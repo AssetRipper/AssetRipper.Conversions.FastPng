@@ -7,11 +7,15 @@ public static class FPng
 {
 	public static unsafe byte[] EncodeImageToMemory(ReadOnlySpan<byte> imageData, int width, int height)
 	{
+		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(width);
+		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(height);
+
 		int pixelCount = width * height;
 		if (imageData.Length % pixelCount != 0)
 		{
 			throw new ArgumentException("Image data length is not a multiple of pixel count.");
 		}
+
 		int channelCount = imageData.Length / pixelCount;
 		if (channelCount is not 3 and not 4)
 		{
