@@ -3,7 +3,7 @@ using System;
 
 namespace AssetRipper.Conversions.FastPng;
 
-public static class FPng
+public static partial class FPng
 {
 	public static unsafe byte[] EncodeImageToMemory(ReadOnlySpan<byte> imageData, int width, int height)
 	{
@@ -25,18 +25,18 @@ public static class FPng
 		byte[] result;
 		std_vector vector = default;
 		std_vector* vectorPtr = &vector;
-		GlobalFunctions.vector_unsigned_char_class_std_allocator_unsigned_char_Constructor(vectorPtr); // Constructor
+		vector_unsigned_char_class_std_allocator_unsigned_char_Constructor(vectorPtr); // Constructor
 		try
 		{
 			fixed (byte* ptr = imageData)
 			{
-				GlobalFunctions.fpng_encode_image_to_memory(ptr, width, height, channelCount, vectorPtr, default);
+				fpng_encode_image_to_memory(ptr, width, height, channelCount, vectorPtr, default);
 			}
 			result = vector.AsSpan<byte>().ToArray();
 		}
 		finally
 		{
-			GlobalFunctions.vector_unsigned_char_class_std_allocator_unsigned_char_Destructor(vectorPtr); // Destructor
+			vector_unsigned_char_class_std_allocator_unsigned_char_Destructor(vectorPtr); // Destructor
 		}
 		return result;
 	}

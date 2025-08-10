@@ -1,3 +1,5 @@
+using AssetRipper.Conversions.FastPng.Helpers;
+
 namespace AssetRipper.Conversions.FastPng.Structures;
 
 [MangledName("class.std::vector.5")]

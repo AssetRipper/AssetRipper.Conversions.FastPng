@@ -1,3 +1,5 @@
+using AssetRipper.Conversions.FastPng.Helpers;
+
 namespace AssetRipper.Conversions.FastPng.Structures;
 
 [MangledName("struct.std::_One_then_variadic_args_t")]

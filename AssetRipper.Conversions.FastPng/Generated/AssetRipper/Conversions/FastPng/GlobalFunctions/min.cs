@@ -1,0 +1,17 @@
+using AssetRipper.Conversions.FastPng.Helpers;
+
+namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
+
+[MangledName("??$min@_K@std@@YAAEB_KAEB_K0@Z")]
+[DemangledName("unsigned __int64 const & __cdecl std::min<unsigned __int64>(unsigned __int64 const &, unsigned __int64 const &)")]
+internal static partial class min
+{
+	public unsafe static void* Invoke(void* Left, void* Right)
+	{
+		if (unchecked((ulong)(*(long*)Right) >= (ulong)(*(long*)Left)))
+		{
+			return Left;
+		}
+		return Right;
+	}
+}

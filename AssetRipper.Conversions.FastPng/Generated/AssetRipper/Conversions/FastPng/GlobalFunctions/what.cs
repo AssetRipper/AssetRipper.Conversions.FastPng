@@ -1,0 +1,24 @@
+using AssetRipper.Conversions.FastPng.GlobalVariables;
+using AssetRipper.Conversions.FastPng.Helpers;
+using AssetRipper.Conversions.FastPng.Structures;
+
+namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
+
+[MangledName("?what@exception@std@@UEBAPEBDXZ")]
+[DemangledName("public: virtual char const * __cdecl std::exception::what(void) const")]
+internal static partial class what
+{
+	public unsafe static readonly void* __pointer = PointerIndices.Register((delegate*<void*, void*>)(&Invoke));
+
+	public unsafe static void* Invoke(void* @this)
+	{
+		unchecked
+		{
+			if (((std_exception*)@this)->field_1.field_0 != null)
+			{
+				return ((std_exception*)@this)->field_1.field_0;
+			}
+			return String_ja3ma5d.__pointer;
+		}
+	}
+}

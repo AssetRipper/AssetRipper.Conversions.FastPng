@@ -1,3 +1,5 @@
+using AssetRipper.Conversions.FastPng.Helpers;
+
 namespace AssetRipper.Conversions.FastPng.Structures;
 
 [MangledName("struct.fpng::defl_sym_freq")]
