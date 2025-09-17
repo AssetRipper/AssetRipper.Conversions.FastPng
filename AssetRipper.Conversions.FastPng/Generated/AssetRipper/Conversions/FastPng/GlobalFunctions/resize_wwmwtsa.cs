@@ -10,20 +10,14 @@ internal static partial class resize_wwmwtsa
 {
 	private partial struct LocalVariables
 	{
-		public long Instruction_0;
-
-		public unsafe void* Instruction_1;
-
-		public std_Value_init_tag Instruction_2;
+		public std_Value_init_tag field_0;
 	}
 
 	public unsafe static void Invoke(void* @this, long Newsize)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		std_Value_init_tag* val = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_2;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = Newsize;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_1 = @this;
-		Resize_p4x2rua.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_1, startFrame.GetLocalsRef<LocalVariables>().Instruction_0, val);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_Value_init_tag);
+		Resize_p4x2rua.Invoke(@this, Newsize, &startFrame.GetLocalsPointer<LocalVariables>()->field_0);
 		if (ExceptionInfo.Current == null)
 		{
 			StackFrameList.Current.Clear(startFrame);

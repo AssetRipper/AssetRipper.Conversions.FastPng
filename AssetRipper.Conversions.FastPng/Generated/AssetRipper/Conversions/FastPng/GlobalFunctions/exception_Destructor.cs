@@ -14,13 +14,12 @@ internal static partial class exception_Destructor
 	{
 		unchecked
 		{
-			*(byte**)@this = (byte*)(&Variable_x4f2ufc.__pointer->field_0) + sizeof(nint) * 1;
+			*(byte**)@this = (byte*)(&Variable_x4f2ufc.__pointer->field_0) + sizeof(nint);
 			std_exception_destroy.Invoke(&((std_exception*)@this)->field_1);
 			if (ExceptionInfo.Current == null)
 			{
 				return;
 			}
-			ExceptionInfo current = ExceptionInfo.Current;
 			ExceptionInfo.Current = null;
 			std_terminate.Invoke();
 			throw null;

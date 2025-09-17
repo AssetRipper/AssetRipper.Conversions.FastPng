@@ -9,10 +9,6 @@ internal static partial class minimum_ymfg3kb
 {
 	public static int Invoke(int a, int b)
 	{
-		if (a >= b)
-		{
-			return b;
-		}
-		return a;
+		return (a >= b) ? b : a;
 	}
 }

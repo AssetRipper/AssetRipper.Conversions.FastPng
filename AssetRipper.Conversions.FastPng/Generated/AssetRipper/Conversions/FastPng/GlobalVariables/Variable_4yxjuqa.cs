@@ -1,4 +1,3 @@
-using System;
 using AssetRipper.Conversions.FastPng.GlobalFunctions;
 using AssetRipper.Conversions.FastPng.Helpers;
 using AssetRipper.Conversions.FastPng.InlineArrays;
@@ -29,15 +28,15 @@ internal static partial class Variable_4yxjuqa
 		unchecked
 		{
 			__pointer = (Struct*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(Struct)));
-			Struct value = default(Struct);
-			ref InlineArray_3_gbfuvwd field_ = ref value.field_0;
-			InlineArray_3_gbfuvwd buffer = default(InlineArray_3_gbfuvwd);
-			Span<nint> span = buffer.AsSpan<InlineArray_3_gbfuvwd, nint>();
-			span[0] = (nint)R4bad_array_new_length.__pointer;
-			span[1] = (nint)bad_array_new_length_Delete.__pointer;
-			span[2] = (nint)what.__pointer;
-			field_ = buffer;
-			Value = value;
+			Value = new Struct
+			{
+				field_0 = new InlineArrayBuilder<InlineArray_3_gbfuvwd, nint>
+				{
+					(nint)R4bad_array_new_length.__pointer,
+					(nint)bad_array_new_length_Delete.__pointer,
+					(nint)what.__pointer
+				}
+			};
 		}
 	}
 }

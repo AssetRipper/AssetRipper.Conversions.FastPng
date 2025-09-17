@@ -10,17 +10,14 @@ internal static partial class Deallocate
 	public unsafe static void Invoke(void* Ptr, long Bytes)
 	{
 		long num = 0L;
-		long* bytes = &num;
 		void* ptr = null;
-		void** ptr2 = &ptr;
 		num = Bytes;
 		ptr = Ptr;
 		if (unchecked((ulong)num) >= 4096uL)
 		{
-			Adjust_manually_vector_aligned.Invoke(ptr2, bytes);
+			Adjust_manually_vector_aligned.Invoke(&ptr, &num);
 			if (ExceptionInfo.Current != null)
 			{
-				ExceptionInfo current = ExceptionInfo.Current;
 				ExceptionInfo.Current = null;
 				std_terminate.Invoke();
 				throw null;

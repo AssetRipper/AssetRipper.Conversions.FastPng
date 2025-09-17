@@ -9,30 +9,20 @@ internal static partial class vector_unsigned_int_class_std_allocator_unsigned_i
 {
 	private partial struct LocalVariables
 	{
-		public unsafe void* Instruction_0;
-
-		public long Instruction_1;
-
-		public unsafe void* Instruction_2;
-
-		public std_One_then_variadic_args_t Instruction_3;
+		public std_One_then_variadic_args_t field_0;
 	}
 
 	public unsafe static void* Invoke(void* @this, long Count, void* Al)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		std_One_then_variadic_args_t* ptr = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_3;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = Al;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_1 = Count;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_2 = @this;
-		void* instruction_ = startFrame.GetLocalsRef<LocalVariables>().Instruction_2;
-		Compressed_pair_class_std_allocator_unsigned_int_class_std_Vector_val_struct_std_Simple_types_unsigned_int_1_Constructor.Invoke(&unchecked((std_vector_0*)instruction_)->field_0, Val1: startFrame.GetLocalsRef<LocalVariables>().Instruction_0, coerce: ptr->field_0);
-		Construct_n.Invoke(instruction_, startFrame.GetLocalsRef<LocalVariables>().Instruction_1);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_One_then_variadic_args_t);
+		Compressed_pair_class_std_allocator_unsigned_int_class_std_Vector_val_struct_std_Simple_types_unsigned_int_1_Constructor.Invoke(&unchecked((std_vector_0*)@this)->field_0, startFrame.GetLocalsPointer<LocalVariables>()->field_0.field_0, Al);
+		Construct_n.Invoke(@this, Count);
 		if (ExceptionInfo.Current != null)
 		{
 			return null;
 		}
 		StackFrameList.Current.Clear(startFrame);
-		return instruction_;
+		return @this;
 	}
 }

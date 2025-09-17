@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.FastPng.Helpers;
@@ -7,7 +9,7 @@ using AssetRipper.Conversions.FastPng.Structures;
 namespace AssetRipper.Conversions.FastPng.InlineArrays;
 
 [InlineArray(288)]
-public partial struct InlineArray_288_mcnvamb : IEquatable<InlineArray_288_mcnvamb>, IEqualityOperators<InlineArray_288_mcnvamb, InlineArray_288_mcnvamb, bool>, IInlineArray<anon_11>
+public partial struct InlineArray_288_mcnvamb : IEquatable<InlineArray_288_mcnvamb>, IEqualityOperators<InlineArray_288_mcnvamb, InlineArray_288_mcnvamb, bool>, IEnumerable, IInlineArray<InlineArray_288_mcnvamb, anon_11>
 {
 	private anon_11 __element0;
 
@@ -40,5 +42,10 @@ public partial struct InlineArray_288_mcnvamb : IEquatable<InlineArray_288_mcnva
 	public override int GetHashCode()
 	{
 		return this.GetHashCode<InlineArray_288_mcnvamb, anon_11>();
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return ((IEnumerable<anon_11>)this).GetEnumerator();
 	}
 }

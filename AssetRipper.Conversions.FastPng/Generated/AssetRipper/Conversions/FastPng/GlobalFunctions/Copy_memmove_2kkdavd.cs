@@ -9,14 +9,10 @@ internal static partial class Copy_memmove_2kkdavd
 {
 	public unsafe static void* Invoke(void* First, void* Last, void* Dest)
 	{
-		void* ptr = null;
-		void** val = &ptr;
-		void* ptr2 = null;
-		void** val2 = &ptr2;
-		ptr = Last;
-		ptr2 = First;
-		void* ptr3 = To_address_enkoctc.Invoke(val2);
-		void* ptr4 = To_address_enkoctc.Invoke(val);
+		void* ptr = Last;
+		void* ptr2 = First;
+		void* ptr3 = To_address_enkoctc.Invoke(&ptr2);
+		void* ptr4 = To_address_enkoctc.Invoke(&ptr);
 		unchecked
 		{
 			long object_count = (long)ptr4 - (long)ptr3;

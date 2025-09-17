@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.FastPng.Helpers;
@@ -6,7 +8,7 @@ using AssetRipper.Conversions.FastPng.Helpers;
 namespace AssetRipper.Conversions.FastPng.InlineArrays;
 
 [InlineArray(256)]
-public partial struct InlineArray_256_vqkfj7a : IEquatable<InlineArray_256_vqkfj7a>, IEqualityOperators<InlineArray_256_vqkfj7a, InlineArray_256_vqkfj7a, bool>, IInlineArray<int>, IInlineArray<uint>
+public partial struct InlineArray_256_vqkfj7a : IEquatable<InlineArray_256_vqkfj7a>, IEqualityOperators<InlineArray_256_vqkfj7a, InlineArray_256_vqkfj7a, bool>, IEnumerable, IInlineArray<InlineArray_256_vqkfj7a, int>, IInlineArray<InlineArray_256_vqkfj7a, uint>
 {
 	private int __element0;
 
@@ -39,5 +41,10 @@ public partial struct InlineArray_256_vqkfj7a : IEquatable<InlineArray_256_vqkfj
 	public override int GetHashCode()
 	{
 		return this.GetHashCode<InlineArray_256_vqkfj7a, int>();
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return ((IEnumerable<int>)this).GetEnumerator();
 	}
 }

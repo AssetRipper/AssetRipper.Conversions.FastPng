@@ -9,7 +9,6 @@ internal static partial class Get_size_of_n_iqtw9sb
 {
 	public static long Invoke(long Count)
 	{
-		sbyte b = 0;
 		return unchecked(Count * 1L);
 	}
 }

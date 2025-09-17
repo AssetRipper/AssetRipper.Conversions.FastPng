@@ -8,34 +8,17 @@ internal static partial class fpng_get_info
 {
 	private partial struct LocalVariables
 	{
-		public unsafe void* Instruction_0;
+		public int field_0;
 
-		public unsafe void* Instruction_1;
-
-		public unsafe void* Instruction_2;
-
-		public int Instruction_3;
-
-		public unsafe void* Instruction_4;
-
-		public int Instruction_5;
-
-		public int Instruction_6;
+		public int field_1;
 	}
 
 	public unsafe static int Invoke(void* pImage, int image_size, void* width, void* height, void* channels_in_file)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		int* idat_ofs = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_5;
-		int* idat_len = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_6;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = channels_in_file;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_1 = height;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_2 = width;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_3 = image_size;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_4 = pImage;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_5 = 0;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_6 = 0;
-		int result = fpng_get_info_internal.Invoke(channels_in_file: startFrame.GetLocalsRef<LocalVariables>().Instruction_0, height: startFrame.GetLocalsRef<LocalVariables>().Instruction_1, width: startFrame.GetLocalsRef<LocalVariables>().Instruction_2, image_size: startFrame.GetLocalsRef<LocalVariables>().Instruction_3, pImage: startFrame.GetLocalsRef<LocalVariables>().Instruction_4, idat_ofs: idat_ofs, idat_len: idat_len);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
+		int result = fpng_get_info_internal.Invoke(pImage, image_size, width, height, channels_in_file, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, &startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 		if (ExceptionInfo.Current != null)
 		{
 			return 0;

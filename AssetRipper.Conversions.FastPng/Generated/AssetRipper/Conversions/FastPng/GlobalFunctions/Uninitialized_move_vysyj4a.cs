@@ -9,14 +9,10 @@ internal static partial class Uninitialized_move_vysyj4a
 {
 	public unsafe static void* Invoke(void* First, void* Last, void* Dest, void* Al)
 	{
-		void* ptr = null;
-		void** it = &ptr;
-		void* ptr2 = null;
-		void** it2 = &ptr2;
-		ptr = Last;
-		ptr2 = First;
-		void* ptr3 = Get_unwrapped_z99fpma.Invoke(it2);
-		void* ptr4 = Get_unwrapped_z99fpma.Invoke(it);
+		void* ptr = Last;
+		void* ptr2 = First;
+		void* ptr3 = Get_unwrapped_z99fpma.Invoke(&ptr2);
+		void* ptr4 = Get_unwrapped_z99fpma.Invoke(&ptr);
 		Copy_memmove_2kkdavd.Invoke(ptr3, ptr4, Unfancy_aszk3nc.Invoke(Dest));
 		return unchecked((byte*)Dest + ((long)ptr4 - (long)ptr3));
 	}

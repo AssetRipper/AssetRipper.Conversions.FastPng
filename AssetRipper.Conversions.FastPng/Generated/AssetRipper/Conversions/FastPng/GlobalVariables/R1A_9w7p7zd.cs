@@ -25,16 +25,15 @@ internal static partial class R1A_9w7p7zd
 	unsafe static R1A_9w7p7zd()
 	{
 		__pointer = unchecked((rtti_BaseClassDescriptor*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(rtti_BaseClassDescriptor))));
-		rtti_BaseClassDescriptor value = default(rtti_BaseClassDescriptor);
-		ref int field_ = ref value.field_0;
-		field_ = PointerIndices.GetIndex(R0_AVbad_array_new_length.__pointer);
-		value.field_1 = 2;
-		value.field_2 = 0;
-		value.field_3 = -1;
-		value.field_4 = 0;
-		value.field_5 = 64;
-		ref int field_2 = ref value.field_6;
-		field_2 = PointerIndices.GetIndex(R3bad_array_new_length.__pointer);
-		Value = value;
+		Value = new rtti_BaseClassDescriptor
+		{
+			field_0 = PointerIndices.GetIndex(R0_AVbad_array_new_length.__pointer),
+			field_1 = 2,
+			field_2 = 0,
+			field_3 = -1,
+			field_4 = 0,
+			field_5 = 64,
+			field_6 = PointerIndices.GetIndex(R3bad_array_new_length.__pointer)
+		};
 	}
 }

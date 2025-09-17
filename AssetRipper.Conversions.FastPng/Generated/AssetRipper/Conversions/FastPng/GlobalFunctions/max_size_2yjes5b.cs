@@ -9,12 +9,8 @@ internal static partial class max_size_2yjes5b
 {
 	public unsafe static long Invoke(void* @this)
 	{
-		long num = 0L;
-		long* right = &num;
-		long num2 = 0L;
-		long* left = &num2;
-		num = max_size_hv9dl3d.Invoke(Getal_llls4cc.Invoke(@this));
-		num2 = Max_limit.Invoke();
-		return *unchecked((long*)min.Invoke(left, right));
+		long num = max_size_hv9dl3d.Invoke(Getal_llls4cc.Invoke(@this));
+		long num2 = Max_limit.Invoke();
+		return *unchecked((long*)min.Invoke(&num2, &num));
 	}
 }

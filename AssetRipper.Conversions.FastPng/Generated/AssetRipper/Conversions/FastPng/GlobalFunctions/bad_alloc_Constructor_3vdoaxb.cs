@@ -15,7 +15,7 @@ internal static partial class bad_alloc_Constructor_3vdoaxb
 		exception_Constructor_ikocrpb.Invoke(@this, parameter_1);
 		unchecked
 		{
-			*(byte**)@this = (byte*)(&Variable_zdor9mc.__pointer->field_0) + sizeof(nint) * 1;
+			*(byte**)@this = (byte*)(&Variable_zdor9mc.__pointer->field_0) + sizeof(nint);
 			return @this;
 		}
 	}

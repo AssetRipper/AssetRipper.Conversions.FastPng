@@ -9,10 +9,6 @@ internal static partial class minimum_su2nfub
 {
 	public static int Invoke(int a, int b)
 	{
-		if (unchecked((uint)a >= (uint)b))
-		{
-			return b;
-		}
-		return a;
+		return unchecked((uint)a >= (uint)b) ? b : a;
 	}
 }

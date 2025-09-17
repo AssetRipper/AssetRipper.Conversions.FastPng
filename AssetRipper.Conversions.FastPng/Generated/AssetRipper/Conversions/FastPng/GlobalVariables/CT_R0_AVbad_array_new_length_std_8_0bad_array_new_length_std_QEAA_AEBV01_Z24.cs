@@ -25,18 +25,15 @@ internal static partial class CT_R0_AVbad_array_new_length_std_8_0bad_array_new_
 	unsafe static CT_R0_AVbad_array_new_length_std_8_0bad_array_new_length_std_QEAA_AEBV01_Z24()
 	{
 		__pointer = unchecked((eh_CatchableType*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(eh_CatchableType))));
-		eh_CatchableType value = new eh_CatchableType
+		Value = new eh_CatchableType
 		{
-			field_0 = 0
+			field_0 = 0,
+			field_1 = PointerIndices.GetIndex(R0_AVbad_array_new_length.__pointer),
+			field_2 = 0,
+			field_3 = -1,
+			field_4 = 0,
+			field_5 = 24,
+			field_6 = PointerIndices.GetIndex(bad_array_new_length_Constructor_7fjuj3c.__pointer)
 		};
-		ref int field_ = ref value.field_1;
-		field_ = PointerIndices.GetIndex(R0_AVbad_array_new_length.__pointer);
-		value.field_2 = 0;
-		value.field_3 = -1;
-		value.field_4 = 0;
-		value.field_5 = 24;
-		ref int field_2 = ref value.field_6;
-		field_2 = PointerIndices.GetIndex(bad_array_new_length_Constructor_7fjuj3c.__pointer);
-		Value = value;
 	}
 }

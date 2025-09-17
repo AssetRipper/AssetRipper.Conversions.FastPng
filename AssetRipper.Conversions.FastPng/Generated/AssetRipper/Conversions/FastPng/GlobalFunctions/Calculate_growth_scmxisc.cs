@@ -9,21 +9,22 @@ internal static partial class Calculate_growth_scmxisc
 {
 	public unsafe static long Invoke(void* @this, long Newsize)
 	{
-		long num = capacity_mz5ysja.Invoke(@this);
-		long num2 = max_size_2yjes5b.Invoke(@this);
+		long num = 0L;
+		long num2 = 0L;
+		long num3 = capacity_mz5ysja.Invoke(@this);
+		long num4 = max_size_2yjes5b.Invoke(@this);
 		unchecked
 		{
-			long result;
-			if ((ulong)num > (ulong)(num2 - (long)((ulong)num / 2uL)))
+			if ((ulong)num3 > (ulong)(num4 - (long)((ulong)num3 / 2uL)))
 			{
-				result = num2;
+				return num4;
 			}
-			else
+			num2 = num3 + (long)((ulong)num3 / 2uL);
+			if ((ulong)num2 < (ulong)Newsize)
 			{
-				long num3 = num + (long)((ulong)num / 2uL);
-				result = (((ulong)num3 >= (ulong)Newsize) ? num3 : Newsize);
+				return Newsize;
 			}
-			return result;
+			return num2;
 		}
 	}
 }

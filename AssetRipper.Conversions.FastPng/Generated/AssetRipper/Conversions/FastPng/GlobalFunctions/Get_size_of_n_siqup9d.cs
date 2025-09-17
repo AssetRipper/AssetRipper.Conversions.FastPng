@@ -7,24 +7,11 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Get_size_of_n")]
 internal static partial class Get_size_of_n_siqup9d
 {
-	private partial struct LocalVariables
-	{
-		public long Instruction_0;
-
-		public sbyte Instruction_1;
-
-		public long Instruction_2;
-	}
-
 	public static long Invoke(long Count)
 	{
-		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = Count;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_1 = 1;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_2 = 2305843009213693951L;
 		unchecked
 		{
-			if ((ulong)startFrame.GetLocalsRef<LocalVariables>().Instruction_0 > 2305843009213693951uL)
+			if ((ulong)Count > 2305843009213693951uL)
 			{
 				Throw_bad_array_new_length.Invoke();
 				if (ExceptionInfo.Current != null)
@@ -33,9 +20,7 @@ internal static partial class Get_size_of_n_siqup9d
 				}
 				throw null;
 			}
-			long result = startFrame.GetLocalsRef<LocalVariables>().Instruction_0 * 8L;
-			StackFrameList.Current.Clear(startFrame);
-			return result;
+			return Count * 8L;
 		}
 	}
 }

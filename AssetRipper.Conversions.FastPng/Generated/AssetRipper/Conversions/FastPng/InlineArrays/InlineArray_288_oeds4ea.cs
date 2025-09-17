@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.FastPng.Helpers;
@@ -6,7 +8,7 @@ using AssetRipper.Conversions.FastPng.Helpers;
 namespace AssetRipper.Conversions.FastPng.InlineArrays;
 
 [InlineArray(288)]
-public partial struct InlineArray_288_oeds4ea : IEquatable<InlineArray_288_oeds4ea>, IEqualityOperators<InlineArray_288_oeds4ea, InlineArray_288_oeds4ea, bool>, IInlineArray<short>, IInlineArray<ushort>, IInlineArray<char>
+public partial struct InlineArray_288_oeds4ea : IEquatable<InlineArray_288_oeds4ea>, IEqualityOperators<InlineArray_288_oeds4ea, InlineArray_288_oeds4ea, bool>, IEnumerable, IInlineArray<InlineArray_288_oeds4ea, short>, IInlineArray<InlineArray_288_oeds4ea, ushort>, IInlineArray<InlineArray_288_oeds4ea, char>
 {
 	private short __element0;
 
@@ -39,5 +41,10 @@ public partial struct InlineArray_288_oeds4ea : IEquatable<InlineArray_288_oeds4
 	public override int GetHashCode()
 	{
 		return this.GetHashCode<InlineArray_288_oeds4ea, short>();
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return ((IEnumerable<short>)this).GetEnumerator();
 	}
 }

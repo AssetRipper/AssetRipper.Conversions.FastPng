@@ -8,10 +8,6 @@ internal static partial class min
 {
 	public unsafe static void* Invoke(void* Left, void* Right)
 	{
-		if (unchecked((ulong)(*(long*)Right) >= (ulong)(*(long*)Left)))
-		{
-			return Left;
-		}
-		return Right;
+		return unchecked((ulong)(*(long*)Right) >= (ulong)(*(long*)Left)) ? Left : Right;
 	}
 }

@@ -12,152 +12,89 @@ internal static partial class pixel_deflate_dyn_3_rle
 {
 	private partial struct LocalVariables
 	{
-		public int Instruction_0;
+		public long field_0;
 
-		public int Instruction_1;
+		public int field_1;
 
-		public unsafe void* Instruction_2;
+		public int field_2;
 
-		public int Instruction_3;
+		public std_vector_0 field_3;
 
-		public int Instruction_4;
+		public std_allocator_2 field_4;
 
-		public unsafe void* Instruction_5;
+		public InlineArray_288_vqkfj7a field_5;
 
-		public int Instruction_6;
-
-		public long Instruction_7;
-
-		public int Instruction_8;
-
-		public int Instruction_9;
-
-		public int Instruction_10;
-
-		public int Instruction_11;
-
-		public int Instruction_12;
-
-		public int Instruction_13;
-
-		public int Instruction_14;
-
-		public int Instruction_15;
-
-		public std_vector_0 Instruction_16;
-
-		public std_allocator_2 Instruction_17;
-
-		public unsafe void* Instruction_18;
-
-		public InlineArray_288_vqkfj7a Instruction_19;
-
-		public unsafe void* Instruction_20;
-
-		public int Instruction_21;
-
-		public int Instruction_22;
-
-		public int Instruction_23;
-
-		public int Instruction_24;
-
-		public int Instruction_25;
-
-		public int Instruction_26;
-
-		public int Instruction_27;
-
-		public int Instruction_28;
-
-		public int Instruction_29;
-
-		public int Instruction_30;
-
-		public int Instruction_31;
-
-		public int Instruction_32;
-
-		public int Instruction_33;
-
-		public fpng_defl_huff Instruction_34;
-
-		public int Instruction_35;
-
-		public int Instruction_36;
-
-		public int Instruction_37;
-
-		public int Instruction_38;
-
-		public int Instruction_39;
-
-		public int Instruction_40;
-
-		public int Instruction_41;
-
-		public int Instruction_42;
-
-		public int Instruction_43;
-
-		public int Instruction_44;
-
-		public int Instruction_45;
-
-		public int Instruction_46;
-
-		public int Instruction_47;
-
-		public int Instruction_48;
-
-		public int Instruction_49;
-
-		public int Instruction_50;
-
-		public int Instruction_51;
-
-		public int Instruction_52;
-
-		public int Instruction_53;
-
-		public int Instruction_54;
-
-		public int Instruction_55;
-
-		public int Instruction_56;
-
-		public int Instruction_57;
-
-		public int Instruction_58;
+		public fpng_defl_huff field_6;
 	}
 
 	public unsafe static int Invoke(void* pImg, int w, int h, void* pDst, int dst_buf_size)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		long* bit_buf = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_7;
-		int* bit_buf_size = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_8;
-		int* dst_ofs = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_9;
-		std_vector_0* ptr = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_16;
-		std_allocator_2* ptr2 = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_17;
-		InlineArray_288_vqkfj7a* ptr3 = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_19;
-		fpng_defl_huff* ptr4 = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_34;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_1 = dst_buf_size;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_2 = pDst;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_3 = h;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_4 = w;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_5 = pImg;
-		int instruction_ = startFrame.GetLocalsRef<LocalVariables>().Instruction_4;
+		int num = 0;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0L;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_2 = 0;
+		int num2 = 0;
+		int num3 = 0;
+		int num4 = 0;
+		int num5 = 0;
+		int num6 = 0;
+		int num7 = 0;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(std_vector_0);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_4 = default(std_allocator_2);
+		void* ptr = null;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_5 = default(InlineArray_288_vqkfj7a);
+		void* ptr2 = null;
+		int num8 = 0;
+		int num9 = 0;
+		int num10 = 0;
+		int num11 = 0;
+		int num12 = 0;
+		int num13 = 0;
+		int num14 = 0;
+		int num15 = 0;
+		int num16 = 0;
+		int num17 = 0;
+		int num18 = 0;
+		int num19 = 0;
+		int num20 = 0;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_6 = default(fpng_defl_huff);
+		int num21 = 0;
+		int num22 = 0;
+		int num23 = 0;
+		int num24 = 0;
+		int num25 = 0;
+		int num26 = 0;
+		int num27 = 0;
+		int num28 = 0;
+		int num29 = 0;
+		int num30 = 0;
+		int num31 = 0;
+		int num32 = 0;
+		int num33 = 0;
+		int num34 = 0;
+		int num35 = 0;
+		int num36 = 0;
+		int num37 = 0;
+		int num38 = 0;
+		int num39 = 0;
+		int num40 = 0;
+		int num41 = 0;
+		int num42 = 0;
+		int num43 = 0;
+		int num44 = 0;
 		unchecked
 		{
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_6 = 1 + instruction_ * 3;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = 0L;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = 0;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_9 = 0;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_10 = 120;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_11 = 8;
-			if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_11 >= 0u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_11 <= 16u)
+			int num45 = 1 + w * 3;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0L;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_2 = 0;
+			num2 = 120;
+			num3 = 8;
+			int num46;
+			if ((uint)num3 >= 0u && (uint)num3 <= 16u)
 			{
-				_ = -1;
+				num46 = -1;
 			}
 			else
 			{
@@ -166,11 +103,12 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num46 = 0;
 			}
-			if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_10 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_11))
+			int num47;
+			if ((ulong)(uint)num2 < (ulong)(1L << (int)(uint)num3))
 			{
-				_ = -1;
+				num47 = -1;
 			}
 			else
 			{
@@ -179,17 +117,17 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num47 = 0;
 			}
-			long num = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_10 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-			long instruction_2 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_2 | num;
-			int instruction_3 = startFrame.GetLocalsRef<LocalVariables>().Instruction_11;
-			int instruction_4 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_4 + instruction_3;
-			if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+			long num48 = (long)((ulong)(uint)num2 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+			long field_ = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num48;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_;
+			int field_2 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num3;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_2;
+			int num49;
+			if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 			{
-				_ = -1;
+				num49 = -1;
 			}
 			else
 			{
@@ -198,13 +136,14 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num49 = 0;
 			}
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_12 = 1;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_13 = 8;
-			if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_13 >= 0u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_13 <= 16u)
+			num4 = 1;
+			num5 = 8;
+			int num50;
+			if ((uint)num5 >= 0u && (uint)num5 <= 16u)
 			{
-				_ = -1;
+				num50 = -1;
 			}
 			else
 			{
@@ -213,11 +152,12 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num50 = 0;
 			}
-			if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_12 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_13))
+			int num51;
+			if ((ulong)(uint)num4 < (ulong)(1L << (int)(uint)num5))
 			{
-				_ = -1;
+				num51 = -1;
 			}
 			else
 			{
@@ -226,17 +166,17 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num51 = 0;
 			}
-			long num2 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_12 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-			long instruction_5 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_5 | num2;
-			int instruction_6 = startFrame.GetLocalsRef<LocalVariables>().Instruction_13;
-			int instruction_7 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_7 + instruction_6;
-			if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+			long num52 = (long)((ulong)(uint)num4 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+			long field_3 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num52;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_3;
+			int field_4 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num5;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_4;
+			int num53;
+			if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 			{
-				_ = -1;
+				num53 = -1;
 			}
 			else
 			{
@@ -245,13 +185,14 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num53 = 0;
 			}
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_14 = 1;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_15 = 1;
-			if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_15 >= 0u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_15 <= 16u)
+			num6 = 1;
+			num7 = 1;
+			int num54;
+			if ((uint)num7 >= 0u && (uint)num7 <= 16u)
 			{
-				_ = -1;
+				num54 = -1;
 			}
 			else
 			{
@@ -260,11 +201,12 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num54 = 0;
 			}
-			if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_14 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_15))
+			int num55;
+			if ((ulong)(uint)num6 < (ulong)(1L << (int)(uint)num7))
 			{
-				_ = -1;
+				num55 = -1;
 			}
 			else
 			{
@@ -273,17 +215,17 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num55 = 0;
 			}
-			long num3 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_14 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-			long instruction_8 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_8 | num3;
-			int instruction_9 = startFrame.GetLocalsRef<LocalVariables>().Instruction_15;
-			int instruction_10 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_10 + instruction_9;
-			if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+			long num56 = (long)((ulong)(uint)num6 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+			long field_5 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num56;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_5;
+			int field_6 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num7;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_6;
+			int num57;
+			if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 			{
-				_ = -1;
+				num57 = -1;
 			}
 			else
 			{
@@ -292,125 +234,106 @@ internal static partial class pixel_deflate_dyn_3_rle
 				{
 					return 0;
 				}
-				_ = 0;
+				num57 = 0;
 			}
-			allocator_unsigned_int_Constructor.Invoke(ptr2);
-			vector_unsigned_int_class_std_allocator_unsigned_int_Constructor.Invoke(ptr, (uint)((startFrame.GetLocalsRef<LocalVariables>().Instruction_4 + 1) * startFrame.GetLocalsRef<LocalVariables>().Instruction_3), ptr2);
+			allocator_unsigned_int_Constructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_4);
+			vector_unsigned_int_class_std_allocator_unsigned_int_Constructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3, (uint)((w + 1) * h), &startFrame.GetLocalsPointer<LocalVariables>()->field_4);
 			if (ExceptionInfo.Current != null)
 			{
 				return 0;
 			}
-			void* instruction_11 = data_uf9yj3b.Invoke(ptr);
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_18 = instruction_11;
-			llvm_memset_p0_i64.Invoke((byte*)ptr3 + sizeof(int) * 0, 0, 1152L, isVolatile: false);
-			void* instruction_12 = startFrame.GetLocalsRef<LocalVariables>().Instruction_5;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_20 = instruction_12;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_21 = 0;
-			int instruction_13 = fpng_adler32.Invoke(size: (uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_6 * startFrame.GetLocalsRef<LocalVariables>().Instruction_3), pData: startFrame.GetLocalsRef<LocalVariables>().Instruction_5, adler: 1);
+			ptr = data_uf9yj3b.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3);
+			llvm_memset_p0_i64.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_5, 0, 1152L, isVolatile: false);
+			ptr2 = pImg;
+			num8 = 0;
+			int num58 = fpng_adler32.Invoke(pImg, (uint)(num45 * h), 1);
 			if (ExceptionInfo.Current == null)
 			{
-				startFrame.GetLocalsRef<LocalVariables>().Instruction_22 = instruction_13;
-				startFrame.GetLocalsRef<LocalVariables>().Instruction_23 = 2;
-				startFrame.GetLocalsRef<LocalVariables>().Instruction_24 = 0;
+				num9 = num58;
+				num10 = 2;
+				num11 = 0;
 				while (true)
 				{
-					if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_24 < (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_3)
+					if ((uint)num11 < (uint)h)
 					{
-						int instruction_14 = startFrame.GetLocalsRef<LocalVariables>().Instruction_21;
-						int instruction_15 = startFrame.GetLocalsRef<LocalVariables>().Instruction_6;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_25 = instruction_14 + instruction_15;
-						void* instruction_16 = startFrame.GetLocalsRef<LocalVariables>().Instruction_20;
-						int instruction_17 = startFrame.GetLocalsRef<LocalVariables>().Instruction_21;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_21 = instruction_17 + 1;
-						sbyte b = ((sbyte*)instruction_16)[(uint)instruction_17];
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_26 = (byte)b;
-						int num4 = 1 | (startFrame.GetLocalsRef<LocalVariables>().Instruction_26 << 8);
-						void* instruction_18 = startFrame.GetLocalsRef<LocalVariables>().Instruction_18;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_18 = (byte*)instruction_18 + 4;
-						*(int*)instruction_18 = num4;
-						(*(int*)((byte*)ptr3 + sizeof(int) * (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_26))++;
-						int instruction_19 = READ_RGB_PIXEL.Invoke((byte*)startFrame.GetLocalsRef<LocalVariables>().Instruction_20 + (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_21);
+						num12 = num8 + num45;
+						num13 = (byte)((sbyte*)ptr2)[(uint)num8++];
+						int num59 = 1 | (num13 << 8);
+						void* ptr3 = ptr;
+						ptr = (byte*)ptr3 + 4;
+						*(int*)ptr3 = num59;
+						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[(uint)num13]++;
+						int num60 = READ_RGB_PIXEL.Invoke((byte*)ptr2 + (uint)num8);
 						if (ExceptionInfo.Current != null)
 						{
 							break;
 						}
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_28 = instruction_19;
-						int num5 = startFrame.GetLocalsRef<LocalVariables>().Instruction_28 << 8;
-						void* instruction_20 = startFrame.GetLocalsRef<LocalVariables>().Instruction_18;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_18 = (byte*)instruction_20 + 4;
-						*(int*)instruction_20 = num5;
-						(*(int*)((byte*)ptr3 + sizeof(int) * (int)(uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_28 & 0xFF)))++;
-						(*(int*)((byte*)ptr3 + sizeof(int) * (int)(uint)((startFrame.GetLocalsRef<LocalVariables>().Instruction_28 >>> 8) & 0xFF)))++;
-						(*(int*)((byte*)ptr3 + sizeof(int) * (int)(uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_28 >>> 16)))++;
-						int instruction_21 = startFrame.GetLocalsRef<LocalVariables>().Instruction_21;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_21 = instruction_21 + 3;
-						int instruction_22 = startFrame.GetLocalsRef<LocalVariables>().Instruction_28;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_27 = instruction_22;
-						while ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_21 < (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_25)
+						num15 = num60;
+						int num61 = num15 << 8;
+						void* ptr4 = ptr;
+						ptr = (byte*)ptr4 + 4;
+						*(int*)ptr4 = num61;
+						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[(uint)(num15 & 0xFF)]++;
+						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[(uint)((num15 >>> 8) & 0xFF)]++;
+						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[(uint)(num15 >>> 16)]++;
+						num8 += 3;
+						num14 = num15;
+						while ((uint)num8 < (uint)num12)
 						{
-							int instruction_23 = READ_RGB_PIXEL.Invoke((byte*)startFrame.GetLocalsRef<LocalVariables>().Instruction_20 + (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_21);
+							int num62 = READ_RGB_PIXEL.Invoke((byte*)ptr2 + (uint)num8);
 							if (ExceptionInfo.Current != null)
 							{
-								goto end_IL_075b;
+								goto end_IL_0545;
 							}
-							startFrame.GetLocalsRef<LocalVariables>().Instruction_29 = instruction_23;
-							if (startFrame.GetLocalsRef<LocalVariables>().Instruction_29 == startFrame.GetLocalsRef<LocalVariables>().Instruction_27)
+							num16 = num62;
+							if (num16 == num14)
 							{
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_30 = 3;
-								int instruction_24 = minimum_ymfg3kb.Invoke(255, startFrame.GetLocalsRef<LocalVariables>().Instruction_25 - startFrame.GetLocalsRef<LocalVariables>().Instruction_21);
+								num17 = 3;
+								int num63 = minimum_ymfg3kb.Invoke(255, num12 - num8);
 								if (ExceptionInfo.Current != null)
 								{
-									goto end_IL_075b;
+									goto end_IL_0545;
 								}
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_31 = instruction_24;
-								while ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_30 < (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_31)
+								for (num18 = num63; (uint)num17 < (uint)num18; num17 += 3)
 								{
-									int num6 = READ_RGB_PIXEL.Invoke((byte*)startFrame.GetLocalsRef<LocalVariables>().Instruction_20 + (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_21 + (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_30);
+									int num64 = READ_RGB_PIXEL.Invoke((byte*)ptr2 + (uint)num8 + (uint)num17);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									if (num6 != startFrame.GetLocalsRef<LocalVariables>().Instruction_29)
+									if (num64 != num16)
 									{
 										break;
 									}
-									int instruction_25 = startFrame.GetLocalsRef<LocalVariables>().Instruction_30;
-									startFrame.GetLocalsRef<LocalVariables>().Instruction_30 = instruction_25 + 3;
 								}
-								int num7 = startFrame.GetLocalsRef<LocalVariables>().Instruction_30 - 1;
-								void* instruction_26 = startFrame.GetLocalsRef<LocalVariables>().Instruction_18;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_18 = (byte*)instruction_26 + 4;
-								*(int*)instruction_26 = num7;
-								int instruction_27 = startFrame.GetLocalsRef<LocalVariables>().Instruction_30;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_32 = instruction_27 - 3;
-								int instruction_28 = startFrame.GetLocalsRef<LocalVariables>().Instruction_32;
-								(*(int*)((byte*)ptr3 + sizeof(int) * (ushort)(*(short*)((byte*)g_defl_len_sym.__pointer + sizeof(short) * (int)(uint)instruction_28))))++;
-								int instruction_29 = startFrame.GetLocalsRef<LocalVariables>().Instruction_30;
-								int instruction_30 = startFrame.GetLocalsRef<LocalVariables>().Instruction_21;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_21 = instruction_30 + instruction_29;
+								int num65 = num17 - 1;
+								void* ptr5 = ptr;
+								ptr = (byte*)ptr5 + 4;
+								*(int*)ptr5 = num65;
+								long num66 = (ushort)((short*)g_defl_len_sym.__pointer)[(uint)(num17 - 3)];
+								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[num66]++;
+								num8 += num17;
 							}
 							else
 							{
-								int num8 = startFrame.GetLocalsRef<LocalVariables>().Instruction_29 << 8;
-								void* instruction_31 = startFrame.GetLocalsRef<LocalVariables>().Instruction_18;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_18 = (byte*)instruction_31 + 4;
-								*(int*)instruction_31 = num8;
-								(*(int*)((byte*)ptr3 + sizeof(int) * (int)(uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_29 & 0xFF)))++;
-								(*(int*)((byte*)ptr3 + sizeof(int) * (int)(uint)((startFrame.GetLocalsRef<LocalVariables>().Instruction_29 >>> 8) & 0xFF)))++;
-								(*(int*)((byte*)ptr3 + sizeof(int) * (int)(uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_29 >>> 16)))++;
-								int instruction_32 = startFrame.GetLocalsRef<LocalVariables>().Instruction_29;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_27 = instruction_32;
-								int instruction_33 = startFrame.GetLocalsRef<LocalVariables>().Instruction_21;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_21 = instruction_33 + 3;
+								int num67 = num16 << 8;
+								void* ptr6 = ptr;
+								ptr = (byte*)ptr6 + 4;
+								*(int*)ptr6 = num67;
+								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[(uint)(num16 & 0xFF)]++;
+								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[(uint)((num16 >>> 8) & 0xFF)]++;
+								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[(uint)(num16 >>> 16)]++;
+								num14 = num16;
+								num8 += 3;
 							}
 						}
-						int instruction_34 = startFrame.GetLocalsRef<LocalVariables>().Instruction_24;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_24 = instruction_34 + 1;
+						num11++;
 						continue;
 					}
-					if (startFrame.GetLocalsRef<LocalVariables>().Instruction_21 == startFrame.GetLocalsRef<LocalVariables>().Instruction_3 * startFrame.GetLocalsRef<LocalVariables>().Instruction_6)
+					int num68;
+					if (num8 == h * num45)
 					{
-						_ = -1;
+						num68 = -1;
 					}
 					else
 					{
@@ -419,13 +342,13 @@ internal static partial class pixel_deflate_dyn_3_rle
 						{
 							break;
 						}
-						_ = 0;
+						num68 = 0;
 					}
-					long num9 = ((long)startFrame.GetLocalsRef<LocalVariables>().Instruction_18 - (long)data_uf9yj3b.Invoke(ptr)) / 4L;
-					startFrame.GetLocalsRef<LocalVariables>().Instruction_33 = (int)num9;
-					if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_33 <= (ulong)size_wtrvsgc.Invoke(ptr))
+					num20 = (int)(((long)ptr - (long)data_uf9yj3b.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3)) / 4L);
+					int num69;
+					if ((ulong)(uint)num20 <= (ulong)size_wtrvsgc.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3))
 					{
-						_ = -1;
+						num69 = -1;
 					}
 					else
 					{
@@ -434,32 +357,33 @@ internal static partial class pixel_deflate_dyn_3_rle
 						{
 							break;
 						}
-						_ = 0;
+						num69 = 0;
 					}
-					*(int*)((byte*)ptr3 + sizeof(int) * 256) = 1;
-					adjust_freq32.Invoke(288, (byte*)ptr3 + sizeof(int) * 0, (byte*)(&ptr4->field_0) + sizeof(InlineArray_288_oeds4ea) * 0 + sizeof(short) * 0);
+					((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5))[256] = 1;
+					adjust_freq32.Invoke(pFreq16: &startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0, num_freq: 288, pFreq: &startFrame.GetLocalsPointer<LocalVariables>()->field_5);
 					if (ExceptionInfo.Current != null)
 					{
 						break;
 					}
-					llvm_memset_p0_i64.Invoke((byte*)(&ptr4->field_0) + sizeof(InlineArray_288_oeds4ea) * 1 + sizeof(short) * 0, 0, 64L, isVolatile: false);
-					*(short*)((byte*)(&ptr4->field_0) + sizeof(InlineArray_288_oeds4ea) * 1 + sizeof(short) * 2) = 1;
-					*(short*)((byte*)(&ptr4->field_0) + sizeof(InlineArray_288_oeds4ea) * 1 + sizeof(short) * 3) = 1;
-					bool flag = defl_start_dynamic_block.Invoke(dst_buf_size: startFrame.GetLocalsRef<LocalVariables>().Instruction_1, d: ptr4, pDst: startFrame.GetLocalsRef<LocalVariables>().Instruction_2, dst_ofs: dst_ofs, bit_buf: bit_buf, bit_buf_size: bit_buf_size);
+					llvm_memset_p0_i64.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray_288_oeds4ea), 0, 64L, isVolatile: false);
+					((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray_288_oeds4ea)))[2] = 1;
+					((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray_288_oeds4ea)))[3] = 1;
+					bool flag = defl_start_dynamic_block.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_6, pDst, &startFrame.GetLocalsPointer<LocalVariables>()->field_2, dst_buf_size, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, &startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 					if (ExceptionInfo.Current != null)
 					{
 						break;
 					}
 					if (!flag)
 					{
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = 0;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_35 = 1;
+						num = 0;
+						num21 = 1;
 					}
 					else
 					{
-						if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 7)
+						int num70;
+						if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 7)
 						{
-							_ = -1;
+							num70 = -1;
 						}
 						else
 						{
@@ -468,11 +392,12 @@ internal static partial class pixel_deflate_dyn_3_rle
 							{
 								break;
 							}
-							_ = 0;
+							num70 = 0;
 						}
-						if ((ushort)(*(short*)((byte*)(&ptr4->field_1) + sizeof(InlineArray_288_oeds4ea) * 1 + sizeof(short) * 2)) == 0 && ((byte*)(&ptr4->field_2) + sizeof(InlineArray_288_w3otm9c) * 1)[sizeof(sbyte) * 2] == 1)
+						int num71;
+						if ((ushort)((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1) + sizeof(InlineArray_288_oeds4ea)))[2] == 0 && ((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2) + sizeof(InlineArray_288_w3otm9c))[2] == 1)
 						{
-							_ = -1;
+							num71 = -1;
 						}
 						else
 						{
@@ -481,382 +406,362 @@ internal static partial class pixel_deflate_dyn_3_rle
 							{
 								break;
 							}
-							_ = 0;
+							num71 = 0;
 						}
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_36 = 0;
-						while ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_36 < (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_33)
+						num22 = 0;
+						while ((uint)num22 < (uint)num20)
 						{
-							int instruction_35 = *(int*)Index_2nyjhmb.Invoke(ptr, (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_36);
-							startFrame.GetLocalsRef<LocalVariables>().Instruction_37 = instruction_35;
-							int instruction_36 = startFrame.GetLocalsRef<LocalVariables>().Instruction_37;
-							startFrame.GetLocalsRef<LocalVariables>().Instruction_38 = instruction_36 & 0xFF;
-							if (startFrame.GetLocalsRef<LocalVariables>().Instruction_38 == 0)
+							num23 = *(int*)vector_unsigned_int_class_std_allocator_unsigned_int_Index.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3, (uint)num22);
+							num24 = num23 & 0xFF;
+							if (num24 == 0)
 							{
-								int instruction_37 = startFrame.GetLocalsRef<LocalVariables>().Instruction_37;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_39 = instruction_37 >>> 8;
-								short num10 = *(short*)((byte*)(&ptr4->field_1) + sizeof(InlineArray_288_oeds4ea) * 0 + sizeof(short) * (int)(uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_39 & 0xFF));
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_40 = (ushort)num10;
-								sbyte b2 = (sbyte)((byte*)(&ptr4->field_2) + sizeof(InlineArray_288_w3otm9c) * 0)[sizeof(sbyte) * (int)(uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_39 & 0xFF)];
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_41 = (byte)b2;
-								if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_41 >= 1u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_41 <= 16u)
+								num25 = num23 >>> 8;
+								num26 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1))[(uint)(num25 & 0xFF)];
+								num27 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2))[(uint)(num25 & 0xFF)];
+								int num72;
+								if ((uint)num27 >= 1u && (uint)num27 <= 16u)
 								{
-									_ = -1;
+									num72 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1115);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num72 = 0;
 								}
-								if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_40 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_41))
+								int num73;
+								if ((ulong)(uint)num26 < (ulong)(1L << (int)(uint)num27))
 								{
-									_ = -1;
+									num73 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1115);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num73 = 0;
 								}
-								long num11 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_40 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-								long instruction_38 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_38 | num11;
-								int instruction_39 = startFrame.GetLocalsRef<LocalVariables>().Instruction_41;
-								int instruction_40 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_40 + instruction_39;
-								if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+								long num74 = (long)((ulong)(uint)num26 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+								long field_7 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num74;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_7;
+								int field_8 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num27;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_8;
+								int num75;
+								if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 								{
-									_ = -1;
+									num75 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1115);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num75 = 0;
 								}
-								int instruction_41 = startFrame.GetLocalsRef<LocalVariables>().Instruction_39;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_39 = instruction_41 >>> 8;
-								short num12 = *(short*)((byte*)(&ptr4->field_1) + sizeof(InlineArray_288_oeds4ea) * 0 + sizeof(short) * (int)(uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_39 & 0xFF));
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_42 = (ushort)num12;
-								sbyte b3 = (sbyte)((byte*)(&ptr4->field_2) + sizeof(InlineArray_288_w3otm9c) * 0)[sizeof(sbyte) * (int)(uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_39 & 0xFF)];
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_43 = (byte)b3;
-								if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_43 >= 1u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_43 <= 16u)
+								num25 >>>= 8;
+								num28 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1))[(uint)(num25 & 0xFF)];
+								num29 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2))[(uint)(num25 & 0xFF)];
+								int num76;
+								if ((uint)num29 >= 1u && (uint)num29 <= 16u)
 								{
-									_ = -1;
+									num76 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1118);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num76 = 0;
 								}
-								if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_42 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_43))
+								int num77;
+								if ((ulong)(uint)num28 < (ulong)(1L << (int)(uint)num29))
 								{
-									_ = -1;
+									num77 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1118);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num77 = 0;
 								}
-								long num13 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_42 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-								long instruction_42 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_42 | num13;
-								int instruction_43 = startFrame.GetLocalsRef<LocalVariables>().Instruction_43;
-								int instruction_44 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_44 + instruction_43;
-								if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+								long num78 = (long)((ulong)(uint)num28 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+								long field_9 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num78;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_9;
+								int field_10 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num29;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_10;
+								int num79;
+								if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 								{
-									_ = -1;
+									num79 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1118);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num79 = 0;
 								}
-								int instruction_45 = startFrame.GetLocalsRef<LocalVariables>().Instruction_39;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_39 = instruction_45 >>> 8;
-								short num14 = *(short*)((byte*)(&ptr4->field_1) + sizeof(InlineArray_288_oeds4ea) * 0 + sizeof(short) * (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_39);
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_44 = (ushort)num14;
-								sbyte b4 = (sbyte)((byte*)(&ptr4->field_2) + sizeof(InlineArray_288_w3otm9c) * 0)[sizeof(sbyte) * (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_39];
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_45 = (byte)b4;
-								if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_45 >= 1u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_45 <= 16u)
+								num25 >>>= 8;
+								num30 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1))[(uint)num25];
+								num31 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2))[(uint)num25];
+								int num80;
+								if ((uint)num31 >= 1u && (uint)num31 <= 16u)
 								{
-									_ = -1;
+									num80 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1121);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num80 = 0;
 								}
-								if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_44 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_45))
+								int num81;
+								if ((ulong)(uint)num30 < (ulong)(1L << (int)(uint)num31))
 								{
-									_ = -1;
+									num81 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1121);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num81 = 0;
 								}
-								long num15 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_44 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-								long instruction_46 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_46 | num15;
-								int instruction_47 = startFrame.GetLocalsRef<LocalVariables>().Instruction_45;
-								int instruction_48 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_48 + instruction_47;
-								if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+								long num82 = (long)((ulong)(uint)num30 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+								long field_11 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num82;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_11;
+								int field_12 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num31;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_12;
+								int num83;
+								if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 								{
-									_ = -1;
+									num83 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1121);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num83 = 0;
 								}
 							}
-							else if (startFrame.GetLocalsRef<LocalVariables>().Instruction_38 == 1)
+							else if (num24 == 1)
 							{
-								int instruction_49 = startFrame.GetLocalsRef<LocalVariables>().Instruction_37;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_46 = instruction_49 >>> 8;
-								short num16 = *(short*)((byte*)(&ptr4->field_1) + sizeof(InlineArray_288_oeds4ea) * 0 + sizeof(short) * (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_46);
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_47 = (ushort)num16;
-								sbyte b5 = (sbyte)((byte*)(&ptr4->field_2) + sizeof(InlineArray_288_w3otm9c) * 0)[sizeof(sbyte) * (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_46];
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_48 = (byte)b5;
-								if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_48 >= 1u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_48 <= 16u)
+								num32 = num23 >>> 8;
+								num33 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1))[(uint)num32];
+								num34 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2))[(uint)num32];
+								int num84;
+								if ((uint)num34 >= 1u && (uint)num34 <= 16u)
 								{
-									_ = -1;
+									num84 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1126);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num84 = 0;
 								}
-								if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_47 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_48))
+								int num85;
+								if ((ulong)(uint)num33 < (ulong)(1L << (int)(uint)num34))
 								{
-									_ = -1;
+									num85 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1126);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num85 = 0;
 								}
-								long num17 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_47 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-								long instruction_50 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_50 | num17;
-								int instruction_51 = startFrame.GetLocalsRef<LocalVariables>().Instruction_48;
-								int instruction_52 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_52 + instruction_51;
-								if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+								long num86 = (long)((ulong)(uint)num33 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+								long field_13 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num86;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_13;
+								int field_14 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num34;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_14;
+								int num87;
+								if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 								{
-									_ = -1;
+									num87 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1126);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num87 = 0;
 								}
 							}
 							else
 							{
-								int instruction_53 = startFrame.GetLocalsRef<LocalVariables>().Instruction_38;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_49 = instruction_53 + 1;
-								int instruction_54 = startFrame.GetLocalsRef<LocalVariables>().Instruction_49;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_50 = instruction_54 - 3;
-								InlineArray_288_oeds4ea* ptr5 = (InlineArray_288_oeds4ea*)((byte*)(&ptr4->field_1) + sizeof(InlineArray_288_oeds4ea) * 0);
-								int instruction_55 = startFrame.GetLocalsRef<LocalVariables>().Instruction_50;
-								short num18 = *(short*)((byte*)ptr5 + sizeof(short) * (ushort)(*(short*)((byte*)g_defl_len_sym.__pointer + sizeof(short) * (int)(uint)instruction_55)));
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_51 = (ushort)num18;
-								InlineArray_288_w3otm9c* ptr6 = (InlineArray_288_w3otm9c*)((byte*)(&ptr4->field_2) + sizeof(InlineArray_288_w3otm9c) * 0);
-								int instruction_56 = startFrame.GetLocalsRef<LocalVariables>().Instruction_50;
-								sbyte b6 = ((sbyte*)ptr6)[sizeof(sbyte) * (ushort)(*(short*)((byte*)g_defl_len_sym.__pointer + sizeof(short) * (int)(uint)instruction_56))];
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_52 = (byte)b6;
-								if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_52 >= 1u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_52 <= 16u)
+								num36 = num24 + 1 - 3;
+								num37 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1))[(ushort)((short*)g_defl_len_sym.__pointer)[(uint)num36]];
+								num38 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2))[(ushort)((short*)g_defl_len_sym.__pointer)[(uint)num36]];
+								int num88;
+								if ((uint)num38 >= 1u && (uint)num38 <= 16u)
 								{
-									_ = -1;
+									num88 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1134);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num88 = 0;
 								}
-								if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_51 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_52))
+								int num89;
+								if ((ulong)(uint)num37 < (ulong)(1L << (int)(uint)num38))
 								{
-									_ = -1;
+									num89 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1134);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num89 = 0;
 								}
-								long num19 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_51 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-								long instruction_57 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_57 | num19;
-								int instruction_58 = startFrame.GetLocalsRef<LocalVariables>().Instruction_52;
-								int instruction_59 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_59 + instruction_58;
-								if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+								long num90 = (long)((ulong)(uint)num37 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+								long field_15 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num90;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_15;
+								int field_16 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num38;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_16;
+								int num91;
+								if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 								{
-									_ = -1;
+									num91 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1134);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num91 = 0;
 								}
-								int instruction_60 = startFrame.GetLocalsRef<LocalVariables>().Instruction_50;
-								int instruction_61 = startFrame.GetLocalsRef<LocalVariables>().Instruction_50;
-								sbyte b7 = ((sbyte*)g_defl_len_extra.__pointer)[sizeof(sbyte) * (int)(uint)instruction_61];
-								int num20 = *(int*)((byte*)g_bitmasks.__pointer + sizeof(int) * (byte)b7);
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_53 = instruction_60 & num20;
-								int instruction_62 = startFrame.GetLocalsRef<LocalVariables>().Instruction_50;
+								int num92 = num36;
+								long num93 = (byte)((sbyte*)g_defl_len_extra.__pointer)[(uint)num36];
+								num39 = num92 & ((int*)g_bitmasks.__pointer)[num93];
 								checked
 								{
-									int instruction_63 = unchecked((byte)((sbyte*)g_defl_len_extra.__pointer)[sizeof(sbyte) * (int)(uint)instruction_62]) + 1;
-									startFrame.GetLocalsRef<LocalVariables>().Instruction_54 = instruction_63;
+									num40 = unchecked((byte)((sbyte*)g_defl_len_extra.__pointer)[(uint)num36]) + 1;
 								}
-								if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_54 >= 0u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_54 <= 16u)
+								int num94;
+								if ((uint)num40 >= 0u && (uint)num40 <= 16u)
 								{
-									_ = -1;
+									num94 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1135);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num94 = 0;
 								}
-								if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_53 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_54))
+								int num95;
+								if ((ulong)(uint)num39 < (ulong)(1L << (int)(uint)num40))
 								{
-									_ = -1;
+									num95 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1135);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num95 = 0;
 								}
-								long num21 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_53 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-								long instruction_64 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_64 | num21;
-								int instruction_65 = startFrame.GetLocalsRef<LocalVariables>().Instruction_54;
-								int instruction_66 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_66 + instruction_65;
-								if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+								long num96 = (long)((ulong)(uint)num39 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+								long field_17 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num96;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_17;
+								int field_18 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num40;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_18;
+								int num97;
+								if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 								{
-									_ = -1;
+									num97 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1135);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num97 = 0;
 								}
 							}
-							if ((uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_9 + 8) <= (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_1)
+							if ((uint)(startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 8) <= (uint)dst_buf_size)
 							{
-								long instruction_67 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								*(long*)((byte*)startFrame.GetLocalsRef<LocalVariables>().Instruction_2 + (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_9) = instruction_67;
-								int instruction_68 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_55 = instruction_68 & -8;
-								int num22 = startFrame.GetLocalsRef<LocalVariables>().Instruction_55 >>> 3;
-								int instruction_69 = startFrame.GetLocalsRef<LocalVariables>().Instruction_9;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_9 = instruction_69 + num22;
-								if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_55 < 64u)
+								long field_19 = startFrame.GetLocalsPointer<LocalVariables>()->field_0;
+								*(long*)((byte*)pDst + (uint)startFrame.GetLocalsPointer<LocalVariables>()->field_2) = field_19;
+								num41 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 & -8;
+								int field_20 = startFrame.GetLocalsPointer<LocalVariables>()->field_2 + (num41 >>> 3);
+								startFrame.GetLocalsPointer<LocalVariables>()->field_2 = field_20;
+								int num98;
+								if ((uint)num41 < 64u)
 								{
-									_ = -1;
+									num98 = -1;
 								}
 								else
 								{
 									wassert.Invoke(String_2ej5tjb.__pointer, String_uxbkrtb.__pointer, 1142);
 									if (ExceptionInfo.Current != null)
 									{
-										goto end_IL_075b;
+										goto end_IL_0545;
 									}
-									_ = 0;
+									num98 = 0;
 								}
-								long instruction_70 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								int instruction_71 = startFrame.GetLocalsRef<LocalVariables>().Instruction_55;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_70 >>> (int)(uint)instruction_71;
-								int instruction_72 = startFrame.GetLocalsRef<LocalVariables>().Instruction_55;
-								int instruction_73 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_73 - instruction_72;
-								int instruction_74 = startFrame.GetLocalsRef<LocalVariables>().Instruction_36;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_36 = instruction_74 + 1;
+								long field_21 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 >>> (int)(uint)num41;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_21;
+								int field_22 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 - num41;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_22;
+								num22++;
 								continue;
 							}
-							goto IL_263d;
+							goto IL_136f;
 						}
-						short num23 = *(short*)((byte*)(&ptr4->field_1) + sizeof(InlineArray_288_oeds4ea) * 0 + sizeof(short) * 256);
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_56 = (ushort)num23;
-						sbyte b8 = (sbyte)((byte*)(&ptr4->field_2) + sizeof(InlineArray_288_w3otm9c) * 0)[sizeof(sbyte) * 256];
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_57 = (byte)b8;
-						if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_57 >= 1u && (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_57 <= 16u)
+						num42 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1))[256];
+						num43 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2))[256];
+						int num99;
+						if ((uint)num43 >= 1u && (uint)num43 <= 16u)
 						{
-							_ = -1;
+							num99 = -1;
 						}
 						else
 						{
@@ -865,11 +770,12 @@ internal static partial class pixel_deflate_dyn_3_rle
 							{
 								break;
 							}
-							_ = 0;
+							num99 = 0;
 						}
-						if ((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_56 < (ulong)(1L << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_57))
+						int num100;
+						if ((ulong)(uint)num42 < (ulong)(1L << (int)(uint)num43))
 						{
-							_ = -1;
+							num100 = -1;
 						}
 						else
 						{
@@ -878,17 +784,17 @@ internal static partial class pixel_deflate_dyn_3_rle
 							{
 								break;
 							}
-							_ = 0;
+							num100 = 0;
 						}
-						long num24 = (long)((ulong)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_56 << (int)(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_8);
-						long instruction_75 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_75 | num24;
-						int instruction_76 = startFrame.GetLocalsRef<LocalVariables>().Instruction_57;
-						int instruction_77 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_77 + instruction_76;
-						if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 <= 64)
+						long num101 = (long)((ulong)(uint)num42 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+						long field_23 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num101;
+						startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_23;
+						int field_24 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num43;
+						startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_24;
+						int num102;
+						if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
 						{
-							_ = -1;
+							num102 = -1;
 						}
 						else
 						{
@@ -897,75 +803,71 @@ internal static partial class pixel_deflate_dyn_3_rle
 							{
 								break;
 							}
-							_ = 0;
+							num102 = 0;
 						}
 						while (true)
 						{
-							if (startFrame.GetLocalsRef<LocalVariables>().Instruction_8 > 0)
+							if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 > 0)
 							{
-								if ((uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_9 + 1) > (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_1)
+								if ((uint)(startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 1) > (uint)dst_buf_size)
 								{
-									startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = 0;
-									startFrame.GetLocalsRef<LocalVariables>().Instruction_35 = 1;
+									num = 0;
+									num21 = 1;
 									break;
 								}
-								long instruction_78 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								((sbyte*)startFrame.GetLocalsRef<LocalVariables>().Instruction_2)[(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_9] = (sbyte)instruction_78;
-								int instruction_79 = startFrame.GetLocalsRef<LocalVariables>().Instruction_9;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_9 = instruction_79 + 1;
-								long instruction_80 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_80 >>> 8;
-								int instruction_81 = checked(startFrame.GetLocalsRef<LocalVariables>().Instruction_8 - 8);
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_81;
+								sbyte b = (sbyte)startFrame.GetLocalsPointer<LocalVariables>()->field_0;
+								((sbyte*)pDst)[(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_2] = b;
+								int field_25 = startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 1;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_2 = field_25;
+								long field_26 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 >>> 8;
+								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_26;
+								int field_27 = checked(startFrame.GetLocalsPointer<LocalVariables>()->field_1 - 8);
+								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_27;
 								continue;
 							}
-							startFrame.GetLocalsRef<LocalVariables>().Instruction_58 = 0;
+							num44 = 0;
 							while (true)
 							{
-								if ((uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_58 < 4u)
+								if ((uint)num44 < 4u)
 								{
-									if ((uint)(startFrame.GetLocalsRef<LocalVariables>().Instruction_9 + 1) > (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_1)
+									if ((uint)(startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 1) > (uint)dst_buf_size)
 									{
-										startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = 0;
-										startFrame.GetLocalsRef<LocalVariables>().Instruction_35 = 1;
+										num = 0;
+										num21 = 1;
 										break;
 									}
-									int instruction_82 = startFrame.GetLocalsRef<LocalVariables>().Instruction_22;
-									((sbyte*)startFrame.GetLocalsRef<LocalVariables>().Instruction_2)[(uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_9] = (sbyte)(instruction_82 >>> 24);
-									int instruction_83 = startFrame.GetLocalsRef<LocalVariables>().Instruction_9;
-									startFrame.GetLocalsRef<LocalVariables>().Instruction_9 = instruction_83 + 1;
-									int instruction_84 = startFrame.GetLocalsRef<LocalVariables>().Instruction_22;
-									startFrame.GetLocalsRef<LocalVariables>().Instruction_22 = instruction_84 << 8;
-									int instruction_85 = startFrame.GetLocalsRef<LocalVariables>().Instruction_58;
-									startFrame.GetLocalsRef<LocalVariables>().Instruction_58 = instruction_85 + 1;
+									((sbyte*)pDst)[(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_2] = (sbyte)(num9 >>> 24);
+									int field_28 = startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 1;
+									startFrame.GetLocalsPointer<LocalVariables>()->field_2 = field_28;
+									num9 <<= 8;
+									num44++;
 									continue;
 								}
-								int instruction_86 = startFrame.GetLocalsRef<LocalVariables>().Instruction_9;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = instruction_86;
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_35 = 1;
+								num = startFrame.GetLocalsPointer<LocalVariables>()->field_2;
+								num21 = 1;
 								break;
 							}
 							break;
 						}
 					}
-					goto IL_2e10;
-					IL_2e10:
-					vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(ptr);
-					int instruction_87 = startFrame.GetLocalsRef<LocalVariables>().Instruction_0;
+					goto IL_16fb;
+					IL_16fb:
+					vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3);
+					int result = num;
 					StackFrameList.Current.Clear(startFrame);
-					return instruction_87;
-					IL_263d:
-					startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = 0;
-					startFrame.GetLocalsRef<LocalVariables>().Instruction_35 = 1;
-					goto IL_2e10;
+					return result;
+					IL_136f:
+					num = 0;
+					num21 = 1;
+					goto IL_16fb;
 					continue;
-					end_IL_075b:
+					end_IL_0545:
 					break;
 				}
 			}
-			ExceptionInfo current = ExceptionInfo.Current;
+			ExceptionInfo? current = ExceptionInfo.Current;
 			ExceptionInfo.Current = null;
-			vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(ptr);
+			vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3);
 			ExceptionInfo.Current = current;
 			return 0;
 		}

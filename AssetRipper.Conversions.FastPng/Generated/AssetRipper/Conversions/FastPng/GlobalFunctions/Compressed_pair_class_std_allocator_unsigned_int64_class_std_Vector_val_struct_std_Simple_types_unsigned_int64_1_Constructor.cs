@@ -9,8 +9,10 @@ internal static partial class Compressed_pair_class_std_allocator_unsigned_int64
 {
 	public unsafe static void* Invoke(void* @this, sbyte coerce)
 	{
-		std_Zero_then_variadic_args_t std_Zero_then_variadic_args_t = default(std_Zero_then_variadic_args_t);
-		std_Zero_then_variadic_args_t.field_0 = coerce;
+		std_Zero_then_variadic_args_t std_Zero_then_variadic_args_t = new std_Zero_then_variadic_args_t
+		{
+			field_0 = coerce
+		};
 		allocator_unsigned_int64_Constructor.Invoke(@this);
 		Vector_val_struct_std_Simple_types_unsigned_int64_Constructor.Invoke(&unchecked((std_Compressed_pair_6*)@this)->field_0);
 		return @this;

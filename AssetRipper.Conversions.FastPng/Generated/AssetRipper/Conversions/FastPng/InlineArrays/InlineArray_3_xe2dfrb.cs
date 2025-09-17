@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.FastPng.Helpers;
@@ -6,7 +8,7 @@ using AssetRipper.Conversions.FastPng.Helpers;
 namespace AssetRipper.Conversions.FastPng.InlineArrays;
 
 [InlineArray(3)]
-public partial struct InlineArray_3_xe2dfrb : IEquatable<InlineArray_3_xe2dfrb>, IEqualityOperators<InlineArray_3_xe2dfrb, InlineArray_3_xe2dfrb, bool>, IInlineArray<InlineArray_288_oeds4ea>, IInlineArray<short>, IInlineArray<ushort>, IInlineArray<char>
+public partial struct InlineArray_3_xe2dfrb : IEquatable<InlineArray_3_xe2dfrb>, IEqualityOperators<InlineArray_3_xe2dfrb, InlineArray_3_xe2dfrb, bool>, IEnumerable, IInlineArray<InlineArray_3_xe2dfrb, InlineArray_288_oeds4ea>, IInlineArray<InlineArray_3_xe2dfrb, short>, IInlineArray<InlineArray_3_xe2dfrb, ushort>, IInlineArray<InlineArray_3_xe2dfrb, char>
 {
 	private InlineArray_288_oeds4ea __element0;
 
@@ -45,5 +47,10 @@ public partial struct InlineArray_3_xe2dfrb : IEquatable<InlineArray_3_xe2dfrb>,
 	public override int GetHashCode()
 	{
 		return this.GetHashCode<InlineArray_3_xe2dfrb, InlineArray_288_oeds4ea>();
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return ((IEnumerable<InlineArray_288_oeds4ea>)this).GetEnumerator();
 	}
 }

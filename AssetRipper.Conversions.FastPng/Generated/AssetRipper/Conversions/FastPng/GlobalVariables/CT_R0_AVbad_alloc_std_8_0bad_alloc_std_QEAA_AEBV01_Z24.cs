@@ -25,18 +25,15 @@ internal static partial class CT_R0_AVbad_alloc_std_8_0bad_alloc_std_QEAA_AEBV01
 	unsafe static CT_R0_AVbad_alloc_std_8_0bad_alloc_std_QEAA_AEBV01_Z24()
 	{
 		__pointer = unchecked((eh_CatchableType*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(eh_CatchableType))));
-		eh_CatchableType value = new eh_CatchableType
+		Value = new eh_CatchableType
 		{
-			field_0 = 16
+			field_0 = 16,
+			field_1 = PointerIndices.GetIndex(R0_AVbad_alloc.__pointer),
+			field_2 = 0,
+			field_3 = -1,
+			field_4 = 0,
+			field_5 = 24,
+			field_6 = PointerIndices.GetIndex(bad_alloc_Constructor_3vdoaxb.__pointer)
 		};
-		ref int field_ = ref value.field_1;
-		field_ = PointerIndices.GetIndex(R0_AVbad_alloc.__pointer);
-		value.field_2 = 0;
-		value.field_3 = -1;
-		value.field_4 = 0;
-		value.field_5 = 24;
-		ref int field_2 = ref value.field_6;
-		field_2 = PointerIndices.GetIndex(bad_alloc_Constructor_3vdoaxb.__pointer);
-		Value = value;
 	}
 }

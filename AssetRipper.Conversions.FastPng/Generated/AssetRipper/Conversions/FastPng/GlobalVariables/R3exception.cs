@@ -24,14 +24,12 @@ internal static partial class R3exception
 	unsafe static R3exception()
 	{
 		__pointer = unchecked((rtti_ClassHierarchyDescriptor*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(rtti_ClassHierarchyDescriptor))));
-		rtti_ClassHierarchyDescriptor value = new rtti_ClassHierarchyDescriptor
+		Value = new rtti_ClassHierarchyDescriptor
 		{
 			field_0 = 0,
 			field_1 = 0,
-			field_2 = 1
+			field_2 = 1,
+			field_3 = PointerIndices.GetIndex(R2exception.__pointer)
 		};
-		ref int field_ = ref value.field_3;
-		field_ = PointerIndices.GetIndex(R2exception.__pointer);
-		Value = value;
 	}
 }

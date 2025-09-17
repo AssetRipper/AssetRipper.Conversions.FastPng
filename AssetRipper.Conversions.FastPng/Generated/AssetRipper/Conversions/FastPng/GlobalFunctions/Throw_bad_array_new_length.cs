@@ -11,14 +11,15 @@ internal static partial class Throw_bad_array_new_length
 {
 	private partial struct LocalVariables
 	{
-		public std_bad_array_new_length Instruction_0;
+		public std_bad_array_new_length field_0;
 	}
 
 	public unsafe static void Invoke()
 	{
-		std_bad_array_new_length* ptr = &StackFrameList.Current.New<LocalVariables>().GetLocalsPointer<LocalVariables>()->Instruction_0;
-		bad_array_new_length_Constructor_fnjru5d.Invoke(ptr);
-		CxxThrowException.Invoke(ptr, TI3_AVbad_array_new_length_std.__pointer);
+		StackFrame stackFrame = StackFrameList.Current.New<LocalVariables>();
+		stackFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_bad_array_new_length);
+		bad_array_new_length_Constructor_fnjru5d.Invoke(&stackFrame.GetLocalsPointer<LocalVariables>()->field_0);
+		CxxThrowException.Invoke(&stackFrame.GetLocalsPointer<LocalVariables>()->field_0, TI3_AVbad_array_new_length_std.__pointer);
 		if (ExceptionInfo.Current != null)
 		{
 			return;

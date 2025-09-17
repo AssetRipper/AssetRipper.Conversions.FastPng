@@ -8,31 +8,32 @@ internal static partial class defl_huffman_enforce_max_code_size
 {
 	public unsafe static void Invoke(void* pNum_codes, int code_list_len, int max_code_size)
 	{
+		int num = 0;
 		int i = 0;
 		if (code_list_len <= 1)
 		{
 			return;
 		}
-		for (int j = max_code_size + 1; j <= 32; j++)
+		for (num = max_code_size + 1; num <= 32; num++)
 		{
-			unchecked((int*)pNum_codes)[max_code_size] += unchecked((int*)pNum_codes)[j];
+			unchecked((int*)pNum_codes)[max_code_size] += unchecked((int*)pNum_codes)[num];
 		}
-		for (int j = max_code_size; j > 0; j += -1)
+		for (num = max_code_size; num > 0; num += -1)
 		{
 			unchecked
 			{
-				i += ((int*)pNum_codes)[j] << checked(max_code_size - j);
+				i += ((int*)pNum_codes)[num] << checked(max_code_size - num);
 			}
 		}
 		for (; i != 1 << max_code_size; i = unchecked(i + -1))
 		{
 			unchecked((int*)pNum_codes)[max_code_size] += -1;
-			for (int j = max_code_size - 1; j > 0; j += -1)
+			for (num = max_code_size - 1; num > 0; num += -1)
 			{
-				if (unchecked((int*)pNum_codes)[j] != 0)
+				if (unchecked((int*)pNum_codes)[num] != 0)
 				{
-					unchecked((int*)pNum_codes)[j] += -1;
-					unchecked((int*)pNum_codes)[j + 1] += 2;
+					unchecked((int*)pNum_codes)[num] += -1;
+					unchecked((int*)pNum_codes)[num + 1] += 2;
 					break;
 				}
 			}

@@ -14,12 +14,10 @@ internal static partial class Adjust_manually_vector_aligned
 		{
 			*(long*)Bytes += 39L;
 			long num = *(long*)((nint)(*(IntPtr*)Ptr) + -8);
-			long num2 = 8L;
-			long num3 = (long)(nuint)(*(nint*)Ptr) - num;
-			if ((ulong)num3 < 8uL || (ulong)num3 > 39uL)
+			long num2 = (long)(nuint)(*(nint*)Ptr) - num;
+			if ((ulong)num2 < 8uL || (ulong)num2 > 39uL)
 			{
-				invoke_watson.Invoke(null, null, null, 0, 0L);
-				throw null;
+				llvm_trap.Invoke();
 			}
 			*(IntPtr*)Ptr = (nint)num;
 		}

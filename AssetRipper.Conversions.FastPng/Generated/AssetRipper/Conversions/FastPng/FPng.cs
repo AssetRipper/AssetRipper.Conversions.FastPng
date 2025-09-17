@@ -1229,10 +1229,9 @@ public static partial class FPng
 
 	[MangledName("??A?$vector@EV?$allocator@E@std@@@std@@QEAAAEAE_K@Z")]
 	[DemangledName("public: unsigned char & __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::operator[](unsigned __int64)")]
-	[CleanName("Index")]
-	public unsafe static void* Index_zukzlzc(void* @this, long Pos)
+	public unsafe static void* vector_unsigned_char_class_std_allocator_unsigned_char_Index(void* @this, long Pos)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Index_zukzlzc.Invoke(@this, Pos);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(@this, Pos);
 	}
 
 	[MangledName("?apply_filter@fpng@@YAXIHHIIPEBE0PEAE@Z")]
@@ -1596,10 +1595,9 @@ public static partial class FPng
 
 	[MangledName("??A?$vector@IV?$allocator@I@std@@@std@@QEAAAEAI_K@Z")]
 	[DemangledName("public: unsigned int & __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::operator[](unsigned __int64)")]
-	[CleanName("Index")]
-	public unsafe static void* Index_2nyjhmb(void* @this, long Pos)
+	public unsafe static void* vector_unsigned_int_class_std_allocator_unsigned_int_Index(void* @this, long Pos)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Index_2nyjhmb.Invoke(@this, Pos);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_int_class_std_allocator_unsigned_int_Index.Invoke(@this, Pos);
 	}
 
 	[MangledName("??1?$vector@IV?$allocator@I@std@@@std@@QEAA@XZ")]
@@ -1645,6 +1643,14 @@ public static partial class FPng
 	public unsafe static void* Getal_t2pmqoc(void* @this)
 	{
 		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_t2pmqoc.Invoke(@this);
+	}
+
+	[MangledName("??$_Get_proxy_allocator@V?$allocator@I@std@@@std@@YA?AU_Fake_allocator@0@AEBV?$allocator@I@0@@Z")]
+	[DemangledName("struct std::_Fake_allocator __cdecl std::_Get_proxy_allocator<class std::allocator<unsigned int>>(class std::allocator<unsigned int> const &)")]
+	[CleanName("Get_proxy_allocator")]
+	public unsafe static sbyte Get_proxy_allocator_uag3hnc(void* parameter_0)
+	{
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_uag3hnc.Invoke(parameter_0);
 	}
 
 	[MangledName("??0_Fake_proxy_ptr_impl@std@@QEAA@AEBU_Fake_allocator@1@AEBU_Container_base0@1@@Z")]
@@ -1895,11 +1901,11 @@ public static partial class FPng
 		StackFrameList.ExitToUserCode();
 	}
 
-	[MangledName("_invoke_watson")]
-	[DemangledName("_invoke_watson")]
-	public unsafe static void invoke_watson(void* parameter_0, void* parameter_1, void* parameter_2, int parameter_3, long parameter_4)
+	[MangledName("llvm.trap")]
+	[DemangledName("llvm.trap")]
+	public static void llvm_trap()
 	{
-		AssetRipper.Conversions.FastPng.Intrinsics.Implemented.invoke_watson.Invoke(parameter_0, parameter_1, parameter_2, parameter_3, parameter_4);
+		AssetRipper.Conversions.FastPng.Intrinsics.Implemented.llvm_trap.Invoke();
 	}
 
 	[MangledName("??0bad_array_new_length@std@@QEAA@XZ")]
@@ -2213,10 +2219,9 @@ public static partial class FPng
 
 	[MangledName("??A?$vector@_KV?$allocator@_K@std@@@std@@QEAAAEA_K_K@Z")]
 	[DemangledName("public: unsigned __int64 & __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::operator[](unsigned __int64)")]
-	[CleanName("Index")]
-	public unsafe static void* Index_7d577ub(void* @this, long Pos)
+	public unsafe static void* vector_unsigned_int64_class_std_allocator_unsigned_int64_Index(void* @this, long Pos)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Index_7d577ub.Invoke(@this, Pos);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_int64_class_std_allocator_unsigned_int64_Index.Invoke(@this, Pos);
 	}
 
 	[MangledName("??1?$vector@_KV?$allocator@_K@std@@@std@@QEAA@XZ")]
@@ -2240,6 +2245,22 @@ public static partial class FPng
 		AssetRipper.Conversions.FastPng.GlobalFunctions.Alloc_proxy.Invoke(@this, parameter_1);
 	}
 
+	[MangledName("??$_Get_proxy_allocator@V?$allocator@_K@std@@@std@@YA?AU_Fake_allocator@0@AEBV?$allocator@_K@0@@Z")]
+	[DemangledName("struct std::_Fake_allocator __cdecl std::_Get_proxy_allocator<class std::allocator<unsigned __int64>>(class std::allocator<unsigned __int64> const &)")]
+	[CleanName("Get_proxy_allocator")]
+	public unsafe static sbyte Get_proxy_allocator_9e3ilvb(void* parameter_0)
+	{
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_9e3ilvb.Invoke(parameter_0);
+	}
+
+	[MangledName("?_Getal@?$vector@_KV?$allocator@_K@std@@@std@@AEAAAEAV?$allocator@_K@2@XZ")]
+	[DemangledName("private: class std::allocator<unsigned __int64> & __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Getal(void)")]
+	[CleanName("Getal")]
+	public unsafe static void* Getal_kuj7nva(void* @this)
+	{
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_kuj7nva.Invoke(@this);
+	}
+
 	[MangledName("??0?$allocator@_K@std@@QEAA@XZ")]
 	[DemangledName("public: __cdecl std::allocator<unsigned __int64>::allocator<unsigned __int64>(void)")]
 	public unsafe static void* allocator_unsigned_int64_Constructor(void* @this)
@@ -2252,6 +2273,14 @@ public static partial class FPng
 	public unsafe static void* Vector_val_struct_std_Simple_types_unsigned_int64_Constructor(void* @this)
 	{
 		return AssetRipper.Conversions.FastPng.GlobalFunctions.Vector_val_struct_std_Simple_types_unsigned_int64_Constructor.Invoke(@this);
+	}
+
+	[MangledName("?_Get_first@?$_Compressed_pair@V?$allocator@_K@std@@V?$_Vector_val@U?$_Simple_types@_K@std@@@2@$00@std@@QEAAAEAV?$allocator@_K@2@XZ")]
+	[DemangledName("public: class std::allocator<unsigned __int64> & __cdecl std::_Compressed_pair<class std::allocator<unsigned __int64>, class std::_Vector_val<struct std::_Simple_types<unsigned __int64>>, 1>::_Get_first(void)")]
+	[CleanName("Get_first")]
+	public unsafe static void* Get_first_whlbtqb(void* @this)
+	{
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_whlbtqb.Invoke(@this);
 	}
 
 	[MangledName("??$_Resize@U_Value_init_tag@std@@@?$vector@_KV?$allocator@_K@std@@@std@@AEAAX_KAEBU_Value_init_tag@1@@Z")]
@@ -2269,14 +2298,6 @@ public static partial class FPng
 			throw;
 		}
 		StackFrameList.ExitToUserCode();
-	}
-
-	[MangledName("?_Getal@?$vector@_KV?$allocator@_K@std@@@std@@AEAAAEAV?$allocator@_K@2@XZ")]
-	[DemangledName("private: class std::allocator<unsigned __int64> & __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Getal(void)")]
-	[CleanName("Getal")]
-	public unsafe static void* Getal_kuj7nva(void* @this)
-	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_kuj7nva.Invoke(@this);
 	}
 
 	[MangledName("?_Orphan_range@?$vector@_KV?$allocator@_K@std@@@std@@AEBAXPEA_K0@Z")]
@@ -2318,14 +2339,6 @@ public static partial class FPng
 	public unsafe static void* Uninitialized_value_construct_n_hqowyoc(void* First, long Count, void* Al)
 	{
 		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_value_construct_n_hqowyoc.Invoke(First, Count, Al);
-	}
-
-	[MangledName("?_Get_first@?$_Compressed_pair@V?$allocator@_K@std@@V?$_Vector_val@U?$_Simple_types@_K@std@@@2@$00@std@@QEAAAEAV?$allocator@_K@2@XZ")]
-	[DemangledName("public: class std::allocator<unsigned __int64> & __cdecl std::_Compressed_pair<class std::allocator<unsigned __int64>, class std::_Vector_val<struct std::_Simple_types<unsigned __int64>>, 1>::_Get_first(void)")]
-	[CleanName("Get_first")]
-	public unsafe static void* Get_first_whlbtqb(void* @this)
-	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_whlbtqb.Invoke(@this);
 	}
 
 	[MangledName("?max_size@?$vector@_KV?$allocator@_K@std@@@std@@QEBA_KXZ")]
@@ -2845,6 +2858,14 @@ public static partial class FPng
 	public unsafe static void* Compressed_pair_class_std_allocator_unsigned_char_class_std_Vector_val_struct_std_Simple_types_unsigned_char_1_Constructor(void* @this, sbyte coerce)
 	{
 		return AssetRipper.Conversions.FastPng.GlobalFunctions.Compressed_pair_class_std_allocator_unsigned_char_class_std_Vector_val_struct_std_Simple_types_unsigned_char_1_Constructor.Invoke(@this, coerce);
+	}
+
+	[MangledName("??$_Get_proxy_allocator@V?$allocator@E@std@@@std@@YA?AU_Fake_allocator@0@AEBV?$allocator@E@0@@Z")]
+	[DemangledName("struct std::_Fake_allocator __cdecl std::_Get_proxy_allocator<class std::allocator<unsigned char>>(class std::allocator<unsigned char> const &)")]
+	[CleanName("Get_proxy_allocator")]
+	public unsafe static sbyte Get_proxy_allocator_zrfshta(void* parameter_0)
+	{
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_zrfshta.Invoke(parameter_0);
 	}
 
 	[MangledName("??0?$allocator@E@std@@QEAA@XZ")]

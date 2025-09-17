@@ -24,14 +24,12 @@ internal static partial class R3bad_alloc
 	unsafe static R3bad_alloc()
 	{
 		__pointer = unchecked((rtti_ClassHierarchyDescriptor*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(rtti_ClassHierarchyDescriptor))));
-		rtti_ClassHierarchyDescriptor value = new rtti_ClassHierarchyDescriptor
+		Value = new rtti_ClassHierarchyDescriptor
 		{
 			field_0 = 0,
 			field_1 = 0,
-			field_2 = 2
+			field_2 = 2,
+			field_3 = PointerIndices.GetIndex(R2bad_alloc.__pointer)
 		};
-		ref int field_ = ref value.field_3;
-		field_ = PointerIndices.GetIndex(R2bad_alloc.__pointer);
-		Value = value;
 	}
 }

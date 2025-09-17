@@ -9,10 +9,6 @@ internal static partial class maximum_sfjssib
 {
 	public static int Invoke(int a, int b)
 	{
-		if (a <= b)
-		{
-			return b;
-		}
-		return a;
+		return (a <= b) ? b : a;
 	}
 }

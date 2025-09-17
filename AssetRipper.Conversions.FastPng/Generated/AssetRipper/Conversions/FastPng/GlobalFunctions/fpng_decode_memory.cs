@@ -10,158 +10,117 @@ internal static partial class fpng_decode_memory
 {
 	private partial struct LocalVariables
 	{
-		public int Instruction_0;
+		public int field_0;
 
-		public int Instruction_1;
-
-		public unsafe void* Instruction_2;
-
-		public unsafe void* Instruction_3;
-
-		public unsafe void* Instruction_4;
-
-		public unsafe void* Instruction_5;
-
-		public int Instruction_6;
-
-		public unsafe void* Instruction_7;
-
-		public int Instruction_8;
-
-		public int Instruction_9;
-
-		public int Instruction_10;
-
-		public long Instruction_11;
-
-		public unsafe void* Instruction_12;
-
-		public int Instruction_13;
-
-		public sbyte Instruction_14;
+		public int field_1;
 	}
 
 	public unsafe static int Invoke(void* pImage, int image_size, void* @out, void* width, void* height, void* channels_in_file, int desired_channels)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		int* idat_ofs = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_8;
-		int* idat_len = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_9;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_1 = desired_channels;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_2 = channels_in_file;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_3 = height;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_4 = width;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_5 = @out;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_6 = image_size;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = pImage;
-		resize_wwmwtsa.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_5, 0L);
+		int num = 0;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
+		int num2 = 0;
+		long num3 = 0L;
+		void* ptr = null;
+		int num4 = 0;
+		sbyte b = 0;
+		resize_wwmwtsa.Invoke(@out, 0L);
 		if (ExceptionInfo.Current != null)
 		{
 			return 0;
 		}
 		unchecked
 		{
-			*(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_4 = 0;
-			*(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_3 = 0;
-			*(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_2 = 0;
-			if (startFrame.GetLocalsRef<LocalVariables>().Instruction_7 == null || startFrame.GetLocalsRef<LocalVariables>().Instruction_6 == 0 || (startFrame.GetLocalsRef<LocalVariables>().Instruction_1 != 3 && startFrame.GetLocalsRef<LocalVariables>().Instruction_1 != 4))
+			*(int*)width = 0;
+			*(int*)height = 0;
+			*(int*)channels_in_file = 0;
+			if (pImage == null || image_size == 0 || (desired_channels != 3 && desired_channels != 4))
 			{
 				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 3094);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = 2;
+				num = 2;
 			}
 			else
 			{
-				startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = 0;
-				startFrame.GetLocalsRef<LocalVariables>().Instruction_9 = 0;
-				int instruction_ = fpng_get_info_internal.Invoke(channels_in_file: startFrame.GetLocalsRef<LocalVariables>().Instruction_2, height: startFrame.GetLocalsRef<LocalVariables>().Instruction_3, width: startFrame.GetLocalsRef<LocalVariables>().Instruction_4, image_size: startFrame.GetLocalsRef<LocalVariables>().Instruction_6, pImage: startFrame.GetLocalsRef<LocalVariables>().Instruction_7, idat_ofs: idat_ofs, idat_len: idat_len);
+				startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0;
+				startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
+				int num5 = fpng_get_info_internal.Invoke(pImage, image_size, width, height, channels_in_file, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, &startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				startFrame.GetLocalsRef<LocalVariables>().Instruction_10 = instruction_;
-				if (startFrame.GetLocalsRef<LocalVariables>().Instruction_10 != 0)
+				num2 = num5;
+				if (num2 != 0)
 				{
-					int instruction_2 = startFrame.GetLocalsRef<LocalVariables>().Instruction_10;
-					startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = instruction_2;
+					num = num2;
 				}
 				else
 				{
-					long num = (long)(uint)(*(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_4) * (long)(uint)(*(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_3);
-					int instruction_3 = startFrame.GetLocalsRef<LocalVariables>().Instruction_1;
-					startFrame.GetLocalsRef<LocalVariables>().Instruction_11 = num * (uint)instruction_3;
-					if ((ulong)startFrame.GetLocalsRef<LocalVariables>().Instruction_11 > 4294967295uL)
+					num3 = (long)(uint)(*(int*)width) * (long)(uint)(*(int*)height) * (uint)desired_channels;
+					if ((ulong)num3 > 4294967295uL)
 					{
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = 6;
+						num = 6;
 					}
 					else
 					{
-						resize_wwmwtsa.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_5, startFrame.GetLocalsRef<LocalVariables>().Instruction_11);
+						resize_wwmwtsa.Invoke(@out, num3);
 						if (ExceptionInfo.Current != null)
 						{
 							return 0;
 						}
-						void* instruction_4 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-						int instruction_5 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_12 = (byte*)instruction_4 + (uint)instruction_5 + 8L;
-						long num2 = (uint)startFrame.GetLocalsRef<LocalVariables>().Instruction_6;
-						int instruction_6 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-						startFrame.GetLocalsRef<LocalVariables>().Instruction_13 = (int)(num2 - ((long)(uint)instruction_6 + 8L));
-						if (startFrame.GetLocalsRef<LocalVariables>().Instruction_1 == 3)
+						ptr = (byte*)pImage + (uint)startFrame.GetLocalsPointer<LocalVariables>()->field_0 + 8;
+						num4 = (int)((uint)image_size - ((long)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_0 + 8L));
+						if (desired_channels == 3)
 						{
-							if (*(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_2 == 3)
+							if (*(int*)channels_in_file == 3)
 							{
-								bool flag = fpng_pixel_zlib_decompress_3_prmnnjb.Invoke(h: *(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_3, w: *(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_4, pDst: data_efhnzgd.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_5), zlib_len: startFrame.GetLocalsRef<LocalVariables>().Instruction_9, src_len: startFrame.GetLocalsRef<LocalVariables>().Instruction_13, pSrc: startFrame.GetLocalsRef<LocalVariables>().Instruction_12);
+								bool flag = fpng_pixel_zlib_decompress_3_prmnnjb.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: ptr, src_len: num4, zlib_len: startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 								if (ExceptionInfo.Current != null)
 								{
 									return 0;
 								}
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_14 = (flag ? ((sbyte)1) : ((sbyte)0));
+								b = (flag ? ((sbyte)1) : ((sbyte)0));
 							}
 							else
 							{
-								bool flag2 = fpng_pixel_zlib_decompress_4_xygi9td.Invoke(h: *(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_3, w: *(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_4, pDst: data_efhnzgd.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_5), zlib_len: startFrame.GetLocalsRef<LocalVariables>().Instruction_9, src_len: startFrame.GetLocalsRef<LocalVariables>().Instruction_13, pSrc: startFrame.GetLocalsRef<LocalVariables>().Instruction_12);
+								bool flag2 = fpng_pixel_zlib_decompress_4_xygi9td.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: ptr, src_len: num4, zlib_len: startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 								if (ExceptionInfo.Current != null)
 								{
 									return 0;
 								}
-								startFrame.GetLocalsRef<LocalVariables>().Instruction_14 = (flag2 ? ((sbyte)1) : ((sbyte)0));
+								b = (flag2 ? ((sbyte)1) : ((sbyte)0));
 							}
 						}
-						else if (*(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_2 == 3)
+						else if (*(int*)channels_in_file == 3)
 						{
-							bool flag3 = fpng_pixel_zlib_decompress_3_yffw42c.Invoke(h: *(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_3, w: *(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_4, pDst: data_efhnzgd.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_5), zlib_len: startFrame.GetLocalsRef<LocalVariables>().Instruction_9, src_len: startFrame.GetLocalsRef<LocalVariables>().Instruction_13, pSrc: startFrame.GetLocalsRef<LocalVariables>().Instruction_12);
+							bool flag3 = fpng_pixel_zlib_decompress_3_yffw42c.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: ptr, src_len: num4, zlib_len: startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 							if (ExceptionInfo.Current != null)
 							{
 								return 0;
 							}
-							startFrame.GetLocalsRef<LocalVariables>().Instruction_14 = (flag3 ? ((sbyte)1) : ((sbyte)0));
+							b = (flag3 ? ((sbyte)1) : ((sbyte)0));
 						}
 						else
 						{
-							bool flag4 = fpng_pixel_zlib_decompress_4_amptoaa.Invoke(h: *(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_3, w: *(int*)startFrame.GetLocalsRef<LocalVariables>().Instruction_4, pDst: data_efhnzgd.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_5), zlib_len: startFrame.GetLocalsRef<LocalVariables>().Instruction_9, src_len: startFrame.GetLocalsRef<LocalVariables>().Instruction_13, pSrc: startFrame.GetLocalsRef<LocalVariables>().Instruction_12);
+							bool flag4 = fpng_pixel_zlib_decompress_4_amptoaa.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: ptr, src_len: num4, zlib_len: startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 							if (ExceptionInfo.Current != null)
 							{
 								return 0;
 							}
-							startFrame.GetLocalsRef<LocalVariables>().Instruction_14 = (flag4 ? ((sbyte)1) : ((sbyte)0));
+							b = (flag4 ? ((sbyte)1) : ((sbyte)0));
 						}
-						if ((startFrame.GetLocalsRef<LocalVariables>().Instruction_14 & 1) != 1)
-						{
-							startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = 1;
-						}
-						else
-						{
-							startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = 0;
-						}
+						num = (((b & 1) != 1) ? 1 : 0);
 					}
 				}
 			}
-			int instruction_7 = startFrame.GetLocalsRef<LocalVariables>().Instruction_0;
+			int result = num;
 			StackFrameList.Current.Clear(startFrame);
-			return instruction_7;
+			return result;
 		}
 	}
 }

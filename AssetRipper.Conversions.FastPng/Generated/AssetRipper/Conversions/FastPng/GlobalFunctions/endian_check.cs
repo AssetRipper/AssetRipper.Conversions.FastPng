@@ -9,9 +9,7 @@ internal static partial class endian_check
 	public unsafe static bool Invoke()
 	{
 		int num = 0;
-		int* ptr = &num;
-		num = 0;
 		num = 305441741;
-		return unchecked((byte)(*(sbyte*)ptr)) == 205;
+		return unchecked((byte)(*(sbyte*)(&num))) == 205;
 	}
 }

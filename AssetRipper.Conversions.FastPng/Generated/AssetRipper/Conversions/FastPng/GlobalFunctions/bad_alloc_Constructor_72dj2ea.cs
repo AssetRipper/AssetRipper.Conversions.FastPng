@@ -13,7 +13,7 @@ internal static partial class bad_alloc_Constructor_72dj2ea
 		exception_Constructor_morlzmd.Invoke(@this, Message, 1);
 		unchecked
 		{
-			*(byte**)@this = (byte*)(&Variable_zdor9mc.__pointer->field_0) + sizeof(nint) * 1;
+			*(byte**)@this = (byte*)(&Variable_zdor9mc.__pointer->field_0) + sizeof(nint);
 			return @this;
 		}
 	}

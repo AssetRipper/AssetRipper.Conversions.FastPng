@@ -12,13 +12,6 @@ internal static partial class what
 
 	public unsafe static void* Invoke(void* @this)
 	{
-		unchecked
-		{
-			if (((std_exception*)@this)->field_1.field_0 != null)
-			{
-				return ((std_exception*)@this)->field_1.field_0;
-			}
-			return String_ja3ma5d.__pointer;
-		}
+		return unchecked((((std_exception*)@this)->field_1.field_0 == null) ? String_ja3ma5d.__pointer : ((std_exception*)@this)->field_1.field_0);
 	}
 }

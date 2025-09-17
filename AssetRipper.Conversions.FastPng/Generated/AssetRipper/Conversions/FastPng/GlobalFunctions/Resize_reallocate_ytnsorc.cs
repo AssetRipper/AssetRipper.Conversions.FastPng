@@ -10,99 +10,68 @@ internal static partial class Resize_reallocate_ytnsorc
 {
 	private partial struct LocalVariables
 	{
-		public unsafe void* Instruction_0;
+		public long field_0;
 
-		public long Instruction_1;
-
-		public unsafe void* Instruction_2;
-
-		public unsafe void* Instruction_3;
-
-		public unsafe void* Instruction_4;
-
-		public unsafe void* Instruction_5;
-
-		public unsafe void* Instruction_6;
-
-		public long Instruction_7;
-
-		public long Instruction_8;
-
-		public unsafe void* Instruction_9;
-
-		public unsafe void* Instruction_10;
-
-		public std_vector_unsigned_long_long_Reallocation_guard Instruction_11;
-
-		public unsafe void* Instruction_12;
+		public std_vector_unsigned_long_long_Reallocation_guard field_1;
 	}
 
 	public unsafe static void Invoke(void* @this, long Newsize, void* Val)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		long* count = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_8;
-		std_vector_unsigned_long_long_Reallocation_guard* ptr = &startFrame.GetLocalsPointer<LocalVariables>()->Instruction_11;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = Val;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_1 = Newsize;
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_2 = @this;
-		void* instruction_ = startFrame.GetLocalsRef<LocalVariables>().Instruction_2;
+		void* ptr = null;
+		void* ptr2 = null;
+		void* ptr3 = null;
+		void* ptr4 = null;
+		long num = 0L;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0L;
+		void* ptr5 = null;
+		void* ptr6 = null;
+		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(std_vector_unsigned_long_long_Reallocation_guard);
+		void* ptr7 = null;
 		unchecked
 		{
-			if ((ulong)startFrame.GetLocalsRef<LocalVariables>().Instruction_1 > (ulong)max_size_kyvxnnb.Invoke(instruction_))
+			if ((ulong)Newsize > (ulong)max_size_kyvxnnb.Invoke(@this))
 			{
 				Xlength_zmqdsxa.Invoke();
 				throw null;
 			}
-			void* instruction_2 = Getal_kuj7nva.Invoke(instruction_);
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_3 = instruction_2;
-			std_Vector_val_9* field_ = &((std_vector_5*)instruction_)->field_0.field_0;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_4 = field_;
-			void** field_2 = &((std_Vector_val_9*)startFrame.GetLocalsRef<LocalVariables>().Instruction_4)->field_0;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_5 = field_2;
-			void** field_3 = &((std_Vector_val_9*)startFrame.GetLocalsRef<LocalVariables>().Instruction_4)->field_1;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_6 = field_3;
-			long instruction_3 = ((long)(nuint)(*(nint*)startFrame.GetLocalsRef<LocalVariables>().Instruction_6) - (long)(nuint)(*(nint*)startFrame.GetLocalsRef<LocalVariables>().Instruction_5)) / 8L;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_7 = instruction_3;
-			long instruction_4 = Calculate_growth_vbhwmec.Invoke(instruction_, startFrame.GetLocalsRef<LocalVariables>().Instruction_1);
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_8 = instruction_4;
-			void* instruction_5 = Allocate_at_least_helper_l9zi7qb.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_3, count);
+			ptr = Getal_kuj7nva.Invoke(@this);
+			ptr2 = &((std_vector_5*)@this)->field_0.field_0;
+			ptr3 = &((std_Vector_val_9*)ptr2)->field_0;
+			ptr4 = &((std_Vector_val_9*)ptr2)->field_1;
+			num = ((long)(nuint)(*(nint*)ptr4) - (long)(nuint)(*(nint*)ptr3)) / 8L;
+			long field_ = Calculate_growth_vbhwmec.Invoke(@this, Newsize);
+			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_;
+			void* ptr8 = Allocate_at_least_helper_l9zi7qb.Invoke(ptr, &startFrame.GetLocalsPointer<LocalVariables>()->field_0);
 			if (ExceptionInfo.Current != null)
 			{
 				return;
 			}
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_9 = instruction_5;
-			void* instruction_6 = startFrame.GetLocalsRef<LocalVariables>().Instruction_9;
-			long instruction_7 = startFrame.GetLocalsRef<LocalVariables>().Instruction_7;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_10 = (byte*)instruction_6 + (nint)instruction_7 * 8;
-			void** field_4 = &ptr->field_0;
-			*field_4 = startFrame.GetLocalsRef<LocalVariables>().Instruction_3;
-			void** field_5 = &ptr->field_1;
-			*field_5 = startFrame.GetLocalsRef<LocalVariables>().Instruction_9;
-			long* field_6 = &ptr->field_2;
-			*field_6 = startFrame.GetLocalsRef<LocalVariables>().Instruction_8;
-			void** field_7 = &ptr->field_3;
-			*field_7 = startFrame.GetLocalsRef<LocalVariables>().Instruction_10;
-			void** field_8 = &ptr->field_4;
-			*field_8 = startFrame.GetLocalsRef<LocalVariables>().Instruction_10;
-			void** field_9 = &ptr->field_4;
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_12 = field_9;
-			void* ptr2 = Uninitialized_value_construct_n_hqowyoc.Invoke(Al: startFrame.GetLocalsRef<LocalVariables>().Instruction_3, Count: startFrame.GetLocalsRef<LocalVariables>().Instruction_1 - startFrame.GetLocalsRef<LocalVariables>().Instruction_7, First: startFrame.GetLocalsRef<LocalVariables>().Instruction_10);
+			ptr5 = ptr8;
+			ptr6 = (byte*)ptr5 + (nint)num * 8;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1.field_0 = ptr;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1.field_1 = ptr5;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1.field_2 = startFrame.GetLocalsPointer<LocalVariables>()->field_0;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1.field_3 = ptr6;
+			startFrame.GetLocalsPointer<LocalVariables>()->field_1.field_4 = ptr6;
+			ptr7 = &startFrame.GetLocalsPointer<LocalVariables>()->field_1.field_4;
+			void* ptr9 = Uninitialized_value_construct_n_hqowyoc.Invoke(ptr6, Newsize - num, ptr);
 			if (ExceptionInfo.Current == null)
 			{
-				*(void**)startFrame.GetLocalsRef<LocalVariables>().Instruction_12 = ptr2;
-				Uninitialized_move_cbc4pbc.Invoke(Al: startFrame.GetLocalsRef<LocalVariables>().Instruction_3, Dest: startFrame.GetLocalsRef<LocalVariables>().Instruction_9, Last: *(void**)startFrame.GetLocalsRef<LocalVariables>().Instruction_6, First: *(void**)startFrame.GetLocalsRef<LocalVariables>().Instruction_5);
+				*(void**)ptr7 = ptr9;
+				Uninitialized_move_cbc4pbc.Invoke(Al: ptr, Dest: ptr5, Last: *(void**)ptr4, First: *(void**)ptr3);
 				if (ExceptionInfo.Current == null)
 				{
-					ptr->field_1 = null;
-					Change_array_hgqy2vc.Invoke(Newcapacity: startFrame.GetLocalsRef<LocalVariables>().Instruction_8, Newsize: startFrame.GetLocalsRef<LocalVariables>().Instruction_1, @this: instruction_, Newvec: startFrame.GetLocalsRef<LocalVariables>().Instruction_9);
-					Reallocation_guard_Destructor_jfaqped.Invoke(ptr);
+					startFrame.GetLocalsPointer<LocalVariables>()->field_1.field_1 = null;
+					Change_array_hgqy2vc.Invoke(@this, ptr5, Newsize, startFrame.GetLocalsPointer<LocalVariables>()->field_0);
+					Reallocation_guard_Destructor_jfaqped.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 					StackFrameList.Current.Clear(startFrame);
 					return;
 				}
 			}
-			ExceptionInfo current = ExceptionInfo.Current;
+			ExceptionInfo? current = ExceptionInfo.Current;
 			ExceptionInfo.Current = null;
-			Reallocation_guard_Destructor_jfaqped.Invoke(ptr);
+			Reallocation_guard_Destructor_jfaqped.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 			ExceptionInfo.Current = current;
 		}
 	}

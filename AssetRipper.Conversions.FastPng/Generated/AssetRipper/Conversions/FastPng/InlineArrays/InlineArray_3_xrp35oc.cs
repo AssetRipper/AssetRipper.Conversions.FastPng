@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.FastPng.Helpers;
@@ -6,7 +8,7 @@ using AssetRipper.Conversions.FastPng.Helpers;
 namespace AssetRipper.Conversions.FastPng.InlineArrays;
 
 [InlineArray(3)]
-public partial struct InlineArray_3_xrp35oc : IEquatable<InlineArray_3_xrp35oc>, IEqualityOperators<InlineArray_3_xrp35oc, InlineArray_3_xrp35oc, bool>, IInlineArray<InlineArray_288_w3otm9c>, IInlineArray<sbyte>, IInlineArray<byte>
+public partial struct InlineArray_3_xrp35oc : IEquatable<InlineArray_3_xrp35oc>, IEqualityOperators<InlineArray_3_xrp35oc, InlineArray_3_xrp35oc, bool>, IEnumerable, IInlineArray<InlineArray_3_xrp35oc, InlineArray_288_w3otm9c>, IInlineArray<InlineArray_3_xrp35oc, sbyte>, IInlineArray<InlineArray_3_xrp35oc, byte>
 {
 	private InlineArray_288_w3otm9c __element0;
 
@@ -43,5 +45,10 @@ public partial struct InlineArray_3_xrp35oc : IEquatable<InlineArray_3_xrp35oc>,
 	public override int GetHashCode()
 	{
 		return this.GetHashCode<InlineArray_3_xrp35oc, InlineArray_288_w3otm9c>();
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return ((IEnumerable<InlineArray_288_w3otm9c>)this).GetEnumerator();
 	}
 }

@@ -8,7 +8,6 @@ internal static partial class Max_limit
 {
 	public static long Invoke()
 	{
-		long num = -1L;
 		return long.MaxValue;
 	}
 }

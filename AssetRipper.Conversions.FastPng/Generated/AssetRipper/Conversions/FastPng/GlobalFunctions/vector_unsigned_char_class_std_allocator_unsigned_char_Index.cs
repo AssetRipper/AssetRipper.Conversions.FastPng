@@ -5,8 +5,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 
 [MangledName("??A?$vector@EV?$allocator@E@std@@@std@@QEAAAEAE_K@Z")]
 [DemangledName("public: unsigned char & __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::operator[](unsigned __int64)")]
-[CleanName("Index")]
-internal static partial class Index_zukzlzc
+internal static partial class vector_unsigned_char_class_std_allocator_unsigned_char_Index
 {
 	public unsafe static void* Invoke(void* @this, long Pos)
 	{

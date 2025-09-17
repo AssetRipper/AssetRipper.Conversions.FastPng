@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.FastPng.Helpers;
@@ -7,7 +9,7 @@ using AssetRipper.Conversions.FastPng.Structures;
 namespace AssetRipper.Conversions.FastPng.InlineArrays;
 
 [InlineArray(288)]
-public partial struct InlineArray_288_27j5lac : IEquatable<InlineArray_288_27j5lac>, IEqualityOperators<InlineArray_288_27j5lac, InlineArray_288_27j5lac, bool>, IInlineArray<fpng_defl_sym_freq>
+public partial struct InlineArray_288_27j5lac : IEquatable<InlineArray_288_27j5lac>, IEqualityOperators<InlineArray_288_27j5lac, InlineArray_288_27j5lac, bool>, IEnumerable, IInlineArray<InlineArray_288_27j5lac, fpng_defl_sym_freq>
 {
 	private fpng_defl_sym_freq __element0;
 
@@ -40,5 +42,10 @@ public partial struct InlineArray_288_27j5lac : IEquatable<InlineArray_288_27j5l
 	public override int GetHashCode()
 	{
 		return this.GetHashCode<InlineArray_288_27j5lac, fpng_defl_sym_freq>();
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return ((IEnumerable<fpng_defl_sym_freq>)this).GetEnumerator();
 	}
 }

@@ -1,4 +1,3 @@
-using System;
 using AssetRipper.Conversions.FastPng.Helpers;
 using AssetRipper.Conversions.FastPng.InlineArrays;
 
@@ -25,10 +24,10 @@ internal static partial class R2exception
 	unsafe static R2exception()
 	{
 		__pointer = unchecked((InlineArray_2_vqkfj7a*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_2_vqkfj7a))));
-		InlineArray_2_vqkfj7a buffer = default(InlineArray_2_vqkfj7a);
-		Span<int> span = buffer.AsSpan<InlineArray_2_vqkfj7a, int>();
-		span[0] = PointerIndices.GetIndex(R1A_bbqer2a.__pointer);
-		span[1] = 0;
-		Value = buffer;
+		Value = new InlineArrayBuilder<InlineArray_2_vqkfj7a, int>
+		{
+			PointerIndices.GetIndex(R1A_bbqer2a.__pointer),
+			0
+		};
 	}
 }

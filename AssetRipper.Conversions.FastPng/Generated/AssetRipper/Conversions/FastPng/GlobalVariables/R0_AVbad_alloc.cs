@@ -25,12 +25,11 @@ internal static partial class R0_AVbad_alloc
 	unsafe static R0_AVbad_alloc()
 	{
 		__pointer = unchecked((rtti_TypeDescriptor19*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(rtti_TypeDescriptor19))));
-		rtti_TypeDescriptor19 value = default(rtti_TypeDescriptor19);
-		ref void* field_ = ref value.field_0;
-		field_ = _7type_info.__pointer;
-		value.field_1 = null;
-		ref InlineArray_20_w3otm9c field_2 = ref value.field_2;
-		field_2 = InlineArrayHelper.Create<InlineArray_20_w3otm9c, byte>(".?AVbad_alloc@std@@\0"u8);
-		Value = value;
+		Value = new rtti_TypeDescriptor19
+		{
+			field_0 = _7type_info.__pointer,
+			field_1 = null,
+			field_2 = InlineArrayHelper.Create<InlineArray_20_w3otm9c, byte>(".?AVbad_alloc@std@@\0"u8)
+		};
 	}
 }

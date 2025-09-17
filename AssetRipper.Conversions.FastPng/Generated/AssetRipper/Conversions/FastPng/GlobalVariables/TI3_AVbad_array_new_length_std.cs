@@ -25,15 +25,12 @@ internal static partial class TI3_AVbad_array_new_length_std
 	unsafe static TI3_AVbad_array_new_length_std()
 	{
 		__pointer = unchecked((eh_ThrowInfo*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(eh_ThrowInfo))));
-		eh_ThrowInfo value = new eh_ThrowInfo
+		Value = new eh_ThrowInfo
 		{
-			field_0 = 0
+			field_0 = 0,
+			field_1 = PointerIndices.GetIndex(bad_array_new_length_Destructor.__pointer),
+			field_2 = 0,
+			field_3 = PointerIndices.GetIndex(CTA3_AVbad_array_new_length_std.__pointer)
 		};
-		ref int field_ = ref value.field_1;
-		field_ = PointerIndices.GetIndex(bad_array_new_length_Destructor.__pointer);
-		value.field_2 = 0;
-		ref int field_2 = ref value.field_3;
-		field_2 = PointerIndices.GetIndex(CTA3_AVbad_array_new_length_std.__pointer);
-		Value = value;
 	}
 }

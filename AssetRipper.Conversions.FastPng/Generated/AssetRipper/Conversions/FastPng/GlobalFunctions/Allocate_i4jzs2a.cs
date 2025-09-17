@@ -7,37 +7,22 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Allocate")]
 internal static partial class Allocate_i4jzs2a
 {
-	private partial struct LocalVariables
-	{
-		public unsafe void* Instruction_0;
-
-		public long Instruction_1;
-	}
-
 	public unsafe static void* Invoke(long Bytes)
 	{
-		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		startFrame.GetLocalsRef<LocalVariables>().Instruction_1 = Bytes;
-		if (startFrame.GetLocalsRef<LocalVariables>().Instruction_1 == 0L)
+		void* ptr = null;
+		if (Bytes == 0L)
 		{
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = null;
+			return null;
 		}
-		else if (unchecked((ulong)startFrame.GetLocalsRef<LocalVariables>().Instruction_1) >= 4096uL)
+		if (unchecked((ulong)Bytes) >= 4096uL)
 		{
-			void* instruction_ = Allocate_manually_vector_aligned.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_1);
+			void* result = Allocate_manually_vector_aligned.Invoke(Bytes);
 			if (ExceptionInfo.Current != null)
 			{
 				return null;
 			}
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = instruction_;
+			return result;
 		}
-		else
-		{
-			void* instruction_2 = Allocate_ifu7fia.Invoke(startFrame.GetLocalsRef<LocalVariables>().Instruction_1);
-			startFrame.GetLocalsRef<LocalVariables>().Instruction_0 = instruction_2;
-		}
-		void* instruction_3 = startFrame.GetLocalsRef<LocalVariables>().Instruction_0;
-		StackFrameList.Current.Clear(startFrame);
-		return instruction_3;
+		return Allocate_ifu7fia.Invoke(Bytes);
 	}
 }

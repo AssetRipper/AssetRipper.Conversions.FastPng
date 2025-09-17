@@ -20,4 +20,9 @@ internal static partial class SpanHelper
 	{
 		return unchecked((T*)Unsafe.AsPointer(ref MemoryMarshal.GetReference(span)));
 	}
+
+	public static ReadOnlySpan<TTo> Cast<TFrom, TTo>(this ReadOnlySpan<TFrom> span) where TFrom : struct where TTo : struct
+	{
+		return MemoryMarshal.Cast<TFrom, TTo>(span);
+	}
 }

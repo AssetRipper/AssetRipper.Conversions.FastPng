@@ -15,7 +15,7 @@ internal static partial class bad_array_new_length_Constructor_7fjuj3c
 		bad_alloc_Constructor_3vdoaxb.Invoke(@this, parameter_1);
 		unchecked
 		{
-			*(byte**)@this = (byte*)(&Variable_4yxjuqa.__pointer->field_0) + sizeof(nint) * 1;
+			*(byte**)@this = (byte*)(&Variable_4yxjuqa.__pointer->field_0) + sizeof(nint);
 			return @this;
 		}
 	}
