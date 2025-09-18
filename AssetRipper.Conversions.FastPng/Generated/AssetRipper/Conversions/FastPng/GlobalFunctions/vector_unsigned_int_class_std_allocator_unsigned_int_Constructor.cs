@@ -12,7 +12,7 @@ internal static partial class vector_unsigned_int_class_std_allocator_unsigned_i
 		public std_One_then_variadic_args_t field_0;
 	}
 
-	public unsafe static void* Invoke(void* @this, long Count, void* Al)
+	public unsafe static void* Invoke(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned int> const &")] void* Al)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_One_then_variadic_args_t);

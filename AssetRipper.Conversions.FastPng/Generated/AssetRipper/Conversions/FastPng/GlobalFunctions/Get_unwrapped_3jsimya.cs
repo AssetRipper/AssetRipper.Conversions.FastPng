@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Get_unwrapped")]
 internal static partial class Get_unwrapped_3jsimya
 {
-	public unsafe static void* Invoke(void* It)
+	[return: NativeType("decltype(auto)")]
+	public unsafe static void* Invoke([MangledName("_It")][NativeType("unsigned __int64 *const &")] void* It)
 	{
 		return *unchecked((void**)It);
 	}

@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("maximum")]
 internal static partial class maximum_sfjssib
 {
-	public static int Invoke(int a, int b)
+	[return: NativeType("int")]
+	public static int Invoke([NativeType("int")] int a, [NativeType("int")] int b)
 	{
 		return (a <= b) ? b : a;
 	}

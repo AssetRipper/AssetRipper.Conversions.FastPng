@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl std::_Deallocate<16>(void *, unsigned __int64)")]
 internal static partial class Deallocate
 {
-	public unsafe static void Invoke(void* Ptr, long Bytes)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([MangledName("_Ptr")][NativeType("void *")] void* Ptr, [MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
 	{
 		long num = 0L;
 		void* ptr = null;

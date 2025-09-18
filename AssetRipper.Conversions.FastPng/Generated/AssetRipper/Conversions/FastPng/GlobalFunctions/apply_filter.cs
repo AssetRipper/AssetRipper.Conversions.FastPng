@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl fpng::apply_filter(unsigned int, int, int, unsigned int, unsigned int, unsigned char const *, unsigned char const *, unsigned char *)")]
 internal static partial class apply_filter
 {
-	public unsafe static void Invoke(int filter, int w, int h, int num_chans, int bpl, void* pSrc, void* pPrev_src, void* pDst)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([NativeType("unsigned int")] int filter, [NativeType("int")] int w, [NativeType("int")] int h, [NativeType("unsigned int")] int num_chans, [NativeType("unsigned int")] int bpl, [NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned char const *")] void* pPrev_src, [NativeType("unsigned char *")] void* pDst)
 	{
 		int num = 0;
 		int num2 = 0;

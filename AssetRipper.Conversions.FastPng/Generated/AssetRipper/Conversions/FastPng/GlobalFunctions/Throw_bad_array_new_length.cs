@@ -14,6 +14,7 @@ internal static partial class Throw_bad_array_new_length
 		public std_bad_array_new_length field_0;
 	}
 
+	[return: NativeType("void")]
 	public unsafe static void Invoke()
 	{
 		StackFrame stackFrame = StackFrameList.Current.New<LocalVariables>();

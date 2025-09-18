@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Copy_memmove")]
 internal static partial class Copy_memmove_2kkdavd
 {
-	public unsafe static void* Invoke(void* First, void* Last, void* Dest)
+	[return: NativeType("unsigned char *")]
+	public unsafe static void* Invoke([MangledName("_First")][NativeType("unsigned char *")] void* First, [MangledName("_Last")][NativeType("unsigned char *")] void* Last, [MangledName("_Dest")][NativeType("unsigned char *")] void* Dest)
 	{
 		void* ptr = Last;
 		void* ptr2 = First;

@@ -15,7 +15,8 @@ internal static partial class fpng_get_info_internal
 		public InlineArray_5_w3otm9c field_0;
 	}
 
-	public unsafe static int Invoke(void* pImage, int image_size, void* width, void* height, void* channels_in_file, void* idat_ofs, void* idat_len)
+	[return: NativeType("int")]
+	public unsafe static int Invoke([NativeType("void const *")] void* pImage, [NativeType("unsigned int")] int image_size, [NativeType("unsigned int &")] void* width, [NativeType("unsigned int &")] void* height, [NativeType("unsigned int &")] void* channels_in_file, [NativeType("unsigned int &")] void* idat_ofs, [NativeType("unsigned int &")] void* idat_len)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		int num = 0;

@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Destroy_range")]
 internal static partial class Destroy_range_jjcob5a
 {
-	public unsafe static void Invoke(void* First, void* Last, void* Al)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([MangledName("_First")][NativeType("unsigned char *")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last, [MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al)
 	{
 	}
 }

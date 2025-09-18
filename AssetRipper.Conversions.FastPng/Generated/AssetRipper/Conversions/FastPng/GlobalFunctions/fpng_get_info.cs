@@ -13,7 +13,8 @@ internal static partial class fpng_get_info
 		public int field_1;
 	}
 
-	public unsafe static int Invoke(void* pImage, int image_size, void* width, void* height, void* channels_in_file)
+	[return: NativeType("int")]
+	public unsafe static int Invoke([NativeType("void const *")] void* pImage, [NativeType("unsigned int")] int image_size, [NativeType("unsigned int &")] void* width, [NativeType("unsigned int &")] void* height, [NativeType("unsigned int &")] void* channels_in_file)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0;

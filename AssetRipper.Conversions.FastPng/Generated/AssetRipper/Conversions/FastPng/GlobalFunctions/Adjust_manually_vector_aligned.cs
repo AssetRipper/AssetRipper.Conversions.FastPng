@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl std::_Adjust_manually_vector_aligned(void *&, unsigned __int64 &)")]
 internal static partial class Adjust_manually_vector_aligned
 {
-	public unsafe static void Invoke(void* Ptr, void* Bytes)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([MangledName("_Ptr")][NativeType("void *&")] void* Ptr, [MangledName("_Bytes")][NativeType("unsigned __int64 &")] void* Bytes)
 	{
 		unchecked
 		{

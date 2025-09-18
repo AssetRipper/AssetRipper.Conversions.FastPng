@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("deallocate")]
 internal static partial class deallocate_mc9rbjc
 {
-	public unsafe static void Invoke(void* @this, void* Ptr, long Count)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [MangledName("_Ptr")][NativeType("unsigned char *const")] void* Ptr, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		Deallocate.Invoke(Ptr, unchecked(1L * Count));
 	}

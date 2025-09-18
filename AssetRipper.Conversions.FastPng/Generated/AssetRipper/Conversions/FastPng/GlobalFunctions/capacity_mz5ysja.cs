@@ -8,6 +8,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("capacity")]
 internal static partial class capacity_mz5ysja
 {
+	[return: NativeType("unsigned __int64")]
 	public unsafe static long Invoke(void* @this)
 	{
 		unchecked

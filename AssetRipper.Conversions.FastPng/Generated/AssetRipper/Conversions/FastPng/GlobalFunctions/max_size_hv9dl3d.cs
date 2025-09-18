@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("max_size")]
 internal static partial class max_size_hv9dl3d
 {
-	public unsafe static long Invoke(void* parameter_0)
+	[return: NativeType("unsigned __int64")]
+	public unsafe static long Invoke([NativeType("class std::allocator<unsigned char> const &")] void* parameter_0)
 	{
 		return -1L;
 	}

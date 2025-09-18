@@ -7,7 +7,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("public: __cdecl std::_Compressed_pair<class std::allocator<unsigned int>, class std::_Vector_val<struct std::_Simple_types<unsigned int>>, 1>::_Compressed_pair<class std::allocator<unsigned int>, class std::_Vector_val<struct std::_Simple_types<unsigned int>>, 1><class std::allocator<unsigned int> const &>(struct std::_One_then_variadic_args_t, class std::allocator<unsigned int> const &)")]
 internal static partial class Compressed_pair_class_std_allocator_unsigned_int_class_std_Vector_val_struct_std_Simple_types_unsigned_int_1_Constructor
 {
-	public unsafe static void* Invoke(void* @this, sbyte coerce, void* Val1)
+	public unsafe static void* Invoke(void* @this, [MangledName(".coerce")][NativeType("struct std::_One_then_variadic_args_t")] sbyte coerce, [MangledName("_Val1")][NativeType("class std::allocator<unsigned int> const &")] void* Val1)
 	{
 		std_One_then_variadic_args_t std_One_then_variadic_args_t = new std_One_then_variadic_args_t
 		{

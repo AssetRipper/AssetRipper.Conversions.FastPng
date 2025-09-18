@@ -6,6 +6,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl fpng::fpng_init(void)")]
 internal static partial class fpng_init
 {
+	[return: NativeType("void")]
 	public static void Invoke()
 	{
 	}

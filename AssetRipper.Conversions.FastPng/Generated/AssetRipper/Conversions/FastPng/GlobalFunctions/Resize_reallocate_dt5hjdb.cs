@@ -15,7 +15,8 @@ internal static partial class Resize_reallocate_dt5hjdb
 		public std_vector_unsigned_char_Reallocation_guard field_1;
 	}
 
-	public unsafe static void Invoke(void* @this, long Newsize, void* Val)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		void* ptr = null;

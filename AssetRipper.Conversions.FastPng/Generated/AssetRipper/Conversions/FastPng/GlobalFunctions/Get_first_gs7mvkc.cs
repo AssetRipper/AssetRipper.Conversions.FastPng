@@ -7,6 +7,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Get_first")]
 internal static partial class Get_first_gs7mvkc
 {
+	[return: NativeType("class std::allocator<unsigned int> const &")]
 	public unsafe static void* Invoke(void* @this)
 	{
 		return @this;

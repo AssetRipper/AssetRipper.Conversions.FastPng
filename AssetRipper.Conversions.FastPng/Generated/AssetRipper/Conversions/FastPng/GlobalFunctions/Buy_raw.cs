@@ -12,7 +12,8 @@ internal static partial class Buy_raw
 		public long field_0;
 	}
 
-	public unsafe static void Invoke(void* @this, long Newcapacity)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = Newcapacity;

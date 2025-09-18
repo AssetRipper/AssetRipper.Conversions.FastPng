@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl fpng::adjust_freq32(unsigned int, unsigned int *, unsigned short *)")]
 internal static partial class adjust_freq32
 {
-	public unsafe static void Invoke(int num_freq, void* pFreq, void* pFreq16)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([NativeType("unsigned int")] int num_freq, [NativeType("unsigned int *")] void* pFreq, [NativeType("unsigned short *")] void* pFreq16)
 	{
 		int num = 0;
 		int num2 = 0;

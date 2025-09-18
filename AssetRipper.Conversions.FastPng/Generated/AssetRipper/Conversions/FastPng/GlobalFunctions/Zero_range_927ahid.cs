@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Zero_range")]
 internal static partial class Zero_range_927ahid
 {
-	public unsafe static void* Invoke(void* First, void* Last)
+	[return: NativeType("unsigned char *")]
+	public unsafe static void* Invoke([MangledName("_First")][NativeType("unsigned char *const")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last)
 	{
 		void* result = Last;
 		void* ptr = First;

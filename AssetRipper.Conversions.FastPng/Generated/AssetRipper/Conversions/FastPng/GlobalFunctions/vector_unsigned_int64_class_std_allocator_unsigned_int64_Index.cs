@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("public: unsigned __int64 & __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::operator[](unsigned __int64)")]
 internal static partial class vector_unsigned_int64_class_std_allocator_unsigned_int64_Index
 {
-	public unsafe static void* Invoke(void* @this, long Pos)
+	[return: NativeType("unsigned __int64 &")]
+	public unsafe static void* Invoke(void* @this, [MangledName("_Pos")][NativeType("unsigned __int64")] long Pos)
 	{
 		return unchecked((byte*)((std_vector_5*)@this)->field_0.field_0.field_0 + (nint)Pos * 8);
 	}

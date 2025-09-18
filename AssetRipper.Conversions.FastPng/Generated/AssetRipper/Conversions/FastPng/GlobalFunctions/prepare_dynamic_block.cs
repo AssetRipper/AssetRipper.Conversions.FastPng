@@ -20,7 +20,8 @@ internal static partial class prepare_dynamic_block
 		public InlineArray_288_w3otm9c field_3;
 	}
 
-	public unsafe static bool Invoke(void* pSrc, int src_len, void* src_ofs, void* bit_buf_size, void* bit_buf, void* pLit_table, int num_chans)
+	[return: NativeType("bool")]
+	public unsafe static bool Invoke([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int &")] void* src_ofs, [NativeType("unsigned int &")] void* bit_buf_size, [NativeType("unsigned __int64 &")] void* bit_buf, [NativeType("unsigned int *")] void* pLit_table, [NativeType("unsigned int")] int num_chans)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		bool flag = false;

@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.Intrinsics.Unimplemented;
 internal static partial class Xlength_error
 {
 	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public unsafe static void Invoke(void* parameter_0)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([NativeType("char const *")] void* parameter_0)
 	{
 		throw null;
 	}

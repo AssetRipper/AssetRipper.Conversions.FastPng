@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Get_proxy_allocator")]
 internal static partial class Get_proxy_allocator_9e3ilvb
 {
-	public unsafe static sbyte Invoke(void* parameter_0)
+	[return: NativeType("struct std::_Fake_allocator")]
+	public unsafe static sbyte Invoke([NativeType("class std::allocator<unsigned __int64> const &")] void* parameter_0)
 	{
 		return default(std_Fake_allocator).field_0;
 	}

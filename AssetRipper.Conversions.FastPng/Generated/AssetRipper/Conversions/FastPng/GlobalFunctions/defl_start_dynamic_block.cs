@@ -17,7 +17,8 @@ internal static partial class defl_start_dynamic_block
 		public InlineArray_320_w3otm9c field_1;
 	}
 
-	public unsafe static bool Invoke(void* d, void* pDst, void* dst_ofs, int dst_buf_size, void* bit_buf, void* bit_buf_size)
+	[return: NativeType("bool")]
+	public unsafe static bool Invoke([NativeType("struct fpng::defl_huff *")] void* d, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int &")] void* dst_ofs, [NativeType("unsigned int")] int dst_buf_size, [NativeType("unsigned __int64 &")] void* bit_buf, [NativeType("int &")] void* bit_buf_size)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		bool flag = false;

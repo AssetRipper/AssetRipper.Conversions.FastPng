@@ -9,6 +9,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Tidy")]
 internal static partial class Tidy_hq3jjxb
 {
+	[return: NativeType("void")]
 	public unsafe static void Invoke(void* @this)
 	{
 		void* ptr = Getal_kuj7nva.Invoke(@this);

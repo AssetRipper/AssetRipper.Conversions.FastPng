@@ -8,6 +8,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("size")]
 internal static partial class size_4io4p4d
 {
+	[return: NativeType("unsigned __int64")]
 	public unsafe static long Invoke(void* @this)
 	{
 		unchecked

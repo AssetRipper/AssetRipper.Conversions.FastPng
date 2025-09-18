@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.Intrinsics.Implemented;
 internal static partial class New
 {
 	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public unsafe static void* Invoke(long size)
+	[return: NativeType("void *")]
+	public unsafe static void* Invoke([NativeType("unsigned __int64")] long size)
 	{
 		return IntrinsicFunctions.Alloc(size);
 	}

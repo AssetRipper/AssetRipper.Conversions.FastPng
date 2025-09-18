@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl fpng::vector_append(class std::vector<unsigned char, class std::allocator<unsigned char>> &, void const *, unsigned __int64)")]
 internal static partial class vector_append
 {
-	public unsafe static void Invoke(void* buf, void* pData, long len)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([NativeType("class std::vector<unsigned char, class std::allocator<unsigned char>> &")] void* buf, [NativeType("void const *")] void* pData, [NativeType("unsigned __int64")] long len)
 	{
 		long num = 0L;
 		unchecked

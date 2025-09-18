@@ -18,7 +18,8 @@ internal static partial class build_decoder_table
 		public InlineArray_288_vqkfj7a field_2;
 	}
 
-	public unsafe static bool Invoke(int num_syms, void* pCode_sizes, void* pTable)
+	[return: NativeType("bool")]
+	public unsafe static bool Invoke([NativeType("unsigned int")] int num_syms, [NativeType("unsigned char *")] void* pCode_sizes, [NativeType("unsigned int *")] void* pTable)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		bool flag = false;

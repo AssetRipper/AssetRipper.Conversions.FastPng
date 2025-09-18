@@ -8,6 +8,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Getal")]
 internal static partial class Getal_r5wdlvb
 {
+	[return: NativeType("class std::allocator<unsigned int> const &")]
 	public unsafe static void* Invoke(void* @this)
 	{
 		return Get_first_gs7mvkc.Invoke(&unchecked((std_vector_0*)@this)->field_0);

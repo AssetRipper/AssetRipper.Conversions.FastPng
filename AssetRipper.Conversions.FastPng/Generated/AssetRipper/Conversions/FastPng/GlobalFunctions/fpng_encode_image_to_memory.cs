@@ -17,7 +17,8 @@ internal static partial class fpng_encode_image_to_memory
 		public InlineArray_58_w3otm9c field_1;
 	}
 
-	public unsafe static bool Invoke(void* pImage, int w, int h, int num_chans, void* out_buf, int flags)
+	[return: NativeType("bool")]
+	public unsafe static bool Invoke([NativeType("void const *")] void* pImage, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h, [NativeType("unsigned int")] int num_chans, [NativeType("class std::vector<unsigned char, class std::allocator<unsigned char>> &")] void* out_buf, [NativeType("unsigned int")] int flags)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		bool flag = false;

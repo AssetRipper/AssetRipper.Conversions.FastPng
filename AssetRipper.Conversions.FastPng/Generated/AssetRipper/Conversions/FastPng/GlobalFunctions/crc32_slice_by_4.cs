@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("unsigned int __cdecl fpng::crc32_slice_by_4(void const *, unsigned __int64, unsigned int)")]
 internal static partial class crc32_slice_by_4
 {
-	public unsafe static int Invoke(void* pData, long data_len, int cur_crc32)
+	[return: NativeType("unsigned int")]
+	public unsafe static int Invoke([NativeType("void const *")] void* pData, [NativeType("unsigned __int64")] long data_len, [NativeType("unsigned int")] int cur_crc32)
 	{
 		int num = 0;
 		void* ptr = null;

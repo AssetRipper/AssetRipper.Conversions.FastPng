@@ -7,6 +7,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("max_size")]
 internal static partial class max_size_kyvxnnb
 {
+	[return: NativeType("unsigned __int64")]
 	public unsafe static long Invoke(void* @this)
 	{
 		long num = max_size_ngjedfc.Invoke(Getal_2reycsb.Invoke(@this));

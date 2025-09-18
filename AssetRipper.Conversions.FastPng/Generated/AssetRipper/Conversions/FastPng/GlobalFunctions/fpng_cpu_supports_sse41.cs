@@ -6,6 +6,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("bool __cdecl fpng::fpng_cpu_supports_sse41(void)")]
 internal static partial class fpng_cpu_supports_sse41
 {
+	[return: NativeType("bool")]
 	public static bool Invoke()
 	{
 		return false;

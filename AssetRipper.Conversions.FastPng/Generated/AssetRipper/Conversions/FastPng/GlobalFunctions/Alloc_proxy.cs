@@ -6,7 +6,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("public: void __cdecl std::_Container_base0::_Alloc_proxy(struct std::_Fake_allocator const &)")]
 internal static partial class Alloc_proxy
 {
-	public unsafe static void Invoke(void* @this, void* parameter_1)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [NativeType("struct std::_Fake_allocator const &")] void* parameter_1)
 	{
 	}
 }

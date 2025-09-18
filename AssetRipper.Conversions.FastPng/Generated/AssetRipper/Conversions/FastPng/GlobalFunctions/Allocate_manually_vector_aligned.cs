@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)")]
 internal static partial class Allocate_manually_vector_aligned
 {
-	public unsafe static void* Invoke(long Bytes)
+	[return: NativeType("void *")]
+	public unsafe static void* Invoke([MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
 	{
 		long num = 0L;
 		void* ptr = null;

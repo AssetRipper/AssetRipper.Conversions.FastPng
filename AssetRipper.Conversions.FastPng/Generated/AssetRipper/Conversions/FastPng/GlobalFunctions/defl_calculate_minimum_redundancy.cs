@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl fpng::defl_calculate_minimum_redundancy(struct fpng::defl_sym_freq *, int)")]
 internal static partial class defl_calculate_minimum_redundancy
 {
-	public unsafe static void Invoke(void* A, int n)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([NativeType("struct fpng::defl_sym_freq *")] void* A, [NativeType("int")] int n)
 	{
 		int num = 0;
 		int num2 = 0;

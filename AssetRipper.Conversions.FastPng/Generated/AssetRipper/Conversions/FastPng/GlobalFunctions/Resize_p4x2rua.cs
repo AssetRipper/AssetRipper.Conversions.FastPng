@@ -9,7 +9,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Resize")]
 internal static partial class Resize_p4x2rua
 {
-	public unsafe static void Invoke(void* @this, long Newsize, void* Val)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
 	{
 		void* ptr = null;
 		long num = 0L;

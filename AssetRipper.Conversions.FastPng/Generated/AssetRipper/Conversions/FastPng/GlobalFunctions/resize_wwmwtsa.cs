@@ -13,7 +13,8 @@ internal static partial class resize_wwmwtsa
 		public std_Value_init_tag field_0;
 	}
 
-	public unsafe static void Invoke(void* @this, long Newsize)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_Value_init_tag);

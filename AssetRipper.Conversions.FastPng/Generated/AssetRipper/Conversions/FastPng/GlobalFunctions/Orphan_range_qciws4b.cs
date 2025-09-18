@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Orphan_range")]
 internal static partial class Orphan_range_qciws4b
 {
-	public unsafe static void Invoke(void* @this, void* parameter_1, void* parameter_2)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [NativeType("unsigned __int64 *")] void* parameter_1, [NativeType("unsigned __int64 *")] void* parameter_2)
 	{
 	}
 }

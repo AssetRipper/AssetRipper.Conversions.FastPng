@@ -9,7 +9,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Change_array")]
 internal static partial class Change_array_hgqy2vc
 {
-	public unsafe static void Invoke(void* @this, void* Newvec, long Newsize, long Newcapacity)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [MangledName("_Newvec")][NativeType("unsigned __int64 *const")] void* Newvec, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
 	{
 		void* ptr = Getal_kuj7nva.Invoke(@this);
 		unchecked

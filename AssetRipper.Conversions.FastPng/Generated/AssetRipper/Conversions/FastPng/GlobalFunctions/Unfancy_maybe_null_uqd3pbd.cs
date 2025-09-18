@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Unfancy_maybe_null")]
 internal static partial class Unfancy_maybe_null_uqd3pbd
 {
-	public unsafe static void* Invoke(void* Ptr)
+	[return: NativeType("unsigned __int64 *")]
+	public unsafe static void* Invoke([MangledName("_Ptr")][NativeType("unsigned __int64 *")] void* Ptr)
 	{
 		return Ptr;
 	}

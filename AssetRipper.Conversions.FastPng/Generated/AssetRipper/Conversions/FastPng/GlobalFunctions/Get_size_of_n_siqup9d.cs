@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Get_size_of_n")]
 internal static partial class Get_size_of_n_siqup9d
 {
-	public static long Invoke(long Count)
+	[return: NativeType("unsigned __int64")]
+	public static long Invoke([MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		unchecked
 		{

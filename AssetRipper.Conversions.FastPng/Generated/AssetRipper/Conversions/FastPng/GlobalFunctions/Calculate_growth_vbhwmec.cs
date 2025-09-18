@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Calculate_growth")]
 internal static partial class Calculate_growth_vbhwmec
 {
-	public unsafe static long Invoke(void* @this, long Newsize)
+	[return: NativeType("unsigned __int64")]
+	public unsafe static long Invoke(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
 	{
 		long num = 0L;
 		long num2 = 0L;

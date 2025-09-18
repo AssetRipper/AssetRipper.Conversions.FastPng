@@ -25,7 +25,8 @@ internal static partial class pixel_deflate_dyn_4_rle
 		public fpng_defl_huff field_5;
 	}
 
-	public unsafe static int Invoke(void* pImg, int w, int h, void* pDst, int dst_buf_size)
+	[return: NativeType("unsigned int")]
+	public unsafe static int Invoke([NativeType("unsigned char const *")] void* pImg, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int dst_buf_size)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		int num = 0;

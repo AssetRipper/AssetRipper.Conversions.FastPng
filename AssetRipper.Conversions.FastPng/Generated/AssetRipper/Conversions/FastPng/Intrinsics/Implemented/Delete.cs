@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.Intrinsics.Implemented;
 internal static partial class Delete
 {
 	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public unsafe static void Invoke(void* ptr, long size)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([NativeType("void *")] void* ptr, [NativeType("unsigned __int64")] long size)
 	{
 		IntrinsicFunctions.Delete(ptr, size);
 	}

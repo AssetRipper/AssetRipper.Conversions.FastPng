@@ -13,7 +13,7 @@ internal static partial class exception_Constructor_ikocrpb
 {
 	public unsafe static readonly void* __pointer = PointerIndices.Register((delegate*<void*, void*, void*>)(&Invoke));
 
-	public unsafe static void* Invoke(void* @this, void* Other)
+	public unsafe static void* Invoke(void* @this, [MangledName("_Other")][NativeType("class std::exception const &")] void* Other)
 	{
 		unchecked
 		{

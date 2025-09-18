@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("max_size")]
 internal static partial class max_size_ngjedfc
 {
-	public unsafe static long Invoke(void* parameter_0)
+	[return: NativeType("unsigned __int64")]
+	public unsafe static long Invoke([NativeType("class std::allocator<unsigned __int64> const &")] void* parameter_0)
 	{
 		return 2305843009213693951L;
 	}

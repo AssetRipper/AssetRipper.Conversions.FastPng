@@ -8,6 +8,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("data")]
 internal static partial class data_uf9yj3b
 {
+	[return: NativeType("unsigned int *")]
 	public unsafe static void* Invoke(void* @this)
 	{
 		return Unfancy_maybe_null_ys5czvb.Invoke(unchecked((std_vector_0*)@this)->field_0.field_0.field_0);

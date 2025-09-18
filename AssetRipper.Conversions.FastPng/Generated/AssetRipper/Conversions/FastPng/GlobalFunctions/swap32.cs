@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("unsigned int __cdecl fpng::swap32(unsigned int)")]
 internal static partial class swap32
 {
-	public static int Invoke(int x)
+	[return: NativeType("unsigned int")]
+	public static int Invoke([NativeType("unsigned int")] int x)
 	{
 		return llvm_bswap_i32.Invoke(x);
 	}

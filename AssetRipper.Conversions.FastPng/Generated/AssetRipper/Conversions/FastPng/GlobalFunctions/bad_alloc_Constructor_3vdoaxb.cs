@@ -10,7 +10,7 @@ internal static partial class bad_alloc_Constructor_3vdoaxb
 {
 	public unsafe static readonly void* __pointer = PointerIndices.Register((delegate*<void*, void*, void*>)(&Invoke));
 
-	public unsafe static void* Invoke(void* @this, void* parameter_1)
+	public unsafe static void* Invoke(void* @this, [NativeType("class std::bad_alloc const &")] void* parameter_1)
 	{
 		exception_Constructor_ikocrpb.Invoke(@this, parameter_1);
 		unchecked

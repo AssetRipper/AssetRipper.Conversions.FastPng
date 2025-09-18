@@ -6,7 +6,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("unsigned int __cdecl fpng::fpng_adler32_scalar(unsigned char const *, unsigned __int64, unsigned int)")]
 internal static partial class fpng_adler32_scalar
 {
-	public unsafe static int Invoke(void* ptr, long buf_len, int adler)
+	[return: NativeType("unsigned int")]
+	public unsafe static int Invoke([NativeType("unsigned char const *")] void* ptr, [NativeType("unsigned __int64")] long buf_len, [NativeType("unsigned int")] int adler)
 	{
 		int num = 0;
 		int num2 = 0;

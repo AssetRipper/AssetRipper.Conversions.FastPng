@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Uninitialized_move")]
 internal static partial class Uninitialized_move_vysyj4a
 {
-	public unsafe static void* Invoke(void* First, void* Last, void* Dest, void* Al)
+	[return: NativeType("unsigned char *")]
+	public unsafe static void* Invoke([MangledName("_First")][NativeType("unsigned char *const")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last, [MangledName("_Dest")][NativeType("unsigned char *")] void* Dest, [MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al)
 	{
 		void* ptr = Last;
 		void* ptr2 = First;

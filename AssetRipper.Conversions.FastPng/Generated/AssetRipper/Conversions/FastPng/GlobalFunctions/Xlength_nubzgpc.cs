@@ -9,6 +9,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Xlength")]
 internal static partial class Xlength_nubzgpc
 {
+	[return: NativeType("void")]
 	public unsafe static void Invoke()
 	{
 		Xlength_error.Invoke(String_7b7kt9c.__pointer);

@@ -10,7 +10,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("exception_Constructor")]
 internal static partial class exception_Constructor_morlzmd
 {
-	public unsafe static void* Invoke(void* @this, void* Message, int parameter_2)
+	public unsafe static void* Invoke(void* @this, [MangledName("_Message")][NativeType("char const *const")] void* Message, [NativeType("int")] int parameter_2)
 	{
 		unchecked
 		{

@@ -10,7 +10,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("struct fpng::defl_sym_freq * __cdecl fpng::defl_radix_sort_syms(unsigned int, struct fpng::defl_sym_freq *, struct fpng::defl_sym_freq *)")]
 internal static partial class defl_radix_sort_syms
 {
-	public unsafe static void* Invoke(int num_syms, void* pSyms0, void* pSyms1)
+	[return: NativeType("struct fpng::defl_sym_freq *")]
+	public unsafe static void* Invoke([NativeType("unsigned int")] int num_syms, [NativeType("struct fpng::defl_sym_freq *")] void* pSyms0, [NativeType("struct fpng::defl_sym_freq *")] void* pSyms1)
 	{
 		int num = 0;
 		int num2 = 0;

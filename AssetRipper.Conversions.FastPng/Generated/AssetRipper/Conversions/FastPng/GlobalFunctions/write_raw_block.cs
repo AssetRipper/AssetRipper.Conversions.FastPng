@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("unsigned int __cdecl fpng::write_raw_block(unsigned char const *, unsigned int, unsigned char *, unsigned int)")]
 internal static partial class write_raw_block
 {
-	public unsafe static int Invoke(void* pSrc, int src_len, void* pDst, int dst_buf_size)
+	[return: NativeType("unsigned int")]
+	public unsafe static int Invoke([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int dst_buf_size)
 	{
 		int num = 0;
 		int num2 = 0;

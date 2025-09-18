@@ -9,7 +9,8 @@ internal static partial class bad_alloc_Delete
 {
 	public unsafe static readonly void* __pointer = PointerIndices.Register((delegate*<void*, int, void*>)(&Invoke));
 
-	public unsafe static void* Invoke(void* @this, int should_call_delete)
+	[return: NativeType("void *")]
+	public unsafe static void* Invoke(void* @this, [NativeType("unsigned int")] int should_call_delete)
 	{
 		bad_alloc_Destructor.Invoke(@this);
 		if (should_call_delete != 0)

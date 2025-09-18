@@ -6,7 +6,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl fpng::defl_huffman_enforce_max_code_size(int *, int, int)")]
 internal static partial class defl_huffman_enforce_max_code_size
 {
-	public unsafe static void Invoke(void* pNum_codes, int code_list_len, int max_code_size)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([NativeType("int *")] void* pNum_codes, [NativeType("int")] int code_list_len, [NativeType("int")] int max_code_size)
 	{
 		int num = 0;
 		int i = 0;

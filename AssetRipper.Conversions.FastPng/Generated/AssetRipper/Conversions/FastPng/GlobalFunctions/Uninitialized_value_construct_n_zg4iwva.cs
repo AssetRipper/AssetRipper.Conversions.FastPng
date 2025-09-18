@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Uninitialized_value_construct_n")]
 internal static partial class Uninitialized_value_construct_n_zg4iwva
 {
-	public unsafe static void* Invoke(void* First, long Count, void* Al)
+	[return: NativeType("unsigned int *")]
+	public unsafe static void* Invoke([MangledName("_First")][NativeType("unsigned int *")] void* First, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned int> &")] void* Al)
 	{
 		void* ptr = Unfancy_xjzn42c.Invoke(First);
 		unchecked

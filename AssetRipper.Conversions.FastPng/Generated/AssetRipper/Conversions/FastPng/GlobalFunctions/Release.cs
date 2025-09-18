@@ -6,6 +6,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("public: void __cdecl std::_Fake_proxy_ptr_impl::_Release(void)")]
 internal static partial class Release
 {
+	[return: NativeType("void")]
 	public unsafe static void Invoke(void* @this)
 	{
 	}

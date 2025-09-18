@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("allocate")]
 internal static partial class allocate_4vpkydd
 {
-	public unsafe static void* Invoke(void* @this, long Count)
+	[return: NativeType("unsigned __int64 *")]
+	public unsafe static void* Invoke(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		long bytes = Get_size_of_n_siqup9d.Invoke(Count);
 		if (ExceptionInfo.Current != null)

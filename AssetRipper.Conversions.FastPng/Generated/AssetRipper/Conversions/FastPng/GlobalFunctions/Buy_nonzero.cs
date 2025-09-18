@@ -6,7 +6,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("private: void __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::_Buy_nonzero(unsigned __int64)")]
 internal static partial class Buy_nonzero
 {
-	public unsafe static void Invoke(void* @this, long Newcapacity)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
 	{
 		if (unchecked((ulong)Newcapacity > (ulong)max_size_qdwnpha.Invoke(@this)))
 		{

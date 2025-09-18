@@ -6,6 +6,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("public: void __cdecl std::_Container_base0::_Orphan_all(void)")]
 internal static partial class Orphan_all
 {
+	[return: NativeType("void")]
 	public unsafe static void Invoke(void* @this)
 	{
 	}

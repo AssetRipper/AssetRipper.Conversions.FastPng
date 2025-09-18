@@ -21,7 +21,8 @@ internal static partial class fpng_pixel_zlib_decompress_3_prmnnjb
 		public InlineArray_4096_vqkfj7a field_3;
 	}
 
-	public unsafe static bool Invoke(void* pSrc, int src_len, int zlib_len, void* pDst, int w, int h)
+	[return: NativeType("bool")]
+	public unsafe static bool Invoke([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		bool flag = false;

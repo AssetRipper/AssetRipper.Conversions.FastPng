@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Allocate_at_least_helper")]
 internal static partial class Allocate_at_least_helper_l9zi7qb
 {
-	public unsafe static void* Invoke(void* Al, void* Count)
+	[return: NativeType("unsigned __int64 *")]
+	public unsafe static void* Invoke([MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al, [MangledName("_Count")][NativeType("unsigned __int64 &")] void* Count)
 	{
 		void* result = allocate_4vpkydd.Invoke(Al, *unchecked((long*)Count));
 		if (ExceptionInfo.Current != null)

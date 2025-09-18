@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("To_address")]
 internal static partial class To_address_aoz7nfb
 {
-	public unsafe static void* Invoke(void* Val)
+	[return: NativeType("auto")]
+	public unsafe static void* Invoke([MangledName("_Val")][NativeType("unsigned int *const &")] void* Val)
 	{
 		return *unchecked((void**)Val);
 	}

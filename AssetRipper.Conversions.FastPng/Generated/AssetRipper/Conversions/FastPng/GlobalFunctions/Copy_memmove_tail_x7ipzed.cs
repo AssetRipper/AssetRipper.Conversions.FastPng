@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Copy_memmove_tail")]
 internal static partial class Copy_memmove_tail_x7ipzed
 {
-	public unsafe static void* Invoke(void* First_ch, void* Dest, long Byte_count, long Object_count)
+	[return: NativeType("unsigned char *")]
+	public unsafe static void* Invoke([MangledName("_First_ch")][NativeType("char const *const")] void* First_ch, [MangledName("_Dest")][NativeType("unsigned char *const")] void* Dest, [MangledName("_Byte_count")][NativeType("unsigned __int64")] long Byte_count, [MangledName("_Object_count")][NativeType("unsigned __int64")] long Object_count)
 	{
 		void* ptr = Dest;
 		void* ptr2 = To_address_enkoctc.Invoke(&ptr);

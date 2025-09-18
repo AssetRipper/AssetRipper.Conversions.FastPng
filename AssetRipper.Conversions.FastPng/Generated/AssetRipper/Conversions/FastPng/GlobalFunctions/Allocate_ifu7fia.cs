@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("Allocate")]
 internal static partial class Allocate_ifu7fia
 {
-	public unsafe static void* Invoke(long Bytes)
+	[return: NativeType("void *")]
+	public unsafe static void* Invoke([MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
 	{
 		return New.Invoke(Bytes);
 	}

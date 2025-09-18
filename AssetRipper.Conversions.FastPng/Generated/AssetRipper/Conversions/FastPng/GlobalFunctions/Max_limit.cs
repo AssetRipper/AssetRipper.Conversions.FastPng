@@ -6,6 +6,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("__int64 __cdecl std::_Max_limit<__int64>(void)")]
 internal static partial class Max_limit
 {
+	[return: NativeType("__int64")]
 	public static long Invoke()
 	{
 		return long.MaxValue;

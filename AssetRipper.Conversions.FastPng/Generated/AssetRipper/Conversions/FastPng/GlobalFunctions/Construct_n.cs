@@ -16,7 +16,8 @@ internal static partial class Construct_n
 		public std_Tidy_guard field_2;
 	}
 
-	public unsafe static void Invoke(void* @this, long Count)
+	[return: NativeType("void")]
+	public unsafe static void Invoke(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_Fake_allocator);

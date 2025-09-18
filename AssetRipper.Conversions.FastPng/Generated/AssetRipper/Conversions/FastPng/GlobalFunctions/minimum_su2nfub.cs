@@ -7,7 +7,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("minimum")]
 internal static partial class minimum_su2nfub
 {
-	public static int Invoke(int a, int b)
+	[return: NativeType("unsigned int")]
+	public static int Invoke([NativeType("unsigned int")] int a, [NativeType("unsigned int")] int b)
 	{
 		return unchecked((uint)a >= (uint)b) ? b : a;
 	}

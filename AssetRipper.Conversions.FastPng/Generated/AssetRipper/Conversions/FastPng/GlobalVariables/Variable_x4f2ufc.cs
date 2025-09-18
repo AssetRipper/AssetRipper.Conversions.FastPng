@@ -5,7 +5,6 @@ using AssetRipper.Conversions.FastPng.Structures;
 
 namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 
-[MangledName("")]
 [CleanName("Variable")]
 internal static partial class Variable_x4f2ufc
 {

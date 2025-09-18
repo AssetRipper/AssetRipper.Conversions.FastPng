@@ -8,7 +8,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("bool __cdecl fpng::fpng_pixel_zlib_raw_decompress(unsigned char const *, unsigned int, unsigned int, unsigned char *, unsigned int, unsigned int, unsigned int, unsigned int)")]
 internal static partial class fpng_pixel_zlib_raw_decompress
 {
-	public unsafe static bool Invoke(void* pSrc, int src_len, int zlib_len, void* pDst, int w, int h, int src_chans, int dst_chans)
+	[return: NativeType("bool")]
+	public unsafe static bool Invoke([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h, [NativeType("unsigned int")] int src_chans, [NativeType("unsigned int")] int dst_chans)
 	{
 		bool flag = false;
 		int num = 0;

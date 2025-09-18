@@ -10,7 +10,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("void __cdecl fpng::defl_optimize_huffman_table(struct fpng::defl_huff *, int, int, int, int)")]
 internal static partial class defl_optimize_huffman_table
 {
-	public unsafe static void Invoke(void* d, int table_num, int table_len, int code_size_limit, int static_table)
+	[return: NativeType("void")]
+	public unsafe static void Invoke([NativeType("struct fpng::defl_huff *")] void* d, [NativeType("int")] int table_num, [NativeType("int")] int table_len, [NativeType("int")] int code_size_limit, [NativeType("int")] int static_table)
 	{
 		int num = 0;
 		int num2 = 0;

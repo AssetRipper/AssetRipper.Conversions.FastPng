@@ -8,7 +8,7 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [CleanName("bad_alloc_Constructor")]
 internal static partial class bad_alloc_Constructor_72dj2ea
 {
-	public unsafe static void* Invoke(void* @this, void* Message)
+	public unsafe static void* Invoke(void* @this, [MangledName("_Message")][NativeType("char const *const")] void* Message)
 	{
 		exception_Constructor_morlzmd.Invoke(@this, Message, 1);
 		unchecked

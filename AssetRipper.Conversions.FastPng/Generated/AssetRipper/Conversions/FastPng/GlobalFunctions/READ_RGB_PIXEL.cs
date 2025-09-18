@@ -6,7 +6,8 @@ namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
 [DemangledName("unsigned int __cdecl fpng::READ_RGB_PIXEL(void const *)")]
 internal static partial class READ_RGB_PIXEL
 {
-	public unsafe static int Invoke(void* p)
+	[return: NativeType("unsigned int")]
+	public unsafe static int Invoke([NativeType("void const *")] void* p)
 	{
 		return *unchecked((int*)p) & 0xFFFFFF;
 	}
