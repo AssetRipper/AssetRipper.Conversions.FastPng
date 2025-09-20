@@ -37,9 +37,9 @@ internal static partial class Resize_reallocate_dt5hjdb
 				throw null;
 			}
 			ptr = Getal_jms5hzb.Invoke(@this);
-			ptr2 = &((std_vector*)@this)->field_0.field_0;
-			ptr3 = &((std_Vector_val*)ptr2)->field_0;
-			ptr4 = &((std_Vector_val*)ptr2)->field_1;
+			ptr2 = &((std_vector_7uge3hb*)@this)->field_0.field_0;
+			ptr3 = &((std_Vector_val_p59sy9d*)ptr2)->field_0;
+			ptr4 = &((std_Vector_val_p59sy9d*)ptr2)->field_1;
 			num = (long)(nuint)(*(nint*)ptr4) - (long)(nuint)(*(nint*)ptr3);
 			long field_ = Calculate_growth_scmxisc.Invoke(@this, Newsize);
 			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_;

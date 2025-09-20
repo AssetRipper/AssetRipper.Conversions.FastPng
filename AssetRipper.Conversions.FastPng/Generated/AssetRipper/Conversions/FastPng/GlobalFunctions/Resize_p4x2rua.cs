@@ -18,9 +18,9 @@ internal static partial class Resize_p4x2rua
 		void* al = Getal_jms5hzb.Invoke(@this);
 		unchecked
 		{
-			void* field_ = &((std_vector*)@this)->field_0.field_0;
-			void* field_2 = &((std_Vector_val*)field_)->field_0;
-			void* field_3 = &((std_Vector_val*)field_)->field_1;
+			void* field_ = &((std_vector_7uge3hb*)@this)->field_0.field_0;
+			void* field_2 = &((std_Vector_val_p59sy9d*)field_)->field_0;
+			void* field_3 = &((std_Vector_val_p59sy9d*)field_)->field_1;
 			long num2 = (long)(nuint)(*(nint*)field_3) - (long)(nuint)(*(nint*)field_2);
 			if ((ulong)Newsize < (ulong)num2)
 			{
@@ -35,7 +35,7 @@ internal static partial class Resize_p4x2rua
 				{
 					return;
 				}
-				if ((ulong)Newsize > (ulong)((long)((std_Vector_val*)field_)->field_2 - (long)(nuint)(*(nint*)field_2)))
+				if ((ulong)Newsize > (ulong)((long)((std_Vector_val_p59sy9d*)field_)->field_2 - (long)(nuint)(*(nint*)field_2)))
 				{
 					Resize_reallocate_dt5hjdb.Invoke(@this, Newsize, Val);
 					if (ExceptionInfo.Current == null)

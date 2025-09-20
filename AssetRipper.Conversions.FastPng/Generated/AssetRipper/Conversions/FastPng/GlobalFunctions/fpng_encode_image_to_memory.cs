@@ -12,9 +12,9 @@ internal static partial class fpng_encode_image_to_memory
 {
 	private partial struct LocalVariables
 	{
-		public std_vector field_0;
+		public std_vector_7uge3hb field_0;
 
-		public InlineArray_58_w3otm9c field_1;
+		public InlineArray58_SByte field_1;
 	}
 
 	[return: NativeType("bool")]
@@ -25,7 +25,7 @@ internal static partial class fpng_encode_image_to_memory
 		int num = 0;
 		int num2 = 0;
 		int num3 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_vector);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_vector_7uge3hb);
 		int num4 = 0;
 		void* ptr = null;
 		void* ptr2 = null;
@@ -39,7 +39,7 @@ internal static partial class fpng_encode_image_to_memory
 		int num9 = 0;
 		int num10 = 0;
 		int num11 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray_58_w3otm9c);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray58_SByte);
 		int num12 = 0;
 		int num13 = 0;
 		unchecked

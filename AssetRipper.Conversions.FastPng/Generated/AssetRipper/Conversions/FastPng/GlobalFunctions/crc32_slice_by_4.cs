@@ -21,7 +21,7 @@ internal static partial class crc32_slice_by_4
 			while ((ulong)num2 >= 4uL)
 			{
 				num = *(int*)ptr2 ^ num3;
-				num3 = ((int*)g_crc32_4.__pointer)[(uint)(num >>> 24)] ^ ((int*)((byte*)g_crc32_4.__pointer + sizeof(InlineArray_256_vqkfj7a)))[(uint)((num >>> 16) & 0xFF)] ^ ((int*)((byte*)g_crc32_4.__pointer + (nint)2 * sizeof(InlineArray_256_vqkfj7a)))[(uint)((num >>> 8) & 0xFF)] ^ ((int*)((byte*)g_crc32_4.__pointer + (nint)3 * sizeof(InlineArray_256_vqkfj7a)))[(uint)(num & 0xFF)];
+				num3 = ((int*)g_crc32_4.__pointer)[(uint)(num >>> 24)] ^ ((int*)((byte*)g_crc32_4.__pointer + sizeof(InlineArray256_Int32)))[(uint)((num >>> 16) & 0xFF)] ^ ((int*)((byte*)g_crc32_4.__pointer + (nint)2 * sizeof(InlineArray256_Int32)))[(uint)((num >>> 8) & 0xFF)] ^ ((int*)((byte*)g_crc32_4.__pointer + (nint)3 * sizeof(InlineArray256_Int32)))[(uint)(num & 0xFF)];
 				ptr2 = (byte*)ptr2 + 4;
 				num2 -= 4L;
 			}

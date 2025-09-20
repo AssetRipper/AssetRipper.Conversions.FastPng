@@ -15,10 +15,10 @@ internal static partial class Tidy_kyqxybb
 		void* ptr = Getal_t2pmqoc.Invoke(@this);
 		unchecked
 		{
-			void* field_ = &((std_vector_0*)@this)->field_0.field_0;
-			void* field_2 = &((std_Vector_val_4*)field_)->field_0;
-			void* field_3 = &((std_Vector_val_4*)field_)->field_1;
-			void* field_4 = &((std_Vector_val_4*)field_)->field_2;
+			void* field_ = &((std_vector_drook9b*)@this)->field_0.field_0;
+			void* field_2 = &((std_Vector_val_edx9ebc*)field_)->field_0;
+			void* field_3 = &((std_Vector_val_edx9ebc*)field_)->field_1;
+			void* field_4 = &((std_Vector_val_edx9ebc*)field_)->field_2;
 			Orphan_all.Invoke(field_);
 			if (*(IntPtr*)field_2 != (IntPtr)(nint)0)
 			{

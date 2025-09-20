@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 16)]
 [MangledName("rtti.ClassHierarchyDescriptor")]
+[DemangledName("rtti.ClassHierarchyDescriptor")]
 public partial struct rtti_ClassHierarchyDescriptor
 {
 	[FieldOffset(0)]

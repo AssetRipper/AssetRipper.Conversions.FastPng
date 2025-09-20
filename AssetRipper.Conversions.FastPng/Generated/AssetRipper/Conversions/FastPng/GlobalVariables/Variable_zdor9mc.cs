@@ -29,7 +29,7 @@ internal static partial class Variable_zdor9mc
 			__pointer = (Struct*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(Struct)));
 			Value = new Struct
 			{
-				field_0 = new InlineArrayBuilder<InlineArray_3_gbfuvwd, nint>
+				field_0 = new InlineArrayBuilder<InlineArray3_IntPtr, nint>
 				{
 					(nint)R4bad_alloc.__pointer,
 					(nint)bad_alloc_Delete.__pointer,

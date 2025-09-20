@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 25)]
 [MangledName("struct.fpng::png_ihdr")]
+[DemangledName("fpng::png_ihdr")]
 public partial struct fpng_png_ihdr
 {
 	[FieldOffset(0)]

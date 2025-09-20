@@ -12,9 +12,9 @@ internal static partial class defl_start_dynamic_block
 {
 	private partial struct LocalVariables
 	{
-		public InlineArray_320_w3otm9c field_0;
+		public InlineArray320_SByte field_0;
 
-		public InlineArray_320_w3otm9c field_1;
+		public InlineArray320_SByte field_1;
 	}
 
 	[return: NativeType("bool")]
@@ -30,8 +30,8 @@ internal static partial class defl_start_dynamic_block
 		int num6 = 0;
 		int num7 = 0;
 		int num8 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray_320_w3otm9c);
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray_320_w3otm9c);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray320_SByte);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray320_SByte);
 		sbyte b = 0;
 		int num9 = 0;
 		int num10 = 0;
@@ -56,18 +56,18 @@ internal static partial class defl_start_dynamic_block
 		for (i = 286; i > 257 && unchecked((sbyte*)(&((fpng_defl_huff*)d)->field_2))[i - 1] == 0; i += -1)
 		{
 		}
-		for (num = 30; num > 1 && (unchecked((byte*)(&((fpng_defl_huff*)d)->field_2)) + sizeof(InlineArray_288_w3otm9c))[num - 1] == 0; num += -1)
+		for (num = 30; num > 1 && (unchecked((byte*)(&((fpng_defl_huff*)d)->field_2)) + sizeof(InlineArray288_SByte))[num - 1] == 0; num += -1)
 		{
 		}
 		unchecked
 		{
 			llvm_memcpy_p0_p0_i64.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0, &((fpng_defl_huff*)d)->field_2, i, isVolatile: false);
-			llvm_memcpy_p0_p0_i64.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0) + i, (byte*)(&((fpng_defl_huff*)d)->field_2) + sizeof(InlineArray_288_w3otm9c), num, isVolatile: false);
+			llvm_memcpy_p0_p0_i64.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0) + i, (byte*)(&((fpng_defl_huff*)d)->field_2) + sizeof(InlineArray288_SByte), num, isVolatile: false);
 			num4 = checked(i + num);
 			num5 = 0;
 			num6 = 0;
 			num7 = 0;
-			llvm_memset_p0_i64.Invoke((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea), 0, 38L, isVolatile: false);
+			llvm_memset_p0_i64.Invoke((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16), 0, 38L, isVolatile: false);
 			for (num3 = 0; (uint)num3 < (uint)num4; num3++)
 			{
 				b = ((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[(uint)num3];
@@ -77,8 +77,8 @@ internal static partial class defl_start_dynamic_block
 					{
 						if ((uint)num7 < 3u)
 						{
-							short num24 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b2] + num7);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b2] = num24;
+							short num24 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] + num7);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num24;
 							while (true)
 							{
 								int num25 = num7;
@@ -94,8 +94,8 @@ internal static partial class defl_start_dynamic_block
 						}
 						else
 						{
-							short num27 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[16]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[16] = num27;
+							short num27 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num27;
 							int num28 = num5++;
 							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num28] = 16;
 							sbyte b4 = (sbyte)(num7 - 3);
@@ -114,8 +114,8 @@ internal static partial class defl_start_dynamic_block
 						case 1:
 						case 2:
 						{
-							short num37 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea))) + num6);
-							*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)) = num37;
+							short num37 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16))) + num6);
+							*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)) = num37;
 							while (true)
 							{
 								int num38 = num6;
@@ -138,8 +138,8 @@ internal static partial class defl_start_dynamic_block
 						case 9:
 						case 10:
 						{
-							short num34 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[17]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[17] = num34;
+							short num34 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num34;
 							int num35 = num5++;
 							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num35] = 17;
 							sbyte b6 = (sbyte)(num6 - 3);
@@ -149,8 +149,8 @@ internal static partial class defl_start_dynamic_block
 						}
 						default:
 						{
-							short num31 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[18]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[18] = num31;
+							short num31 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num31;
 							int num32 = num5++;
 							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num32] = 18;
 							sbyte b5 = (sbyte)(num6 - 11);
@@ -172,8 +172,8 @@ internal static partial class defl_start_dynamic_block
 						case 1:
 						case 2:
 						{
-							short num46 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea))) + num6);
-							*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)) = num46;
+							short num46 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16))) + num6);
+							*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)) = num46;
 							while (true)
 							{
 								int num47 = num6;
@@ -196,8 +196,8 @@ internal static partial class defl_start_dynamic_block
 						case 9:
 						case 10:
 						{
-							short num43 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[17]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[17] = num43;
+							short num43 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num43;
 							int num44 = num5++;
 							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num44] = 17;
 							sbyte b8 = (sbyte)(num6 - 3);
@@ -207,8 +207,8 @@ internal static partial class defl_start_dynamic_block
 						}
 						default:
 						{
-							short num40 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[18]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[18] = num40;
+							short num40 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num40;
 							int num41 = num5++;
 							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num41] = 18;
 							sbyte b7 = (sbyte)(num6 - 11);
@@ -225,8 +225,8 @@ internal static partial class defl_start_dynamic_block
 						{
 							if ((uint)num7 < 3u)
 							{
-								short num49 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b2] + num7);
-								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b2] = num49;
+								short num49 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] + num7);
+								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num49;
 								while (true)
 								{
 									int num50 = num7;
@@ -242,8 +242,8 @@ internal static partial class defl_start_dynamic_block
 							}
 							else
 							{
-								short num52 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[16]) + 1);
-								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[16] = num52;
+								short num52 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
+								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num52;
 								int num53 = num5++;
 								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num53] = 16;
 								sbyte b10 = (sbyte)(num7 - 3);
@@ -252,8 +252,8 @@ internal static partial class defl_start_dynamic_block
 							}
 							num7 = 0;
 						}
-						short num55 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b]) + 1);
-						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b] = num55;
+						short num55 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b]) + 1);
+						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] = num55;
 						sbyte b11 = b;
 						int num56 = num5++;
 						((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num56] = b11;
@@ -266,8 +266,8 @@ internal static partial class defl_start_dynamic_block
 						{
 							if ((uint)num7 < 3u)
 							{
-								short num58 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b2] + num7);
-								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b2] = num58;
+								short num58 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] + num7);
+								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num58;
 								while (true)
 								{
 									int num59 = num7;
@@ -283,8 +283,8 @@ internal static partial class defl_start_dynamic_block
 							}
 							else
 							{
-								short num61 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[16]) + 1);
-								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[16] = num61;
+								short num61 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
+								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num61;
 								int num62 = num5++;
 								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num62] = 16;
 								sbyte b13 = (sbyte)(num7 - 3);
@@ -303,8 +303,8 @@ internal static partial class defl_start_dynamic_block
 				{
 					if ((uint)num7 < 3u)
 					{
-						short num64 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b2] + num7);
-						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(byte)b2] = num64;
+						short num64 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] + num7);
+						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num64;
 						while (true)
 						{
 							int num65 = num7;
@@ -320,8 +320,8 @@ internal static partial class defl_start_dynamic_block
 					}
 					else
 					{
-						short num67 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[16]) + 1);
-						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[16] = num67;
+						short num67 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
+						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num67;
 						int num68 = num5++;
 						((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num68] = 16;
 						sbyte b15 = (sbyte)(num7 - 3);
@@ -339,8 +339,8 @@ internal static partial class defl_start_dynamic_block
 				case 1:
 				case 2:
 				{
-					short num76 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea))) + num6);
-					*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)) = num76;
+					short num76 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16))) + num6);
+					*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)) = num76;
 					while (true)
 					{
 						int num77 = num6;
@@ -363,8 +363,8 @@ internal static partial class defl_start_dynamic_block
 				case 9:
 				case 10:
 				{
-					short num73 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[17]) + 1);
-					((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[17] = num73;
+					short num73 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
+					((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num73;
 					int num74 = num5++;
 					((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num74] = 17;
 					sbyte b17 = (sbyte)(num6 - 3);
@@ -374,8 +374,8 @@ internal static partial class defl_start_dynamic_block
 				}
 				default:
 				{
-					short num70 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[18]) + 1);
-					((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[18] = num70;
+					short num70 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
+					((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num70;
 					int num71 = num5++;
 					((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num71] = 18;
 					sbyte b16 = (sbyte)(num6 - 11);
@@ -582,7 +582,7 @@ internal static partial class defl_start_dynamic_block
 								continue;
 							}
 						}
-						for (num2 = 18; num2 >= 0 && ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray_288_w3otm9c))[(byte)((sbyte*)g_defl_packed_code_size_syms_swizzle.__pointer)[num2]] == 0; num2 = checked(num2 + -1))
+						for (num2 = 18; num2 >= 0 && ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray288_SByte))[(byte)((sbyte*)g_defl_packed_code_size_syms_swizzle.__pointer)[num2]] == 0; num2 = checked(num2 + -1))
 						{
 						}
 						checked
@@ -659,7 +659,7 @@ internal static partial class defl_start_dynamic_block
 							{
 								if (num3 < num2)
 								{
-									num17 = ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray_288_w3otm9c))[(byte)((sbyte*)g_defl_packed_code_size_syms_swizzle.__pointer)[(uint)num3]];
+									num17 = ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray288_SByte))[(byte)((sbyte*)g_defl_packed_code_size_syms_swizzle.__pointer)[(uint)num3]];
 									num18 = 3;
 									int num91;
 									if ((uint)num18 >= 1u && (uint)num18 <= 16u)
@@ -745,8 +745,8 @@ internal static partial class defl_start_dynamic_block
 											}
 											num95 = 0;
 										}
-										num20 = (ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_1) + (nint)2 * sizeof(InlineArray_288_oeds4ea)))[(uint)num19];
-										num21 = ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray_288_w3otm9c))[(uint)num19];
+										num20 = (ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_1) + (nint)2 * sizeof(InlineArray288_Int16)))[(uint)num19];
+										num21 = ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray288_SByte))[(uint)num19];
 										int num96;
 										if ((uint)num21 >= 1u && (uint)num21 <= 16u)
 										{

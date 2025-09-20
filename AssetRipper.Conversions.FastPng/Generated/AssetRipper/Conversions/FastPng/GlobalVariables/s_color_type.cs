@@ -7,9 +7,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [DemangledName("unsigned char const *const `bool __cdecl fpng::fpng_encode_image_to_memory(void const *, unsigned int, unsigned int, unsigned int, class std::vector<unsigned char, class std::allocator<unsigned char>> &, unsigned int)'::`2'::s_color_type")]
 internal static partial class s_color_type
 {
-	public unsafe static InlineArray_5_w3otm9c* __pointer;
+	public unsafe static InlineArray5_SByte* __pointer;
 
-	public unsafe static InlineArray_5_w3otm9c Value
+	public unsafe static InlineArray5_SByte Value
 	{
 		get
 		{
@@ -23,7 +23,7 @@ internal static partial class s_color_type
 
 	unsafe static s_color_type()
 	{
-		__pointer = unchecked((InlineArray_5_w3otm9c*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_5_w3otm9c))));
-		Value = InlineArrayHelper.Create<InlineArray_5_w3otm9c, byte>(new byte[5] { 0, 0, 4, 2, 6 });
+		__pointer = unchecked((InlineArray5_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray5_SByte))));
+		Value = InlineArrayHelper.Create<InlineArray5_SByte, byte>(new byte[5] { 0, 0, 4, 2, 6 });
 	}
 }

@@ -11,11 +11,11 @@ internal static partial class build_decoder_table
 {
 	private partial struct LocalVariables
 	{
-		public InlineArray_16_vqkfj7a field_0;
+		public InlineArray16_Int32 field_0;
 
-		public InlineArray_17_vqkfj7a field_1;
+		public InlineArray17_Int32 field_1;
 
-		public InlineArray_288_vqkfj7a field_2;
+		public InlineArray288_Int32 field_2;
 	}
 
 	[return: NativeType("bool")]
@@ -23,13 +23,13 @@ internal static partial class build_decoder_table
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		bool flag = false;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray_16_vqkfj7a);
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray_17_vqkfj7a);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray16_Int32);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray17_Int32);
 		int num = 0;
 		int num2 = 0;
 		int num3 = 0;
 		int num4 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_2 = default(InlineArray_288_vqkfj7a);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_2 = default(InlineArray288_Int32);
 		int num5 = 0;
 		int num6 = 0;
 		int num7 = 0;

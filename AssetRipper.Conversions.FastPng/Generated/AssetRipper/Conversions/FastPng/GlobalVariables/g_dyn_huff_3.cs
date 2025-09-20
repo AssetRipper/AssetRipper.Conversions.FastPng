@@ -7,9 +7,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [DemangledName("unsigned char const *const fpng::g_dyn_huff_3")]
 internal static partial class g_dyn_huff_3
 {
-	public unsafe static InlineArray_62_w3otm9c* __pointer;
+	public unsafe static InlineArray62_SByte* __pointer;
 
-	public unsafe static InlineArray_62_w3otm9c Value
+	public unsafe static InlineArray62_SByte Value
 	{
 		get
 		{
@@ -23,8 +23,8 @@ internal static partial class g_dyn_huff_3
 
 	unsafe static g_dyn_huff_3()
 	{
-		__pointer = unchecked((InlineArray_62_w3otm9c*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_62_w3otm9c))));
-		Value = InlineArrayHelper.Create<InlineArray_62_w3otm9c, byte>(new byte[62]
+		__pointer = unchecked((InlineArray62_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray62_SByte))));
+		Value = InlineArrayHelper.Create<InlineArray62_SByte, byte>(new byte[62]
 		{
 			120, 1, 237, 195, 3, 176, 110, 89, 122, 128,
 			225, 247, 251, 214, 218, 248, 113, 124, 173, 190,

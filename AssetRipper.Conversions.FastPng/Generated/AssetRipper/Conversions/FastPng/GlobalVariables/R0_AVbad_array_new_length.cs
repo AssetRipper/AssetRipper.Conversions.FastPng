@@ -29,7 +29,7 @@ internal static partial class R0_AVbad_array_new_length
 		{
 			field_0 = _7type_info.__pointer,
 			field_1 = null,
-			field_2 = InlineArrayHelper.Create<InlineArray_31_w3otm9c, byte>(".?AVbad_array_new_length@std@@\0"u8)
+			field_2 = InlineArrayHelper.Create<InlineArray31_SByte, byte>(".?AVbad_array_new_length@std@@\0"u8)
 		};
 	}
 }

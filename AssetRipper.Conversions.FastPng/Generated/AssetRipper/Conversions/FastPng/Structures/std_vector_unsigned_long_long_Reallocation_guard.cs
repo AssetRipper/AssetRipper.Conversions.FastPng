@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 40)]
 [MangledName("struct.std::vector<unsigned long long>::_Reallocation_guard")]
+[DemangledName("std::vector<unsigned long long>::_Reallocation_guard")]
 public partial struct std_vector_unsigned_long_long_Reallocation_guard
 {
 	[FieldOffset(0)]

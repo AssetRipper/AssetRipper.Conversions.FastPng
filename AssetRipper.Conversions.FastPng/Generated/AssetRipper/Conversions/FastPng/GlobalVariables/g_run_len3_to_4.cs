@@ -7,9 +7,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [DemangledName("unsigned short const *const fpng::g_run_len3_to_4")]
 internal static partial class g_run_len3_to_4
 {
-	public unsafe static InlineArray_259_oeds4ea* __pointer;
+	public unsafe static InlineArray259_Int16* __pointer;
 
-	public unsafe static InlineArray_259_oeds4ea Value
+	public unsafe static InlineArray259_Int16 Value
 	{
 		get
 		{
@@ -23,8 +23,8 @@ internal static partial class g_run_len3_to_4
 
 	unsafe static g_run_len3_to_4()
 	{
-		__pointer = unchecked((InlineArray_259_oeds4ea*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_259_oeds4ea))));
-		Value = InlineArrayHelper.Create<InlineArray_259_oeds4ea, short>(new short[259]
+		__pointer = unchecked((InlineArray259_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray259_Int16))));
+		Value = InlineArrayHelper.Create<InlineArray259_Int16, short>(new short[259]
 		{
 			0, 0, 0, 4, 0, 0, 8, 0, 0, 12,
 			0, 0, 16, 0, 0, 20, 0, 0, 24, 0,

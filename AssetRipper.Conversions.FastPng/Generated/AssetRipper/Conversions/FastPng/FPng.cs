@@ -28,7 +28,7 @@ public static partial class FPng
 	[MangledName("??_C@_1DK@OKEJEHAG@?$AA?4?$AA?4?$AA?1?$AA?4?$AA?4?$AA?1?$AA?4?$AA?4?$AA?1?$AA?4?$AA?4?$AA?1?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAs?$AA?2?$AAf?$AAp?$AAn?$AAg?$AA?4?$AAc?$AAp?$AAp?$AA?$AA@")]
 	[DemangledName("L\"../../../../Samples\\\\fpng.cpp\"")]
 	[CleanName("String")]
-	public static InlineArray_29_oeds4ea String_uxbkrtb
+	public static InlineArray29_Int16 String_uxbkrtb
 	{
 		get
 		{
@@ -43,7 +43,7 @@ public static partial class FPng
 	[MangledName("??_C@_13COJANIEC@?$AA0?$AA?$AA@")]
 	[DemangledName("L\"0\"")]
 	[CleanName("String")]
-	public static InlineArray_2_oeds4ea String_kdrammb
+	public static InlineArray2_Int16 String_kdrammb
 	{
 		get
 		{
@@ -58,7 +58,7 @@ public static partial class FPng
 	[MangledName("??_C@_1EA@NGEOLJKL@?$AAt?$AAe?$AAm?$AAp?$AA_?$AAb?$AAu?$AAf?$AA_?$AAo?$AAf?$AAs?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAt?$AAe?$AAm?$AAp?$AA_?$AAb?$AAu?$AAf?$AA?4?$AAs?$AAi?$AAz?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"temp_buf_ofs <= temp_buf.size()\"")]
 	[CleanName("String")]
-	public static InlineArray_32_oeds4ea String_bik4erc
+	public static InlineArray32_Int16 String_bik4erc
 	{
 		get
 		{
@@ -73,7 +73,7 @@ public static partial class FPng
 	[MangledName("??_C@_1FA@FOPIPCKM@?$AA?$CI?$AAo?$AAu?$AAt?$AA_?$AAo?$AAf?$AAs?$AA?5?$AA?$CL?$AA?5?$AAz?$AAl?$AAi?$AAb?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?$CJ?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAo?$AAu?$AAt?$AA_?$AAb?$AAu?$AAf@")]
 	[DemangledName("L\"(out_ofs + zlib_size) <= out_buf\"...")]
 	[CleanName("String")]
-	public static InlineArray_40_oeds4ea String_dqvhqxc
+	public static InlineArray40_Int16 String_dqvhqxc
 	{
 		get
 		{
@@ -87,7 +87,7 @@ public static partial class FPng
 
 	[MangledName("?s_color_type@?1??fpng_encode_image_to_memory@fpng@@YA_NPEBXIIIAEAV?$vector@EV?$allocator@E@std@@@std@@I@Z@4QBEB")]
 	[DemangledName("unsigned char const *const `bool __cdecl fpng::fpng_encode_image_to_memory(void const *, unsigned int, unsigned int, unsigned int, class std::vector<unsigned char, class std::allocator<unsigned char>> &, unsigned int)'::`2'::s_color_type")]
-	public static InlineArray_5_w3otm9c s_color_type
+	public static InlineArray5_SByte s_color_type
 	{
 		get
 		{
@@ -102,7 +102,7 @@ public static partial class FPng
 	[MangledName("??_C@_0BB@BKMJLBGB@?$AA?$AA?$AA?$AA?$AA?$AA?$AA?$AAIEND?$KOB?$GA?$IC?$AA@")]
 	[DemangledName("\"\\0\\0\\0\\0\\0\\0\\0\\0IEND\\xAEB`\\x82\"")]
 	[CleanName("String")]
-	public static InlineArray_17_w3otm9c String_nz3h57a
+	public static InlineArray17_SByte String_nz3h57a
 	{
 		get
 		{
@@ -116,7 +116,7 @@ public static partial class FPng
 
 	[MangledName("?g_crc32_4@fpng@@3QAY0BAA@$$CBIA")]
 	[DemangledName("unsigned int const (*const fpng::g_crc32_4)[256]")]
-	public static InlineArray_4_vjlif9a g_crc32_4
+	public static InlineArray4_InlineArray256_Int32 g_crc32_4
 	{
 		get
 		{
@@ -131,7 +131,7 @@ public static partial class FPng
 	[MangledName("??_C@_1BE@DFLAPPIJ@?$AAp?$AAP?$AAr?$AAe?$AAv?$AA_?$AAs?$AAr?$AAc?$AA?$AA@")]
 	[DemangledName("L\"pPrev_src\"")]
 	[CleanName("String")]
-	public static InlineArray_10_oeds4ea String_uc52kza
+	public static InlineArray10_Int16 String_uc52kza
 	{
 		get
 		{
@@ -146,7 +146,7 @@ public static partial class FPng
 	[MangledName("??_C@_1CM@PHNBINKF@?$AA?$CI?$AAl?$AA?$CJ?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAl?$AA?$CJ?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA1?$AA6?$AA?$AA@")]
 	[DemangledName("L\"(l) >= 0 && (l) <= 16\"")]
 	[CleanName("String")]
-	public static InlineArray_22_oeds4ea String_9hewgtd
+	public static InlineArray22_Int16 String_9hewgtd
 	{
 		get
 		{
@@ -161,7 +161,7 @@ public static partial class FPng
 	[MangledName("??_C@_1CI@EDFEPIBM@?$AA?$CI?$AAb?$AA?$CJ?$AA?5?$AA?$DM?$AA?5?$AA?$CI?$AA1?$AAU?$AAL?$AAL?$AA?5?$AA?$DM?$AA?$DM?$AA?5?$AA?$CI?$AAl?$AA?$CJ?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"(b) < (1ULL << (l))\"")]
 	[CleanName("String")]
-	public static InlineArray_20_oeds4ea String_ooiduua
+	public static InlineArray20_Int16 String_ooiduua
 	{
 		get
 		{
@@ -176,7 +176,7 @@ public static partial class FPng
 	[MangledName("??_C@_1CG@LKELDOLB@?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA6?$AA4?$AA?$AA@")]
 	[DemangledName("L\"bit_buf_size <= 64\"")]
 	[CleanName("String")]
-	public static InlineArray_19_oeds4ea String_mggwlgb
+	public static InlineArray19_Int16 String_mggwlgb
 	{
 		get
 		{
@@ -190,7 +190,7 @@ public static partial class FPng
 
 	[MangledName("?g_defl_len_sym@fpng@@3QBGB")]
 	[DemangledName("unsigned short const *const fpng::g_defl_len_sym")]
-	public static InlineArray_256_oeds4ea g_defl_len_sym
+	public static InlineArray256_Int16 g_defl_len_sym
 	{
 		get
 		{
@@ -205,7 +205,7 @@ public static partial class FPng
 	[MangledName("??_C@_1CG@PKEJNHCM@?$AAs?$AAr?$AAc?$AA_?$AAo?$AAf?$AAs?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AAh?$AA?5?$AA?$CK?$AA?5?$AAb?$AAp?$AAl?$AA?$AA@")]
 	[DemangledName("L\"src_ofs == h * bpl\"")]
 	[CleanName("String")]
-	public static InlineArray_19_oeds4ea String_bjvsuxc
+	public static InlineArray19_Int16 String_bjvsuxc
 	{
 		get
 		{
@@ -220,7 +220,7 @@ public static partial class FPng
 	[MangledName("??_C@_1DI@FDHIJIML@?$AAt?$AAo?$AAt?$AAa?$AAl?$AA_?$AAc?$AAo?$AAd?$AAe?$AAs?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAc?$AAo?$AAd?$AAe?$AAs?$AA?4?$AAs?$AAi?$AAz?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"total_codes <= codes.size()\"")]
 	[CleanName("String")]
-	public static InlineArray_28_oeds4ea String_hsgehfc
+	public static InlineArray28_Int16 String_hsgehfc
 	{
 		get
 		{
@@ -235,7 +235,7 @@ public static partial class FPng
 	[MangledName("??_C@_1CE@GPOANAFC@?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA7?$AA?$AA@")]
 	[DemangledName("L\"bit_buf_size <= 7\"")]
 	[CleanName("String")]
-	public static InlineArray_18_oeds4ea String_vpte4cc
+	public static InlineArray18_Int16 String_vpte4cc
 	{
 		get
 		{
@@ -250,7 +250,7 @@ public static partial class FPng
 	[MangledName("??_C@_1JI@IFFHKEFF@?$AAd?$AAh?$AA?4?$AAm?$AA_?$AAh?$AAu?$AAf?$AAf?$AA_?$AAc?$AAo?$AAd?$AAe?$AAs?$AA?$FL?$AA1?$AA?$FN?$AA?$FL?$AAd?$AAi?$AAs?$AAt?$AA_?$AAs?$AAy?$AAm?$AA?$FN?$AA?5?$AA?$DN?$AA?$DN?$AA?5@")]
 	[DemangledName("L\"dh.m_huff_codes[1][dist_sym] == \"...")]
 	[CleanName("String")]
-	public static InlineArray_76_oeds4ea String_df5ko9b
+	public static InlineArray76_Int16 String_df5ko9b
 	{
 		get
 		{
@@ -265,7 +265,7 @@ public static partial class FPng
 	[MangledName("??_C@_1CM@MLLBGOKN@?$AA?$CI?$AAl?$AA?$CJ?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA1?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAl?$AA?$CJ?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA1?$AA6?$AA?$AA@")]
 	[DemangledName("L\"(l) >= 1 && (l) <= 16\"")]
 	[CleanName("String")]
-	public static InlineArray_22_oeds4ea String_isj2lib
+	public static InlineArray22_Int16 String_isj2lib
 	{
 		get
 		{
@@ -279,7 +279,7 @@ public static partial class FPng
 
 	[MangledName("?g_bitmasks@fpng@@3QBIB")]
 	[DemangledName("unsigned int const *const fpng::g_bitmasks")]
-	public static InlineArray_17_vqkfj7a g_bitmasks
+	public static InlineArray17_Int32 g_bitmasks
 	{
 		get
 		{
@@ -293,7 +293,7 @@ public static partial class FPng
 
 	[MangledName("?g_defl_len_extra@fpng@@3QBEB")]
 	[DemangledName("unsigned char const *const fpng::g_defl_len_extra")]
-	public static InlineArray_256_w3otm9c g_defl_len_extra
+	public static InlineArray256_SByte g_defl_len_extra
 	{
 		get
 		{
@@ -308,7 +308,7 @@ public static partial class FPng
 	[MangledName("??_C@_1CG@JFLKAPAP@?$AAb?$AAi?$AAt?$AAs?$AA_?$AAt?$AAo?$AA_?$AAs?$AAh?$AAi?$AAf?$AAt?$AA?5?$AA?$DM?$AA?5?$AA6?$AA4?$AA?$AA@")]
 	[DemangledName("L\"bits_to_shift < 64\"")]
 	[CleanName("String")]
-	public static InlineArray_19_oeds4ea String_2ej5tjb
+	public static InlineArray19_Int16 String_2ej5tjb
 	{
 		get
 		{
@@ -323,7 +323,7 @@ public static partial class FPng
 	[MangledName("??_C@_0BA@FOIKENOD@vector?5too?5long?$AA@")]
 	[DemangledName("\"vector too long\"")]
 	[CleanName("String")]
-	public static InlineArray_16_w3otm9c String_7b7kt9c
+	public static InlineArray16_SByte String_7b7kt9c
 	{
 		get
 		{
@@ -449,7 +449,7 @@ public static partial class FPng
 
 	[MangledName("_CTA3?AVbad_array_new_length@std@@")]
 	[DemangledName("_CTA3?AVbad_array_new_length@std@@")]
-	public static eh_CatchableTypeArray_3 CTA3_AVbad_array_new_length_std
+	public static eh_CatchableTypeArray CTA3_AVbad_array_new_length_std
 	{
 		get
 		{
@@ -478,7 +478,7 @@ public static partial class FPng
 	[MangledName("??_C@_0BF@KINCDENJ@bad?5array?5new?5length?$AA@")]
 	[DemangledName("\"bad array new length\"")]
 	[CleanName("String")]
-	public static InlineArray_21_w3otm9c String_gudorqc
+	public static InlineArray21_SByte String_gudorqc
 	{
 		get
 		{
@@ -533,7 +533,7 @@ public static partial class FPng
 
 	[MangledName("??_R2bad_array_new_length@std@@8")]
 	[DemangledName("std::bad_array_new_length::`RTTI Base Class Array'")]
-	public static InlineArray_4_vqkfj7a R2bad_array_new_length
+	public static InlineArray4_Int32 R2bad_array_new_length
 	{
 		get
 		{
@@ -591,7 +591,7 @@ public static partial class FPng
 
 	[MangledName("??_R2bad_alloc@std@@8")]
 	[DemangledName("std::bad_alloc::`RTTI Base Class Array'")]
-	public static InlineArray_3_vqkfj7a R2bad_alloc
+	public static InlineArray3_Int32 R2bad_alloc
 	{
 		get
 		{
@@ -634,7 +634,7 @@ public static partial class FPng
 
 	[MangledName("??_R2exception@std@@8")]
 	[DemangledName("std::exception::`RTTI Base Class Array'")]
-	public static InlineArray_2_vqkfj7a R2exception
+	public static InlineArray2_Int32 R2exception
 	{
 		get
 		{
@@ -703,7 +703,7 @@ public static partial class FPng
 	[MangledName("??_C@_0BC@EOODALEL@Unknown?5exception?$AA@")]
 	[DemangledName("\"Unknown exception\"")]
 	[CleanName("String")]
-	public static InlineArray_18_w3otm9c String_ja3ma5d
+	public static InlineArray18_SByte String_ja3ma5d
 	{
 		get
 		{
@@ -717,7 +717,7 @@ public static partial class FPng
 
 	[MangledName("?g_defl_packed_code_size_syms_swizzle@fpng@@3PAEA")]
 	[DemangledName("unsigned char *fpng::g_defl_packed_code_size_syms_swizzle")]
-	public static InlineArray_19_w3otm9c g_defl_packed_code_size_syms_swizzle
+	public static InlineArray19_SByte g_defl_packed_code_size_syms_swizzle
 	{
 		get
 		{
@@ -732,7 +732,7 @@ public static partial class FPng
 	[MangledName("??_C@_1DO@PIFJFOL@?$AAc?$AAo?$AAd?$AAe?$AA?5?$AA?$DM?$AA?5?$AAD?$AAE?$AAF?$AAL?$AA_?$AAM?$AAA?$AAX?$AA_?$AAH?$AAU?$AAF?$AAF?$AA_?$AAS?$AAY?$AAM?$AAB?$AAO?$AAL?$AAS?$AA_?$AA2?$AA?$AA@")]
 	[DemangledName("L\"code < DEFL_MAX_HUFF_SYMBOLS_2\"")]
 	[CleanName("String")]
-	public static InlineArray_31_oeds4ea String_erkdsbd
+	public static InlineArray31_Int16 String_erkdsbd
 	{
 		get
 		{
@@ -747,7 +747,7 @@ public static partial class FPng
 	[MangledName("??_C@_03DJLFMAPG@?$AC?$AD?$AH?$AA@")]
 	[DemangledName("\"\\x02\\x03\\a\"")]
 	[CleanName("String")]
-	public static InlineArray_4_w3otm9c String_o9ulvgb
+	public static InlineArray4_SByte String_o9ulvgb
 	{
 		get
 		{
@@ -761,7 +761,7 @@ public static partial class FPng
 
 	[MangledName("?g_dyn_huff_3@fpng@@3QBEB")]
 	[DemangledName("unsigned char const *const fpng::g_dyn_huff_3")]
-	public static InlineArray_62_w3otm9c g_dyn_huff_3
+	public static InlineArray62_SByte g_dyn_huff_3
 	{
 		get
 		{
@@ -775,7 +775,7 @@ public static partial class FPng
 
 	[MangledName("?g_dyn_huff_3_codes@fpng@@3QBU<unnamed-type-g_dyn_huff_3_codes>@1@B")]
 	[DemangledName("struct fpng::<unnamed-type-g_dyn_huff_3_codes> const *const fpng::g_dyn_huff_3_codes")]
-	public static InlineArray_288_chfa5zb g_dyn_huff_3_codes
+	public static InlineArray288_anon_b9ijpuc g_dyn_huff_3_codes
 	{
 		get
 		{
@@ -789,7 +789,7 @@ public static partial class FPng
 
 	[MangledName("?g_dyn_huff_4@fpng@@3QBEB")]
 	[DemangledName("unsigned char const *const fpng::g_dyn_huff_4")]
-	public static InlineArray_61_w3otm9c g_dyn_huff_4
+	public static InlineArray61_SByte g_dyn_huff_4
 	{
 		get
 		{
@@ -803,7 +803,7 @@ public static partial class FPng
 
 	[MangledName("?g_dyn_huff_4_codes@fpng@@3QBU<unnamed-type-g_dyn_huff_4_codes>@1@B")]
 	[DemangledName("struct fpng::<unnamed-type-g_dyn_huff_4_codes> const *const fpng::g_dyn_huff_4_codes")]
-	public static InlineArray_288_mcnvamb g_dyn_huff_4_codes
+	public static InlineArray288_anon_atvx4gd g_dyn_huff_4_codes
 	{
 		get
 		{
@@ -817,7 +817,7 @@ public static partial class FPng
 
 	[MangledName("?s_png_sig@?1??fpng_get_info_internal@fpng@@YAHPEBXIAEAI1111@Z@4QBEB")]
 	[DemangledName("unsigned char const *const `int __cdecl fpng::fpng_get_info_internal(void const *, unsigned int, unsigned int &, unsigned int &, unsigned int &, unsigned int &, unsigned int &)'::`2'::s_png_sig")]
-	public static InlineArray_8_w3otm9c s_png_sig
+	public static InlineArray8_SByte s_png_sig
 	{
 		get
 		{
@@ -832,7 +832,7 @@ public static partial class FPng
 	[MangledName("??_C@_04NHMHICBH@IDAT?$AA@")]
 	[DemangledName("\"IDAT\"")]
 	[CleanName("String")]
-	public static InlineArray_5_w3otm9c String_qjc9xdd
+	public static InlineArray5_SByte String_qjc9xdd
 	{
 		get
 		{
@@ -847,7 +847,7 @@ public static partial class FPng
 	[MangledName("??_C@_04COOFLABO@IEND?$AA@")]
 	[DemangledName("\"IEND\"")]
 	[CleanName("String")]
-	public static InlineArray_5_w3otm9c String_p7olgfc
+	public static InlineArray5_SByte String_p7olgfc
 	{
 		get
 		{
@@ -862,7 +862,7 @@ public static partial class FPng
 	[MangledName("??_C@_04DGOOLJLG@fdEC?$AA@")]
 	[DemangledName("\"fdEC\"")]
 	[CleanName("String")]
-	public static InlineArray_5_w3otm9c String_22lii4a
+	public static InlineArray5_SByte String_22lii4a
 	{
 		get
 		{
@@ -877,7 +877,7 @@ public static partial class FPng
 	[MangledName("??_C@_1DE@LOJFIBNB@?$AAs?$AAr?$AAc?$AA_?$AAl?$AAe?$AAn?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA?$CI?$AAz?$AAl?$AAi?$AAb?$AA_?$AAl?$AAe?$AAn?$AA?5?$AA?$CL?$AA?5?$AA4?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"src_len >= (zlib_len + 4)\"")]
 	[CleanName("String")]
-	public static InlineArray_26_oeds4ea String_497patd
+	public static InlineArray26_Int16 String_497patd
 	{
 		get
 		{
@@ -892,7 +892,7 @@ public static partial class FPng
 	[MangledName("??_C@_1BO@DPMPJCNO@?$AAl?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAl?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA3?$AA2?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"l && (l <= 32)\"")]
 	[CleanName("String")]
-	public static InlineArray_15_oeds4ea String_aa3exrc
+	public static InlineArray15_Int16 String_aa3exrc
 	{
 		get
 		{
@@ -907,7 +907,7 @@ public static partial class FPng
 	[MangledName("??_C@_1FA@PEENLMBD@?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AAF?$AAP?$AAN?$AAG?$AA_?$AAD?$AAE?$AAC?$AAO?$AAD?$AAE?$AAR?$AA_?$AAT?$AAA?$AAB@")]
 	[DemangledName("L\"bit_buf_size >= FPNG_DECODER_TAB\"...")]
 	[CleanName("String")]
-	public static InlineArray_40_oeds4ea String_ktv524d
+	public static InlineArray40_Int16 String_ktv524d
 	{
 		get
 		{
@@ -922,7 +922,7 @@ public static partial class FPng
 	[MangledName("??_C@_1BA@ONNHMHEP@?$AAl?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA3?$AA2?$AA?$AA@")]
 	[DemangledName("L\"l <= 32\"")]
 	[CleanName("String")]
-	public static InlineArray_8_oeds4ea String_mf9hyza
+	public static InlineArray8_Int16 String_mf9hyza
 	{
 		get
 		{
@@ -936,7 +936,7 @@ public static partial class FPng
 
 	[MangledName("?s_length_range@fpng@@3QBHB")]
 	[DemangledName("int const *const fpng::s_length_range")]
-	public static InlineArray_31_vqkfj7a s_length_range
+	public static InlineArray31_Int32 s_length_range
 	{
 		get
 		{
@@ -950,7 +950,7 @@ public static partial class FPng
 
 	[MangledName("?s_length_extra@fpng@@3QBHB")]
 	[DemangledName("int const *const fpng::s_length_extra")]
-	public static InlineArray_31_vqkfj7a s_length_extra
+	public static InlineArray31_Int32 s_length_extra
 	{
 		get
 		{
@@ -965,7 +965,7 @@ public static partial class FPng
 	[MangledName("??_C@_1EM@LNFOKHHI@?$AAl?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAl?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA3?$AA2?$AA?$CJ?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5@")]
 	[DemangledName("L\"l && (l <= 32) && (bit_buf_size \"...")]
 	[CleanName("String")]
-	public static InlineArray_38_oeds4ea String_ftb25bb
+	public static InlineArray38_Int16 String_ftb25bb
 	{
 		get
 		{
@@ -980,7 +980,7 @@ public static partial class FPng
 	[MangledName("??_C@_1DO@GINGNLCO@?$AAl?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA3?$AA2?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AAl?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"l <= 32 && (bit_buf_size >= l)\"")]
 	[CleanName("String")]
-	public static InlineArray_31_oeds4ea String_bahgbqd
+	public static InlineArray31_Int16 String_bahgbqd
 	{
 		get
 		{
@@ -995,7 +995,7 @@ public static partial class FPng
 	[MangledName("??_C@_1CG@ELPAFFDG@?$AA?$CI?$AAr?$AAu?$AAn?$AA_?$AAl?$AAe?$AAn?$AA?5?$AA?$CF?$AA?5?$AA3?$AA?$CJ?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA0?$AA?$AA@")]
 	[DemangledName("L\"(run_len % 3) == 0\"")]
 	[CleanName("String")]
-	public static InlineArray_19_oeds4ea String_a5rp7bb
+	public static InlineArray19_Int16 String_a5rp7bb
 	{
 		get
 		{
@@ -1009,7 +1009,7 @@ public static partial class FPng
 
 	[MangledName("?g_run_len3_to_4@fpng@@3QBGB")]
 	[DemangledName("unsigned short const *const fpng::g_run_len3_to_4")]
-	public static InlineArray_259_oeds4ea g_run_len3_to_4
+	public static InlineArray259_Int16 g_run_len3_to_4
 	{
 		get
 		{
@@ -1024,7 +1024,7 @@ public static partial class FPng
 	[MangledName("??_C@_1EK@NPDOIFAN@?$AA?$CI?$AAs?$AAr?$AAc?$AA_?$AAc?$AAh?$AAa?$AAn?$AAs?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA3?$AA?$CJ?$AA?5?$AA?$HM?$AA?$HM?$AA?5?$AA?$CI?$AAs?$AAr?$AAc?$AA_?$AAc?$AAh?$AAa?$AAn?$AAs?$AA?5?$AA?$DN@")]
 	[DemangledName("L\"(src_chans == 3) || (src_chans =\"...")]
 	[CleanName("String")]
-	public static InlineArray_37_oeds4ea String_zixkhbc
+	public static InlineArray37_Int16 String_zixkhbc
 	{
 		get
 		{
@@ -1039,7 +1039,7 @@ public static partial class FPng
 	[MangledName("??_C@_1EK@BJMGPLPL@?$AA?$CI?$AAd?$AAs?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAs?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA3?$AA?$CJ?$AA?5?$AA?$HM?$AA?$HM?$AA?5?$AA?$CI?$AAd?$AAs?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAs?$AA?5?$AA?$DN@")]
 	[DemangledName("L\"(dst_chans == 3) || (dst_chans =\"...")]
 	[CleanName("String")]
-	public static InlineArray_37_oeds4ea String_kppxlqc
+	public static InlineArray37_Int16 String_kppxlqc
 	{
 		get
 		{
@@ -1054,7 +1054,7 @@ public static partial class FPng
 	[MangledName("??_C@_1BE@MMMJACNB@?$AA?$CB?$AAc?$AAo?$AAm?$AAp?$AA_?$AAo?$AAf?$AAs?$AA?$AA@")]
 	[DemangledName("L\"!comp_ofs\"")]
 	[CleanName("String")]
-	public static InlineArray_10_oeds4ea String_ji2h3xd
+	public static InlineArray10_Int16 String_ji2h3xd
 	{
 		get
 		{
@@ -1068,7 +1068,7 @@ public static partial class FPng
 
 	[MangledName("?s_bit_length_order@?1??prepare_dynamic_block@fpng@@YA_NPEBEIAEAI1AEA_KPEAII@Z@4QBEB")]
 	[DemangledName("unsigned char const *const `bool __cdecl fpng::prepare_dynamic_block(unsigned char const *, unsigned int, unsigned int &, unsigned int &, unsigned __int64 &, unsigned int *, unsigned int)'::`2'::s_bit_length_order")]
-	public static InlineArray_19_w3otm9c s_bit_length_order
+	public static InlineArray19_SByte s_bit_length_order
 	{
 		get
 		{
@@ -1083,7 +1083,7 @@ public static partial class FPng
 	[MangledName("??_C@_1EI@CMIKALPF@?$AAs?$AAy?$AAm?$AA_?$AAb?$AAi?$AAt?$AAs?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAF?$AAP?$AAN?$AAG?$AA_?$AAD?$AAE?$AAC?$AAO?$AAD?$AAE?$AAR?$AA_?$AAT?$AAA?$AAB?$AAL?$AAE?$AA_?$AAB@")]
 	[DemangledName("L\"sym_bits <= FPNG_DECODER_TABLE_B\"...")]
 	[CleanName("String")]
-	public static InlineArray_36_oeds4ea String_nlshwsc
+	public static InlineArray36_Int16 String_nlshwsc
 	{
 		get
 		{
@@ -1098,7 +1098,7 @@ public static partial class FPng
 	[MangledName("??_C@_1FE@PPLLBMKL@?$AAp?$AAC?$AAo?$AAd?$AAe?$AA_?$AAs?$AAi?$AAz?$AAe?$AAs?$AA?$FL?$AAi?$AA?$FN?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAF?$AAP?$AAN?$AAG?$AA_?$AAD?$AAE?$AAC?$AAO?$AAD?$AAE?$AAR?$AA_?$AAT@")]
 	[DemangledName("L\"pCode_sizes[i] <= FPNG_DECODER_T\"...")]
 	[CleanName("String")]
-	public static InlineArray_42_oeds4ea String_32otbnd
+	public static InlineArray42_Int16 String_32otbnd
 	{
 		get
 		{

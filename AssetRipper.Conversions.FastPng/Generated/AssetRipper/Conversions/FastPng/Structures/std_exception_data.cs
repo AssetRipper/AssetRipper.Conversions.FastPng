@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 16)]
 [MangledName("struct.__std_exception_data")]
+[DemangledName("__std_exception_data")]
 public partial struct std_exception_data
 {
 	[FieldOffset(0)]

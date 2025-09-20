@@ -69,8 +69,8 @@ internal static partial class pixel_deflate_dyn_3_rle_one_pass
 			{
 				num8 = num5 + num39;
 				num9 = (byte)((sbyte*)ptr)[(uint)num5++];
-				num10 = (ushort)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)num9].field_1;
-				num11 = (byte)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)num9].field_0;
+				num10 = (ushort)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)num9].field_1;
+				num11 = (byte)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)num9].field_0;
 				int num40;
 				if ((uint)num11 >= 1u && (uint)num11 <= 16u)
 				{
@@ -116,8 +116,8 @@ internal static partial class pixel_deflate_dyn_3_rle_one_pass
 					num42 = 0;
 				}
 				num13 = READ_RGB_PIXEL.Invoke((byte*)ptr + (uint)num5);
-				num14 = (ushort)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)(num13 & 0xFF)].field_1;
-				num15 = (byte)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)(num13 & 0xFF)].field_0;
+				num14 = (ushort)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)(num13 & 0xFF)].field_1;
+				num15 = (byte)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)(num13 & 0xFF)].field_0;
 				int num43;
 				if ((uint)num15 >= 1u && (uint)num15 <= 16u)
 				{
@@ -162,8 +162,8 @@ internal static partial class pixel_deflate_dyn_3_rle_one_pass
 					}
 					num45 = 0;
 				}
-				num16 = (ushort)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)((num13 >>> 8) & 0xFF)].field_1;
-				num17 = (byte)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)((num13 >>> 8) & 0xFF)].field_0;
+				num16 = (ushort)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)((num13 >>> 8) & 0xFF)].field_1;
+				num17 = (byte)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)((num13 >>> 8) & 0xFF)].field_0;
 				int num46;
 				if ((uint)num17 >= 1u && (uint)num17 <= 16u)
 				{
@@ -208,8 +208,8 @@ internal static partial class pixel_deflate_dyn_3_rle_one_pass
 					}
 					num48 = 0;
 				}
-				num18 = (ushort)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)(num13 >>> 16)].field_1;
-				num19 = (byte)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)(num13 >>> 16)].field_0;
+				num18 = (ushort)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)(num13 >>> 16)].field_1;
+				num19 = (byte)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)(num13 >>> 16)].field_0;
 				int num49;
 				if ((uint)num19 >= 1u && (uint)num19 <= 16u)
 				{
@@ -290,9 +290,9 @@ internal static partial class pixel_deflate_dyn_3_rle_one_pass
 						}
 						num24 = num22 - 3;
 						long num53 = (ushort)((short*)g_defl_len_sym.__pointer)[(uint)num24];
-						num25 = (ushort)((anon*)g_dyn_huff_3_codes.__pointer)[num53].field_1;
+						num25 = (ushort)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[num53].field_1;
 						long num54 = (ushort)((short*)g_defl_len_sym.__pointer)[(uint)num24];
-						num26 = (byte)((anon*)g_dyn_huff_3_codes.__pointer)[num54].field_0;
+						num26 = (byte)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[num54].field_0;
 						int num55;
 						if ((uint)num26 >= 1u && (uint)num26 <= 16u)
 						{
@@ -392,8 +392,8 @@ internal static partial class pixel_deflate_dyn_3_rle_one_pass
 					}
 					else
 					{
-						num29 = (ushort)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)(num21 & 0xFF)].field_1;
-						num30 = (byte)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)(num21 & 0xFF)].field_0;
+						num29 = (ushort)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)(num21 & 0xFF)].field_1;
+						num30 = (byte)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)(num21 & 0xFF)].field_0;
 						int num63;
 						if ((uint)num30 >= 1u && (uint)num30 <= 16u)
 						{
@@ -438,8 +438,8 @@ internal static partial class pixel_deflate_dyn_3_rle_one_pass
 							}
 							num65 = 0;
 						}
-						num31 = (ushort)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)((num21 >>> 8) & 0xFF)].field_1;
-						num32 = (byte)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)((num21 >>> 8) & 0xFF)].field_0;
+						num31 = (ushort)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)((num21 >>> 8) & 0xFF)].field_1;
+						num32 = (byte)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)((num21 >>> 8) & 0xFF)].field_0;
 						int num66;
 						if ((uint)num32 >= 1u && (uint)num32 <= 16u)
 						{
@@ -484,8 +484,8 @@ internal static partial class pixel_deflate_dyn_3_rle_one_pass
 							}
 							num68 = 0;
 						}
-						num33 = (ushort)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)(num21 >>> 16)].field_1;
-						num34 = (byte)((anon*)g_dyn_huff_3_codes.__pointer)[(uint)(num21 >>> 16)].field_0;
+						num33 = (ushort)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)(num21 >>> 16)].field_1;
+						num34 = (byte)((anon_b9ijpuc*)g_dyn_huff_3_codes.__pointer)[(uint)(num21 >>> 16)].field_0;
 						int num69;
 						if ((uint)num34 >= 1u && (uint)num34 <= 16u)
 						{

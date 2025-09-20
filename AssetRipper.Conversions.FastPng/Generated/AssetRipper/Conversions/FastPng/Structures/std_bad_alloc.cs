@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 24)]
 [MangledName("class.std::bad_alloc")]
+[DemangledName("std::bad_alloc")]
 public partial struct std_bad_alloc
 {
 	[FieldOffset(0)]

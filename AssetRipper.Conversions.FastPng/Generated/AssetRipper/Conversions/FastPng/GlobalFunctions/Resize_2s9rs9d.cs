@@ -18,9 +18,9 @@ internal static partial class Resize_2s9rs9d
 		void* al = Getal_kuj7nva.Invoke(@this);
 		unchecked
 		{
-			void* field_ = &((std_vector_5*)@this)->field_0.field_0;
-			void* field_2 = &((std_Vector_val_9*)field_)->field_0;
-			void* field_3 = &((std_Vector_val_9*)field_)->field_1;
+			void* field_ = &((std_vector_mvt3mha*)@this)->field_0.field_0;
+			void* field_2 = &((std_Vector_val_zgi5p7d*)field_)->field_0;
+			void* field_3 = &((std_Vector_val_zgi5p7d*)field_)->field_1;
 			long num2 = ((long)(nuint)(*(nint*)field_3) - (long)(nuint)(*(nint*)field_2)) / 8L;
 			if ((ulong)Newsize < (ulong)num2)
 			{
@@ -35,7 +35,7 @@ internal static partial class Resize_2s9rs9d
 				{
 					return;
 				}
-				if ((ulong)Newsize > (ulong)(((long)((std_Vector_val_9*)field_)->field_2 - (long)(nuint)(*(nint*)field_2)) / 8L))
+				if ((ulong)Newsize > (ulong)(((long)((std_Vector_val_zgi5p7d*)field_)->field_2 - (long)(nuint)(*(nint*)field_2)) / 8L))
 				{
 					Resize_reallocate_ytnsorc.Invoke(@this, Newsize, Val);
 					if (ExceptionInfo.Current == null)

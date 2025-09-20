@@ -13,8 +13,8 @@ internal static partial class capacity_f49yk4c
 	{
 		unchecked
 		{
-			void* field_ = &((std_vector_5*)@this)->field_0.field_0;
-			return ((long)((std_Vector_val_9*)field_)->field_2 - (long)((std_Vector_val_9*)field_)->field_0) / 8L;
+			void* field_ = &((std_vector_mvt3mha*)@this)->field_0.field_0;
+			return ((long)((std_Vector_val_zgi5p7d*)field_)->field_2 - (long)((std_Vector_val_zgi5p7d*)field_)->field_0) / 8L;
 		}
 	}
 }

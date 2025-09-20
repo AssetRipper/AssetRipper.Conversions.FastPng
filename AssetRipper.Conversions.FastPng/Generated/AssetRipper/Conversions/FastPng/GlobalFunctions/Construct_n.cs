@@ -27,7 +27,7 @@ internal static partial class Construct_n
 		Get_proxy_allocator_uag3hnc.Invoke(ptr);
 		unchecked
 		{
-			void* field_ = &((std_vector_0*)@this)->field_0.field_0;
+			void* field_ = &((std_vector_drook9b*)@this)->field_0.field_0;
 			Fake_proxy_ptr_impl_Constructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_1, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, field_);
 			if (Count != 0L)
 			{
@@ -37,7 +37,7 @@ internal static partial class Construct_n
 					return;
 				}
 				startFrame.GetLocalsPointer<LocalVariables>()->field_2.field_0 = @this;
-				void* field_2 = Uninitialized_value_construct_n_zg4iwva.Invoke(((std_Vector_val_4*)field_)->field_0, Count, ptr);
+				void* field_2 = Uninitialized_value_construct_n_zg4iwva.Invoke(((std_Vector_val_edx9ebc*)field_)->field_0, Count, ptr);
 				if (ExceptionInfo.Current != null)
 				{
 					ExceptionInfo? current = ExceptionInfo.Current;
@@ -46,7 +46,7 @@ internal static partial class Construct_n
 					ExceptionInfo.Current = current;
 					return;
 				}
-				((std_Vector_val_4*)field_)->field_1 = field_2;
+				((std_Vector_val_edx9ebc*)field_)->field_1 = field_2;
 				startFrame.GetLocalsPointer<LocalVariables>()->field_2.field_0 = null;
 				Tidy_guard_class_std_vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_2);
 			}

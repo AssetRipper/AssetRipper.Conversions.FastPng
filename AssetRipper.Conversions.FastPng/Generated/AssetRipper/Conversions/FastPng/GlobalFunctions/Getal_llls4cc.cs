@@ -11,6 +11,6 @@ internal static partial class Getal_llls4cc
 	[return: NativeType("class std::allocator<unsigned char> const &")]
 	public unsafe static void* Invoke(void* @this)
 	{
-		return Get_first_pnsruja.Invoke(&unchecked((std_vector*)@this)->field_0);
+		return Get_first_pnsruja.Invoke(&unchecked((std_vector_7uge3hb*)@this)->field_0);
 	}
 }

@@ -7,9 +7,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [DemangledName("std::exception::`RTTI Base Class Array'")]
 internal static partial class R2exception
 {
-	public unsafe static InlineArray_2_vqkfj7a* __pointer;
+	public unsafe static InlineArray2_Int32* __pointer;
 
-	public unsafe static InlineArray_2_vqkfj7a Value
+	public unsafe static InlineArray2_Int32 Value
 	{
 		get
 		{
@@ -23,8 +23,8 @@ internal static partial class R2exception
 
 	unsafe static R2exception()
 	{
-		__pointer = unchecked((InlineArray_2_vqkfj7a*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_2_vqkfj7a))));
-		Value = new InlineArrayBuilder<InlineArray_2_vqkfj7a, int>
+		__pointer = unchecked((InlineArray2_Int32*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray2_Int32))));
+		Value = new InlineArrayBuilder<InlineArray2_Int32, int>
 		{
 			PointerIndices.GetIndex(R1A_bbqer2a.__pointer),
 			0

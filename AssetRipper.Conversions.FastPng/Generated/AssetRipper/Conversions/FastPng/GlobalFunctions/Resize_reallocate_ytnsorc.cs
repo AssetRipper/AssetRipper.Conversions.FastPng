@@ -37,9 +37,9 @@ internal static partial class Resize_reallocate_ytnsorc
 				throw null;
 			}
 			ptr = Getal_kuj7nva.Invoke(@this);
-			ptr2 = &((std_vector_5*)@this)->field_0.field_0;
-			ptr3 = &((std_Vector_val_9*)ptr2)->field_0;
-			ptr4 = &((std_Vector_val_9*)ptr2)->field_1;
+			ptr2 = &((std_vector_mvt3mha*)@this)->field_0.field_0;
+			ptr3 = &((std_Vector_val_zgi5p7d*)ptr2)->field_0;
+			ptr4 = &((std_Vector_val_zgi5p7d*)ptr2)->field_1;
 			num = ((long)(nuint)(*(nint*)ptr4) - (long)(nuint)(*(nint*)ptr3)) / 8L;
 			long field_ = Calculate_growth_vbhwmec.Invoke(@this, Newsize);
 			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_;

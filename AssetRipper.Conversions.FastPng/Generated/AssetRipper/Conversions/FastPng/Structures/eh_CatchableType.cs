@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 28)]
 [MangledName("eh.CatchableType")]
+[DemangledName("eh.CatchableType")]
 public partial struct eh_CatchableType
 {
 	[FieldOffset(0)]

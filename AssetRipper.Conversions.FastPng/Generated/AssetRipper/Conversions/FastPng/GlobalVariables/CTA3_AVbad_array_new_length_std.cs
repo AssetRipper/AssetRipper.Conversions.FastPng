@@ -8,9 +8,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [DemangledName("_CTA3?AVbad_array_new_length@std@@")]
 internal static partial class CTA3_AVbad_array_new_length_std
 {
-	public unsafe static eh_CatchableTypeArray_3* __pointer;
+	public unsafe static eh_CatchableTypeArray* __pointer;
 
-	public unsafe static eh_CatchableTypeArray_3 Value
+	public unsafe static eh_CatchableTypeArray Value
 	{
 		get
 		{
@@ -24,11 +24,11 @@ internal static partial class CTA3_AVbad_array_new_length_std
 
 	unsafe static CTA3_AVbad_array_new_length_std()
 	{
-		__pointer = unchecked((eh_CatchableTypeArray_3*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(eh_CatchableTypeArray_3))));
-		Value = new eh_CatchableTypeArray_3
+		__pointer = unchecked((eh_CatchableTypeArray*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(eh_CatchableTypeArray))));
+		Value = new eh_CatchableTypeArray
 		{
 			field_0 = 3,
-			field_1 = new InlineArrayBuilder<InlineArray_3_vqkfj7a, int>
+			field_1 = new InlineArrayBuilder<InlineArray3_Int32, int>
 			{
 				PointerIndices.GetIndex(CT_R0_AVbad_array_new_length_std_8_0bad_array_new_length_std_QEAA_AEBV01_Z24.__pointer),
 				PointerIndices.GetIndex(CT_R0_AVbad_alloc_std_8_0bad_alloc_std_QEAA_AEBV01_Z24.__pointer),

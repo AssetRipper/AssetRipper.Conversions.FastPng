@@ -18,11 +18,11 @@ internal static partial class pixel_deflate_dyn_3_rle
 
 		public int field_2;
 
-		public std_vector_0 field_3;
+		public std_vector_drook9b field_3;
 
-		public std_allocator_2 field_4;
+		public std_allocator field_4;
 
-		public InlineArray_288_vqkfj7a field_5;
+		public InlineArray288_Int32 field_5;
 
 		public fpng_defl_huff field_6;
 	}
@@ -41,10 +41,10 @@ internal static partial class pixel_deflate_dyn_3_rle
 		int num5 = 0;
 		int num6 = 0;
 		int num7 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(std_vector_0);
-		startFrame.GetLocalsPointer<LocalVariables>()->field_4 = default(std_allocator_2);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(std_vector_drook9b);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_4 = default(std_allocator);
 		void* ptr = null;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_5 = default(InlineArray_288_vqkfj7a);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_5 = default(InlineArray288_Int32);
 		void* ptr2 = null;
 		int num8 = 0;
 		int num9 = 0;
@@ -366,9 +366,9 @@ internal static partial class pixel_deflate_dyn_3_rle
 					{
 						break;
 					}
-					llvm_memset_p0_i64.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray_288_oeds4ea), 0, 64L, isVolatile: false);
-					((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray_288_oeds4ea)))[2] = 1;
-					((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray_288_oeds4ea)))[3] = 1;
+					llvm_memset_p0_i64.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray288_Int16), 0, 64L, isVolatile: false);
+					((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray288_Int16)))[2] = 1;
+					((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_0) + sizeof(InlineArray288_Int16)))[3] = 1;
 					bool flag = defl_start_dynamic_block.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_6, pDst, &startFrame.GetLocalsPointer<LocalVariables>()->field_2, dst_buf_size, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, &startFrame.GetLocalsPointer<LocalVariables>()->field_1);
 					if (ExceptionInfo.Current != null)
 					{
@@ -396,7 +396,7 @@ internal static partial class pixel_deflate_dyn_3_rle
 							num70 = 0;
 						}
 						int num71;
-						if ((ushort)((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1) + sizeof(InlineArray_288_oeds4ea)))[2] == 0 && ((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2) + sizeof(InlineArray_288_w3otm9c))[2] == 1)
+						if ((ushort)((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_1) + sizeof(InlineArray288_Int16)))[2] == 0 && ((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_6.field_2) + sizeof(InlineArray288_SByte))[2] == 1)
 						{
 							num71 = -1;
 						}

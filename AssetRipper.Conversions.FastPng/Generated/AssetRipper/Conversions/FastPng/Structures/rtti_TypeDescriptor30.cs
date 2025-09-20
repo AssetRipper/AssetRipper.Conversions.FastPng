@@ -6,6 +6,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 48)]
 [MangledName("rtti.TypeDescriptor30")]
+[DemangledName("rtti.TypeDescriptor30")]
 public partial struct rtti_TypeDescriptor30
 {
 	[FieldOffset(0)]
@@ -15,5 +16,5 @@ public partial struct rtti_TypeDescriptor30
 	public unsafe void* field_1;
 
 	[FieldOffset(16)]
-	public InlineArray_31_w3otm9c field_2;
+	public InlineArray31_SByte field_2;
 }

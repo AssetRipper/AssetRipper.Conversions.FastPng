@@ -8,9 +8,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_ja3ma5d
 {
-	public unsafe static InlineArray_18_w3otm9c* __pointer;
+	public unsafe static InlineArray18_SByte* __pointer;
 
-	public unsafe static InlineArray_18_w3otm9c Value
+	public unsafe static InlineArray18_SByte Value
 	{
 		get
 		{
@@ -24,7 +24,7 @@ internal static partial class String_ja3ma5d
 
 	unsafe static String_ja3ma5d()
 	{
-		__pointer = unchecked((InlineArray_18_w3otm9c*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_18_w3otm9c))));
-		Value = InlineArrayHelper.Create<InlineArray_18_w3otm9c, byte>("Unknown exception\0"u8);
+		__pointer = unchecked((InlineArray18_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray18_SByte))));
+		Value = InlineArrayHelper.Create<InlineArray18_SByte, byte>("Unknown exception\0"u8);
 	}
 }

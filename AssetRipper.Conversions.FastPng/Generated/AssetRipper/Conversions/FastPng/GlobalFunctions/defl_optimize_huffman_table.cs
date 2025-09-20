@@ -16,22 +16,22 @@ internal static partial class defl_optimize_huffman_table
 		int num = 0;
 		int num2 = 0;
 		int num3 = 0;
-		InlineArray_33_vqkfj7a inlineArray_33_vqkfj7a = default(InlineArray_33_vqkfj7a);
-		InlineArray_33_vqkfj7a inlineArray_33_vqkfj7a2 = default(InlineArray_33_vqkfj7a);
-		InlineArray_288_27j5lac inlineArray_288_27j5lac = default(InlineArray_288_27j5lac);
-		InlineArray_288_27j5lac inlineArray_288_27j5lac2 = default(InlineArray_288_27j5lac);
+		InlineArray33_Int32 inlineArray33_Int = default(InlineArray33_Int32);
+		InlineArray33_Int32 inlineArray33_Int2 = default(InlineArray33_Int32);
+		InlineArray288_fpng_defl_sym_freq inlineArray288_fpng_defl_sym_freq = default(InlineArray288_fpng_defl_sym_freq);
+		InlineArray288_fpng_defl_sym_freq inlineArray288_fpng_defl_sym_freq2 = default(InlineArray288_fpng_defl_sym_freq);
 		void* ptr = null;
 		int num4 = 0;
 		void* ptr2 = null;
 		int num5 = 0;
 		int num6 = 0;
 		int num7 = 0;
-		llvm_memset_p0_i64.Invoke(&inlineArray_33_vqkfj7a, 0, 132L, isVolatile: false);
+		llvm_memset_p0_i64.Invoke(&inlineArray33_Int, 0, 132L, isVolatile: false);
 		if (static_table != 0)
 		{
 			for (num = 0; num < table_len; num++)
 			{
-				(*unchecked((int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray_33_vqkfj7a, (nint)((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)table_num * (nint)sizeof(InlineArray_288_w3otm9c))[num] * (nint)4))))++;
+				(*unchecked((int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray33_Int, (nint)((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)table_num * (nint)sizeof(InlineArray288_SByte))[num] * (nint)4))))++;
 			}
 		}
 		else
@@ -39,36 +39,36 @@ internal static partial class defl_optimize_huffman_table
 			num4 = 0;
 			unchecked
 			{
-				ptr2 = (byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)table_num * (nint)sizeof(InlineArray_288_oeds4ea);
+				ptr2 = (byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)table_num * (nint)sizeof(InlineArray288_Int16);
 				for (num = 0; num < table_len; num = checked(num + 1))
 				{
 					if (((short*)ptr2)[num] != 0)
 					{
 						short field_ = ((short*)ptr2)[num];
-						Unsafe.As<InlineArray_288_27j5lac, fpng_defl_sym_freq>(ref Unsafe.AddByteOffset(ref inlineArray_288_27j5lac, (nint)num4 * (nint)sizeof(fpng_defl_sym_freq))).field_0 = field_;
-						Unsafe.As<InlineArray_288_27j5lac, fpng_defl_sym_freq>(ref Unsafe.AddByteOffset(ref inlineArray_288_27j5lac, (nint)checked(num4++) * (nint)sizeof(fpng_defl_sym_freq))).field_1 = (short)num;
+						Unsafe.As<InlineArray288_fpng_defl_sym_freq, fpng_defl_sym_freq>(ref Unsafe.AddByteOffset(ref inlineArray288_fpng_defl_sym_freq, (nint)num4 * (nint)sizeof(fpng_defl_sym_freq))).field_0 = field_;
+						Unsafe.As<InlineArray288_fpng_defl_sym_freq, fpng_defl_sym_freq>(ref Unsafe.AddByteOffset(ref inlineArray288_fpng_defl_sym_freq, (nint)checked(num4++) * (nint)sizeof(fpng_defl_sym_freq))).field_1 = (short)num;
 					}
 				}
-				ptr = defl_radix_sort_syms.Invoke(num4, &inlineArray_288_27j5lac, &inlineArray_288_27j5lac2);
+				ptr = defl_radix_sort_syms.Invoke(num4, &inlineArray288_fpng_defl_sym_freq, &inlineArray288_fpng_defl_sym_freq2);
 				defl_calculate_minimum_redundancy.Invoke(ptr, num4);
 			}
 			for (num = 0; num < num4; num++)
 			{
-				(*unchecked((int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray_33_vqkfj7a, (nint)(ushort)((fpng_defl_sym_freq*)ptr)[num].field_0 * (nint)4))))++;
+				(*unchecked((int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray33_Int, (nint)(ushort)((fpng_defl_sym_freq*)ptr)[num].field_0 * (nint)4))))++;
 			}
-			defl_huffman_enforce_max_code_size.Invoke(&inlineArray_33_vqkfj7a, num4, code_size_limit);
+			defl_huffman_enforce_max_code_size.Invoke(&inlineArray33_Int, num4, code_size_limit);
 			unchecked
 			{
-				llvm_memset_p0_i64.Invoke((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)table_num * (nint)sizeof(InlineArray_288_w3otm9c), 0, 288L, isVolatile: false);
-				llvm_memset_p0_i64.Invoke((byte*)(&((fpng_defl_huff*)d)->field_1) + (nint)table_num * (nint)sizeof(InlineArray_288_oeds4ea), 0, 576L, isVolatile: false);
+				llvm_memset_p0_i64.Invoke((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)table_num * (nint)sizeof(InlineArray288_SByte), 0, 288L, isVolatile: false);
+				llvm_memset_p0_i64.Invoke((byte*)(&((fpng_defl_huff*)d)->field_1) + (nint)table_num * (nint)sizeof(InlineArray288_Int16), 0, 576L, isVolatile: false);
 				num = 1;
 				num2 = num4;
 				for (; num <= code_size_limit; num = checked(num + 1))
 				{
-					for (num3 = Unsafe.As<InlineArray_33_vqkfj7a, int>(ref Unsafe.AddByteOffset(ref inlineArray_33_vqkfj7a, (nint)num * (nint)4)); num3 > 0; num3 = checked(num3 + -1))
+					for (num3 = Unsafe.As<InlineArray33_Int32, int>(ref Unsafe.AddByteOffset(ref inlineArray33_Int, (nint)num * (nint)4)); num3 > 0; num3 = checked(num3 + -1))
 					{
 						sbyte b = (sbyte)num;
-						byte* num8 = (byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)table_num * (nint)sizeof(InlineArray_288_w3otm9c);
+						byte* num8 = (byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)table_num * (nint)sizeof(InlineArray288_SByte);
 						void* num9 = ptr;
 						int num10 = checked(num2 + -1);
 						num2 = num10;
@@ -77,22 +77,22 @@ internal static partial class defl_optimize_huffman_table
 				}
 			}
 		}
-		Unsafe.As<InlineArray_33_vqkfj7a, int>(ref Unsafe.AddByteOffset(ref inlineArray_33_vqkfj7a2, 4)) = 0;
+		Unsafe.As<InlineArray33_Int32, int>(ref Unsafe.AddByteOffset(ref inlineArray33_Int2, 4)) = 0;
 		num2 = 0;
 		for (num = 2; num <= code_size_limit; num++)
 		{
-			num2 = (Unsafe.As<InlineArray_33_vqkfj7a, int>(ref Unsafe.AddByteOffset(ref inlineArray_33_vqkfj7a2, unchecked((nint)num * (nint)4))) = num2 + Unsafe.As<InlineArray_33_vqkfj7a, int>(ref Unsafe.AddByteOffset(ref inlineArray_33_vqkfj7a, unchecked((nint)checked(num - 1) * (nint)4))) << 1);
+			num2 = (Unsafe.As<InlineArray33_Int32, int>(ref Unsafe.AddByteOffset(ref inlineArray33_Int2, unchecked((nint)num * (nint)4))) = num2 + Unsafe.As<InlineArray33_Int32, int>(ref Unsafe.AddByteOffset(ref inlineArray33_Int, unchecked((nint)checked(num - 1) * (nint)4))) << 1);
 		}
 		for (num = 0; num < table_len; num++)
 		{
 			num5 = 0;
 			unchecked
 			{
-				int num11 = ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)table_num * (nint)sizeof(InlineArray_288_w3otm9c))[num];
+				int num11 = ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)table_num * (nint)sizeof(InlineArray288_SByte))[num];
 				num7 = num11;
 				if (num11 != 0)
 				{
-					num6 = (*(int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray_33_vqkfj7a2, (nint)(uint)num7 * (nint)4)))++;
+					num6 = (*(int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray33_Int2, (nint)(uint)num7 * (nint)4)))++;
 					num3 = num7;
 					while (num3 > 0)
 					{
@@ -100,7 +100,7 @@ internal static partial class defl_optimize_huffman_table
 						num3 = checked(num3 + -1);
 						num6 >>>= 1;
 					}
-					((short*)((byte*)(&((fpng_defl_huff*)d)->field_1) + (nint)table_num * (nint)sizeof(InlineArray_288_oeds4ea)))[num] = (short)num5;
+					((short*)((byte*)(&((fpng_defl_huff*)d)->field_1) + (nint)table_num * (nint)sizeof(InlineArray288_Int16)))[num] = (short)num5;
 				}
 			}
 		}

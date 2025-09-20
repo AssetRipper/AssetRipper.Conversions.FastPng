@@ -10,6 +10,6 @@ internal static partial class vector_unsigned_int_class_std_allocator_unsigned_i
 	[return: NativeType("unsigned int &")]
 	public unsafe static void* Invoke(void* @this, [MangledName("_Pos")][NativeType("unsigned __int64")] long Pos)
 	{
-		return unchecked((byte*)((std_vector_0*)@this)->field_0.field_0.field_0 + (nint)Pos * 4);
+		return unchecked((byte*)((std_vector_drook9b*)@this)->field_0.field_0.field_0 + (nint)Pos * 4);
 	}
 }

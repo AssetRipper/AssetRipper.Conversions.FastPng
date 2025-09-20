@@ -7,5 +7,5 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct Struct
 {
 	[FieldOffset(0)]
-	public InlineArray_3_gbfuvwd field_0;
+	public InlineArray3_IntPtr field_0;
 }

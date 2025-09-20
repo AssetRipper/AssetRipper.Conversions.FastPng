@@ -7,9 +7,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [DemangledName("std::bad_alloc::`RTTI Base Class Array'")]
 internal static partial class R2bad_alloc
 {
-	public unsafe static InlineArray_3_vqkfj7a* __pointer;
+	public unsafe static InlineArray3_Int32* __pointer;
 
-	public unsafe static InlineArray_3_vqkfj7a Value
+	public unsafe static InlineArray3_Int32 Value
 	{
 		get
 		{
@@ -23,8 +23,8 @@ internal static partial class R2bad_alloc
 
 	unsafe static R2bad_alloc()
 	{
-		__pointer = unchecked((InlineArray_3_vqkfj7a*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_3_vqkfj7a))));
-		Value = new InlineArrayBuilder<InlineArray_3_vqkfj7a, int>
+		__pointer = unchecked((InlineArray3_Int32*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray3_Int32))));
+		Value = new InlineArrayBuilder<InlineArray3_Int32, int>
 		{
 			PointerIndices.GetIndex(R1A_vzsilob.__pointer),
 			PointerIndices.GetIndex(R1A_bbqer2a.__pointer),

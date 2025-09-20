@@ -18,7 +18,7 @@ internal static partial class fpng_pixel_zlib_decompress_3_prmnnjb
 
 		public int field_2;
 
-		public InlineArray_4096_vqkfj7a field_3;
+		public InlineArray4096_Int32 field_3;
 	}
 
 	[return: NativeType("bool")]
@@ -34,7 +34,7 @@ internal static partial class fpng_pixel_zlib_decompress_3_prmnnjb
 		int num3 = 0;
 		int num4 = 0;
 		int num5 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(InlineArray_4096_vqkfj7a);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(InlineArray4096_Int32);
 		void* ptr = null;
 		void* ptr2 = null;
 		int num6 = 0;

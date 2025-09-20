@@ -11,13 +11,13 @@ internal static partial class prepare_dynamic_block
 {
 	private partial struct LocalVariables
 	{
-		public InlineArray_320_w3otm9c field_0;
+		public InlineArray320_SByte field_0;
 
-		public InlineArray_19_w3otm9c field_1;
+		public InlineArray19_SByte field_1;
 
-		public InlineArray_4096_vqkfj7a field_2;
+		public InlineArray4096_Int32 field_2;
 
-		public InlineArray_288_w3otm9c field_3;
+		public InlineArray288_SByte field_3;
 	}
 
 	[return: NativeType("bool")]
@@ -31,13 +31,13 @@ internal static partial class prepare_dynamic_block
 		int num4 = 0;
 		int num5 = 0;
 		int num6 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray_320_w3otm9c);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray320_SByte);
 		int num7 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray_19_w3otm9c);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray19_SByte);
 		int num8 = 0;
 		int num9 = 0;
 		int num10 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_2 = default(InlineArray_4096_vqkfj7a);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_2 = default(InlineArray4096_Int32);
 		int num11 = 0;
 		int num12 = 0;
 		int num13 = 0;
@@ -48,7 +48,7 @@ internal static partial class prepare_dynamic_block
 		int num18 = 0;
 		int num19 = 0;
 		int num20 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(InlineArray_288_w3otm9c);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(InlineArray288_SByte);
 		int num21 = 0;
 		int num22 = 0;
 		int num23 = 0;

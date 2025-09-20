@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 24)]
 [MangledName("rtti.CompleteObjectLocator")]
+[DemangledName("rtti.CompleteObjectLocator")]
 public partial struct rtti_CompleteObjectLocator
 {
 	[FieldOffset(0)]

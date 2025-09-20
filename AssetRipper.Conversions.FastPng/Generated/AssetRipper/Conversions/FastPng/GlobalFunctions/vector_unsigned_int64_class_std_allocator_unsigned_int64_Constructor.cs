@@ -13,8 +13,8 @@ internal static partial class vector_unsigned_int64_class_std_allocator_unsigned
 		std_Fake_allocator std_Fake_allocator = default(std_Fake_allocator);
 		unchecked
 		{
-			Compressed_pair_class_std_allocator_unsigned_int64_class_std_Vector_val_struct_std_Simple_types_unsigned_int64_1_Constructor.Invoke(&((std_vector_5*)@this)->field_0, std_Zero_then_variadic_args_t.field_0);
-			std_Vector_val_9* field_ = &((std_vector_5*)@this)->field_0.field_0;
+			Compressed_pair_class_std_allocator_unsigned_int64_class_std_Vector_val_struct_std_Simple_types_unsigned_int64_1_Constructor.Invoke(&((std_vector_mvt3mha*)@this)->field_0, std_Zero_then_variadic_args_t.field_0);
+			std_Vector_val_zgi5p7d* field_ = &((std_vector_mvt3mha*)@this)->field_0.field_0;
 			Get_proxy_allocator_9e3ilvb.Invoke(Getal_kuj7nva.Invoke(@this));
 			Alloc_proxy.Invoke(field_, &std_Fake_allocator);
 			return @this;

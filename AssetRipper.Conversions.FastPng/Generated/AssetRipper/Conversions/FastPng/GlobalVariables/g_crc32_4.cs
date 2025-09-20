@@ -7,9 +7,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [DemangledName("unsigned int const (*const fpng::g_crc32_4)[256]")]
 internal static partial class g_crc32_4
 {
-	public unsafe static InlineArray_4_vjlif9a* __pointer;
+	public unsafe static InlineArray4_InlineArray256_Int32* __pointer;
 
-	public unsafe static InlineArray_4_vjlif9a Value
+	public unsafe static InlineArray4_InlineArray256_Int32 Value
 	{
 		get
 		{
@@ -23,10 +23,10 @@ internal static partial class g_crc32_4
 
 	unsafe static g_crc32_4()
 	{
-		__pointer = unchecked((InlineArray_4_vjlif9a*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_4_vjlif9a))));
-		Value = new InlineArrayBuilder<InlineArray_4_vjlif9a, InlineArray_256_vqkfj7a>
+		__pointer = unchecked((InlineArray4_InlineArray256_Int32*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray4_InlineArray256_Int32))));
+		Value = new InlineArrayBuilder<InlineArray4_InlineArray256_Int32, InlineArray256_Int32>
 		{
-			InlineArrayHelper.Create<InlineArray_256_vqkfj7a, int>(new int[256]
+			InlineArrayHelper.Create<InlineArray256_Int32, int>(new int[256]
 			{
 				0, 1996959894, -301047508, -1727442502, 124634137, 1886057615, -379345611, -1637575261, 249268274, 2044508324,
 				-522852066, -1747789432, 162941995, 2125561021, -407360249, -1866523247, 498536548, 1789927666, -205950648, -2067906082,
@@ -55,7 +55,7 @@ internal static partial class g_crc32_4
 				-1111625188, -893730166, 1404277552, 615818150, -1160759803, -841546093, 1423857449, 601450431, -1285129682, -1000256840,
 				1567103746, 711928724, -1274298825, -1022587231, 1510334235, 755167117
 			}),
-			InlineArrayHelper.Create<InlineArray_256_vqkfj7a, int>(new int[256]
+			InlineArrayHelper.Create<InlineArray256_Int32, int>(new int[256]
 			{
 				0, 421212481, 842424962, 724390851, 1684849924, 2105013317, 1448781702, 1329698503, -925267448, -775767223,
 				-84940662, -470492725, -1397403892, -1246855603, -1635570290, -2020074289, 1254232657, 1406739216, 2029285587, 1643069842,
@@ -84,7 +84,7 @@ internal static partial class g_crc32_4
 				347922877, 229101820, 646611775, 1066513022, 1892689081, 1774917112, 1122387515, 1543337850, -597333067, -981574924,
 				-296548041, -146261898, -1207325007, -1592614928, -1975530445, -1826292366
 			}),
-			InlineArrayHelper.Create<InlineArray_256_vqkfj7a, int>(new int[256]
+			InlineArrayHelper.Create<InlineArray256_Int32, int>(new int[256]
 			{
 				0, 29518391, 59036782, 38190681, 118073564, 114017003, 76381362, 89069189, 236147128, 265370511,
 				228034006, 206958561, 152762724, 148411219, 178138378, 190596925, 472294256, 501532999, 530741022, 509615401,
@@ -113,7 +113,7 @@ internal static partial class g_crc32_4
 				-1245416496, -1274668569, -1237276738, -1216164471, -1295131892, -1290817221, -1320611998, -1333041835, -1143528856, -1173010337,
 				-1202457082, -1181639631, -1126266188, -1122180989, -1084596518, -1097321235
 			}),
-			InlineArrayHelper.Create<InlineArray_256_vqkfj7a, int>(new int[256]
+			InlineArrayHelper.Create<InlineArray256_Int32, int>(new int[256]
 			{
 				0, -1195612315, -1442199413, 313896942, -1889364137, 937357362, 627793884, -1646839623, -978048785, 2097696650,
 				1874714724, -687765759, 1255587768, -227878691, -522225869, 1482887254, 1343838111, -391827206, -99573996, 1118632049,

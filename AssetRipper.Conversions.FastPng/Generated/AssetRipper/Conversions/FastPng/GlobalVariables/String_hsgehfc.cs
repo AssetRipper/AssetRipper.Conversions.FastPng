@@ -8,9 +8,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_hsgehfc
 {
-	public unsafe static InlineArray_28_oeds4ea* __pointer;
+	public unsafe static InlineArray28_Int16* __pointer;
 
-	public unsafe static InlineArray_28_oeds4ea Value
+	public unsafe static InlineArray28_Int16 Value
 	{
 		get
 		{
@@ -24,7 +24,7 @@ internal static partial class String_hsgehfc
 
 	unsafe static String_hsgehfc()
 	{
-		__pointer = unchecked((InlineArray_28_oeds4ea*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_28_oeds4ea))));
-		Value = InlineArrayHelper.Create<InlineArray_28_oeds4ea, char>("total_codes <= codes.size()\0".ToCharacterSpan());
+		__pointer = unchecked((InlineArray28_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray28_Int16))));
+		Value = InlineArrayHelper.Create<InlineArray28_Int16, char>("total_codes <= codes.size()\0".ToCharacterSpan());
 	}
 }

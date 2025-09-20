@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 28)]
 [MangledName("rtti.BaseClassDescriptor")]
+[DemangledName("rtti.BaseClassDescriptor")]
 public partial struct rtti_BaseClassDescriptor
 {
 	[FieldOffset(0)]

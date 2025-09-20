@@ -8,9 +8,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_ktv524d
 {
-	public unsafe static InlineArray_40_oeds4ea* __pointer;
+	public unsafe static InlineArray40_Int16* __pointer;
 
-	public unsafe static InlineArray_40_oeds4ea Value
+	public unsafe static InlineArray40_Int16 Value
 	{
 		get
 		{
@@ -24,7 +24,7 @@ internal static partial class String_ktv524d
 
 	unsafe static String_ktv524d()
 	{
-		__pointer = unchecked((InlineArray_40_oeds4ea*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_40_oeds4ea))));
-		Value = InlineArrayHelper.Create<InlineArray_40_oeds4ea, char>("bit_buf_size >= FPNG_DECODER_TABLE_BITS\0".ToCharacterSpan());
+		__pointer = unchecked((InlineArray40_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray40_Int16))));
+		Value = InlineArrayHelper.Create<InlineArray40_Int16, char>("bit_buf_size >= FPNG_DECODER_TABLE_BITS\0".ToCharacterSpan());
 	}
 }

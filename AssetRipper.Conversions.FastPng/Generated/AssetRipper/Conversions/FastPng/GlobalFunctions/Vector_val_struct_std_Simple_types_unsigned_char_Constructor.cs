@@ -11,9 +11,9 @@ internal static partial class Vector_val_struct_std_Simple_types_unsigned_char_C
 	{
 		unchecked
 		{
-			((std_Vector_val*)@this)->field_0 = null;
-			((std_Vector_val*)@this)->field_1 = null;
-			((std_Vector_val*)@this)->field_2 = null;
+			((std_Vector_val_p59sy9d*)@this)->field_0 = null;
+			((std_Vector_val_p59sy9d*)@this)->field_1 = null;
+			((std_Vector_val_p59sy9d*)@this)->field_2 = null;
 			return @this;
 		}
 	}

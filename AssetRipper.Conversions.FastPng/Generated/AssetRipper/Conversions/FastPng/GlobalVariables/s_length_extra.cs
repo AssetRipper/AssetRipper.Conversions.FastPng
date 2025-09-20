@@ -7,9 +7,9 @@ namespace AssetRipper.Conversions.FastPng.GlobalVariables;
 [DemangledName("int const *const fpng::s_length_extra")]
 internal static partial class s_length_extra
 {
-	public unsafe static InlineArray_31_vqkfj7a* __pointer;
+	public unsafe static InlineArray31_Int32* __pointer;
 
-	public unsafe static InlineArray_31_vqkfj7a Value
+	public unsafe static InlineArray31_Int32 Value
 	{
 		get
 		{
@@ -23,8 +23,8 @@ internal static partial class s_length_extra
 
 	unsafe static s_length_extra()
 	{
-		__pointer = unchecked((InlineArray_31_vqkfj7a*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray_31_vqkfj7a))));
-		Value = InlineArrayHelper.Create<InlineArray_31_vqkfj7a, int>(new int[31]
+		__pointer = unchecked((InlineArray31_Int32*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray31_Int32))));
+		Value = InlineArrayHelper.Create<InlineArray31_Int32, int>(new int[31]
 		{
 			0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
 			1, 1, 2, 2, 2, 2, 3, 3, 3, 3,

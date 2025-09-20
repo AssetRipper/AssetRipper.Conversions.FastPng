@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 1)]
 [MangledName("struct.std::_Value_init_tag")]
+[DemangledName("std::_Value_init_tag")]
 public partial struct std_Value_init_tag
 {
 	[FieldOffset(0)]

@@ -12,7 +12,7 @@ internal static partial class fpng_get_info_internal
 {
 	private partial struct LocalVariables
 	{
-		public InlineArray_5_w3otm9c field_0;
+		public InlineArray5_SByte field_0;
 	}
 
 	[return: NativeType("int")]
@@ -33,7 +33,7 @@ internal static partial class fpng_get_info_internal
 		sbyte b3 = 0;
 		sbyte b4 = 0;
 		int num7 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray_5_w3otm9c);
+		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray5_SByte);
 		sbyte b5 = 0;
 		int num8 = 0;
 		void* ptr4 = null;

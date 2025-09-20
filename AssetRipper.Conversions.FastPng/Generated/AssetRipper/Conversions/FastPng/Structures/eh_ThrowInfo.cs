@@ -5,6 +5,7 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 
 [StructLayout(LayoutKind.Explicit, Size = 16)]
 [MangledName("eh.ThrowInfo")]
+[DemangledName("eh.ThrowInfo")]
 public partial struct eh_ThrowInfo
 {
 	[FieldOffset(0)]

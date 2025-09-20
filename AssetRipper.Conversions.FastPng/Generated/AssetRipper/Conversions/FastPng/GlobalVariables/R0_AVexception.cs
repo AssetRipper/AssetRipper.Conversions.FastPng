@@ -29,7 +29,7 @@ internal static partial class R0_AVexception
 		{
 			field_0 = _7type_info.__pointer,
 			field_1 = null,
-			field_2 = InlineArrayHelper.Create<InlineArray_20_w3otm9c, byte>(".?AVexception@std@@\0"u8)
+			field_2 = InlineArrayHelper.Create<InlineArray20_SByte, byte>(".?AVexception@std@@\0"u8)
 		};
 	}
 }
