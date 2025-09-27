@@ -25,6 +25,6 @@ internal static partial class String_df5ko9b
 	unsafe static String_df5ko9b()
 	{
 		__pointer = unchecked((InlineArray76_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray76_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray76_Int16, char>("dh.m_huff_codes[1][dist_sym] == 0 && dh.m_huff_code_sizes[1][dist_sym] == 1\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray76_Int16, char>("dh.m_huff_codes[1][dist_sym] == 0 && dh.m_huff_code_sizes[1][dist_sym] == 1\0");
 	}
 }

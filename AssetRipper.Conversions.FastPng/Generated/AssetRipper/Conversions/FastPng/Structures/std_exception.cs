@@ -9,8 +9,8 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct std_exception
 {
 	[FieldOffset(0)]
-	public unsafe void* field_0;
+	public unsafe void* vptr_exception;
 
 	[FieldOffset(8)]
-	public std_exception_data field_1;
+	public std_exception_data Data;
 }

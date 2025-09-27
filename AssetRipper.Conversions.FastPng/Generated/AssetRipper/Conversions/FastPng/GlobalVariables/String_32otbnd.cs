@@ -25,6 +25,6 @@ internal static partial class String_32otbnd
 	unsafe static String_32otbnd()
 	{
 		__pointer = unchecked((InlineArray42_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray42_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray42_Int16, char>("pCode_sizes[i] <= FPNG_DECODER_TABLE_SIZE\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray42_Int16, char>("pCode_sizes[i] <= FPNG_DECODER_TABLE_SIZE\0");
 	}
 }

@@ -25,6 +25,6 @@ internal static partial class String_isj2lib
 	unsafe static String_isj2lib()
 	{
 		__pointer = unchecked((InlineArray22_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray22_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray22_Int16, char>("(l) >= 1 && (l) <= 16\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray22_Int16, char>("(l) >= 1 && (l) <= 16\0");
 	}
 }

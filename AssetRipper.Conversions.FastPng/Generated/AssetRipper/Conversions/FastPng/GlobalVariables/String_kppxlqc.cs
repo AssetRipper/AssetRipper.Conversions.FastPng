@@ -25,6 +25,6 @@ internal static partial class String_kppxlqc
 	unsafe static String_kppxlqc()
 	{
 		__pointer = unchecked((InlineArray37_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray37_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray37_Int16, char>("(dst_chans == 3) || (dst_chans == 4)\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray37_Int16, char>("(dst_chans == 3) || (dst_chans == 4)\0");
 	}
 }

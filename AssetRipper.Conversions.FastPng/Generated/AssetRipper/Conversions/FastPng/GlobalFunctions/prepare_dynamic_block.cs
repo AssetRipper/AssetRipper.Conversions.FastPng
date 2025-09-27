@@ -24,165 +24,112 @@ internal static partial class prepare_dynamic_block
 	public unsafe static bool Invoke([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int &")] void* src_ofs, [NativeType("unsigned int &")] void* bit_buf_size, [NativeType("unsigned __int64 &")] void* bit_buf, [NativeType("unsigned int *")] void* pLit_table, [NativeType("unsigned int")] int num_chans)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		bool flag = false;
-		int num = 0;
-		int num2 = 0;
-		int num3 = 0;
-		int num4 = 0;
-		int num5 = 0;
-		int num6 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray320_SByte);
-		int num7 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray19_SByte);
-		int num8 = 0;
-		int num9 = 0;
-		int num10 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_2 = default(InlineArray4096_Int32);
-		int num11 = 0;
-		int num12 = 0;
-		int num13 = 0;
-		int num14 = 0;
-		int num15 = 0;
-		int num16 = 0;
-		int num17 = 0;
-		int num18 = 0;
-		int num19 = 0;
-		int num20 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(InlineArray288_SByte);
-		int num21 = 0;
-		int num22 = 0;
-		int num23 = 0;
-		int num24 = 0;
-		int num25 = 0;
-		int num26 = 0;
-		int num27 = 0;
-		int num28 = 0;
-		int num29 = 0;
-		num4 = 5;
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = default(InlineArray320_SByte);
+		localsPointer->field_1 = default(InlineArray19_SByte);
+		localsPointer->field_2 = default(InlineArray4096_Int32);
+		localsPointer->field_3 = default(InlineArray288_SByte);
+		int num = 5;
+		bool flag;
 		unchecked
 		{
-			int num30;
-			if (num4 != 0 && (uint)num4 <= 32u)
-			{
-				num30 = -1;
-			}
-			else
+			if (num == 0 || (uint)num > 32u)
 			{
 				wassert.Invoke(String_aa3exrc.__pointer, String_uxbkrtb.__pointer, 1963);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
 				}
-				num30 = 0;
 			}
-			num = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num4]);
-			*(long*)bit_buf >>>= (int)(uint)num4;
-			*(int*)bit_buf_size -= num4;
+			int num2 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num]);
+			*(long*)bit_buf >>>= (int)(uint)num;
+			*(int*)bit_buf_size -= num;
 			if ((uint)(*(int*)bit_buf_size) < 32u)
 			{
 				if ((uint)(*(int*)src_ofs + 4) > (uint)src_len)
 				{
 					flag = false;
-					goto IL_0d62;
+					goto IL_0cf8;
 				}
 				*(long*)bit_buf |= (long)((ulong)(uint)(*(int*)((byte*)pSrc + (uint)(*(int*)src_ofs))) << (int)(uint)(*(int*)bit_buf_size));
 				*(int*)src_ofs += 4;
 				*(int*)bit_buf_size += 32;
 			}
-			num += 257;
-			num5 = 5;
-			int num31;
-			if (num5 != 0 && (uint)num5 <= 32u)
-			{
-				num31 = -1;
-			}
-			else
+			num2 += 257;
+			int num3 = 5;
+			if (num3 == 0 || (uint)num3 > 32u)
 			{
 				wassert.Invoke(String_aa3exrc.__pointer, String_uxbkrtb.__pointer, 1966);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
 				}
-				num31 = 0;
 			}
-			num2 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num5]);
-			*(long*)bit_buf >>>= (int)(uint)num5;
-			*(int*)bit_buf_size -= num5;
+			int num4 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num3]);
+			*(long*)bit_buf >>>= (int)(uint)num3;
+			*(int*)bit_buf_size -= num3;
 			if ((uint)(*(int*)bit_buf_size) < 32u)
 			{
 				if ((uint)(*(int*)src_ofs + 4) > (uint)src_len)
 				{
 					flag = false;
-					goto IL_0d62;
+					goto IL_0cf8;
 				}
 				*(long*)bit_buf |= (long)((ulong)(uint)(*(int*)((byte*)pSrc + (uint)(*(int*)src_ofs))) << (int)(uint)(*(int*)bit_buf_size));
 				*(int*)src_ofs += 4;
 				*(int*)bit_buf_size += 32;
 			}
-			num2++;
-			num6 = num + num2;
-			if ((uint)num6 > 320u)
+			num4++;
+			int num5 = num2 + num4;
+			if ((uint)num5 > 320u)
 			{
 				flag = false;
 			}
 			else
 			{
-				llvm_memset_p0_i64.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0, 0, 320L, isVolatile: false);
-				num7 = 4;
-				int num32;
-				if (num7 != 0 && (uint)num7 <= 32u)
-				{
-					num32 = -1;
-				}
-				else
+				llvm_memset_p0_i64.Invoke(&localsPointer->field_0, 0, 320L, isVolatile: false);
+				int num6 = 4;
+				if (num6 == 0 || (uint)num6 > 32u)
 				{
 					wassert.Invoke(String_aa3exrc.__pointer, String_uxbkrtb.__pointer, 1976);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;
 					}
-					num32 = 0;
 				}
-				num3 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num7]);
-				*(long*)bit_buf >>>= (int)(uint)num7;
-				*(int*)bit_buf_size -= num7;
+				int num7 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num6]);
+				*(long*)bit_buf >>>= (int)(uint)num6;
+				*(int*)bit_buf_size -= num6;
 				if ((uint)(*(int*)bit_buf_size) < 32u)
 				{
 					if ((uint)(*(int*)src_ofs + 4) > (uint)src_len)
 					{
 						flag = false;
-						goto IL_0d62;
+						goto IL_0cf8;
 					}
 					*(long*)bit_buf |= (long)((ulong)(uint)(*(int*)((byte*)pSrc + (uint)(*(int*)src_ofs))) << (int)(uint)(*(int*)bit_buf_size));
 					*(int*)src_ofs += 4;
 					*(int*)bit_buf_size += 32;
 				}
-				num3 += 4;
-				llvm_memset_p0_i64.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_1, 0, 19L, isVolatile: false);
-				num8 = 0;
+				num7 += 4;
+				llvm_memset_p0_i64.Invoke(&localsPointer->field_1, 0, 19L, isVolatile: false);
+				int num8 = 0;
 				while (true)
 				{
-					if ((uint)num8 < (uint)num3)
+					if ((uint)num8 < (uint)num7)
 					{
-						num9 = 0;
-						num10 = 3;
-						int num33;
-						if (num10 != 0 && (uint)num10 <= 32u)
-						{
-							num33 = -1;
-						}
-						else
+						int num9 = 3;
+						if (num9 == 0 || (uint)num9 > 32u)
 						{
 							wassert.Invoke(String_aa3exrc.__pointer, String_uxbkrtb.__pointer, 1985);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
 							}
-							num33 = 0;
 						}
-						num9 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num10]);
-						*(long*)bit_buf >>>= (int)(uint)num10;
-						*(int*)bit_buf_size -= num10;
+						int num10 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num9]);
+						*(long*)bit_buf >>>= (int)(uint)num9;
+						*(int*)bit_buf_size -= num9;
 						if ((uint)(*(int*)bit_buf_size) < 32u)
 						{
 							if ((uint)(*(int*)src_ofs + 4) > (uint)src_len)
@@ -194,13 +141,13 @@ internal static partial class prepare_dynamic_block
 							*(int*)src_ofs += 4;
 							*(int*)bit_buf_size += 32;
 						}
-						sbyte b = (sbyte)num9;
-						long num34 = (byte)((sbyte*)s_bit_length_order.__pointer)[(uint)num8];
-						((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[num34] = b;
+						sbyte b = (sbyte)num10;
+						long num11 = (byte)((sbyte*)s_bit_length_order.__pointer)[(uint)num8];
+						((sbyte*)(&localsPointer->field_1))[num11] = b;
 						num8++;
 						continue;
 					}
-					bool flag2 = build_decoder_table.Invoke(pTable: &startFrame.GetLocalsPointer<LocalVariables>()->field_2, num_syms: 19, pCode_sizes: &startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+					bool flag2 = build_decoder_table.Invoke(pTable: &localsPointer->field_2, num_syms: 19, pCode_sizes: &localsPointer->field_1);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;
@@ -210,37 +157,31 @@ internal static partial class prepare_dynamic_block
 						flag = false;
 						break;
 					}
-					num11 = 15;
-					num12 = 0;
+					int num12 = 15;
+					int num13 = 0;
 					while (true)
 					{
-						if ((uint)num12 < (uint)num6)
+						if ((uint)num13 < (uint)num5)
 						{
-							long num35 = *(long*)bit_buf & 0xFFFL;
-							num13 = ((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_2))[num35];
-							num14 = num13 >>> 9;
-							if (num14 == 0)
+							long num14 = *(long*)bit_buf & 0xFFFL;
+							int num15 = ((int*)(&localsPointer->field_2))[num14];
+							int num16 = num15 >>> 9;
+							if (num16 == 0)
 							{
 								flag = false;
 								break;
 							}
-							num15 = num14;
-							int num36;
-							if ((uint)num15 <= 32u)
-							{
-								num36 = -1;
-							}
-							else
+							int num17 = num16;
+							if ((uint)num17 > 32u)
 							{
 								wassert.Invoke(String_mf9hyza.__pointer, String_uxbkrtb.__pointer, 2001);
 								if (ExceptionInfo.Current != null)
 								{
 									return false;
 								}
-								num36 = 0;
 							}
-							*(long*)bit_buf >>>= (int)(uint)num15;
-							*(int*)bit_buf_size -= num15;
+							*(long*)bit_buf >>>= (int)(uint)num17;
+							*(int*)bit_buf_size -= num17;
 							if ((uint)(*(int*)bit_buf_size) < 32u)
 							{
 								if ((uint)(*(int*)src_ofs + 4) > (uint)src_len)
@@ -252,50 +193,44 @@ internal static partial class prepare_dynamic_block
 								*(int*)src_ofs += 4;
 								*(int*)bit_buf_size += 32;
 							}
-							num13 &= 0x1FF;
-							if ((uint)num13 <= 15u)
+							num15 &= 0x1FF;
+							if ((uint)num15 <= 15u)
 							{
-								if ((uint)num13 > 12u)
+								if ((uint)num15 > 12u)
 								{
 									flag = false;
 									break;
 								}
-								if (num13 != 0)
+								if (num15 != 0)
 								{
-									num11 = minimum_su2nfub.Invoke(num11, num13);
+									num12 = minimum_su2nfub.Invoke(num12, num15);
 								}
-								sbyte b2 = (sbyte)num13;
-								int num37 = num12++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[(uint)num37] = b2;
+								sbyte b2 = (sbyte)num15;
+								int num18 = num13++;
+								((sbyte*)(&localsPointer->field_0))[(uint)num18] = b2;
 								continue;
 							}
-							num16 = 0;
-							num17 = 0;
-							int num38 = num13;
-							if (num38 != 16)
+							int i = 0;
+							int num19 = 0;
+							int num20 = num15;
+							if (num20 != 16)
 							{
-								if (num38 != 17)
+								if (num20 != 17)
 								{
-									if (num38 == 18)
+									if (num20 == 18)
 									{
-										num20 = 7;
-										int num39;
-										if (num20 != 0 && (uint)num20 <= 32u)
-										{
-											num39 = -1;
-										}
-										else
+										int num21 = 7;
+										if (num21 == 0 || (uint)num21 > 32u)
 										{
 											wassert.Invoke(String_aa3exrc.__pointer, String_uxbkrtb.__pointer, 2039);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
 											}
-											num39 = 0;
 										}
-										num16 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num20]);
-										*(long*)bit_buf >>>= (int)(uint)num20;
-										*(int*)bit_buf_size -= num20;
+										i = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num21]);
+										*(long*)bit_buf >>>= (int)(uint)num21;
+										*(int*)bit_buf_size -= num21;
 										if ((uint)(*(int*)bit_buf_size) < 32u)
 										{
 											if ((uint)(*(int*)src_ofs + 4) > (uint)src_len)
@@ -307,30 +242,24 @@ internal static partial class prepare_dynamic_block
 											*(int*)src_ofs += 4;
 											*(int*)bit_buf_size += 32;
 										}
-										num16 += 11;
-										num17 = 0;
+										i += 11;
+										num19 = 0;
 									}
 								}
 								else
 								{
-									num19 = 3;
-									int num40;
-									if (num19 != 0 && (uint)num19 <= 32u)
-									{
-										num40 = -1;
-									}
-									else
+									int num22 = 3;
+									if (num22 == 0 || (uint)num22 > 32u)
 									{
 										wassert.Invoke(String_aa3exrc.__pointer, String_uxbkrtb.__pointer, 2032);
 										if (ExceptionInfo.Current != null)
 										{
 											return false;
 										}
-										num40 = 0;
 									}
-									num16 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num19]);
-									*(long*)bit_buf >>>= (int)(uint)num19;
-									*(int*)bit_buf_size -= num19;
+									i = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num22]);
+									*(long*)bit_buf >>>= (int)(uint)num22;
+									*(int*)bit_buf_size -= num22;
 									if ((uint)(*(int*)bit_buf_size) < 32u)
 									{
 										if ((uint)(*(int*)src_ofs + 4) > (uint)src_len)
@@ -342,30 +271,24 @@ internal static partial class prepare_dynamic_block
 										*(int*)src_ofs += 4;
 										*(int*)bit_buf_size += 32;
 									}
-									num16 += 3;
-									num17 = 0;
+									i += 3;
+									num19 = 0;
 								}
 							}
 							else
 							{
-								num18 = 2;
-								int num41;
-								if (num18 != 0 && (uint)num18 <= 32u)
-								{
-									num41 = -1;
-								}
-								else
+								int num23 = 2;
+								if (num23 == 0 || (uint)num23 > 32u)
 								{
 									wassert.Invoke(String_aa3exrc.__pointer, String_uxbkrtb.__pointer, 2023);
 									if (ExceptionInfo.Current != null)
 									{
 										return false;
 									}
-									num41 = 0;
 								}
-								num16 = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num18]);
-								*(long*)bit_buf >>>= (int)(uint)num18;
-								*(int*)bit_buf_size -= num18;
+								i = (int)(*(long*)bit_buf & (uint)((int*)g_bitmasks.__pointer)[(uint)num23]);
+								*(long*)bit_buf >>>= (int)(uint)num23;
+								*(int*)bit_buf_size -= num23;
 								if ((uint)(*(int*)bit_buf_size) < 32u)
 								{
 									if ((uint)(*(int*)src_ofs + 4) > (uint)src_len)
@@ -377,51 +300,50 @@ internal static partial class prepare_dynamic_block
 									*(int*)src_ofs += 4;
 									*(int*)bit_buf_size += 32;
 								}
-								num16 += 3;
-								if (num12 == 0)
+								i += 3;
+								if (num13 == 0)
 								{
 									flag = false;
 									break;
 								}
-								long num42 = (uint)(num12 - 1);
-								num17 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[num42];
+								num19 = (byte)((sbyte*)(&localsPointer->field_0))[(uint)(num13 - 1)];
 							}
-							if ((uint)(num12 + num16) > (uint)num6)
+							if ((uint)(num13 + i) > (uint)num5)
 							{
 								flag = false;
 								break;
 							}
-							for (; num16 != 0; num16 += -1)
+							for (; i != 0; i += -1)
 							{
-								sbyte b3 = (sbyte)num17;
-								int num43 = num12++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[(uint)num43] = b3;
+								sbyte b3 = (sbyte)num19;
+								int num24 = num13++;
+								((sbyte*)(&localsPointer->field_0))[(uint)num24] = b3;
 							}
 							continue;
 						}
-						llvm_memcpy_p0_p0_i64.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, (uint)num, isVolatile: false);
-						llvm_memset_p0_i64.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_3) + (uint)num, 0, (uint)(288 - num), isVolatile: false);
-						num21 = 0;
-						for (num22 = 0; (uint)num22 < (uint)num2; num22++)
+						llvm_memcpy_p0_p0_i64.Invoke(&localsPointer->field_3, &localsPointer->field_0, (uint)num2, isVolatile: false);
+						llvm_memset_p0_i64.Invoke((byte*)(&localsPointer->field_3) + (uint)num2, 0, (uint)(288 - num2), isVolatile: false);
+						int num25 = 0;
+						for (int j = 0; (uint)j < (uint)num4; j++)
 						{
-							num21 += (((byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[(uint)(num + num22)] == 1) ? 1 : 0);
+							num25 += (((byte)((sbyte*)(&localsPointer->field_0))[(uint)(num2 + j)] == 1) ? 1 : 0);
 						}
-						if ((uint)num21 < 1u || (uint)num21 > 2u)
-						{
-							flag = false;
-							break;
-						}
-						if ((byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[(uint)(num + (num_chans - 1))] != 1)
+						if ((uint)num25 < 1u || (uint)num25 > 2u)
 						{
 							flag = false;
 							break;
 						}
-						if (num21 == 2 && (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[(uint)(num + num_chans)] != 1)
+						if ((byte)((sbyte*)(&localsPointer->field_0))[(uint)(num2 + (num_chans - 1))] != 1)
 						{
 							flag = false;
 							break;
 						}
-						bool flag3 = build_decoder_table.Invoke(num, &startFrame.GetLocalsPointer<LocalVariables>()->field_3, pLit_table);
+						if (num25 == 2 && (byte)((sbyte*)(&localsPointer->field_0))[(uint)(num2 + num_chans)] != 1)
+						{
+							flag = false;
+							break;
+						}
+						bool flag3 = build_decoder_table.Invoke(num2, &localsPointer->field_3, pLit_table);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;
@@ -431,40 +353,34 @@ internal static partial class prepare_dynamic_block
 							flag = false;
 							break;
 						}
-						for (num23 = 0; (uint)num23 < 4096u; num23++)
+						for (int k = 0; (uint)k < 4096u; k++)
 						{
-							if ((uint)(((int*)pLit_table)[(uint)num23] & 0x1FF) >= 256u)
+							if ((uint)(((int*)pLit_table)[(uint)k] & 0x1FF) >= 256u)
 							{
 								continue;
 							}
-							num25 = (((int*)pLit_table)[(uint)num23] >>> 9) & 0xF;
-							if (num25 == 0)
+							int num26 = (((int*)pLit_table)[(uint)k] >>> 9) & 0xF;
+							if (num26 == 0)
 							{
 								continue;
 							}
-							int num44;
-							if ((uint)num25 <= 12u)
-							{
-								num44 = -1;
-							}
-							else
+							if ((uint)num26 > 12u)
 							{
 								wassert.Invoke(String_nlshwsc.__pointer, String_uxbkrtb.__pointer, 2089);
 								if (ExceptionInfo.Current != null)
 								{
 									return false;
 								}
-								num44 = 0;
 							}
-							num26 = 12 - num25;
-							if ((uint)num26 >= (uint)num11)
+							int num27 = 12 - num26;
+							if ((uint)num27 >= (uint)num12)
 							{
-								num27 = num23 >>> num25;
-								num28 = ((int*)pLit_table)[(uint)num27] & 0x1FF;
-								num29 = (((int*)pLit_table)[(uint)num27] >>> 9) & 0xF;
-								if (num29 != 0 && (uint)num26 >= (uint)num29)
+								int num28 = k >>> num26;
+								int num29 = ((int*)pLit_table)[(uint)num28] & 0x1FF;
+								int num30 = (((int*)pLit_table)[(uint)num28] >>> 9) & 0xF;
+								if (num30 != 0 && (uint)num27 >= (uint)num30)
 								{
-									((int*)pLit_table)[(uint)num23] |= (num28 << 16) | (num29 << 25);
+									((int*)pLit_table)[(uint)k] |= (num29 << 16) | (num30 << 25);
 								}
 							}
 						}
@@ -474,9 +390,9 @@ internal static partial class prepare_dynamic_block
 					break;
 				}
 			}
-			goto IL_0d62;
+			goto IL_0cf8;
 		}
-		IL_0d62:
+		IL_0cf8:
 		bool result = flag;
 		StackFrameList.Current.Clear(startFrame);
 		return result;

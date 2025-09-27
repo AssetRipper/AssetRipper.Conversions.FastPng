@@ -13,8 +13,8 @@ internal static partial class size_trt5i3d
 	{
 		unchecked
 		{
-			void* field_ = &((std_vector_mvt3mha*)@this)->field_0.field_0;
-			return ((long)((std_Vector_val_zgi5p7d*)field_)->field_1 - (long)((std_Vector_val_zgi5p7d*)field_)->field_0) / 8L;
+			void* myval = &((std_vector_mvt3mha*)@this)->Mypair.Myval2;
+			return ((long)((std_Vector_val_zgi5p7d*)myval)->Mylast - (long)((std_Vector_val_zgi5p7d*)myval)->Myfirst) / 8L;
 		}
 	}
 }

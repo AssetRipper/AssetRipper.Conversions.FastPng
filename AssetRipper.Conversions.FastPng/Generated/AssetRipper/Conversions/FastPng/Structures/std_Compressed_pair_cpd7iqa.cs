@@ -10,5 +10,5 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct std_Compressed_pair_cpd7iqa
 {
 	[FieldOffset(0)]
-	public std_Vector_val_p59sy9d field_0;
+	public std_Vector_val_p59sy9d Myval2;
 }

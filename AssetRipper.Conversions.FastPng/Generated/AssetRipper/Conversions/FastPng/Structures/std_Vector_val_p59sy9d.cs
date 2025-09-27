@@ -10,11 +10,11 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct std_Vector_val_p59sy9d
 {
 	[FieldOffset(0)]
-	public unsafe void* field_0;
+	public unsafe void* Myfirst;
 
 	[FieldOffset(8)]
-	public unsafe void* field_1;
+	public unsafe void* Mylast;
 
 	[FieldOffset(16)]
-	public unsafe void* field_2;
+	public unsafe void* Myend;
 }

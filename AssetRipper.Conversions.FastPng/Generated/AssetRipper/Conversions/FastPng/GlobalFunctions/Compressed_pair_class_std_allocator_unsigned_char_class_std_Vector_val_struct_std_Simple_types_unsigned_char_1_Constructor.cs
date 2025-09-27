@@ -14,7 +14,7 @@ internal static partial class Compressed_pair_class_std_allocator_unsigned_char_
 			field_0 = coerce
 		};
 		allocator_unsigned_char_Constructor.Invoke(@this);
-		Vector_val_struct_std_Simple_types_unsigned_char_Constructor.Invoke(&unchecked((std_Compressed_pair_cpd7iqa*)@this)->field_0);
+		Vector_val_struct_std_Simple_types_unsigned_char_Constructor.Invoke(&unchecked((std_Compressed_pair_cpd7iqa*)@this)->Myval2);
 		return @this;
 	}
 }

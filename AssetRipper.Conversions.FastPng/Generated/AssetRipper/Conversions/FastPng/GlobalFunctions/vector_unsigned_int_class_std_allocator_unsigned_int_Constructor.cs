@@ -15,8 +15,9 @@ internal static partial class vector_unsigned_int_class_std_allocator_unsigned_i
 	public unsafe static void* Invoke(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned int> const &")] void* Al)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_One_then_variadic_args_t);
-		Compressed_pair_class_std_allocator_unsigned_int_class_std_Vector_val_struct_std_Simple_types_unsigned_int_1_Constructor.Invoke(&unchecked((std_vector_drook9b*)@this)->field_0, startFrame.GetLocalsPointer<LocalVariables>()->field_0.field_0, Al);
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = default(std_One_then_variadic_args_t);
+		Compressed_pair_class_std_allocator_unsigned_int_class_std_Vector_val_struct_std_Simple_types_unsigned_int_1_Constructor.Invoke(&unchecked((std_vector_drook9b*)@this)->Mypair, localsPointer->field_0.field_0, Al);
 		Construct_n.Invoke(@this, Count);
 		if (ExceptionInfo.Current != null)
 		{

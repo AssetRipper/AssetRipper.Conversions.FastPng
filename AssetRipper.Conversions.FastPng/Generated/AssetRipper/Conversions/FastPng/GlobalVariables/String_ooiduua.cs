@@ -25,6 +25,6 @@ internal static partial class String_ooiduua
 	unsafe static String_ooiduua()
 	{
 		__pointer = unchecked((InlineArray20_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray20_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray20_Int16, char>("(b) < (1ULL << (l))\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray20_Int16, char>("(b) < (1ULL << (l))\0");
 	}
 }

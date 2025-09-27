@@ -16,17 +16,18 @@ internal static partial class Buy_raw
 	public unsafe static void Invoke(void* @this, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = Newcapacity;
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = Newcapacity;
 		unchecked
 		{
-			void* field_ = &((std_vector_drook9b*)@this)->field_0.field_0;
-			void* field_2 = &((std_Vector_val_edx9ebc*)field_)->field_0;
-			void* field_3 = &((std_Vector_val_edx9ebc*)field_)->field_1;
-			void* field_4 = &((std_Vector_val_edx9ebc*)field_)->field_2;
-			void* ptr = Allocate_at_least_helper_22hwyxd.Invoke(Getal_t2pmqoc.Invoke(@this), &startFrame.GetLocalsPointer<LocalVariables>()->field_0);
+			void* myval = &((std_vector_drook9b*)@this)->Mypair.Myval2;
+			void* myfirst = &((std_Vector_val_edx9ebc*)myval)->Myfirst;
+			void* mylast = &((std_Vector_val_edx9ebc*)myval)->Mylast;
+			void* myend = &((std_Vector_val_edx9ebc*)myval)->Myend;
+			void* ptr = Allocate_at_least_helper_22hwyxd.Invoke(Getal_t2pmqoc.Invoke(@this), &localsPointer->field_0);
 			if (ExceptionInfo.Current == null)
 			{
-				*(byte**)field_4 = (byte*)(*(void**)field_3 = (*(void**)field_2 = ptr)) + (nint)startFrame.GetLocalsPointer<LocalVariables>()->field_0 * 4;
+				*(byte**)myend = (byte*)(*(void**)mylast = (*(void**)myfirst = ptr)) + (nint)localsPointer->field_0 * 4;
 				StackFrameList.Current.Clear(startFrame);
 			}
 		}

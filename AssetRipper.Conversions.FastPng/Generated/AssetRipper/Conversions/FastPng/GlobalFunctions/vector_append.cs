@@ -10,12 +10,11 @@ internal static partial class vector_append
 	[return: NativeType("void")]
 	public unsafe static void Invoke([NativeType("class std::vector<unsigned char, class std::allocator<unsigned char>> &")] void* buf, [NativeType("void const *")] void* pData, [NativeType("unsigned __int64")] long len)
 	{
-		long num = 0L;
 		unchecked
 		{
 			if (len != 0L)
 			{
-				num = size_4io4p4d.Invoke(buf);
+				long num = size_4io4p4d.Invoke(buf);
 				resize_wwmwtsa.Invoke(buf, num + len);
 				if (ExceptionInfo.Current == null)
 				{

@@ -10,12 +10,8 @@ internal static partial class defl_calculate_minimum_redundancy
 	[return: NativeType("void")]
 	public unsafe static void Invoke([NativeType("struct fpng::defl_sym_freq *")] void* A, [NativeType("int")] int n)
 	{
-		int num = 0;
-		int num2 = 0;
-		int num3 = 0;
-		int num4 = 0;
-		int num5 = 0;
-		int num6 = 0;
+		int num3;
+		int num2;
 		unchecked
 		{
 			switch (n)
@@ -23,67 +19,68 @@ internal static partial class defl_calculate_minimum_redundancy
 			case 0:
 				return;
 			case 1:
-				((fpng_defl_sym_freq*)A)->field_0 = 1;
+				((fpng_defl_sym_freq*)A)->m_key = 1;
 				return;
 			}
-			int num7 = (ushort)((fpng_defl_sym_freq*)A)[1].field_0;
-			short* field_ = &((fpng_defl_sym_freq*)A)->field_0;
-			*field_ = (short)checked(unchecked((ushort)(*field_)) + num7);
-			num = 0;
-			num2 = 2;
+			int num = (ushort)((fpng_defl_sym_freq*)A)[1].m_key;
+			short* key = &((fpng_defl_sym_freq*)A)->m_key;
+			*key = (short)checked(unchecked((ushort)(*key)) + num);
+			num2 = 0;
+			num3 = 2;
 		}
-		for (num3 = 1; num3 < n - 1; num3++)
+		int i;
+		for (i = 1; i < n - 1; i++)
 		{
 			unchecked
 			{
-				if (num2 >= n || (ushort)((fpng_defl_sym_freq*)A)[num].field_0 < (ushort)((fpng_defl_sym_freq*)A)[num2].field_0)
+				if (num3 >= n || (ushort)((fpng_defl_sym_freq*)A)[num2].m_key < (ushort)((fpng_defl_sym_freq*)A)[num3].m_key)
 				{
-					((fpng_defl_sym_freq*)A)[num3].field_0 = ((fpng_defl_sym_freq*)A)[num].field_0;
-					((fpng_defl_sym_freq*)A)[checked(num++)].field_0 = (short)num3;
+					((fpng_defl_sym_freq*)A)[i].m_key = ((fpng_defl_sym_freq*)A)[num2].m_key;
+					((fpng_defl_sym_freq*)A)[checked(num2++)].m_key = (short)i;
 				}
 				else
 				{
-					((fpng_defl_sym_freq*)A)[num3].field_0 = ((fpng_defl_sym_freq*)A)[checked(num2++)].field_0;
+					((fpng_defl_sym_freq*)A)[i].m_key = ((fpng_defl_sym_freq*)A)[checked(num3++)].m_key;
 				}
-				if (num2 >= n || (num < num3 && (ushort)((fpng_defl_sym_freq*)A)[num].field_0 < (ushort)((fpng_defl_sym_freq*)A)[num2].field_0))
+				if (num3 >= n || (num2 < i && (ushort)((fpng_defl_sym_freq*)A)[num2].m_key < (ushort)((fpng_defl_sym_freq*)A)[num3].m_key))
 				{
-					((fpng_defl_sym_freq*)A)[num3].field_0 = (short)checked(unchecked((ushort)((fpng_defl_sym_freq*)A)[num3].field_0) + unchecked((ushort)((fpng_defl_sym_freq*)A)[num].field_0));
-					((fpng_defl_sym_freq*)A)[checked(num++)].field_0 = (short)num3;
+					((fpng_defl_sym_freq*)A)[i].m_key = (short)checked(unchecked((ushort)((fpng_defl_sym_freq*)A)[i].m_key) + unchecked((ushort)((fpng_defl_sym_freq*)A)[num2].m_key));
+					((fpng_defl_sym_freq*)A)[checked(num2++)].m_key = (short)i;
 				}
 				else
 				{
-					((fpng_defl_sym_freq*)A)[num3].field_0 = (short)checked(unchecked((ushort)((fpng_defl_sym_freq*)A)[num3].field_0) + unchecked((ushort)((fpng_defl_sym_freq*)A)[checked(num2++)].field_0));
+					((fpng_defl_sym_freq*)A)[i].m_key = (short)checked(unchecked((ushort)((fpng_defl_sym_freq*)A)[i].m_key) + unchecked((ushort)((fpng_defl_sym_freq*)A)[checked(num3++)].m_key));
 				}
 			}
 		}
-		unchecked((fpng_defl_sym_freq*)A)[n - 2].field_0 = 0;
-		for (num3 = n - 3; num3 >= 0; num3 += -1)
+		unchecked((fpng_defl_sym_freq*)A)[n - 2].m_key = 0;
+		for (i = n - 3; i >= 0; i += -1)
 		{
 			unchecked
 			{
-				((fpng_defl_sym_freq*)A)[num3].field_0 = (short)checked(unchecked((ushort)((fpng_defl_sym_freq*)A)[(ushort)((fpng_defl_sym_freq*)A)[num3].field_0].field_0) + 1);
+				((fpng_defl_sym_freq*)A)[i].m_key = (short)checked(unchecked((ushort)((fpng_defl_sym_freq*)A)[(ushort)((fpng_defl_sym_freq*)A)[i].m_key].m_key) + 1);
 			}
 		}
-		num4 = 1;
-		num6 = 0;
-		num5 = 0;
-		num = n - 2;
-		num3 = n - 1;
-		while (num4 > 0)
+		int j = 1;
+		int num4 = 0;
+		int num5 = 0;
+		num2 = n - 2;
+		i = n - 1;
+		while (j > 0)
 		{
-			for (; num >= 0 && unchecked((ushort)((fpng_defl_sym_freq*)A)[num].field_0) == num6; num += -1)
+			for (; num2 >= 0 && unchecked((ushort)((fpng_defl_sym_freq*)A)[num2].m_key) == num4; num2 += -1)
 			{
 				num5++;
 			}
-			for (; num4 > num5; num4 += -1)
+			for (; j > num5; j += -1)
 			{
-				short field_2 = unchecked((short)num6);
-				int num8 = num3;
-				num3 = num8 + -1;
-				unchecked((fpng_defl_sym_freq*)A)[num8].field_0 = field_2;
+				short key2 = unchecked((short)num4);
+				int num6 = i;
+				i = num6 + -1;
+				unchecked((fpng_defl_sym_freq*)A)[num6].m_key = key2;
 			}
-			num4 = 2 * num5;
-			num6++;
+			j = 2 * num5;
+			num4++;
 			num5 = 0;
 		}
 	}

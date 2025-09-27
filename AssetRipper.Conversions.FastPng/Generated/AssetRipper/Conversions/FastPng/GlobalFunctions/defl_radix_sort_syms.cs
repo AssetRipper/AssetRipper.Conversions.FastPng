@@ -13,51 +13,45 @@ internal static partial class defl_radix_sort_syms
 	[return: NativeType("struct fpng::defl_sym_freq *")]
 	public unsafe static void* Invoke([NativeType("unsigned int")] int num_syms, [NativeType("struct fpng::defl_sym_freq *")] void* pSyms0, [NativeType("struct fpng::defl_sym_freq *")] void* pSyms1)
 	{
-		int num = 0;
-		int num2 = 0;
 		InlineArray512_Int32 inlineArray512_Int = default(InlineArray512_Int32);
-		int num3 = 0;
-		void* ptr = null;
 		InlineArray256_Int32 inlineArray256_Int = default(InlineArray256_Int32);
-		int num4 = 0;
-		void* ptr2 = null;
 		int i = 2;
-		void* ptr3 = pSyms0;
-		void* ptr4 = pSyms1;
+		void* ptr = pSyms0;
+		void* ptr2 = pSyms1;
 		llvm_memset_p0_i64.Invoke(&inlineArray512_Int, 0, 2048L, isVolatile: false);
 		unchecked
 		{
 			for (int j = 0; (uint)j < (uint)num_syms; j++)
 			{
-				num3 = (ushort)((fpng_defl_sym_freq*)pSyms0)[(uint)j].field_0;
-				(*(int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray512_Int, (nint)(uint)(num3 & 0xFF) * (nint)4)))++;
-				(*(int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray512_Int, (nint)(uint)(256 + ((num3 >>> 8) & 0xFF)) * (nint)4)))++;
+				int num = (ushort)((fpng_defl_sym_freq*)pSyms0)[(uint)j].m_key;
+				(*(int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray512_Int, (nint)(uint)(num & 0xFF) * (nint)4)))++;
+				(*(int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray512_Int, (nint)(uint)(256 + ((num >>> 8) & 0xFF)) * (nint)4)))++;
 			}
 			for (; (uint)i > 1u && num_syms == Unsafe.As<InlineArray512_Int32, int>(ref Unsafe.AddByteOffset(ref inlineArray512_Int, (nint)(uint)((i - 1) * 256) * (nint)4)); i += -1)
 			{
 			}
-			num = 0;
-			num2 = 0;
-			while ((uint)num2 < (uint)i)
+			int num2 = 0;
+			int num3 = 0;
+			while ((uint)num3 < (uint)i)
 			{
-				ptr = Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray512_Int, (nint)(uint)(num2 << 8) * (nint)4));
-				num4 = 0;
+				void* ptr3 = Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray512_Int, (nint)(uint)(num3 << 8) * (nint)4));
+				int num4 = 0;
 				for (int j = 0; (uint)j < 256u; j++)
 				{
 					Unsafe.As<InlineArray256_Int32, int>(ref Unsafe.AddByteOffset(ref inlineArray256_Int, (nint)(uint)j * (nint)4)) = num4;
-					num4 += ((int*)ptr)[(uint)j];
+					num4 += ((int*)ptr3)[(uint)j];
 				}
 				for (int j = 0; (uint)j < (uint)num_syms; j++)
 				{
-					llvm_memcpy_p0_p0_i64.Invoke((byte*)ptr4 + (nint)(uint)(*(int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray256_Int, (nint)(((ushort)((fpng_defl_sym_freq*)ptr3)[(uint)j].field_0 >> num) & 0xFF) * (nint)4)))++ * (nint)sizeof(fpng_defl_sym_freq), (byte*)ptr3 + (nint)(uint)j * (nint)sizeof(fpng_defl_sym_freq), 4L, isVolatile: false);
+					llvm_memcpy_p0_p0_i64.Invoke((byte*)ptr2 + (nint)(uint)(*(int*)Unsafe.AsPointer(ref Unsafe.AddByteOffset(ref inlineArray256_Int, (nint)(((ushort)((fpng_defl_sym_freq*)ptr)[(uint)j].m_key >> num2) & 0xFF) * (nint)4)))++ * (nint)sizeof(fpng_defl_sym_freq), (byte*)ptr + (nint)(uint)j * (nint)sizeof(fpng_defl_sym_freq), 4L, isVolatile: false);
 				}
-				ptr2 = ptr3;
-				ptr3 = ptr4;
-				ptr4 = ptr2;
-				num2++;
-				num += 8;
+				void* ptr4 = ptr;
+				ptr = ptr2;
+				ptr2 = ptr4;
+				num3++;
+				num2 += 8;
 			}
-			return ptr3;
+			return ptr;
 		}
 	}
 }

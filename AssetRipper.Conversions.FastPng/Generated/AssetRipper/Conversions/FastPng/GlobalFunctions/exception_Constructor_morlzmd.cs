@@ -15,8 +15,8 @@ internal static partial class exception_Constructor_morlzmd
 		unchecked
 		{
 			*(byte**)@this = (byte*)(&Variable_x4f2ufc.__pointer->field_0) + sizeof(nint);
-			llvm_memset_p0_i64.Invoke(&((std_exception*)@this)->field_1, 0, 16L, isVolatile: false);
-			((std_exception*)@this)->field_1.field_0 = Message;
+			llvm_memset_p0_i64.Invoke(&((std_exception*)@this)->Data, 0, 16L, isVolatile: false);
+			((std_exception*)@this)->Data.What = Message;
 			return @this;
 		}
 	}

@@ -25,6 +25,6 @@ internal static partial class String_uxbkrtb
 	unsafe static String_uxbkrtb()
 	{
 		__pointer = unchecked((InlineArray29_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray29_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray29_Int16, char>("../../../../Samples\\fpng.cpp\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray29_Int16, char>("../../../../Samples\\fpng.cpp\0");
 	}
 }

@@ -9,5 +9,5 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct std_allocator
 {
 	[FieldOffset(0)]
-	public sbyte field_0;
+	public sbyte Minimum_asan_allocation_alignment;
 }

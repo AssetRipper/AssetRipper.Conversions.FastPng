@@ -25,6 +25,6 @@ internal static partial class String_vpte4cc
 	unsafe static String_vpte4cc()
 	{
 		__pointer = unchecked((InlineArray18_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray18_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray18_Int16, char>("bit_buf_size <= 7\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray18_Int16, char>("bit_buf_size <= 7\0");
 	}
 }

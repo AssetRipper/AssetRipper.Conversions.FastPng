@@ -25,6 +25,6 @@ internal static partial class String_aa3exrc
 	unsafe static String_aa3exrc()
 	{
 		__pointer = unchecked((InlineArray15_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray15_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray15_Int16, char>("l && (l <= 32)\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray15_Int16, char>("l && (l <= 32)\0");
 	}
 }

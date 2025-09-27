@@ -25,6 +25,6 @@ internal static partial class String_bjvsuxc
 	unsafe static String_bjvsuxc()
 	{
 		__pointer = unchecked((InlineArray19_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray19_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray19_Int16, char>("src_ofs == h * bpl\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray19_Int16, char>("src_ofs == h * bpl\0");
 	}
 }

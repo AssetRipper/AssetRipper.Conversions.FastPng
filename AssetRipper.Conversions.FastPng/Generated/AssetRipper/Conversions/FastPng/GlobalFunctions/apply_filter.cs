@@ -11,8 +11,6 @@ internal static partial class apply_filter
 	[return: NativeType("void")]
 	public unsafe static void Invoke([NativeType("unsigned int")] int filter, [NativeType("int")] int w, [NativeType("int")] int h, [NativeType("unsigned int")] int num_chans, [NativeType("unsigned int")] int bpl, [NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned char const *")] void* pPrev_src, [NativeType("unsigned char *")] void* pDst)
 	{
-		int num = 0;
-		int num2 = 0;
 		void* ptr = pDst;
 		void* ptr2 = pPrev_src;
 		void* ptr3 = pSrc;
@@ -30,26 +28,20 @@ internal static partial class apply_filter
 			}
 			case 2:
 			{
-				int num3;
-				if (ptr2 != null)
-				{
-					num3 = -1;
-				}
-				else
+				if (ptr2 == null)
 				{
 					wassert.Invoke(String_uc52kza.__pointer, String_uxbkrtb.__pointer, 1607);
 					if (ExceptionInfo.Current != null)
 					{
 						break;
 					}
-					num3 = 0;
 				}
 				void* ptr4 = ptr;
 				ptr = (byte*)ptr4 + 1;
 				*(sbyte*)ptr4 = 2;
 				if (num_chans == 3)
 				{
-					for (num = 0; (uint)num < (uint)w; num++)
+					for (int i = 0; (uint)i < (uint)w; i++)
 					{
 						*(sbyte*)ptr = (sbyte)checked(unchecked((byte)(*(sbyte*)ptr3)) - unchecked((byte)(*(sbyte*)ptr2)));
 						((sbyte*)ptr)[1] = (sbyte)checked(unchecked((byte)((sbyte*)ptr3)[1]) - unchecked((byte)((sbyte*)ptr2)[1]));
@@ -60,7 +52,7 @@ internal static partial class apply_filter
 					}
 					break;
 				}
-				for (num2 = 0; (uint)num2 < (uint)w; num2++)
+				for (int j = 0; (uint)j < (uint)w; j++)
 				{
 					*(sbyte*)ptr = (sbyte)checked(unchecked((byte)(*(sbyte*)ptr3)) - unchecked((byte)(*(sbyte*)ptr2)));
 					((sbyte*)ptr)[1] = (sbyte)checked(unchecked((byte)((sbyte*)ptr3)[1]) - unchecked((byte)((sbyte*)ptr2)[1]));

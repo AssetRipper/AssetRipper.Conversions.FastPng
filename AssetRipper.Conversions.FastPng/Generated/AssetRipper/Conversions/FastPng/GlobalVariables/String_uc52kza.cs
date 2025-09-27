@@ -25,6 +25,6 @@ internal static partial class String_uc52kza
 	unsafe static String_uc52kza()
 	{
 		__pointer = unchecked((InlineArray10_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray10_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray10_Int16, char>("pPrev_src\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray10_Int16, char>("pPrev_src\0");
 	}
 }

@@ -29,894 +29,570 @@ internal static partial class pixel_deflate_dyn_4_rle
 	public unsafe static int Invoke([NativeType("unsigned char const *")] void* pImg, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int dst_buf_size)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		int num = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0L;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_2 = 0;
-		int num2 = 0;
-		int num3 = 0;
-		int num4 = 0;
-		int num5 = 0;
-		int num6 = 0;
-		int num7 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_3 = default(std_vector_mvt3mha);
-		void* ptr = null;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_4 = default(InlineArray288_Int32);
-		void* ptr2 = null;
-		int num8 = 0;
-		int num9 = 0;
-		int num10 = 0;
-		int num11 = 0;
-		int num12 = 0;
-		int num13 = 0;
-		int num14 = 0;
-		int num15 = 0;
-		int num16 = 0;
-		int num17 = 0;
-		int num18 = 0;
-		int num19 = 0;
-		int num20 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_5 = default(fpng_defl_huff);
-		int num21 = 0;
-		int num22 = 0;
-		long num23 = 0L;
-		int num24 = 0;
-		int num25 = 0;
-		int num26 = 0;
-		int num27 = 0;
-		int num28 = 0;
-		int num29 = 0;
-		int num30 = 0;
-		int num31 = 0;
-		int num32 = 0;
-		int num33 = 0;
-		int num34 = 0;
-		int num35 = 0;
-		int num36 = 0;
-		int num37 = 0;
-		int num38 = 0;
-		int num39 = 0;
-		int num40 = 0;
-		int num41 = 0;
-		int num42 = 0;
-		int num43 = 0;
-		int num44 = 0;
-		int num45 = 0;
-		int num46 = 0;
-		int num47 = 0;
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = 0L;
+		localsPointer->field_1 = 0;
+		localsPointer->field_2 = 0;
+		localsPointer->field_3 = default(std_vector_mvt3mha);
+		localsPointer->field_4 = default(InlineArray288_Int32);
+		localsPointer->field_5 = default(fpng_defl_huff);
+		int num23;
 		unchecked
 		{
-			int num48 = 1 + w * 4;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0L;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_2 = 0;
-			num2 = 120;
-			num3 = 8;
-			int num49;
-			if ((uint)num3 >= 0u && (uint)num3 <= 16u)
-			{
-				num49 = -1;
-			}
-			else
+			int num = 1 + w * 4;
+			localsPointer->field_0 = 0L;
+			localsPointer->field_1 = 0;
+			localsPointer->field_2 = 0;
+			int num2 = 120;
+			int num3 = 8;
+			if ((uint)num3 < 0u || (uint)num3 > 16u)
 			{
 				wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1279);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num49 = 0;
 			}
-			int num50;
-			if ((ulong)(uint)num2 < (ulong)(1L << (int)(uint)num3))
-			{
-				num50 = -1;
-			}
-			else
+			if ((ulong)(uint)num2 >= (ulong)(1L << (int)(uint)num3))
 			{
 				wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1279);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num50 = 0;
 			}
-			long num51 = (long)((ulong)(uint)num2 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-			long field_ = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num51;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_;
-			int field_2 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num3;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_2;
-			int num52;
-			if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-			{
-				num52 = -1;
-			}
-			else
+			localsPointer->field_0 |= (long)((ulong)(uint)num2 << (int)(uint)localsPointer->field_1);
+			localsPointer->field_1 += num3;
+			if (localsPointer->field_1 > 64)
 			{
 				wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1279);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num52 = 0;
 			}
-			num4 = 1;
-			num5 = 8;
-			int num53;
-			if ((uint)num5 >= 0u && (uint)num5 <= 16u)
-			{
-				num53 = -1;
-			}
-			else
+			int num4 = 1;
+			int num5 = 8;
+			if ((uint)num5 < 0u || (uint)num5 > 16u)
 			{
 				wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1280);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num53 = 0;
 			}
-			int num54;
-			if ((ulong)(uint)num4 < (ulong)(1L << (int)(uint)num5))
-			{
-				num54 = -1;
-			}
-			else
+			if ((ulong)(uint)num4 >= (ulong)(1L << (int)(uint)num5))
 			{
 				wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1280);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num54 = 0;
 			}
-			long num55 = (long)((ulong)(uint)num4 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-			long field_3 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num55;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_3;
-			int field_4 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num5;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_4;
-			int num56;
-			if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-			{
-				num56 = -1;
-			}
-			else
+			localsPointer->field_0 |= (long)((ulong)(uint)num4 << (int)(uint)localsPointer->field_1);
+			localsPointer->field_1 += num5;
+			if (localsPointer->field_1 > 64)
 			{
 				wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1280);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num56 = 0;
 			}
-			num6 = 1;
-			num7 = 1;
-			int num57;
-			if ((uint)num7 >= 0u && (uint)num7 <= 16u)
-			{
-				num57 = -1;
-			}
-			else
+			int num6 = 1;
+			int num7 = 1;
+			if ((uint)num7 < 0u || (uint)num7 > 16u)
 			{
 				wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1283);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num57 = 0;
 			}
-			int num58;
-			if ((ulong)(uint)num6 < (ulong)(1L << (int)(uint)num7))
-			{
-				num58 = -1;
-			}
-			else
+			if ((ulong)(uint)num6 >= (ulong)(1L << (int)(uint)num7))
 			{
 				wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1283);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num58 = 0;
 			}
-			long num59 = (long)((ulong)(uint)num6 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-			long field_5 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num59;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_5;
-			int field_6 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num7;
-			startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_6;
-			int num60;
-			if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-			{
-				num60 = -1;
-			}
-			else
+			localsPointer->field_0 |= (long)((ulong)(uint)num6 << (int)(uint)localsPointer->field_1);
+			localsPointer->field_1 += num7;
+			if (localsPointer->field_1 > 64)
 			{
 				wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1283);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num60 = 0;
 			}
-			vector_unsigned_int64_class_std_allocator_unsigned_int64_Constructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3);
-			resize_d4pmvud.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3, (uint)((w + 1) * h));
+			vector_unsigned_int64_class_std_allocator_unsigned_int64_Constructor.Invoke(&localsPointer->field_3);
+			resize_d4pmvud.Invoke(&localsPointer->field_3, (uint)((w + 1) * h));
 			if (ExceptionInfo.Current == null)
 			{
-				ptr = data_dtgl25a.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3);
-				llvm_memset_p0_i64.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_4, 0, 1152L, isVolatile: false);
-				ptr2 = pImg;
-				num8 = 0;
-				int num61 = fpng_adler32.Invoke(pImg, (uint)(num48 * h), 1);
+				void* ptr = data_dtgl25a.Invoke(&localsPointer->field_3);
+				llvm_memset_p0_i64.Invoke(&localsPointer->field_4, 0, 1152L, isVolatile: false);
+				void* ptr2 = pImg;
+				int num8 = 0;
+				int num9 = fpng_adler32.Invoke(pImg, (uint)(num * h), 1);
 				if (ExceptionInfo.Current == null)
 				{
-					num9 = num61;
-					num10 = 3;
-					for (num11 = 0; (uint)num11 < (uint)h; num11++)
+					int num10 = num9;
+					for (int i = 0; (uint)i < (uint)h; i++)
 					{
-						num12 = num8 + num48;
-						num13 = (byte)((sbyte*)ptr2)[(uint)num8++];
-						long num62 = (uint)(1 | (num13 << 8));
+						int num11 = num8 + num;
+						int num12 = (byte)((sbyte*)ptr2)[(uint)num8++];
+						long num13 = (uint)(1 | (num12 << 8));
 						void* ptr3 = ptr;
 						ptr = (byte*)ptr3 + 8;
-						*(long*)ptr3 = num62;
-						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)num13]++;
-						num15 = *(int*)((byte*)ptr2 + (uint)num8);
-						long num63 = (long)((ulong)(uint)num15 << 8);
+						*(long*)ptr3 = num13;
+						((int*)(&localsPointer->field_4))[(uint)num12]++;
+						int num14 = *(int*)((byte*)ptr2 + (uint)num8);
+						long num15 = (long)((ulong)(uint)num14 << 8);
 						void* ptr4 = ptr;
 						ptr = (byte*)ptr4 + 8;
-						*(long*)ptr4 = num63;
-						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)(num15 & 0xFF)]++;
-						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)((num15 >>> 8) & 0xFF)]++;
-						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)((num15 >>> 16) & 0xFF)]++;
-						((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)(num15 >>> 24)]++;
+						*(long*)ptr4 = num15;
+						((int*)(&localsPointer->field_4))[(uint)(num14 & 0xFF)]++;
+						((int*)(&localsPointer->field_4))[(uint)((num14 >>> 8) & 0xFF)]++;
+						((int*)(&localsPointer->field_4))[(uint)((num14 >>> 16) & 0xFF)]++;
+						((int*)(&localsPointer->field_4))[(uint)(num14 >>> 24)]++;
 						num8 += 4;
-						num14 = num15;
-						while ((uint)num8 < (uint)num12)
+						int num16 = num14;
+						while ((uint)num8 < (uint)num11)
 						{
-							num16 = *(int*)((byte*)ptr2 + (uint)num8);
-							if (num16 == num14)
+							int num17 = *(int*)((byte*)ptr2 + (uint)num8);
+							if (num17 == num16)
 							{
-								num17 = 4;
-								for (num18 = minimum_ymfg3kb.Invoke(252, num12 - num8); (uint)num17 < (uint)num18 && *(int*)((byte*)ptr2 + (uint)num8 + (uint)num17) == num16; num17 += 4)
+								int j = 4;
+								for (int num18 = minimum_ymfg3kb.Invoke(252, num11 - num8); (uint)j < (uint)num18 && *(int*)((byte*)ptr2 + (uint)num8 + (uint)j) == num17; j += 4)
 								{
 								}
-								long num64 = (uint)(num17 - 1);
+								long num19 = (uint)(j - 1);
 								void* ptr5 = ptr;
 								ptr = (byte*)ptr5 + 8;
-								*(long*)ptr5 = num64;
-								long num65 = (ushort)((short*)g_defl_len_sym.__pointer)[(uint)(num17 - 3)];
-								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[num65]++;
-								num8 += num17;
+								*(long*)ptr5 = num19;
+								long num20 = (ushort)((short*)g_defl_len_sym.__pointer)[(uint)(j - 3)];
+								((int*)(&localsPointer->field_4))[num20]++;
+								num8 += j;
 							}
 							else
 							{
-								long num66 = (long)((ulong)(uint)num16 << 8);
+								long num21 = (long)((ulong)(uint)num17 << 8);
 								void* ptr6 = ptr;
 								ptr = (byte*)ptr6 + 8;
-								*(long*)ptr6 = num66;
-								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)(num16 & 0xFF)]++;
-								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)((num16 >>> 8) & 0xFF)]++;
-								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)((num16 >>> 16) & 0xFF)]++;
-								((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[(uint)(num16 >>> 24)]++;
-								num14 = num16;
+								*(long*)ptr6 = num21;
+								((int*)(&localsPointer->field_4))[(uint)(num17 & 0xFF)]++;
+								((int*)(&localsPointer->field_4))[(uint)((num17 >>> 8) & 0xFF)]++;
+								((int*)(&localsPointer->field_4))[(uint)((num17 >>> 16) & 0xFF)]++;
+								((int*)(&localsPointer->field_4))[(uint)(num17 >>> 24)]++;
+								num16 = num17;
 								num8 += 4;
 							}
 						}
 					}
-					int num67;
-					if (num8 == h * num48)
-					{
-						num67 = -1;
-					}
-					else
+					if (num8 != h * num)
 					{
 						wassert.Invoke(String_bjvsuxc.__pointer, String_uxbkrtb.__pointer, 1365);
 						if (ExceptionInfo.Current != null)
 						{
-							goto IL_19b9;
+							goto IL_15fe;
 						}
-						num67 = 0;
 					}
-					num20 = (int)(((long)ptr - (long)data_dtgl25a.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3)) / 8L);
-					int num68;
-					if ((ulong)(uint)num20 <= (ulong)size_trt5i3d.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3))
-					{
-						num68 = -1;
-					}
-					else
+					int num22 = (int)(((long)ptr - (long)data_dtgl25a.Invoke(&localsPointer->field_3)) / 8L);
+					if ((ulong)(uint)num22 > (ulong)size_trt5i3d.Invoke(&localsPointer->field_3))
 					{
 						wassert.Invoke(String_hsgehfc.__pointer, String_uxbkrtb.__pointer, 1367);
 						if (ExceptionInfo.Current != null)
 						{
-							goto IL_19b9;
+							goto IL_15fe;
 						}
-						num68 = 0;
 					}
-					((int*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_4))[256] = 1;
-					adjust_freq32.Invoke(pFreq16: &startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_0, num_freq: 288, pFreq: &startFrame.GetLocalsPointer<LocalVariables>()->field_4);
+					((int*)(&localsPointer->field_4))[256] = 1;
+					adjust_freq32.Invoke(pFreq16: &localsPointer->field_5.m_huff_count, num_freq: 288, pFreq: &localsPointer->field_4);
 					if (ExceptionInfo.Current == null)
 					{
-						llvm_memset_p0_i64.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_0) + sizeof(InlineArray288_Int16), 0, 64L, isVolatile: false);
-						((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_0) + sizeof(InlineArray288_Int16)))[3] = 1;
-						((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_0) + sizeof(InlineArray288_Int16)))[4] = 1;
-						bool flag = defl_start_dynamic_block.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_5, pDst, &startFrame.GetLocalsPointer<LocalVariables>()->field_2, dst_buf_size, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, &startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+						llvm_memset_p0_i64.Invoke((byte*)(&localsPointer->field_5.m_huff_count) + sizeof(InlineArray288_Int16), 0, 64L, isVolatile: false);
+						((short*)((byte*)(&localsPointer->field_5.m_huff_count) + sizeof(InlineArray288_Int16)))[3] = 1;
+						((short*)((byte*)(&localsPointer->field_5.m_huff_count) + sizeof(InlineArray288_Int16)))[4] = 1;
+						bool flag = defl_start_dynamic_block.Invoke(&localsPointer->field_5, pDst, &localsPointer->field_2, dst_buf_size, &localsPointer->field_0, &localsPointer->field_1);
 						if (ExceptionInfo.Current == null)
 						{
 							if (!flag)
 							{
-								num = 0;
-								num21 = 1;
+								num23 = 0;
 							}
 							else
 							{
-								int num69;
-								if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 7)
-								{
-									num69 = -1;
-								}
-								else
+								if (localsPointer->field_1 > 7)
 								{
 									wassert.Invoke(String_vpte4cc.__pointer, String_uxbkrtb.__pointer, 1382);
 									if (ExceptionInfo.Current != null)
 									{
-										goto IL_19b9;
+										goto IL_15fe;
 									}
-									num69 = 0;
 								}
-								int num70;
-								if ((ushort)((short*)((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_1) + sizeof(InlineArray288_Int16)))[3] == 0 && ((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_2) + sizeof(InlineArray288_SByte))[3] == 1)
-								{
-									num70 = -1;
-								}
-								else
+								if ((ushort)((short*)((byte*)(&localsPointer->field_5.m_huff_codes) + sizeof(InlineArray288_Int16)))[3] != 0 || ((byte*)(&localsPointer->field_5.m_huff_code_sizes) + sizeof(InlineArray288_SByte))[3] != 1)
 								{
 									wassert.Invoke(String_df5ko9b.__pointer, String_uxbkrtb.__pointer, 1383);
 									if (ExceptionInfo.Current != null)
 									{
-										goto IL_19b9;
+										goto IL_15fe;
 									}
-									num70 = 0;
 								}
-								long field_27;
-								int field_28;
-								for (num22 = 0; (uint)num22 < (uint)num20; field_27 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 >>> (int)(uint)num44, startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_27, field_28 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 - num44, startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_28, num22++)
+								int num45;
+								for (int k = 0; (uint)k < (uint)num22; localsPointer->field_0 >>>= (int)(uint)num45, localsPointer->field_1 -= num45, k++)
 								{
-									num23 = *(long*)vector_unsigned_int64_class_std_allocator_unsigned_int64_Index.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3, (uint)num22);
-									num24 = (int)(num23 & 0xFFL);
-									if (num24 == 0)
+									long num24 = *(long*)vector_unsigned_int64_class_std_allocator_unsigned_int64_Index.Invoke(&localsPointer->field_3, (uint)k);
+									int num25 = (int)(num24 & 0xFFL);
+									if (num25 == 0)
 									{
-										num25 = (int)(num23 >>> 8);
-										num26 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_1))[(uint)(num25 & 0xFF)];
-										num27 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_2))[(uint)(num25 & 0xFF)];
-										int num71;
-										if ((uint)num27 >= 1u && (uint)num27 <= 16u)
-										{
-											num71 = -1;
-										}
-										else
+										int num26 = (int)(num24 >>> 8);
+										int num27 = (ushort)((short*)(&localsPointer->field_5.m_huff_codes))[(uint)(num26 & 0xFF)];
+										int num28 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)(num26 & 0xFF)];
+										if ((uint)num28 < 1u || (uint)num28 > 16u)
 										{
 											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1394);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num71 = 0;
 										}
-										int num72;
-										if ((ulong)(uint)num26 < (ulong)(1L << (int)(uint)num27))
-										{
-											num72 = -1;
-										}
-										else
+										if ((ulong)(uint)num27 >= (ulong)(1L << (int)(uint)num28))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1394);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num72 = 0;
 										}
-										long num73 = (long)((ulong)(uint)num26 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-										long field_7 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num73;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_7;
-										int field_8 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num27;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_8;
-										int num74;
-										if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-										{
-											num74 = -1;
-										}
-										else
+										localsPointer->field_0 |= (long)((ulong)(uint)num27 << (int)(uint)localsPointer->field_1);
+										localsPointer->field_1 += num28;
+										if (localsPointer->field_1 > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1394);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num74 = 0;
 										}
-										num25 >>>= 8;
-										num28 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_1))[(uint)(num25 & 0xFF)];
-										num29 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_2))[(uint)(num25 & 0xFF)];
-										int num75;
-										if ((uint)num29 >= 1u && (uint)num29 <= 16u)
-										{
-											num75 = -1;
-										}
-										else
+										num26 >>>= 8;
+										int num29 = (ushort)((short*)(&localsPointer->field_5.m_huff_codes))[(uint)(num26 & 0xFF)];
+										int num30 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)(num26 & 0xFF)];
+										if ((uint)num30 < 1u || (uint)num30 > 16u)
 										{
 											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1397);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num75 = 0;
 										}
-										int num76;
-										if ((ulong)(uint)num28 < (ulong)(1L << (int)(uint)num29))
-										{
-											num76 = -1;
-										}
-										else
+										if ((ulong)(uint)num29 >= (ulong)(1L << (int)(uint)num30))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1397);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num76 = 0;
 										}
-										long num77 = (long)((ulong)(uint)num28 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-										long field_9 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num77;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_9;
-										int field_10 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num29;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_10;
-										int num78;
-										if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-										{
-											num78 = -1;
-										}
-										else
+										localsPointer->field_0 |= (long)((ulong)(uint)num29 << (int)(uint)localsPointer->field_1);
+										localsPointer->field_1 += num30;
+										if (localsPointer->field_1 > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1397);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num78 = 0;
 										}
-										num25 >>>= 8;
-										num30 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_1))[(uint)(num25 & 0xFF)];
-										num31 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_2))[(uint)(num25 & 0xFF)];
-										int num79;
-										if ((uint)num31 >= 1u && (uint)num31 <= 16u)
-										{
-											num79 = -1;
-										}
-										else
+										num26 >>>= 8;
+										int num31 = (ushort)((short*)(&localsPointer->field_5.m_huff_codes))[(uint)(num26 & 0xFF)];
+										int num32 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)(num26 & 0xFF)];
+										if ((uint)num32 < 1u || (uint)num32 > 16u)
 										{
 											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1400);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num79 = 0;
 										}
-										int num80;
-										if ((ulong)(uint)num30 < (ulong)(1L << (int)(uint)num31))
-										{
-											num80 = -1;
-										}
-										else
+										if ((ulong)(uint)num31 >= (ulong)(1L << (int)(uint)num32))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1400);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num80 = 0;
 										}
-										long num81 = (long)((ulong)(uint)num30 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-										long field_11 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num81;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_11;
-										int field_12 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num31;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_12;
-										int num82;
-										if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-										{
-											num82 = -1;
-										}
-										else
+										localsPointer->field_0 |= (long)((ulong)(uint)num31 << (int)(uint)localsPointer->field_1);
+										localsPointer->field_1 += num32;
+										if (localsPointer->field_1 > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1400);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num82 = 0;
 										}
-										num25 >>>= 8;
-										if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 >= 49)
+										num26 >>>= 8;
+										if (localsPointer->field_1 >= 49)
 										{
-											if ((uint)(startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 8) > (uint)dst_buf_size)
+											if ((uint)(localsPointer->field_2 + 8) > (uint)dst_buf_size)
 											{
-												goto IL_0f76;
+												goto IL_0d86;
 											}
-											long field_13 = startFrame.GetLocalsPointer<LocalVariables>()->field_0;
-											*(long*)((byte*)pDst + (uint)startFrame.GetLocalsPointer<LocalVariables>()->field_2) = field_13;
-											num32 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 & -8;
-											int field_14 = startFrame.GetLocalsPointer<LocalVariables>()->field_2 + (num32 >>> 3);
-											startFrame.GetLocalsPointer<LocalVariables>()->field_2 = field_14;
-											int num83;
-											if ((uint)num32 < 64u)
-											{
-												num83 = -1;
-											}
-											else
+											long field_ = localsPointer->field_0;
+											*(long*)((byte*)pDst + (uint)localsPointer->field_2) = field_;
+											int num33 = localsPointer->field_1 & -8;
+											localsPointer->field_2 += num33 >>> 3;
+											if ((uint)num33 >= 64u)
 											{
 												wassert.Invoke(String_2ej5tjb.__pointer, String_uxbkrtb.__pointer, 1405);
 												if (ExceptionInfo.Current != null)
 												{
-													goto IL_19b9;
+													goto IL_15fe;
 												}
-												num83 = 0;
 											}
-											long field_15 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 >>> (int)(uint)num32;
-											startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_15;
-											int field_16 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 - num32;
-											startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_16;
+											localsPointer->field_0 >>>= (int)(uint)num33;
+											localsPointer->field_1 -= num33;
 										}
-										num33 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_1))[(uint)num25];
-										num34 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_2))[(uint)num25];
-										int num84;
-										if ((uint)num34 >= 1u && (uint)num34 <= 16u)
-										{
-											num84 = -1;
-										}
-										else
+										int num34 = (ushort)((short*)(&localsPointer->field_5.m_huff_codes))[(uint)num26];
+										int num35 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)num26];
+										if ((uint)num35 < 1u || (uint)num35 > 16u)
 										{
 											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1408);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num84 = 0;
 										}
-										int num85;
-										if ((ulong)(uint)num33 < (ulong)(1L << (int)(uint)num34))
-										{
-											num85 = -1;
-										}
-										else
+										if ((ulong)(uint)num34 >= (ulong)(1L << (int)(uint)num35))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1408);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num85 = 0;
 										}
-										long num86 = (long)((ulong)(uint)num33 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-										long field_17 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num86;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_17;
-										int field_18 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num34;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_18;
-										int num87;
-										if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-										{
-											num87 = -1;
-										}
-										else
+										localsPointer->field_0 |= (long)((ulong)(uint)num34 << (int)(uint)localsPointer->field_1);
+										localsPointer->field_1 += num35;
+										if (localsPointer->field_1 > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1408);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num87 = 0;
 										}
 									}
-									else if (num24 == 1)
+									else if (num25 == 1)
 									{
-										num35 = (int)(num23 >>> 8);
-										num36 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_1))[(uint)num35];
-										num37 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_2))[(uint)num35];
-										int num88;
-										if ((uint)num37 >= 1u && (uint)num37 <= 16u)
-										{
-											num88 = -1;
-										}
-										else
+										int num36 = (int)(num24 >>> 8);
+										int num37 = (ushort)((short*)(&localsPointer->field_5.m_huff_codes))[(uint)num36];
+										int num38 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)num36];
+										if ((uint)num38 < 1u || (uint)num38 > 16u)
 										{
 											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1413);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num88 = 0;
 										}
-										int num89;
-										if ((ulong)(uint)num36 < (ulong)(1L << (int)(uint)num37))
-										{
-											num89 = -1;
-										}
-										else
+										if ((ulong)(uint)num37 >= (ulong)(1L << (int)(uint)num38))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1413);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num89 = 0;
 										}
-										long num90 = (long)((ulong)(uint)num36 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-										long field_19 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num90;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_19;
-										int field_20 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num37;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_20;
-										int num91;
-										if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-										{
-											num91 = -1;
-										}
-										else
+										localsPointer->field_0 |= (long)((ulong)(uint)num37 << (int)(uint)localsPointer->field_1);
+										localsPointer->field_1 += num38;
+										if (localsPointer->field_1 > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1413);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num91 = 0;
 										}
 									}
 									else
 									{
-										num39 = num24 + 1 - 3;
-										num40 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_1))[(ushort)((short*)g_defl_len_sym.__pointer)[(uint)num39]];
-										num41 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_2))[(ushort)((short*)g_defl_len_sym.__pointer)[(uint)num39]];
-										int num92;
-										if ((uint)num41 >= 1u && (uint)num41 <= 16u)
-										{
-											num92 = -1;
-										}
-										else
+										int num39 = num25 + 1 - 3;
+										int num40 = (ushort)((short*)(&localsPointer->field_5.m_huff_codes))[(ushort)((short*)g_defl_len_sym.__pointer)[(uint)num39]];
+										int num41 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(ushort)((short*)g_defl_len_sym.__pointer)[(uint)num39]];
+										if ((uint)num41 < 1u || (uint)num41 > 16u)
 										{
 											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1421);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num92 = 0;
 										}
-										int num93;
-										if ((ulong)(uint)num40 < (ulong)(1L << (int)(uint)num41))
-										{
-											num93 = -1;
-										}
-										else
+										if ((ulong)(uint)num40 >= (ulong)(1L << (int)(uint)num41))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1421);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num93 = 0;
 										}
-										long num94 = (long)((ulong)(uint)num40 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-										long field_21 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num94;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_21;
-										int field_22 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num41;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_22;
-										int num95;
-										if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-										{
-											num95 = -1;
-										}
-										else
+										localsPointer->field_0 |= (long)((ulong)(uint)num40 << (int)(uint)localsPointer->field_1);
+										localsPointer->field_1 += num41;
+										if (localsPointer->field_1 > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1421);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num95 = 0;
 										}
-										int num96 = num39;
-										long num97 = (byte)((sbyte*)g_defl_len_extra.__pointer)[(uint)num39];
-										num42 = num96 & ((int*)g_bitmasks.__pointer)[num97];
+										long num42 = (byte)((sbyte*)g_defl_len_extra.__pointer)[(uint)num39];
+										int num43 = num39 & ((int*)g_bitmasks.__pointer)[num42];
+										int num44;
 										checked
 										{
-											num43 = unchecked((byte)((sbyte*)g_defl_len_extra.__pointer)[(uint)num39]) + 1;
+											num44 = unchecked((byte)((sbyte*)g_defl_len_extra.__pointer)[(uint)num39]) + 1;
 										}
-										int num98;
-										if ((uint)num43 >= 0u && (uint)num43 <= 16u)
-										{
-											num98 = -1;
-										}
-										else
+										if ((uint)num44 < 0u || (uint)num44 > 16u)
 										{
 											wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1422);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num98 = 0;
 										}
-										int num99;
-										if ((ulong)(uint)num42 < (ulong)(1L << (int)(uint)num43))
-										{
-											num99 = -1;
-										}
-										else
+										if ((ulong)(uint)num43 >= (ulong)(1L << (int)(uint)num44))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1422);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num99 = 0;
 										}
-										long num100 = (long)((ulong)(uint)num42 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-										long field_23 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num100;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_23;
-										int field_24 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num43;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_24;
-										int num101;
-										if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-										{
-											num101 = -1;
-										}
-										else
+										localsPointer->field_0 |= (long)((ulong)(uint)num43 << (int)(uint)localsPointer->field_1);
+										localsPointer->field_1 += num44;
+										if (localsPointer->field_1 > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1422);
 											if (ExceptionInfo.Current != null)
 											{
-												goto IL_19b9;
+												goto IL_15fe;
 											}
-											num101 = 0;
 										}
 									}
-									if ((uint)(startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 8) > (uint)dst_buf_size)
+									if ((uint)(localsPointer->field_2 + 8) > (uint)dst_buf_size)
 									{
-										goto IL_160e;
+										goto IL_132b;
 									}
-									long field_25 = startFrame.GetLocalsPointer<LocalVariables>()->field_0;
-									*(long*)((byte*)pDst + (uint)startFrame.GetLocalsPointer<LocalVariables>()->field_2) = field_25;
-									num44 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 & -8;
-									int field_26 = startFrame.GetLocalsPointer<LocalVariables>()->field_2 + (num44 >>> 3);
-									startFrame.GetLocalsPointer<LocalVariables>()->field_2 = field_26;
-									int num102;
-									if ((uint)num44 < 64u)
+									long field_2 = localsPointer->field_0;
+									*(long*)((byte*)pDst + (uint)localsPointer->field_2) = field_2;
+									num45 = localsPointer->field_1 & -8;
+									localsPointer->field_2 += num45 >>> 3;
+									if ((uint)num45 < 64u)
 									{
-										num102 = -1;
 										continue;
 									}
 									wassert.Invoke(String_2ej5tjb.__pointer, String_uxbkrtb.__pointer, 1428);
 									if (ExceptionInfo.Current == null)
 									{
-										num102 = 0;
 										continue;
 									}
-									goto IL_19b9;
+									goto IL_15fe;
 								}
-								num45 = (ushort)((short*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_1))[256];
-								num46 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_5.field_2))[256];
-								int num103;
-								if ((uint)num46 >= 1u && (uint)num46 <= 16u)
-								{
-									num103 = -1;
-								}
-								else
+								int num46 = (ushort)((short*)(&localsPointer->field_5.m_huff_codes))[256];
+								int num47 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[256];
+								if ((uint)num47 < 1u || (uint)num47 > 16u)
 								{
 									wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1431);
 									if (ExceptionInfo.Current != null)
 									{
-										goto IL_19b9;
+										goto IL_15fe;
 									}
-									num103 = 0;
 								}
-								int num104;
-								if ((ulong)(uint)num45 < (ulong)(1L << (int)(uint)num46))
-								{
-									num104 = -1;
-								}
-								else
+								if ((ulong)(uint)num46 >= (ulong)(1L << (int)(uint)num47))
 								{
 									wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1431);
 									if (ExceptionInfo.Current != null)
 									{
-										goto IL_19b9;
+										goto IL_15fe;
 									}
-									num104 = 0;
 								}
-								long num105 = (long)((ulong)(uint)num45 << (int)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_1);
-								long field_29 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 | num105;
-								startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_29;
-								int field_30 = startFrame.GetLocalsPointer<LocalVariables>()->field_1 + num46;
-								startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_30;
-								int num106;
-								if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 <= 64)
-								{
-									num106 = -1;
-								}
-								else
+								localsPointer->field_0 |= (long)((ulong)(uint)num46 << (int)(uint)localsPointer->field_1);
+								localsPointer->field_1 += num47;
+								if (localsPointer->field_1 > 64)
 								{
 									wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1431);
 									if (ExceptionInfo.Current != null)
 									{
-										goto IL_19b9;
+										goto IL_15fe;
 									}
-									num106 = 0;
 								}
 								while (true)
 								{
-									if (startFrame.GetLocalsPointer<LocalVariables>()->field_1 > 0)
+									if (localsPointer->field_1 > 0)
 									{
-										if ((uint)(startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 1) > (uint)dst_buf_size)
+										if ((uint)(localsPointer->field_2 + 1) > (uint)dst_buf_size)
 										{
-											num = 0;
-											num21 = 1;
+											num23 = 0;
 											break;
 										}
-										sbyte b = (sbyte)startFrame.GetLocalsPointer<LocalVariables>()->field_0;
-										((sbyte*)pDst)[(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_2] = b;
-										int field_31 = startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 1;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_2 = field_31;
-										long field_32 = startFrame.GetLocalsPointer<LocalVariables>()->field_0 >>> 8;
-										startFrame.GetLocalsPointer<LocalVariables>()->field_0 = field_32;
-										int field_33 = checked(startFrame.GetLocalsPointer<LocalVariables>()->field_1 - 8);
-										startFrame.GetLocalsPointer<LocalVariables>()->field_1 = field_33;
-										continue;
-									}
-									num47 = 0;
-									while (true)
-									{
-										if ((uint)num47 < 4u)
+										sbyte b = (sbyte)localsPointer->field_0;
+										((sbyte*)pDst)[(uint)localsPointer->field_2] = b;
+										localsPointer->field_2++;
+										localsPointer->field_0 >>>= 8;
+										checked
 										{
-											if ((uint)(startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 1) > (uint)dst_buf_size)
-											{
-												num = 0;
-												num21 = 1;
-												break;
-											}
-											((sbyte*)pDst)[(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_2] = (sbyte)(num9 >>> 24);
-											int field_34 = startFrame.GetLocalsPointer<LocalVariables>()->field_2 + 1;
-											startFrame.GetLocalsPointer<LocalVariables>()->field_2 = field_34;
-											num9 <<= 8;
-											num47++;
+											localsPointer->field_1 -= 8;
 											continue;
 										}
-										num = startFrame.GetLocalsPointer<LocalVariables>()->field_2;
-										num21 = 1;
+									}
+									int num48 = 0;
+									while (true)
+									{
+										if ((uint)num48 < 4u)
+										{
+											if ((uint)(localsPointer->field_2 + 1) > (uint)dst_buf_size)
+											{
+												num23 = 0;
+												break;
+											}
+											((sbyte*)pDst)[(uint)localsPointer->field_2] = (sbyte)(num10 >>> 24);
+											localsPointer->field_2++;
+											num10 <<= 8;
+											num48++;
+											continue;
+										}
+										num23 = localsPointer->field_2;
 										break;
 									}
 									break;
 								}
 							}
-							goto IL_199a;
+							goto IL_15e5;
 						}
 					}
 				}
 			}
-			goto IL_19b9;
+			goto IL_15fe;
 		}
-		IL_160e:
-		num = 0;
-		num21 = 1;
-		goto IL_199a;
-		IL_0f76:
-		num = 0;
-		num21 = 1;
-		goto IL_199a;
-		IL_199a:
-		vector_unsigned_int64_class_std_allocator_unsigned_int64_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3);
-		int result = num;
-		StackFrameList.Current.Clear(startFrame);
-		return result;
-		IL_19b9:
+		IL_15fe:
 		ExceptionInfo? current = ExceptionInfo.Current;
 		ExceptionInfo.Current = null;
-		vector_unsigned_int64_class_std_allocator_unsigned_int64_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_3);
+		vector_unsigned_int64_class_std_allocator_unsigned_int64_Destructor.Invoke(&localsPointer->field_3);
 		ExceptionInfo.Current = current;
 		return 0;
+		IL_0d86:
+		num23 = 0;
+		goto IL_15e5;
+		IL_132b:
+		num23 = 0;
+		goto IL_15e5;
+		IL_15e5:
+		vector_unsigned_int64_class_std_allocator_unsigned_int64_Destructor.Invoke(&localsPointer->field_3);
+		int result = num23;
+		StackFrameList.Current.Clear(startFrame);
+		return result;
 	}
 }

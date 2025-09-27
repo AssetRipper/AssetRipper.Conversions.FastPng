@@ -25,6 +25,6 @@ internal static partial class String_ftb25bb
 	unsafe static String_ftb25bb()
 	{
 		__pointer = unchecked((InlineArray38_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray38_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray38_Int16, char>("l && (l <= 32) && (bit_buf_size >= l)\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray38_Int16, char>("l && (l <= 32) && (bit_buf_size >= l)\0");
 	}
 }

@@ -25,6 +25,6 @@ internal static partial class String_ktv524d
 	unsafe static String_ktv524d()
 	{
 		__pointer = unchecked((InlineArray40_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray40_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray40_Int16, char>("bit_buf_size >= FPNG_DECODER_TABLE_BITS\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray40_Int16, char>("bit_buf_size >= FPNG_DECODER_TABLE_BITS\0");
 	}
 }

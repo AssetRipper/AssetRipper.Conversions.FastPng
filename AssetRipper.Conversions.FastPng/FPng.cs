@@ -43,8 +43,8 @@ public static partial class FPng
 
 	static unsafe ReadOnlySpan<T> AsSpan<T>(this std_vector_7uge3hb vector) where T : unmanaged
 	{
-		T* startPtr = (T*)vector.field_0.field_0.field_0;
-		T* endPtr = (T*)vector.field_0.field_0.field_1;
+		T* startPtr = (T*)vector.Mypair.Myval2.Myfirst;
+		T* endPtr = (T*)vector.Mypair.Myval2.Mylast;
 		int length = (int)(endPtr - startPtr);
 		return new ReadOnlySpan<T>(startPtr, length);
 	}

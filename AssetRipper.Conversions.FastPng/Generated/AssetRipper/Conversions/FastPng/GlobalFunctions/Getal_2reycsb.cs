@@ -11,6 +11,6 @@ internal static partial class Getal_2reycsb
 	[return: NativeType("class std::allocator<unsigned __int64> const &")]
 	public unsafe static void* Invoke(void* @this)
 	{
-		return Get_first_gcgh4xa.Invoke(&unchecked((std_vector_mvt3mha*)@this)->field_0);
+		return Get_first_gcgh4xa.Invoke(&unchecked((std_vector_mvt3mha*)@this)->Mypair);
 	}
 }

@@ -11,9 +11,9 @@ internal static partial class Tidy_guard_class_std_vector_unsigned_int_class_std
 	{
 		unchecked
 		{
-			if (((std_Tidy_guard*)@this)->field_0 != null)
+			if (((std_Tidy_guard*)@this)->Target != null)
 			{
-				Tidy_kyqxybb.Invoke(((std_Tidy_guard*)@this)->field_0);
+				Tidy_kyqxybb.Invoke(((std_Tidy_guard*)@this)->Target);
 			}
 		}
 	}

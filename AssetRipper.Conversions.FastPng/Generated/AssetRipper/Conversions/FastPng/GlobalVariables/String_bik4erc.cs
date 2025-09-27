@@ -25,6 +25,6 @@ internal static partial class String_bik4erc
 	unsafe static String_bik4erc()
 	{
 		__pointer = unchecked((InlineArray32_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray32_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray32_Int16, char>("temp_buf_ofs <= temp_buf.size()\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray32_Int16, char>("temp_buf_ofs <= temp_buf.size()\0");
 	}
 }

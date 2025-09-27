@@ -21,111 +21,88 @@ internal static partial class defl_start_dynamic_block
 	public unsafe static bool Invoke([NativeType("struct fpng::defl_huff *")] void* d, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int &")] void* dst_ofs, [NativeType("unsigned int")] int dst_buf_size, [NativeType("unsigned __int64 &")] void* bit_buf, [NativeType("int &")] void* bit_buf_size)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		bool flag = false;
-		int num = 0;
-		int num2 = 0;
-		int num3 = 0;
-		int num4 = 0;
-		int num5 = 0;
-		int num6 = 0;
-		int num7 = 0;
-		int num8 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray320_SByte);
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray320_SByte);
-		sbyte b = 0;
-		int num9 = 0;
-		int num10 = 0;
-		int num11 = 0;
-		int num12 = 0;
-		int num13 = 0;
-		int num14 = 0;
-		int num15 = 0;
-		int num16 = 0;
-		int num17 = 0;
-		int num18 = 0;
-		int num19 = 0;
-		int num20 = 0;
-		int num21 = 0;
-		int num22 = 0;
-		int num23 = 0;
-		sbyte b2 = -1;
-		unchecked((short*)(&((fpng_defl_huff*)d)->field_0))[256] = 1;
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = default(InlineArray320_SByte);
+		localsPointer->field_1 = default(InlineArray320_SByte);
+		sbyte b = -1;
+		unchecked((short*)(&((fpng_defl_huff*)d)->m_huff_count))[256] = 1;
 		defl_optimize_huffman_table.Invoke(d, 0, 288, 12, 0);
 		defl_optimize_huffman_table.Invoke(d, 1, 32, 12, 0);
 		int i;
-		for (i = 286; i > 257 && unchecked((sbyte*)(&((fpng_defl_huff*)d)->field_2))[i - 1] == 0; i += -1)
+		for (i = 286; i > 257 && unchecked((sbyte*)(&((fpng_defl_huff*)d)->m_huff_code_sizes))[i - 1] == 0; i += -1)
 		{
 		}
-		for (num = 30; num > 1 && (unchecked((byte*)(&((fpng_defl_huff*)d)->field_2)) + sizeof(InlineArray288_SByte))[num - 1] == 0; num += -1)
+		int j;
+		for (j = 30; j > 1 && (unchecked((byte*)(&((fpng_defl_huff*)d)->m_huff_code_sizes)) + sizeof(InlineArray288_SByte))[j - 1] == 0; j += -1)
 		{
 		}
 		unchecked
 		{
-			llvm_memcpy_p0_p0_i64.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0, &((fpng_defl_huff*)d)->field_2, i, isVolatile: false);
-			llvm_memcpy_p0_p0_i64.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0) + i, (byte*)(&((fpng_defl_huff*)d)->field_2) + sizeof(InlineArray288_SByte), num, isVolatile: false);
-			num4 = checked(i + num);
-			num5 = 0;
-			num6 = 0;
-			num7 = 0;
-			llvm_memset_p0_i64.Invoke((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16), 0, 38L, isVolatile: false);
-			for (num3 = 0; (uint)num3 < (uint)num4; num3++)
+			llvm_memcpy_p0_p0_i64.Invoke(&localsPointer->field_0, &((fpng_defl_huff*)d)->m_huff_code_sizes, i, isVolatile: false);
+			llvm_memcpy_p0_p0_i64.Invoke((byte*)(&localsPointer->field_0) + i, (byte*)(&((fpng_defl_huff*)d)->m_huff_code_sizes) + sizeof(InlineArray288_SByte), j, isVolatile: false);
+			int num = checked(i + j);
+			int num2 = 0;
+			int num3 = 0;
+			int num4 = 0;
+			llvm_memset_p0_i64.Invoke((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16), 0, 38L, isVolatile: false);
+			for (int k = 0; (uint)k < (uint)num; k++)
 			{
-				b = ((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[(uint)num3];
-				if (b == 0)
+				sbyte b2 = ((sbyte*)(&localsPointer->field_0))[(uint)k];
+				if (b2 == 0)
 				{
-					if (num7 != 0)
+					if (num4 != 0)
 					{
-						if ((uint)num7 < 3u)
+						if ((uint)num4 < 3u)
 						{
-							short num24 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] + num7);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num24;
+							short num5 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] + num4);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] = num5;
 							while (true)
 							{
-								int num25 = num7;
-								num7 = num25 + -1;
-								if (num25 == 0)
+								int num6 = num4;
+								num4 = num6 + -1;
+								if (num6 == 0)
 								{
 									break;
 								}
-								sbyte b3 = b2;
-								int num26 = num5++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num26] = b3;
+								sbyte b3 = b;
+								int num7 = num2++;
+								((sbyte*)(&localsPointer->field_1))[(uint)num7] = b3;
 							}
 						}
 						else
 						{
-							short num27 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num27;
-							int num28 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num28] = 16;
-							sbyte b4 = (sbyte)(num7 - 3);
-							int num29 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num29] = b4;
+							short num8 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num8;
+							int num9 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num9] = 16;
+							sbyte b4 = (sbyte)(num4 - 3);
+							int num10 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num10] = b4;
 						}
-						num7 = 0;
+						num4 = 0;
 					}
-					int num30 = num6 + 1;
-					num6 = num30;
-					if (num30 == 138 && num6 != 0)
+					int num11 = num3 + 1;
+					num3 = num11;
+					if (num11 == 138 && num3 != 0)
 					{
-						switch (num6)
+						switch (num3)
 						{
 						case 0:
 						case 1:
 						case 2:
 						{
-							short num37 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16))) + num6);
-							*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)) = num37;
+							short num18 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16))) + num3);
+							*(short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)) = num18;
 							while (true)
 							{
-								int num38 = num6;
-								num6 = num38 + -1;
-								if (num38 == 0)
+								int num19 = num3;
+								num3 = num19 + -1;
+								if (num19 == 0)
 								{
 									break;
 								}
-								int num39 = num5++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num39] = 0;
+								int num20 = num2++;
+								((sbyte*)(&localsPointer->field_1))[(uint)num20] = 0;
 							}
 							break;
 						}
@@ -138,52 +115,52 @@ internal static partial class defl_start_dynamic_block
 						case 9:
 						case 10:
 						{
-							short num34 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num34;
-							int num35 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num35] = 17;
-							sbyte b6 = (sbyte)(num6 - 3);
-							int num36 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num36] = b6;
+							short num15 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num15;
+							int num16 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num16] = 17;
+							sbyte b6 = (sbyte)(num3 - 3);
+							int num17 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num17] = b6;
 							break;
 						}
 						default:
 						{
-							short num31 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num31;
-							int num32 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num32] = 18;
-							sbyte b5 = (sbyte)(num6 - 11);
-							int num33 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num33] = b5;
+							short num12 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num12;
+							int num13 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num13] = 18;
+							sbyte b5 = (sbyte)(num3 - 11);
+							int num14 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num14] = b5;
 							break;
 						}
 						}
-						num6 = 0;
+						num3 = 0;
 					}
 				}
 				else
 				{
-					if (num6 != 0)
+					if (num3 != 0)
 					{
-						switch (num6)
+						switch (num3)
 						{
 						case 0:
 						case 1:
 						case 2:
 						{
-							short num46 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16))) + num6);
-							*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)) = num46;
+							short num27 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16))) + num3);
+							*(short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)) = num27;
 							while (true)
 							{
-								int num47 = num6;
-								num6 = num47 + -1;
-								if (num47 == 0)
+								int num28 = num3;
+								num3 = num28 + -1;
+								if (num28 == 0)
 								{
 									break;
 								}
-								int num48 = num5++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num48] = 0;
+								int num29 = num2++;
+								((sbyte*)(&localsPointer->field_1))[(uint)num29] = 0;
 							}
 							break;
 						}
@@ -196,161 +173,164 @@ internal static partial class defl_start_dynamic_block
 						case 9:
 						case 10:
 						{
-							short num43 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num43;
-							int num44 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num44] = 17;
-							sbyte b8 = (sbyte)(num6 - 3);
-							int num45 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num45] = b8;
+							short num24 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num24;
+							int num25 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num25] = 17;
+							sbyte b8 = (sbyte)(num3 - 3);
+							int num26 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num26] = b8;
 							break;
 						}
 						default:
 						{
-							short num40 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
-							((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num40;
-							int num41 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num41] = 18;
-							sbyte b7 = (sbyte)(num6 - 11);
-							int num42 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num42] = b7;
+							short num21 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
+							((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num21;
+							int num22 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num22] = 18;
+							sbyte b7 = (sbyte)(num3 - 11);
+							int num23 = num2++;
+							((sbyte*)(&localsPointer->field_1))[(uint)num23] = b7;
 							break;
 						}
 						}
-						num6 = 0;
+						num3 = 0;
 					}
-					if ((byte)b != (byte)b2)
+					if ((byte)b2 != (byte)b)
 					{
-						if (num7 != 0)
+						if (num4 != 0)
 						{
-							if ((uint)num7 < 3u)
+							if ((uint)num4 < 3u)
 							{
-								short num49 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] + num7);
-								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num49;
+								short num30 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] + num4);
+								((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] = num30;
 								while (true)
 								{
-									int num50 = num7;
-									num7 = num50 + -1;
-									if (num50 == 0)
+									int num31 = num4;
+									num4 = num31 + -1;
+									if (num31 == 0)
 									{
 										break;
 									}
-									sbyte b9 = b2;
-									int num51 = num5++;
-									((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num51] = b9;
+									sbyte b9 = b;
+									int num32 = num2++;
+									((sbyte*)(&localsPointer->field_1))[(uint)num32] = b9;
 								}
 							}
 							else
 							{
-								short num52 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
-								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num52;
-								int num53 = num5++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num53] = 16;
-								sbyte b10 = (sbyte)(num7 - 3);
-								int num54 = num5++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num54] = b10;
+								short num33 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
+								((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num33;
+								int num34 = num2++;
+								((sbyte*)(&localsPointer->field_1))[(uint)num34] = 16;
+								sbyte b10 = (sbyte)(num4 - 3);
+								int num35 = num2++;
+								((sbyte*)(&localsPointer->field_1))[(uint)num35] = b10;
 							}
-							num7 = 0;
+							num4 = 0;
 						}
-						short num55 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b]) + 1);
-						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] = num55;
-						sbyte b11 = b;
-						int num56 = num5++;
-						((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num56] = b11;
+						short num36 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2]) + 1);
+						((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num36;
+						sbyte b11 = b2;
+						int num37 = num2++;
+						((sbyte*)(&localsPointer->field_1))[(uint)num37] = b11;
 					}
 					else
 					{
-						int num57 = num7 + 1;
-						num7 = num57;
-						if (num57 == 6 && num7 != 0)
+						int num38 = num4 + 1;
+						num4 = num38;
+						if (num38 == 6 && num4 != 0)
 						{
-							if ((uint)num7 < 3u)
+							if ((uint)num4 < 3u)
 							{
-								short num58 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] + num7);
-								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num58;
+								short num39 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] + num4);
+								((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] = num39;
 								while (true)
 								{
-									int num59 = num7;
-									num7 = num59 + -1;
-									if (num59 == 0)
+									int num40 = num4;
+									num4 = num40 + -1;
+									if (num40 == 0)
 									{
 										break;
 									}
-									sbyte b12 = b2;
-									int num60 = num5++;
-									((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num60] = b12;
+									sbyte b12 = b;
+									int num41 = num2++;
+									((sbyte*)(&localsPointer->field_1))[(uint)num41] = b12;
 								}
 							}
 							else
 							{
-								short num61 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
-								((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num61;
-								int num62 = num5++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num62] = 16;
-								sbyte b13 = (sbyte)(num7 - 3);
-								int num63 = num5++;
-								((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num63] = b13;
+								short num42 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
+								((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num42;
+								int num43 = num2++;
+								((sbyte*)(&localsPointer->field_1))[(uint)num43] = 16;
+								sbyte b13 = (sbyte)(num4 - 3);
+								int num44 = num2++;
+								((sbyte*)(&localsPointer->field_1))[(uint)num44] = b13;
 							}
-							num7 = 0;
+							num4 = 0;
 						}
 					}
 				}
-				b2 = b;
+				b = b2;
 			}
-			if (num7 != 0)
+			if (num4 != 0)
 			{
-				if (num7 != 0)
+				switch (num4)
 				{
-					if ((uint)num7 < 3u)
-					{
-						short num64 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] + num7);
-						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b2] = num64;
-						while (true)
-						{
-							int num65 = num7;
-							num7 = num65 + -1;
-							if (num65 == 0)
-							{
-								break;
-							}
-							sbyte b14 = b2;
-							int num66 = num5++;
-							((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num66] = b14;
-						}
-					}
-					else
-					{
-						short num67 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
-						((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num67;
-						int num68 = num5++;
-						((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num68] = 16;
-						sbyte b15 = (sbyte)(num7 - 3);
-						int num69 = num5++;
-						((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num69] = b15;
-					}
-					num7 = 0;
-				}
-			}
-			else if (num6 != 0)
-			{
-				switch (num6)
-				{
-				case 0:
 				case 1:
 				case 2:
 				{
-					short num76 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16))) + num6);
-					*(short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)) = num76;
+					short num48 = (short)((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] + num4);
+					((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[(byte)b] = num48;
 					while (true)
 					{
-						int num77 = num6;
-						num6 = num77 + -1;
-						if (num77 == 0)
+						int num49 = num4;
+						num4 = num49 + -1;
+						if (num49 == 0)
 						{
 							break;
 						}
-						int num78 = num5++;
-						((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num78] = 0;
+						sbyte b15 = b;
+						int num50 = num2++;
+						((sbyte*)(&localsPointer->field_1))[(uint)num50] = b15;
+					}
+					break;
+				}
+				default:
+				{
+					short num45 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[16]) + 1);
+					((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[16] = num45;
+					int num46 = num2++;
+					((sbyte*)(&localsPointer->field_1))[(uint)num46] = 16;
+					sbyte b14 = (sbyte)(num4 - 3);
+					int num47 = num2++;
+					((sbyte*)(&localsPointer->field_1))[(uint)num47] = b14;
+					break;
+				}
+				case 0:
+					break;
+				}
+			}
+			else
+			{
+				switch (num3)
+				{
+				case 1:
+				case 2:
+				{
+					short num57 = (short)((ushort)(*(short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16))) + num3);
+					*(short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)) = num57;
+					while (true)
+					{
+						int num58 = num3;
+						num3 = num58 + -1;
+						if (num58 == 0)
+						{
+							break;
+						}
+						int num59 = num2++;
+						((sbyte*)(&localsPointer->field_1))[(uint)num59] = 0;
 					}
 					break;
 				}
@@ -363,76 +343,60 @@ internal static partial class defl_start_dynamic_block
 				case 9:
 				case 10:
 				{
-					short num73 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
-					((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num73;
-					int num74 = num5++;
-					((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num74] = 17;
-					sbyte b17 = (sbyte)(num6 - 3);
-					int num75 = num5++;
-					((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num75] = b17;
+					short num54 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[17]) + 1);
+					((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[17] = num54;
+					int num55 = num2++;
+					((sbyte*)(&localsPointer->field_1))[(uint)num55] = 17;
+					sbyte b17 = (sbyte)(num3 - 3);
+					int num56 = num2++;
+					((sbyte*)(&localsPointer->field_1))[(uint)num56] = b17;
 					break;
 				}
 				default:
 				{
-					short num70 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
-					((short*)((byte*)(&((fpng_defl_huff*)d)->field_0) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num70;
-					int num71 = num5++;
-					((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num71] = 18;
-					sbyte b16 = (sbyte)(num6 - 11);
-					int num72 = num5++;
-					((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num72] = b16;
+					short num51 = (short)checked(unchecked((ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[18]) + 1);
+					((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_count) + (nint)2 * sizeof(InlineArray288_Int16)))[18] = num51;
+					int num52 = num2++;
+					((sbyte*)(&localsPointer->field_1))[(uint)num52] = 18;
+					sbyte b16 = (sbyte)(num3 - 11);
+					int num53 = num2++;
+					((sbyte*)(&localsPointer->field_1))[(uint)num53] = b16;
 					break;
 				}
+				case 0:
+					break;
 				}
-				num6 = 0;
 			}
 			defl_optimize_huffman_table.Invoke(d, 2, 19, 7, 0);
-			num9 = 2;
-			num10 = 2;
-			int num79;
-			if ((uint)num10 >= 1u && (uint)num10 <= 16u)
-			{
-				num79 = -1;
-			}
-			else
+			int num60 = 2;
+			int num61 = 2;
+			if ((uint)num61 < 1u || (uint)num61 > 16u)
 			{
 				wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 799);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
 				}
-				num79 = 0;
 			}
-			int num80;
-			if ((ulong)(uint)num9 < (ulong)(1L << (int)(uint)num10))
-			{
-				num80 = -1;
-			}
-			else
+			if ((ulong)(uint)num60 >= (ulong)(1L << (int)(uint)num61))
 			{
 				wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 799);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
 				}
-				num80 = 0;
 			}
-			*(long*)bit_buf |= (long)((ulong)(uint)num9 << (int)(uint)(*(int*)bit_buf_size));
-			*(int*)bit_buf_size += num10;
-			int num81;
-			if (*(int*)bit_buf_size <= 64)
-			{
-				num81 = -1;
-			}
-			else
+			*(long*)bit_buf |= (long)((ulong)(uint)num60 << (int)(uint)(*(int*)bit_buf_size));
+			*(int*)bit_buf_size += num61;
+			if (*(int*)bit_buf_size > 64)
 			{
 				wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 799);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
 				}
-				num81 = 0;
 			}
+			bool flag;
 			while (true)
 			{
 				if (*(int*)bit_buf_size >= 8)
@@ -452,51 +416,33 @@ internal static partial class defl_start_dynamic_block
 						continue;
 					}
 				}
-				num11 = checked(i - 257);
-				num12 = 5;
-				int num82;
-				if ((uint)num12 >= 1u && (uint)num12 <= 16u)
-				{
-					num82 = -1;
-				}
-				else
+				int num62 = checked(i - 257);
+				int num63 = 5;
+				if ((uint)num63 < 1u || (uint)num63 > 16u)
 				{
 					wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 801);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;
 					}
-					num82 = 0;
 				}
-				int num83;
-				if ((ulong)(uint)num11 < (ulong)(1L << (int)(uint)num12))
-				{
-					num83 = -1;
-				}
-				else
+				if ((ulong)(uint)num62 >= (ulong)(1L << (int)(uint)num63))
 				{
 					wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 801);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;
 					}
-					num83 = 0;
 				}
-				*(long*)bit_buf |= (long)((ulong)(uint)num11 << (int)(uint)(*(int*)bit_buf_size));
-				*(int*)bit_buf_size += num12;
-				int num84;
-				if (*(int*)bit_buf_size <= 64)
-				{
-					num84 = -1;
-				}
-				else
+				*(long*)bit_buf |= (long)((ulong)(uint)num62 << (int)(uint)(*(int*)bit_buf_size));
+				*(int*)bit_buf_size += num63;
+				if (*(int*)bit_buf_size > 64)
 				{
 					wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 801);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;
 					}
-					num84 = 0;
 				}
 				while (true)
 				{
@@ -517,51 +463,33 @@ internal static partial class defl_start_dynamic_block
 							continue;
 						}
 					}
-					num13 = checked(num - 1);
-					num14 = 5;
-					int num85;
-					if ((uint)num14 >= 1u && (uint)num14 <= 16u)
-					{
-						num85 = -1;
-					}
-					else
+					int num64 = checked(j - 1);
+					int num65 = 5;
+					if ((uint)num65 < 1u || (uint)num65 > 16u)
 					{
 						wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 802);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;
 						}
-						num85 = 0;
 					}
-					int num86;
-					if ((ulong)(uint)num13 < (ulong)(1L << (int)(uint)num14))
-					{
-						num86 = -1;
-					}
-					else
+					if ((ulong)(uint)num64 >= (ulong)(1L << (int)(uint)num65))
 					{
 						wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 802);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;
 						}
-						num86 = 0;
 					}
-					*(long*)bit_buf |= (long)((ulong)(uint)num13 << (int)(uint)(*(int*)bit_buf_size));
-					*(int*)bit_buf_size += num14;
-					int num87;
-					if (*(int*)bit_buf_size <= 64)
-					{
-						num87 = -1;
-					}
-					else
+					*(long*)bit_buf |= (long)((ulong)(uint)num64 << (int)(uint)(*(int*)bit_buf_size));
+					*(int*)bit_buf_size += num65;
+					if (*(int*)bit_buf_size > 64)
 					{
 						wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 802);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;
 						}
-						num87 = 0;
 					}
 					while (true)
 					{
@@ -582,58 +510,43 @@ internal static partial class defl_start_dynamic_block
 								continue;
 							}
 						}
-						for (num2 = 18; num2 >= 0 && ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray288_SByte))[(byte)((sbyte*)g_defl_packed_code_size_syms_swizzle.__pointer)[num2]] == 0; num2 = checked(num2 + -1))
+						int l;
+						for (l = 18; l >= 0 && ((byte*)(&((fpng_defl_huff*)d)->m_huff_code_sizes) + (nint)2 * sizeof(InlineArray288_SByte))[(byte)((sbyte*)g_defl_packed_code_size_syms_swizzle.__pointer)[l]] == 0; l = checked(l + -1))
 						{
 						}
+						int num66;
+						int num67;
 						checked
 						{
-							num2 = maximum_sfjssib.Invoke(4, num2 + 1);
-							num15 = num2 - 4;
-							num16 = 4;
+							l = maximum_sfjssib.Invoke(4, l + 1);
+							num66 = l - 4;
+							num67 = 4;
 						}
-						int num88;
-						if ((uint)num16 >= 1u && (uint)num16 <= 16u)
-						{
-							num88 = -1;
-						}
-						else
+						if ((uint)num67 < 1u || (uint)num67 > 16u)
 						{
 							wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 805);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
 							}
-							num88 = 0;
 						}
-						int num89;
-						if ((ulong)(uint)num15 < (ulong)(1L << (int)(uint)num16))
-						{
-							num89 = -1;
-						}
-						else
+						if ((ulong)(uint)num66 >= (ulong)(1L << (int)(uint)num67))
 						{
 							wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 805);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
 							}
-							num89 = 0;
 						}
-						*(long*)bit_buf |= (long)((ulong)(uint)num15 << (int)(uint)(*(int*)bit_buf_size));
-						*(int*)bit_buf_size += num16;
-						int num90;
-						if (*(int*)bit_buf_size <= 64)
-						{
-							num90 = -1;
-						}
-						else
+						*(long*)bit_buf |= (long)((ulong)(uint)num66 << (int)(uint)(*(int*)bit_buf_size));
+						*(int*)bit_buf_size += num67;
+						if (*(int*)bit_buf_size > 64)
 						{
 							wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 805);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
 							}
-							num90 = 0;
 						}
 						while (true)
 						{
@@ -654,56 +567,38 @@ internal static partial class defl_start_dynamic_block
 									continue;
 								}
 							}
-							num3 = 0;
+							int k = 0;
 							while (true)
 							{
-								if (num3 < num2)
+								if (k < l)
 								{
-									num17 = ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray288_SByte))[(byte)((sbyte*)g_defl_packed_code_size_syms_swizzle.__pointer)[(uint)num3]];
-									num18 = 3;
-									int num91;
-									if ((uint)num18 >= 1u && (uint)num18 <= 16u)
-									{
-										num91 = -1;
-									}
-									else
+									int num68 = ((byte*)(&((fpng_defl_huff*)d)->m_huff_code_sizes) + (nint)2 * sizeof(InlineArray288_SByte))[(byte)((sbyte*)g_defl_packed_code_size_syms_swizzle.__pointer)[(uint)k]];
+									int num69 = 3;
+									if ((uint)num69 < 1u || (uint)num69 > 16u)
 									{
 										wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 806);
 										if (ExceptionInfo.Current != null)
 										{
 											return false;
 										}
-										num91 = 0;
 									}
-									int num92;
-									if ((ulong)(uint)num17 < (ulong)(1L << (int)(uint)num18))
-									{
-										num92 = -1;
-									}
-									else
+									if ((ulong)(uint)num68 >= (ulong)(1L << (int)(uint)num69))
 									{
 										wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 806);
 										if (ExceptionInfo.Current != null)
 										{
 											return false;
 										}
-										num92 = 0;
 									}
-									*(long*)bit_buf |= (long)((ulong)(uint)num17 << (int)(uint)(*(int*)bit_buf_size));
-									*(int*)bit_buf_size += num18;
-									int num93;
-									if (*(int*)bit_buf_size <= 64)
-									{
-										num93 = -1;
-									}
-									else
+									*(long*)bit_buf |= (long)((ulong)(uint)num68 << (int)(uint)(*(int*)bit_buf_size));
+									*(int*)bit_buf_size += num69;
+									if (*(int*)bit_buf_size > 64)
 									{
 										wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 806);
 										if (ExceptionInfo.Current != null)
 										{
 											return false;
 										}
-										num93 = 0;
 									}
 									while (*(int*)bit_buf_size >= 8)
 									{
@@ -719,77 +614,53 @@ internal static partial class defl_start_dynamic_block
 												continue;
 											}
 										}
-										goto IL_14bb;
+										goto IL_13fe;
 									}
-									num3++;
+									k++;
 									continue;
 								}
-								num8 = 0;
+								int num70 = 0;
 								while (true)
 								{
-									if ((uint)num8 < (uint)num5)
+									if ((uint)num70 < (uint)num2)
 									{
-										int num94 = num8++;
-										num19 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num94];
-										int num95;
-										if ((uint)num19 < 19u)
-										{
-											num95 = -1;
-										}
-										else
+										int num71 = num70++;
+										int num72 = (byte)((sbyte*)(&localsPointer->field_1))[(uint)num71];
+										if ((uint)num72 >= 19u)
 										{
 											wassert.Invoke(String_erkdsbd.__pointer, String_uxbkrtb.__pointer, 810);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
 											}
-											num95 = 0;
 										}
-										num20 = (ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->field_1) + (nint)2 * sizeof(InlineArray288_Int16)))[(uint)num19];
-										num21 = ((byte*)(&((fpng_defl_huff*)d)->field_2) + (nint)2 * sizeof(InlineArray288_SByte))[(uint)num19];
-										int num96;
-										if ((uint)num21 >= 1u && (uint)num21 <= 16u)
-										{
-											num96 = -1;
-										}
-										else
+										int num73 = (ushort)((short*)((byte*)(&((fpng_defl_huff*)d)->m_huff_codes) + (nint)2 * sizeof(InlineArray288_Int16)))[(uint)num72];
+										int num74 = ((byte*)(&((fpng_defl_huff*)d)->m_huff_code_sizes) + (nint)2 * sizeof(InlineArray288_SByte))[(uint)num72];
+										if ((uint)num74 < 1u || (uint)num74 > 16u)
 										{
 											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 811);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
 											}
-											num96 = 0;
 										}
-										int num97;
-										if ((ulong)(uint)num20 < (ulong)(1L << (int)(uint)num21))
-										{
-											num97 = -1;
-										}
-										else
+										if ((ulong)(uint)num73 >= (ulong)(1L << (int)(uint)num74))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 811);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
 											}
-											num97 = 0;
 										}
-										*(long*)bit_buf |= (long)((ulong)(uint)num20 << (int)(uint)(*(int*)bit_buf_size));
-										*(int*)bit_buf_size += num21;
-										int num98;
-										if (*(int*)bit_buf_size <= 64)
-										{
-											num98 = -1;
-										}
-										else
+										*(long*)bit_buf |= (long)((ulong)(uint)num73 << (int)(uint)(*(int*)bit_buf_size));
+										*(int*)bit_buf_size += num74;
+										if (*(int*)bit_buf_size > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 811);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
 											}
-											num98 = 0;
 										}
 										while (*(int*)bit_buf_size >= 8)
 										{
@@ -805,58 +676,40 @@ internal static partial class defl_start_dynamic_block
 													continue;
 												}
 											}
-											goto IL_16c8;
+											goto IL_1605;
 										}
-										if ((uint)num19 < 16u)
+										if ((uint)num72 < 16u)
 										{
 											continue;
 										}
-										int num99 = num8++;
-										num22 = (byte)((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[(uint)num99];
-										num23 = ((sbyte*)String_o9ulvgb.__pointer)[(uint)(num19 - 16)];
-										int num100;
-										if ((uint)num23 >= 1u && (uint)num23 <= 16u)
-										{
-											num100 = -1;
-										}
-										else
+										int num75 = num70++;
+										int num76 = (byte)((sbyte*)(&localsPointer->field_1))[(uint)num75];
+										int num77 = ((sbyte*)String_o9ulvgb.__pointer)[(uint)(num72 - 16)];
+										if ((uint)num77 < 1u || (uint)num77 > 16u)
 										{
 											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 812);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
 											}
-											num100 = 0;
 										}
-										int num101;
-										if ((ulong)(uint)num22 < (ulong)(1L << (int)(uint)num23))
-										{
-											num101 = -1;
-										}
-										else
+										if ((ulong)(uint)num76 >= (ulong)(1L << (int)(uint)num77))
 										{
 											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 812);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
 											}
-											num101 = 0;
 										}
-										*(long*)bit_buf |= (long)((ulong)(uint)num22 << (int)(uint)(*(int*)bit_buf_size));
-										*(int*)bit_buf_size += num23;
-										int num102;
-										if (*(int*)bit_buf_size <= 64)
-										{
-											num102 = -1;
-										}
-										else
+										*(long*)bit_buf |= (long)((ulong)(uint)num76 << (int)(uint)(*(int*)bit_buf_size));
+										*(int*)bit_buf_size += num77;
+										if (*(int*)bit_buf_size > 64)
 										{
 											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 812);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
 											}
-											num102 = 0;
 										}
 										while (*(int*)bit_buf_size >= 8)
 										{
@@ -872,21 +725,21 @@ internal static partial class defl_start_dynamic_block
 													continue;
 												}
 											}
-											goto IL_1865;
+											goto IL_179c;
 										}
 										continue;
 									}
 									flag = true;
 									break;
-									IL_16c8:
+									IL_179c:
 									flag = false;
 									break;
-									IL_1865:
+									IL_1605:
 									flag = false;
 									break;
 								}
 								break;
-								IL_14bb:
+								IL_13fe:
 								flag = false;
 								break;
 							}

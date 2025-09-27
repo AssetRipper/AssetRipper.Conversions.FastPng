@@ -9,29 +9,29 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct fpng_png_ihdr
 {
 	[FieldOffset(0)]
-	public fpng_png_chunk_prefix field_0;
+	public fpng_png_chunk_prefix m_prefix;
 
 	[FieldOffset(8)]
-	public int field_1;
+	public int m_width;
 
 	[FieldOffset(12)]
-	public int field_2;
+	public int m_height;
 
 	[FieldOffset(16)]
-	public sbyte field_3;
+	public sbyte m_bitdepth;
 
 	[FieldOffset(17)]
-	public sbyte field_4;
+	public sbyte m_color_type;
 
 	[FieldOffset(18)]
-	public sbyte field_5;
+	public sbyte m_comp_method;
 
 	[FieldOffset(19)]
-	public sbyte field_6;
+	public sbyte m_filter_method;
 
 	[FieldOffset(20)]
-	public sbyte field_7;
+	public sbyte m_interlace_method;
 
 	[FieldOffset(21)]
-	public int field_8;
+	public int m_crc32;
 }

@@ -11,174 +11,129 @@ internal static partial class fpng_pixel_zlib_raw_decompress
 	[return: NativeType("bool")]
 	public unsafe static bool Invoke([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h, [NativeType("unsigned int")] int src_chans, [NativeType("unsigned int")] int dst_chans)
 	{
-		bool flag = false;
-		int num = 0;
-		int num2 = 0;
-		int num3 = 0;
-		int num4 = 0;
-		int num5 = 0;
-		int num6 = 0;
-		int num7 = 0;
-		sbyte b = 0;
-		int num8 = 0;
-		int num9 = 0;
-		int num10 = 0;
-		int num11 = 0;
-		int num12 = 0;
-		int num13;
-		switch (src_chans)
+		if (src_chans != 3 && src_chans != 4)
 		{
-		case 3:
-			num13 = -1;
-			break;
-		case 4:
-			num13 = -1;
-			break;
-		default:
 			wassert.Invoke(String_zixkhbc.__pointer, String_uxbkrtb.__pointer, 2112);
 			if (ExceptionInfo.Current != null)
 			{
 				return false;
 			}
-			num13 = 0;
-			break;
 		}
-		int num14;
-		switch (dst_chans)
+		if (dst_chans != 3 && dst_chans != 4)
 		{
-		case 3:
-			num14 = -1;
-			break;
-		case 4:
-			num14 = -1;
-			break;
-		default:
 			wassert.Invoke(String_kppxlqc.__pointer, String_uxbkrtb.__pointer, 2113);
 			if (ExceptionInfo.Current != null)
 			{
 				return false;
 			}
-			num14 = 0;
-			break;
 		}
 		unchecked
 		{
-			num = w * src_chans;
-			num3 = w * dst_chans * h;
-			num4 = 2;
-			num5 = 0;
-			num6 = 0;
-			num7 = 0;
+			int num = w * src_chans;
+			int num2 = w * dst_chans * h;
+			int num3 = 2;
+			int num4 = 0;
+			int num5 = 0;
+			int num6 = 0;
+			sbyte b;
 			do
 			{
-				if ((uint)(num4 + 1) > (uint)src_len)
+				if ((uint)(num3 + 1) > (uint)src_len)
 				{
 					return false;
 				}
-				b = ((((byte)((sbyte*)pSrc)[(uint)num4] & 1) != 0) ? ((sbyte)1) : ((sbyte)0));
-				if ((((byte)((sbyte*)pSrc)[(uint)num4] >> 1) & 3) != 0)
+				b = ((((byte)((sbyte*)pSrc)[(uint)num3] & 1) != 0) ? ((sbyte)1) : ((sbyte)0));
+				if ((((byte)((sbyte*)pSrc)[(uint)num3] >> 1) & 3) != 0)
 				{
 					return false;
 				}
-				num4++;
-				if ((uint)(num4 + 4) > (uint)src_len)
+				num3++;
+				if ((uint)(num3 + 4) > (uint)src_len)
 				{
 					return false;
 				}
-				num9 = (byte)((sbyte*)pSrc)[(uint)(num4 + 0)] | ((byte)((sbyte*)pSrc)[(uint)(num4 + 1)] << 8);
-				num10 = (byte)((sbyte*)pSrc)[(uint)(num4 + 2)] | ((byte)((sbyte*)pSrc)[(uint)(num4 + 3)] << 8);
-				num4 += 4;
-				if (num9 != ((num10 ^ -1) & 0xFFFF))
+				int num7 = (byte)((sbyte*)pSrc)[(uint)(num3 + 0)] | ((byte)((sbyte*)pSrc)[(uint)(num3 + 1)] << 8);
+				int num8 = (byte)((sbyte*)pSrc)[(uint)(num3 + 2)] | ((byte)((sbyte*)pSrc)[(uint)(num3 + 3)] << 8);
+				num3 += 4;
+				if (num7 != ((num8 ^ -1) & 0xFFFF))
 				{
 					return false;
 				}
-				if ((uint)(num4 + num9) > (uint)src_len)
+				if ((uint)(num3 + num7) > (uint)src_len)
 				{
 					return false;
 				}
-				for (num11 = 0; (uint)num11 < (uint)num9; num11++)
+				for (int i = 0; (uint)i < (uint)num7; i++)
 				{
-					num12 = (byte)((sbyte*)pSrc)[(uint)(num4 + num11)];
-					if (num6 == 0)
+					int num9 = (byte)((sbyte*)pSrc)[(uint)(num3 + i)];
+					if (num5 == 0)
 					{
-						if (num12 != 0)
+						if (num9 != 0)
 						{
 							return false;
 						}
-						int num15;
-						if (num7 == 0)
-						{
-							num15 = -1;
-						}
-						else
+						if (num6 != 0)
 						{
 							wassert.Invoke(String_ji2h3xd.__pointer, String_uxbkrtb.__pointer, 2160);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
 							}
-							num15 = 0;
 						}
 					}
 					else
 					{
-						if ((uint)num7 < (uint)dst_chans)
+						if ((uint)num6 < (uint)dst_chans)
 						{
-							if (num5 == num3)
+							if (num4 == num2)
 							{
 								return false;
 							}
-							((sbyte*)pDst)[(uint)num5++] = (sbyte)num12;
+							((sbyte*)pDst)[(uint)num4++] = (sbyte)num9;
 						}
-						int num16 = num7 + 1;
-						num7 = num16;
-						if (num16 == src_chans)
+						int num10 = num6 + 1;
+						num6 = num10;
+						if (num10 == src_chans)
 						{
 							if ((uint)dst_chans > (uint)src_chans)
 							{
-								if (num5 == num3)
+								if (num4 == num2)
 								{
 									return false;
 								}
-								((sbyte*)pDst)[(uint)num5++] = -1;
+								((sbyte*)pDst)[(uint)num4++] = -1;
 							}
-							num7 = 0;
+							num6 = 0;
 						}
 					}
-					int num17 = num6 + 1;
-					num6 = num17;
-					if (num17 != num + 1)
+					int num11 = num5 + 1;
+					num5 = num11;
+					if (num11 != num + 1)
 					{
 						continue;
 					}
-					int num18;
-					if (num7 == 0)
-					{
-						num18 = -1;
-					}
-					else
+					if (num6 != 0)
 					{
 						wassert.Invoke(String_ji2h3xd.__pointer, String_uxbkrtb.__pointer, 2188);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;
 						}
-						num18 = 0;
 					}
-					num6 = 0;
+					num5 = 0;
 				}
-				num4 += num9;
+				num3 += num7;
 			}
 			while ((b & 1) != 1);
-			if (num7 != 0)
+			if (num6 != 0)
 			{
 				return false;
 			}
-			if (num4 + 4 != zlib_len)
+			if (num3 + 4 != zlib_len)
 			{
 				return false;
 			}
-			return num5 == num3;
+			return num4 == num2;
 		}
 	}
 }

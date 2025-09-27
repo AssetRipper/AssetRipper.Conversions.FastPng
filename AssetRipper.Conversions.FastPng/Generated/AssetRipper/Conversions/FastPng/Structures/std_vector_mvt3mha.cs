@@ -10,5 +10,5 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct std_vector_mvt3mha
 {
 	[FieldOffset(0)]
-	public std_Compressed_pair_wyq2zlc field_0;
+	public std_Compressed_pair_wyq2zlc Mypair;
 }

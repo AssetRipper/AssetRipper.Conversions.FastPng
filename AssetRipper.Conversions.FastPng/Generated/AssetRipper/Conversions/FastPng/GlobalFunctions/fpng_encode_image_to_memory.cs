@@ -21,27 +21,15 @@ internal static partial class fpng_encode_image_to_memory
 	public unsafe static bool Invoke([NativeType("void const *")] void* pImage, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h, [NativeType("unsigned int")] int num_chans, [NativeType("class std::vector<unsigned char, class std::allocator<unsigned char>> &")] void* out_buf, [NativeType("unsigned int")] int flags)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		bool flag = false;
-		int num = 0;
-		int num2 = 0;
-		int num3 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_vector_7uge3hb);
-		int num4 = 0;
-		void* ptr = null;
-		void* ptr2 = null;
-		void* ptr3 = null;
-		int num5 = 0;
-		int num6 = 0;
-		int num7 = 0;
-		int num8 = 0;
-		void* ptr4 = null;
-		void* ptr5 = null;
-		int num9 = 0;
-		int num10 = 0;
-		int num11 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(InlineArray58_SByte);
-		int num12 = 0;
-		int num13 = 0;
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = default(std_vector_7uge3hb);
+		localsPointer->field_1 = default(InlineArray58_SByte);
+		bool flag;
+		int num;
+		int num4;
+		int num5;
+		int num2;
+		int num3;
 		unchecked
 		{
 			if (!endian_check.Invoke())
@@ -66,87 +54,75 @@ internal static partial class fpng_encode_image_to_memory
 			{
 				if (num_chans == 3 || num_chans == 4)
 				{
-					num2 = w * num_chans;
-					vector_unsigned_char_class_std_allocator_unsigned_char_Constructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0);
-					resize_wwmwtsa.Invoke(Newsize: (uint)(checked(num2 + 1) * h + 7), @this: &startFrame.GetLocalsPointer<LocalVariables>()->field_0);
+					num = w * num_chans;
+					vector_unsigned_char_class_std_allocator_unsigned_char_Constructor.Invoke(&localsPointer->field_0);
+					resize_wwmwtsa.Invoke(Newsize: (uint)(checked(num + 1) * h + 7), @this: &localsPointer->field_0);
 					if (ExceptionInfo.Current == null)
 					{
-						num4 = 0;
+						num2 = 0;
 						num3 = 0;
 						while ((uint)num3 < (uint)h)
 						{
-							ptr = (byte*)pImage + (uint)(num3 * num2);
-							ptr2 = ((num3 == 0) ? null : ((byte*)pImage + (uint)((num3 - 1) * num2)));
-							void* pDst = vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0, (uint)num4);
-							void* pPrev_src = ptr2;
-							void* pSrc = ptr;
-							int bpl = num2;
-							int num_chans2 = num_chans;
-							int h2 = h;
-							int w2 = w;
-							bool flag2 = num3 != 0;
-							_ = flag2;
-							apply_filter.Invoke(InstructionHelper.Select(flag2, 2, 0), w2, h2, num_chans2, bpl, pSrc, pPrev_src, pDst);
+							apply_filter.Invoke(pSrc: (byte*)pImage + (uint)(num3 * num), pPrev_src: (num3 == 0) ? null : ((byte*)pImage + (uint)((num3 - 1) * num)), pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(&localsPointer->field_0, (uint)num2), filter: InstructionHelper.Select(num3 != 0, 2, 0), w: w, h: h, num_chans: num_chans, bpl: num);
 							if (ExceptionInfo.Current == null)
 							{
-								num4 += checked(1 + num2);
+								num2 += checked(1 + num);
 								num3++;
 								continue;
 							}
-							goto IL_0be3;
+							goto IL_0a27;
 						}
-						num5 = 58;
-						num6 = 58;
-						resize_wwmwtsa.Invoke(out_buf, (uint)((num6 + checked(num2 + 1) * h + 7) & -8));
+						num4 = 58;
+						resize_wwmwtsa.Invoke(out_buf, (uint)((num4 + checked(num + 1) * h + 7) & -8));
 						if (ExceptionInfo.Current == null)
 						{
-							num7 = 0;
+							num5 = 0;
 							if ((flags & 2) != 0)
 							{
-								goto IL_0423;
+								goto IL_03f3;
 							}
 							if (num_chans == 3)
 							{
 								if ((flags & 1) != 0)
 								{
-									int num14 = pixel_deflate_dyn_3_rle.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num6, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num6), pImg: data_efhnzgd.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0), w: w, h: h);
+									int num6 = pixel_deflate_dyn_3_rle.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num4), pImg: data_efhnzgd.Invoke(&localsPointer->field_0), w: w, h: h);
 									if (ExceptionInfo.Current == null)
 									{
-										num7 = num14;
-										goto IL_0423;
+										num5 = num6;
+										goto IL_03f3;
 									}
 								}
 								else
 								{
-									int num15 = pixel_deflate_dyn_3_rle_one_pass.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num6, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num6), pImg: data_efhnzgd.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0), w: w, h: h);
+									int num7 = pixel_deflate_dyn_3_rle_one_pass.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num4), pImg: data_efhnzgd.Invoke(&localsPointer->field_0), w: w, h: h);
 									if (ExceptionInfo.Current == null)
 									{
-										num7 = num15;
-										goto IL_0423;
+										num5 = num7;
+										goto IL_03f3;
 									}
 								}
 							}
 							else if ((flags & 1) != 0)
 							{
-								int num16 = pixel_deflate_dyn_4_rle.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num6, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num6), pImg: data_efhnzgd.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0), w: w, h: h);
+								int num8 = pixel_deflate_dyn_4_rle.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num4), pImg: data_efhnzgd.Invoke(&localsPointer->field_0), w: w, h: h);
 								if (ExceptionInfo.Current == null)
 								{
-									num7 = num16;
-									goto IL_0423;
+									num5 = num8;
+									goto IL_03f3;
 								}
 							}
 							else
 							{
-								int num17 = pixel_deflate_dyn_4_rle_one_pass.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num6, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num6), pImg: data_efhnzgd.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0), w: w, h: h);
+								int num9 = pixel_deflate_dyn_4_rle_one_pass.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num4), pImg: data_efhnzgd.Invoke(&localsPointer->field_0), w: w, h: h);
 								if (ExceptionInfo.Current == null)
 								{
-									num7 = num17;
-									goto IL_0423;
+									num5 = num9;
+									goto IL_03f3;
 								}
 							}
 						}
 					}
-					goto IL_0be3;
+					goto IL_0a27;
 				}
 				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 1678);
 				if (ExceptionInfo.Current != null)
@@ -155,192 +131,179 @@ internal static partial class fpng_encode_image_to_memory
 				}
 				flag = false;
 			}
-			goto IL_0c07;
+			goto IL_0a45;
 		}
-		IL_0c07:
+		IL_0a45:
 		bool result = flag;
 		StackFrameList.Current.Clear(startFrame);
 		return result;
-		IL_0be3:
+		IL_0a27:
 		ExceptionInfo? current = ExceptionInfo.Current;
 		ExceptionInfo.Current = null;
-		vector_unsigned_char_class_std_allocator_unsigned_char_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0);
+		vector_unsigned_char_class_std_allocator_unsigned_char_Destructor.Invoke(&localsPointer->field_0);
 		ExceptionInfo.Current = current;
 		return false;
-		IL_05c0:
+		IL_057e:
+		int num10;
 		unchecked
 		{
-			int num18;
-			if ((ulong)(uint)(num6 + num8) <= (ulong)size_4io4p4d.Invoke(out_buf))
-			{
-				num18 = -1;
-			}
-			else
+			if ((ulong)(uint)(num4 + num10) > (ulong)size_4io4p4d.Invoke(out_buf))
 			{
 				wassert.Invoke(String_dqvhqxc.__pointer, String_uxbkrtb.__pointer, 1760);
 				if (ExceptionInfo.Current != null)
 				{
-					goto IL_0be3;
+					goto IL_0a27;
 				}
-				num18 = 0;
 			}
-			resize_wwmwtsa.Invoke(out_buf, (uint)(num6 + num8));
+			resize_wwmwtsa.Invoke(out_buf, (uint)(num4 + num10));
 			if (ExceptionInfo.Current == null)
 			{
-				num11 = (int)size_4io4p4d.Invoke(out_buf) - 58;
-				*(sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1) = -119;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[1] = 80;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[2] = 78;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[3] = 71;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[4] = 13;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[5] = 10;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[6] = 26;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[7] = 10;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[8] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[9] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[10] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[11] = 13;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[12] = 73;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[13] = 72;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[14] = 68;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[15] = 82;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[16] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[17] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[18] = (sbyte)(w >>> 8);
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[19] = (sbyte)w;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[20] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[21] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[22] = (sbyte)(h >>> 8);
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[23] = (sbyte)h;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[24] = 8;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[25] = ((sbyte*)s_color_type.__pointer)[(uint)num_chans];
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[26] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[27] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[28] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[29] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[30] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[31] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[32] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[33] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[34] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[35] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[36] = 5;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[37] = 102;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[38] = 100;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[39] = 69;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[40] = 67;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[41] = 82;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[42] = 36;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[43] = -109;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[44] = -29;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[45] = 0;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[46] = -27;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[47] = -85;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[48] = 98;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[49] = -103;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[50] = (sbyte)(num11 >>> 24);
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[51] = (sbyte)(num11 >>> 16);
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[52] = (sbyte)(num11 >>> 8);
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[53] = (sbyte)num11;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[54] = 73;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[55] = 68;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[56] = 65;
-				((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1))[57] = 84;
-				int num19 = fpng_crc32.Invoke((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1) + 12, 17L, 0);
+				int num11 = (int)size_4io4p4d.Invoke(out_buf) - 58;
+				*(sbyte*)(&localsPointer->field_1) = -119;
+				((sbyte*)(&localsPointer->field_1))[1] = 80;
+				((sbyte*)(&localsPointer->field_1))[2] = 78;
+				((sbyte*)(&localsPointer->field_1))[3] = 71;
+				((sbyte*)(&localsPointer->field_1))[4] = 13;
+				((sbyte*)(&localsPointer->field_1))[5] = 10;
+				((sbyte*)(&localsPointer->field_1))[6] = 26;
+				((sbyte*)(&localsPointer->field_1))[7] = 10;
+				((sbyte*)(&localsPointer->field_1))[8] = 0;
+				((sbyte*)(&localsPointer->field_1))[9] = 0;
+				((sbyte*)(&localsPointer->field_1))[10] = 0;
+				((sbyte*)(&localsPointer->field_1))[11] = 13;
+				((sbyte*)(&localsPointer->field_1))[12] = 73;
+				((sbyte*)(&localsPointer->field_1))[13] = 72;
+				((sbyte*)(&localsPointer->field_1))[14] = 68;
+				((sbyte*)(&localsPointer->field_1))[15] = 82;
+				((sbyte*)(&localsPointer->field_1))[16] = 0;
+				((sbyte*)(&localsPointer->field_1))[17] = 0;
+				((sbyte*)(&localsPointer->field_1))[18] = (sbyte)(w >>> 8);
+				((sbyte*)(&localsPointer->field_1))[19] = (sbyte)w;
+				((sbyte*)(&localsPointer->field_1))[20] = 0;
+				((sbyte*)(&localsPointer->field_1))[21] = 0;
+				((sbyte*)(&localsPointer->field_1))[22] = (sbyte)(h >>> 8);
+				((sbyte*)(&localsPointer->field_1))[23] = (sbyte)h;
+				((sbyte*)(&localsPointer->field_1))[24] = 8;
+				((sbyte*)(&localsPointer->field_1))[25] = ((sbyte*)s_color_type.__pointer)[(uint)num_chans];
+				((sbyte*)(&localsPointer->field_1))[26] = 0;
+				((sbyte*)(&localsPointer->field_1))[27] = 0;
+				((sbyte*)(&localsPointer->field_1))[28] = 0;
+				((sbyte*)(&localsPointer->field_1))[29] = 0;
+				((sbyte*)(&localsPointer->field_1))[30] = 0;
+				((sbyte*)(&localsPointer->field_1))[31] = 0;
+				((sbyte*)(&localsPointer->field_1))[32] = 0;
+				((sbyte*)(&localsPointer->field_1))[33] = 0;
+				((sbyte*)(&localsPointer->field_1))[34] = 0;
+				((sbyte*)(&localsPointer->field_1))[35] = 0;
+				((sbyte*)(&localsPointer->field_1))[36] = 5;
+				((sbyte*)(&localsPointer->field_1))[37] = 102;
+				((sbyte*)(&localsPointer->field_1))[38] = 100;
+				((sbyte*)(&localsPointer->field_1))[39] = 69;
+				((sbyte*)(&localsPointer->field_1))[40] = 67;
+				((sbyte*)(&localsPointer->field_1))[41] = 82;
+				((sbyte*)(&localsPointer->field_1))[42] = 36;
+				((sbyte*)(&localsPointer->field_1))[43] = -109;
+				((sbyte*)(&localsPointer->field_1))[44] = -29;
+				((sbyte*)(&localsPointer->field_1))[45] = 0;
+				((sbyte*)(&localsPointer->field_1))[46] = -27;
+				((sbyte*)(&localsPointer->field_1))[47] = -85;
+				((sbyte*)(&localsPointer->field_1))[48] = 98;
+				((sbyte*)(&localsPointer->field_1))[49] = -103;
+				((sbyte*)(&localsPointer->field_1))[50] = (sbyte)(num11 >>> 24);
+				((sbyte*)(&localsPointer->field_1))[51] = (sbyte)(num11 >>> 16);
+				((sbyte*)(&localsPointer->field_1))[52] = (sbyte)(num11 >>> 8);
+				((sbyte*)(&localsPointer->field_1))[53] = (sbyte)num11;
+				((sbyte*)(&localsPointer->field_1))[54] = 73;
+				((sbyte*)(&localsPointer->field_1))[55] = 68;
+				((sbyte*)(&localsPointer->field_1))[56] = 65;
+				((sbyte*)(&localsPointer->field_1))[57] = 84;
+				int num12 = fpng_crc32.Invoke((byte*)(&localsPointer->field_1) + 12, 17L, 0);
 				if (ExceptionInfo.Current == null)
 				{
-					num12 = num19;
-					num = 0;
-					while (num < 4)
+					int num13 = num12;
+					int num14 = 0;
+					while (num14 < 4)
 					{
-						((byte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_1) + 29)[num] = (byte)(sbyte)((uint)num12 >> 24);
-						num = checked(num + 1);
-						num12 <<= 8;
+						((byte*)(&localsPointer->field_1) + 29)[num14] = (byte)(sbyte)((uint)num13 >> 24);
+						num14 = checked(num14 + 1);
+						num13 <<= 8;
 					}
-					llvm_memcpy_p0_p0_i64.Invoke(data_efhnzgd.Invoke(out_buf), &startFrame.GetLocalsPointer<LocalVariables>()->field_1, 58L, isVolatile: false);
+					llvm_memcpy_p0_p0_i64.Invoke(data_efhnzgd.Invoke(out_buf), &localsPointer->field_1, 58L, isVolatile: false);
 					vector_append.Invoke(out_buf, String_nz3h57a.__pointer, 16L);
 					if (ExceptionInfo.Current == null)
 					{
-						int num20 = fpng_crc32.Invoke((byte*)data_efhnzgd.Invoke(out_buf) + 58 + -4, (uint)(num11 + 4), 0);
+						int num15 = fpng_crc32.Invoke((byte*)data_efhnzgd.Invoke(out_buf) + 58 + -4, (uint)(num11 + 4), 0);
 						if (ExceptionInfo.Current == null)
 						{
-							num13 = num20;
-							num = 0;
-							while (num < 4)
+							int num16 = num15;
+							num14 = 0;
+							while (num14 < 4)
 							{
-								((byte*)data_efhnzgd.Invoke(out_buf) + size_4io4p4d.Invoke(out_buf) + -16)[num] = (byte)(sbyte)((uint)num13 >> 24);
-								num = checked(num + 1);
-								num13 <<= 8;
+								((byte*)data_efhnzgd.Invoke(out_buf) + size_4io4p4d.Invoke(out_buf) + -16)[num14] = (byte)(sbyte)((uint)num16 >> 24);
+								num14 = checked(num14 + 1);
+								num16 <<= 8;
 							}
 							flag = true;
-							num10 = 1;
-							goto IL_0bcf;
+							goto IL_0a19;
 						}
 					}
 				}
 			}
-			goto IL_0be3;
+			goto IL_0a27;
 		}
-		IL_0bcf:
-		vector_unsigned_char_class_std_allocator_unsigned_char_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0);
-		goto IL_0c07;
-		IL_0423:
-		num8 = num7;
-		if (num7 != 0)
+		IL_0a19:
+		vector_unsigned_char_class_std_allocator_unsigned_char_Destructor.Invoke(&localsPointer->field_0);
+		goto IL_0a45;
+		IL_03f3:
+		num10 = num5;
+		if (num5 != 0)
 		{
-			goto IL_05c0;
+			goto IL_057e;
 		}
-		num4 = 0;
+		num2 = 0;
 		num3 = 0;
 		unchecked
 		{
 			while ((uint)num3 < (uint)h)
 			{
-				apply_filter.Invoke(0, w, h, num_chans, num2, (byte*)pImage + (uint)(num3 * num2), null, vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0, (uint)num4));
+				apply_filter.Invoke(0, w, h, num_chans, num, (byte*)pImage + (uint)(num3 * num), null, vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(&localsPointer->field_0, (uint)num2));
 				if (ExceptionInfo.Current == null)
 				{
-					num4 += checked(1 + num2);
+					num2 += checked(1 + num);
 					num3++;
 					continue;
 				}
-				goto IL_0be3;
+				goto IL_0a27;
 			}
-			int num21;
-			if ((ulong)(uint)num4 <= (ulong)size_4io4p4d.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))
-			{
-				num21 = -1;
-			}
-			else
+			if ((ulong)(uint)num2 > (ulong)size_4io4p4d.Invoke(&localsPointer->field_0))
 			{
 				wassert.Invoke(String_bik4erc.__pointer, String_uxbkrtb.__pointer, 1745);
 				if (ExceptionInfo.Current != null)
 				{
-					goto IL_0be3;
+					goto IL_0a27;
 				}
-				num21 = 0;
 			}
-			resize_wwmwtsa.Invoke(out_buf, (uint)(num6 + 6 + num4 + (int)((uint)(num4 + 65534) / 65535u * 5)));
+			resize_wwmwtsa.Invoke(out_buf, (uint)(num4 + 6 + num2 + (int)((uint)(num2 + 65534) / 65535u * 5)));
 			if (ExceptionInfo.Current == null)
 			{
-				int num22 = write_raw_block.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num6, pDst: (byte*)data_efhnzgd.Invoke(out_buf) + (uint)num6, pSrc: data_efhnzgd.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0), src_len: num4);
+				int num17 = write_raw_block.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: (byte*)data_efhnzgd.Invoke(out_buf) + (uint)num4, pSrc: data_efhnzgd.Invoke(&localsPointer->field_0), src_len: num2);
 				if (ExceptionInfo.Current == null)
 				{
-					num9 = num22;
-					if (num9 != 0)
+					int num18 = num17;
+					if (num18 != 0)
 					{
-						num8 = num9;
-						goto IL_05c0;
+						num10 = num18;
+						goto IL_057e;
 					}
 					wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 1753);
 					if (ExceptionInfo.Current == null)
 					{
 						flag = false;
-						num10 = 1;
-						goto IL_0bcf;
+						goto IL_0a19;
 					}
 				}
 			}
-			goto IL_0be3;
+			goto IL_0a27;
 		}
 	}
 }

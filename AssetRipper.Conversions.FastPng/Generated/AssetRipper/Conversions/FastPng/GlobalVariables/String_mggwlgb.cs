@@ -25,6 +25,6 @@ internal static partial class String_mggwlgb
 	unsafe static String_mggwlgb()
 	{
 		__pointer = unchecked((InlineArray19_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray19_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray19_Int16, char>("bit_buf_size <= 64\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray19_Int16, char>("bit_buf_size <= 64\0");
 	}
 }

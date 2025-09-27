@@ -10,8 +10,8 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct fpng_png_chunk_prefix
 {
 	[FieldOffset(0)]
-	public int field_0;
+	public int m_length;
 
 	[FieldOffset(4)]
-	public InlineArray4_SByte field_1;
+	public InlineArray4_SByte m_type;
 }

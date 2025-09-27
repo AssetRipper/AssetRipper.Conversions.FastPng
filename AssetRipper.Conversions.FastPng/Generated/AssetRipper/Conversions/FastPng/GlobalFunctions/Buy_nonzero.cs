@@ -15,8 +15,5 @@ internal static partial class Buy_nonzero
 			throw null;
 		}
 		Buy_raw.Invoke(@this, Newcapacity);
-		if (ExceptionInfo.Current == null)
-		{
-		}
 	}
 }

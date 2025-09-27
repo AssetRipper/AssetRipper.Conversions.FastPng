@@ -25,6 +25,6 @@ internal static partial class String_a5rp7bb
 	unsafe static String_a5rp7bb()
 	{
 		__pointer = unchecked((InlineArray19_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray19_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray19_Int16, char>("(run_len % 3) == 0\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray19_Int16, char>("(run_len % 3) == 0\0");
 	}
 }

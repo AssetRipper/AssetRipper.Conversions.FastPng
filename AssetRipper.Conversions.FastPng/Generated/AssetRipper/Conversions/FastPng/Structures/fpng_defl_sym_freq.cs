@@ -9,8 +9,8 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct fpng_defl_sym_freq
 {
 	[FieldOffset(0)]
-	public short field_0;
+	public short m_key;
 
 	[FieldOffset(2)]
-	public short field_1;
+	public short m_sym_index;
 }

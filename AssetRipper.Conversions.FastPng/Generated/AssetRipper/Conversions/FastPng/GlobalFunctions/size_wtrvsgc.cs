@@ -13,8 +13,8 @@ internal static partial class size_wtrvsgc
 	{
 		unchecked
 		{
-			void* field_ = &((std_vector_drook9b*)@this)->field_0.field_0;
-			return ((long)((std_Vector_val_edx9ebc*)field_)->field_1 - (long)((std_Vector_val_edx9ebc*)field_)->field_0) / 4L;
+			void* myval = &((std_vector_drook9b*)@this)->Mypair.Myval2;
+			return ((long)((std_Vector_val_edx9ebc*)myval)->Mylast - (long)((std_Vector_val_edx9ebc*)myval)->Myfirst) / 4L;
 		}
 	}
 }

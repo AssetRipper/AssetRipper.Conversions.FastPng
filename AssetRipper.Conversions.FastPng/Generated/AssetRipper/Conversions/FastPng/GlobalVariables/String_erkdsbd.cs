@@ -25,6 +25,6 @@ internal static partial class String_erkdsbd
 	unsafe static String_erkdsbd()
 	{
 		__pointer = unchecked((InlineArray31_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray31_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray31_Int16, char>("code < DEFL_MAX_HUFF_SYMBOLS_2\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray31_Int16, char>("code < DEFL_MAX_HUFF_SYMBOLS_2\0");
 	}
 }

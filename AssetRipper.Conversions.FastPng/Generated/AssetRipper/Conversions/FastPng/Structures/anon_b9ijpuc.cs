@@ -10,8 +10,8 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct anon_b9ijpuc
 {
 	[FieldOffset(0)]
-	public sbyte field_0;
+	public sbyte m_code_size;
 
 	[FieldOffset(2)]
-	public short field_1;
+	public short m_code;
 }

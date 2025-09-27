@@ -12,30 +12,27 @@ internal static partial class Resize_2s9rs9d
 	[return: NativeType("void")]
 	public unsafe static void Invoke(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
 	{
-		void* ptr = null;
-		long num = 0L;
-		void* ptr2 = null;
 		void* al = Getal_kuj7nva.Invoke(@this);
 		unchecked
 		{
-			void* field_ = &((std_vector_mvt3mha*)@this)->field_0.field_0;
-			void* field_2 = &((std_Vector_val_zgi5p7d*)field_)->field_0;
-			void* field_3 = &((std_Vector_val_zgi5p7d*)field_)->field_1;
-			long num2 = ((long)(nuint)(*(nint*)field_3) - (long)(nuint)(*(nint*)field_2)) / 8L;
-			if ((ulong)Newsize < (ulong)num2)
+			void* myval = &((std_vector_mvt3mha*)@this)->Mypair.Myval2;
+			void* myfirst = &((std_Vector_val_zgi5p7d*)myval)->Myfirst;
+			void* mylast = &((std_Vector_val_zgi5p7d*)myval)->Mylast;
+			long num = ((long)(nuint)(*(nint*)mylast) - (long)(nuint)(*(nint*)myfirst)) / 8L;
+			if ((ulong)Newsize < (ulong)num)
 			{
-				ptr = (void*)((nint)(*(IntPtr*)field_2) + (nint)Newsize * 8);
-				Orphan_range_qciws4b.Invoke(@this, ptr, *(void**)field_3);
-				Destroy_range_qbzp7xb.Invoke(ptr, *(void**)field_3, al);
-				*(void**)field_3 = ptr;
+				void* ptr = (void*)((nint)(*(IntPtr*)myfirst) + (nint)Newsize * 8);
+				Orphan_range_qciws4b.Invoke(@this, ptr, *(void**)mylast);
+				Destroy_range_qbzp7xb.Invoke(ptr, *(void**)mylast, al);
+				*(void**)mylast = ptr;
 			}
 			else
 			{
-				if ((ulong)Newsize <= (ulong)num2)
+				if ((ulong)Newsize <= (ulong)num)
 				{
 					return;
 				}
-				if ((ulong)Newsize > (ulong)(((long)((std_Vector_val_zgi5p7d*)field_)->field_2 - (long)(nuint)(*(nint*)field_2)) / 8L))
+				if ((ulong)Newsize > (ulong)(((long)((std_Vector_val_zgi5p7d*)myval)->Myend - (long)(nuint)(*(nint*)myfirst)) / 8L))
 				{
 					Resize_reallocate_ytnsorc.Invoke(@this, Newsize, Val);
 					if (ExceptionInfo.Current == null)
@@ -44,8 +41,8 @@ internal static partial class Resize_2s9rs9d
 				}
 				else
 				{
-					ptr2 = *(void**)field_3;
-					*(void**)field_3 = Uninitialized_value_construct_n_hqowyoc.Invoke(ptr2, Newsize - num2, al);
+					void* ptr2 = *(void**)mylast;
+					*(void**)mylast = Uninitialized_value_construct_n_hqowyoc.Invoke(ptr2, Newsize - num, al);
 					Orphan_range_qciws4b.Invoke(@this, ptr2, ptr2);
 				}
 			}

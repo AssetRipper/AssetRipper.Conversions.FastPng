@@ -19,14 +19,9 @@ internal static partial class fpng_decode_memory
 	public unsafe static int Invoke([NativeType("void const *")] void* pImage, [NativeType("unsigned int")] int image_size, [NativeType("class std::vector<unsigned char, class std::allocator<unsigned char>> &")] void* @out, [NativeType("unsigned int &")] void* width, [NativeType("unsigned int &")] void* height, [NativeType("unsigned int &")] void* channels_in_file, [NativeType("unsigned int")] int desired_channels)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		int num = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
-		int num2 = 0;
-		long num3 = 0L;
-		void* ptr = null;
-		int num4 = 0;
-		sbyte b = 0;
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = 0;
+		localsPointer->field_1 = 0;
 		resize_wwmwtsa.Invoke(@out, 0L);
 		if (ExceptionInfo.Current != null)
 		{
@@ -37,6 +32,7 @@ internal static partial class fpng_decode_memory
 			*(int*)width = 0;
 			*(int*)height = 0;
 			*(int*)channels_in_file = 0;
+			int num;
 			if (pImage == null || image_size == 0 || (desired_channels != 3 && desired_channels != 4))
 			{
 				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 3094);
@@ -48,39 +44,40 @@ internal static partial class fpng_decode_memory
 			}
 			else
 			{
-				startFrame.GetLocalsPointer<LocalVariables>()->field_0 = 0;
-				startFrame.GetLocalsPointer<LocalVariables>()->field_1 = 0;
-				int num5 = fpng_get_info_internal.Invoke(pImage, image_size, width, height, channels_in_file, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, &startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+				localsPointer->field_0 = 0;
+				localsPointer->field_1 = 0;
+				int num2 = fpng_get_info_internal.Invoke(pImage, image_size, width, height, channels_in_file, &localsPointer->field_0, &localsPointer->field_1);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
-				num2 = num5;
-				if (num2 != 0)
+				int num3 = num2;
+				if (num3 != 0)
 				{
-					num = num2;
+					num = num3;
 				}
 				else
 				{
-					num3 = (long)(uint)(*(int*)width) * (long)(uint)(*(int*)height) * (uint)desired_channels;
-					if ((ulong)num3 > 4294967295uL)
+					long num4 = (long)(uint)(*(int*)width) * (long)(uint)(*(int*)height) * (uint)desired_channels;
+					if ((ulong)num4 > 4294967295uL)
 					{
 						num = 6;
 					}
 					else
 					{
-						resize_wwmwtsa.Invoke(@out, num3);
+						resize_wwmwtsa.Invoke(@out, num4);
 						if (ExceptionInfo.Current != null)
 						{
 							return 0;
 						}
-						ptr = (byte*)pImage + (uint)startFrame.GetLocalsPointer<LocalVariables>()->field_0 + 8;
-						num4 = (int)((uint)image_size - ((long)(uint)startFrame.GetLocalsPointer<LocalVariables>()->field_0 + 8L));
+						void* pSrc = (byte*)pImage + (uint)localsPointer->field_0 + 8;
+						int src_len = (int)((uint)image_size - ((long)(uint)localsPointer->field_0 + 8L));
+						sbyte b;
 						if (desired_channels == 3)
 						{
 							if (*(int*)channels_in_file == 3)
 							{
-								bool flag = fpng_pixel_zlib_decompress_3_prmnnjb.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: ptr, src_len: num4, zlib_len: startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+								bool flag = fpng_pixel_zlib_decompress_3_prmnnjb.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
 								if (ExceptionInfo.Current != null)
 								{
 									return 0;
@@ -89,7 +86,7 @@ internal static partial class fpng_decode_memory
 							}
 							else
 							{
-								bool flag2 = fpng_pixel_zlib_decompress_4_xygi9td.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: ptr, src_len: num4, zlib_len: startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+								bool flag2 = fpng_pixel_zlib_decompress_4_xygi9td.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
 								if (ExceptionInfo.Current != null)
 								{
 									return 0;
@@ -99,7 +96,7 @@ internal static partial class fpng_decode_memory
 						}
 						else if (*(int*)channels_in_file == 3)
 						{
-							bool flag3 = fpng_pixel_zlib_decompress_3_yffw42c.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: ptr, src_len: num4, zlib_len: startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+							bool flag3 = fpng_pixel_zlib_decompress_3_yffw42c.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
 							if (ExceptionInfo.Current != null)
 							{
 								return 0;
@@ -108,7 +105,7 @@ internal static partial class fpng_decode_memory
 						}
 						else
 						{
-							bool flag4 = fpng_pixel_zlib_decompress_4_amptoaa.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: ptr, src_len: num4, zlib_len: startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+							bool flag4 = fpng_pixel_zlib_decompress_4_amptoaa.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
 							if (ExceptionInfo.Current != null)
 							{
 								return 0;

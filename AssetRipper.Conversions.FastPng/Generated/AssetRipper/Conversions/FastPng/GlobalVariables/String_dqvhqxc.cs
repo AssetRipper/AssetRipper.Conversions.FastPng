@@ -25,6 +25,6 @@ internal static partial class String_dqvhqxc
 	unsafe static String_dqvhqxc()
 	{
 		__pointer = unchecked((InlineArray40_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray40_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray40_Int16, char>("(out_ofs + zlib_size) <= out_buf.size()\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray40_Int16, char>("(out_ofs + zlib_size) <= out_buf.size()\0");
 	}
 }

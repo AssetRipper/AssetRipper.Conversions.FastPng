@@ -10,12 +10,10 @@ internal static partial class Allocate_manually_vector_aligned
 	[return: NativeType("void *")]
 	public unsafe static void* Invoke([MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
 	{
-		long num = 0L;
-		void* ptr = null;
 		unchecked
 		{
-			long num2 = 39L + Bytes;
-			if ((ulong)num2 <= (ulong)Bytes)
+			long num = 39L + Bytes;
+			if ((ulong)num <= (ulong)Bytes)
 			{
 				Throw_bad_array_new_length.Invoke();
 				if (ExceptionInfo.Current != null)
@@ -24,13 +22,13 @@ internal static partial class Allocate_manually_vector_aligned
 				}
 				throw null;
 			}
-			num = (long)Allocate_ifu7fia.Invoke(num2);
-			if (num == 0L)
+			long num2 = (long)Allocate_ifu7fia.Invoke(num);
+			if (num2 == 0L)
 			{
 				llvm_trap.Invoke();
 			}
-			ptr = (void*)((num + 39L) & -32L);
-			*(long*)((byte*)ptr + -8) = num;
+			void* ptr = (void*)((num2 + 39L) & -32L);
+			*(long*)((byte*)ptr + -8) = num2;
 			return ptr;
 		}
 	}

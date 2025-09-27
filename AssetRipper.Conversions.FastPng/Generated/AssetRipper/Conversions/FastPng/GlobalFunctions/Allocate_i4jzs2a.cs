@@ -10,7 +10,6 @@ internal static partial class Allocate_i4jzs2a
 	[return: NativeType("void *")]
 	public unsafe static void* Invoke([MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
 	{
-		void* ptr = null;
 		if (Bytes == 0L)
 		{
 			return null;

@@ -9,5 +9,5 @@ namespace AssetRipper.Conversions.FastPng.Structures;
 public partial struct std_Tidy_guard
 {
 	[FieldOffset(0)]
-	public unsafe void* field_0;
+	public unsafe void* Target;
 }

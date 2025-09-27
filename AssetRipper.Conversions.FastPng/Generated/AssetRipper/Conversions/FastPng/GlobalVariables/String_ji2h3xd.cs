@@ -25,6 +25,6 @@ internal static partial class String_ji2h3xd
 	unsafe static String_ji2h3xd()
 	{
 		__pointer = unchecked((InlineArray10_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray10_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray10_Int16, char>("!comp_ofs\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray10_Int16, char>("!comp_ofs\0");
 	}
 }

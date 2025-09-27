@@ -17,8 +17,9 @@ internal static partial class resize_wwmwtsa
 	public unsafe static void Invoke(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_Value_init_tag);
-		Resize_p4x2rua.Invoke(@this, Newsize, &startFrame.GetLocalsPointer<LocalVariables>()->field_0);
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = default(std_Value_init_tag);
+		Resize_p4x2rua.Invoke(@this, Newsize, &localsPointer->field_0);
 		if (ExceptionInfo.Current == null)
 		{
 			StackFrameList.Current.Clear(startFrame);

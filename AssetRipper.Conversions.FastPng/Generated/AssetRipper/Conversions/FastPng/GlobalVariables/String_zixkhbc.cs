@@ -25,6 +25,6 @@ internal static partial class String_zixkhbc
 	unsafe static String_zixkhbc()
 	{
 		__pointer = unchecked((InlineArray37_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray37_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray37_Int16, char>("(src_chans == 3) || (src_chans == 4)\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray37_Int16, char>("(src_chans == 3) || (src_chans == 4)\0");
 	}
 }

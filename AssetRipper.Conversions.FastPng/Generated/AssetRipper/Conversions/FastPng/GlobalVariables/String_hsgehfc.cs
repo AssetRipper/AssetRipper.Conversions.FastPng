@@ -25,6 +25,6 @@ internal static partial class String_hsgehfc
 	unsafe static String_hsgehfc()
 	{
 		__pointer = unchecked((InlineArray28_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray28_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray28_Int16, char>("total_codes <= codes.size()\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray28_Int16, char>("total_codes <= codes.size()\0");
 	}
 }

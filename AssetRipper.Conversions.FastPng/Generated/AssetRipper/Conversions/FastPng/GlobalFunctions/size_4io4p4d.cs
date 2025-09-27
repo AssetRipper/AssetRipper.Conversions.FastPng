@@ -13,8 +13,8 @@ internal static partial class size_4io4p4d
 	{
 		unchecked
 		{
-			void* field_ = &((std_vector_7uge3hb*)@this)->field_0.field_0;
-			return (long)((std_Vector_val_p59sy9d*)field_)->field_1 - (long)((std_Vector_val_p59sy9d*)field_)->field_0;
+			void* myval = &((std_vector_7uge3hb*)@this)->Mypair.Myval2;
+			return (long)((std_Vector_val_p59sy9d*)myval)->Mylast - (long)((std_Vector_val_p59sy9d*)myval)->Myfirst;
 		}
 	}
 }

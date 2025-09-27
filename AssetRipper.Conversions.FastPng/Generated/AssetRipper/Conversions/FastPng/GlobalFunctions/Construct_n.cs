@@ -20,15 +20,16 @@ internal static partial class Construct_n
 	public unsafe static void Invoke(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(std_Fake_allocator);
-		startFrame.GetLocalsPointer<LocalVariables>()->field_1 = default(std_Fake_proxy_ptr_impl);
-		startFrame.GetLocalsPointer<LocalVariables>()->field_2 = default(std_Tidy_guard);
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = default(std_Fake_allocator);
+		localsPointer->field_1 = default(std_Fake_proxy_ptr_impl);
+		localsPointer->field_2 = default(std_Tidy_guard);
 		void* ptr = Getal_t2pmqoc.Invoke(@this);
 		Get_proxy_allocator_uag3hnc.Invoke(ptr);
 		unchecked
 		{
-			void* field_ = &((std_vector_drook9b*)@this)->field_0.field_0;
-			Fake_proxy_ptr_impl_Constructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_1, &startFrame.GetLocalsPointer<LocalVariables>()->field_0, field_);
+			void* myval = &((std_vector_drook9b*)@this)->Mypair.Myval2;
+			Fake_proxy_ptr_impl_Constructor.Invoke(&localsPointer->field_1, &localsPointer->field_0, myval);
 			if (Count != 0L)
 			{
 				Buy_nonzero.Invoke(@this, Count);
@@ -36,21 +37,21 @@ internal static partial class Construct_n
 				{
 					return;
 				}
-				startFrame.GetLocalsPointer<LocalVariables>()->field_2.field_0 = @this;
-				void* field_2 = Uninitialized_value_construct_n_zg4iwva.Invoke(((std_Vector_val_edx9ebc*)field_)->field_0, Count, ptr);
+				localsPointer->field_2.Target = @this;
+				void* mylast = Uninitialized_value_construct_n_zg4iwva.Invoke(((std_Vector_val_edx9ebc*)myval)->Myfirst, Count, ptr);
 				if (ExceptionInfo.Current != null)
 				{
 					ExceptionInfo? current = ExceptionInfo.Current;
 					ExceptionInfo.Current = null;
-					Tidy_guard_class_std_vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_2);
+					Tidy_guard_class_std_vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(&localsPointer->field_2);
 					ExceptionInfo.Current = current;
 					return;
 				}
-				((std_Vector_val_edx9ebc*)field_)->field_1 = field_2;
-				startFrame.GetLocalsPointer<LocalVariables>()->field_2.field_0 = null;
-				Tidy_guard_class_std_vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_2);
+				((std_Vector_val_edx9ebc*)myval)->Mylast = mylast;
+				localsPointer->field_2.Target = null;
+				Tidy_guard_class_std_vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(&localsPointer->field_2);
 			}
-			Release.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_1);
+			Release.Invoke(&localsPointer->field_1);
 			StackFrameList.Current.Clear(startFrame);
 		}
 	}

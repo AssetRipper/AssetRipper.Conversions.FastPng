@@ -15,19 +15,19 @@ internal static partial class Change_array_hgqy2vc
 		void* ptr = Getal_kuj7nva.Invoke(@this);
 		unchecked
 		{
-			void* field_ = &((std_vector_mvt3mha*)@this)->field_0.field_0;
-			void* field_2 = &((std_Vector_val_zgi5p7d*)field_)->field_0;
-			void* field_3 = &((std_Vector_val_zgi5p7d*)field_)->field_1;
-			void* field_4 = &((std_Vector_val_zgi5p7d*)field_)->field_2;
-			Orphan_all.Invoke(field_);
-			if (*(IntPtr*)field_2 != (IntPtr)(nint)0)
+			void* myval = &((std_vector_mvt3mha*)@this)->Mypair.Myval2;
+			void* myfirst = &((std_Vector_val_zgi5p7d*)myval)->Myfirst;
+			void* mylast = &((std_Vector_val_zgi5p7d*)myval)->Mylast;
+			void* myend = &((std_Vector_val_zgi5p7d*)myval)->Myend;
+			Orphan_all.Invoke(myval);
+			if (*(IntPtr*)myfirst != (IntPtr)(nint)0)
 			{
-				Destroy_range_qbzp7xb.Invoke(Al: ptr, Last: *(void**)field_3, First: *(void**)field_2);
-				deallocate_yb2gvqa.Invoke(ptr, Count: ((long)(nuint)(*(nint*)field_4) - (long)(nuint)(*(nint*)field_2)) / 8L, Ptr: *(void**)field_2);
+				Destroy_range_qbzp7xb.Invoke(Al: ptr, Last: *(void**)mylast, First: *(void**)myfirst);
+				deallocate_yb2gvqa.Invoke(ptr, Count: ((long)(nuint)(*(nint*)myend) - (long)(nuint)(*(nint*)myfirst)) / 8L, Ptr: *(void**)myfirst);
 			}
-			*(void**)field_2 = Newvec;
-			*(byte**)field_3 = (byte*)Newvec + (nint)Newsize * 8;
-			*(byte**)field_4 = (byte*)Newvec + (nint)Newcapacity * 8;
+			*(void**)myfirst = Newvec;
+			*(byte**)mylast = (byte*)Newvec + (nint)Newsize * 8;
+			*(byte**)myend = (byte*)Newvec + (nint)Newcapacity * 8;
 		}
 	}
 }

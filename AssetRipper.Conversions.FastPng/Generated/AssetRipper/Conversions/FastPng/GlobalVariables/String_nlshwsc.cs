@@ -25,6 +25,6 @@ internal static partial class String_nlshwsc
 	unsafe static String_nlshwsc()
 	{
 		__pointer = unchecked((InlineArray36_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray36_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray36_Int16, char>("sym_bits <= FPNG_DECODER_TABLE_BITS\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray36_Int16, char>("sym_bits <= FPNG_DECODER_TABLE_BITS\0");
 	}
 }

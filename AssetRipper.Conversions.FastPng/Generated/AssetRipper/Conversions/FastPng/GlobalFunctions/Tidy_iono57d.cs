@@ -15,18 +15,18 @@ internal static partial class Tidy_iono57d
 		void* ptr = Getal_jms5hzb.Invoke(@this);
 		unchecked
 		{
-			void* field_ = &((std_vector_7uge3hb*)@this)->field_0.field_0;
-			void* field_2 = &((std_Vector_val_p59sy9d*)field_)->field_0;
-			void* field_3 = &((std_Vector_val_p59sy9d*)field_)->field_1;
-			void* field_4 = &((std_Vector_val_p59sy9d*)field_)->field_2;
-			Orphan_all.Invoke(field_);
-			if (*(IntPtr*)field_2 != (IntPtr)(nint)0)
+			void* myval = &((std_vector_7uge3hb*)@this)->Mypair.Myval2;
+			void* myfirst = &((std_Vector_val_p59sy9d*)myval)->Myfirst;
+			void* mylast = &((std_Vector_val_p59sy9d*)myval)->Mylast;
+			void* myend = &((std_Vector_val_p59sy9d*)myval)->Myend;
+			Orphan_all.Invoke(myval);
+			if (*(IntPtr*)myfirst != (IntPtr)(nint)0)
 			{
-				Destroy_range_jjcob5a.Invoke(Al: ptr, Last: *(void**)field_3, First: *(void**)field_2);
-				deallocate_mc9rbjc.Invoke(ptr, Count: (long)(nuint)(*(nint*)field_4) - (long)(nuint)(*(nint*)field_2), Ptr: *(void**)field_2);
-				*(IntPtr*)field_2 = (nint)0;
-				*(IntPtr*)field_3 = (nint)0;
-				*(IntPtr*)field_4 = (nint)0;
+				Destroy_range_jjcob5a.Invoke(Al: ptr, Last: *(void**)mylast, First: *(void**)myfirst);
+				deallocate_mc9rbjc.Invoke(ptr, Count: (long)(nuint)(*(nint*)myend) - (long)(nuint)(*(nint*)myfirst), Ptr: *(void**)myfirst);
+				*(IntPtr*)myfirst = (nint)0;
+				*(IntPtr*)mylast = (nint)0;
+				*(IntPtr*)myend = (nint)0;
 			}
 		}
 	}

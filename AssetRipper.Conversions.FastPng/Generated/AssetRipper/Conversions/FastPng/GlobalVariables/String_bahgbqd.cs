@@ -25,6 +25,6 @@ internal static partial class String_bahgbqd
 	unsafe static String_bahgbqd()
 	{
 		__pointer = unchecked((InlineArray31_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray31_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray31_Int16, char>("l <= 32 && (bit_buf_size >= l)\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray31_Int16, char>("l <= 32 && (bit_buf_size >= l)\0");
 	}
 }

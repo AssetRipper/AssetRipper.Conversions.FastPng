@@ -19,26 +19,11 @@ internal static partial class fpng_get_info_internal
 	public unsafe static int Invoke([NativeType("void const *")] void* pImage, [NativeType("unsigned int")] int image_size, [NativeType("unsigned int &")] void* width, [NativeType("unsigned int &")] void* height, [NativeType("unsigned int &")] void* channels_in_file, [NativeType("unsigned int &")] void* idat_ofs, [NativeType("unsigned int &")] void* idat_len)
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
-		int num = 0;
-		void* ptr = null;
-		void* ptr2 = null;
-		long num2 = 0L;
-		sbyte b = 0;
-		long num3 = 0L;
-		int num4 = 0;
-		void* ptr3 = null;
-		int num5 = 0;
-		int num6 = 0;
-		sbyte b2 = 0;
-		sbyte b3 = 0;
-		sbyte b4 = 0;
-		int num7 = 0;
-		startFrame.GetLocalsPointer<LocalVariables>()->field_0 = default(InlineArray5_SByte);
-		sbyte b5 = 0;
-		int num8 = 0;
-		void* ptr4 = null;
+		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
+		localsPointer->field_0 = default(InlineArray5_SByte);
 		unchecked
 		{
+			int num;
 			if (!endian_check.Invoke())
 			{
 				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 2936);
@@ -65,21 +50,21 @@ internal static partial class fpng_get_info_internal
 				}
 				else
 				{
-					ptr = (byte*)pImage + 8;
-					ptr2 = ptr;
+					void* ptr = (byte*)pImage + 8;
+					void* ptr2 = ptr;
 					ptr = (byte*)ptr + 25;
-					if (swap32.Invoke(((fpng_png_ihdr*)ptr2)->field_0.field_0) != 13)
+					if (swap32.Invoke(((fpng_png_ihdr*)ptr2)->m_prefix.m_length) != 13)
 					{
 						num = 3;
 					}
-					else if (fpng_crc32.Invoke(&((fpng_png_ihdr*)ptr2)->field_0.field_1, 17L, 0) != swap32.Invoke(((fpng_png_ihdr*)ptr2)->field_8))
+					else if (fpng_crc32.Invoke(&((fpng_png_ihdr*)ptr2)->m_prefix.m_type, 17L, 0) != swap32.Invoke(((fpng_png_ihdr*)ptr2)->m_crc32))
 					{
 						num = 4;
 					}
 					else
 					{
-						*(int*)width = swap32.Invoke(((fpng_png_ihdr*)ptr2)->field_1);
-						*(int*)height = swap32.Invoke(((fpng_png_ihdr*)ptr2)->field_2);
+						*(int*)width = swap32.Invoke(((fpng_png_ihdr*)ptr2)->m_width);
+						*(int*)height = swap32.Invoke(((fpng_png_ihdr*)ptr2)->m_height);
 						if (*(int*)width == 0 || *(int*)height == 0 || (uint)(*(int*)width) > 16777216u || (uint)(*(int*)height) > 16777216u)
 						{
 							num = 5;
@@ -88,17 +73,17 @@ internal static partial class fpng_get_info_internal
 						{
 							num = 5;
 						}
-						else if (((fpng_png_ihdr*)ptr2)->field_5 != 0 || ((fpng_png_ihdr*)ptr2)->field_6 != 0 || ((fpng_png_ihdr*)ptr2)->field_7 != 0 || (byte)((fpng_png_ihdr*)ptr2)->field_3 != 8)
+						else if (((fpng_png_ihdr*)ptr2)->m_comp_method != 0 || ((fpng_png_ihdr*)ptr2)->m_filter_method != 0 || ((fpng_png_ihdr*)ptr2)->m_interlace_method != 0 || (byte)((fpng_png_ihdr*)ptr2)->m_bitdepth != 8)
 						{
 							num = 1;
 						}
 						else
 						{
-							if ((byte)((fpng_png_ihdr*)ptr2)->field_4 == 2)
+							if ((byte)((fpng_png_ihdr*)ptr2)->m_color_type == 2)
 							{
 								*(int*)channels_in_file = 3;
 							}
-							else if ((byte)((fpng_png_ihdr*)ptr2)->field_4 == 6)
+							else if ((byte)((fpng_png_ihdr*)ptr2)->m_color_type == 6)
 							{
 								*(int*)channels_in_file = 4;
 							}
@@ -108,54 +93,54 @@ internal static partial class fpng_get_info_internal
 							}
 							else
 							{
-								b = 0;
+								sbyte b = 0;
 								while (true)
 								{
-									num3 = (long)ptr - (long)pImage;
-									if ((ulong)num3 >= (ulong)(uint)image_size)
+									long num2 = (long)ptr - (long)pImage;
+									if ((ulong)num2 >= (ulong)(uint)image_size)
 									{
 										num = 7;
 										break;
 									}
-									if ((ulong)(uint)(image_size - (int)num3) < 12uL)
+									if ((ulong)(uint)(image_size - (int)num2) < 12uL)
 									{
 										num = 7;
 										break;
 									}
-									ptr3 = ptr;
-									num5 = swap32.Invoke(((fpng_png_chunk_prefix*)ptr3)->field_0);
-									if ((ulong)(num3 + 8L + (uint)num5 + 4L) > (ulong)(uint)image_size)
+									void* ptr3 = ptr;
+									int num3 = swap32.Invoke(((fpng_png_chunk_prefix*)ptr3)->m_length);
+									if ((ulong)(num2 + 8L + (uint)num3 + 4L) > (ulong)(uint)image_size)
 									{
 										num = 7;
 										break;
 									}
-									num6 = 0;
-									while ((uint)num6 < 4u)
+									int num4 = 0;
+									while ((uint)num4 < 4u)
 									{
-										b2 = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->field_1))[(uint)num6];
-										b3 = (((byte)b2 >= 65 && (byte)b2 <= 90) ? ((sbyte)1) : ((sbyte)0));
-										b4 = (((byte)b2 >= 97 && (byte)b2 <= 122) ? ((sbyte)1) : ((sbyte)0));
+										sbyte b2 = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->m_type))[(uint)num4];
+										sbyte b3 = (((byte)b2 >= 65 && (byte)b2 <= 90) ? ((sbyte)1) : ((sbyte)0));
+										sbyte b4 = (((byte)b2 >= 97 && (byte)b2 <= 122) ? ((sbyte)1) : ((sbyte)0));
 										if ((b3 & 1) != 1 && (b4 & 1) != 1)
 										{
-											goto IL_035b;
+											goto IL_036a;
 										}
-										num6++;
+										num4++;
 									}
-									num7 = swap32.Invoke(*(int*)((byte*)ptr + 8 + (uint)num5));
-									sbyte field_ = *(sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->field_1);
-									*(sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0) = field_;
-									((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[1] = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->field_1))[1];
-									((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[2] = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->field_1))[2];
-									((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[3] = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->field_1))[3];
-									((sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0))[4] = 0;
-									b5 = ((strcmp.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0, String_qjc9xdd.__pointer) == 0) ? ((sbyte)1) : ((sbyte)0));
-									if ((b5 & 1) != 1 && fpng_crc32.Invoke((byte*)ptr + 4, 4L + (long)(uint)num5, 0) != num7)
+									int num5 = swap32.Invoke(*(int*)((byte*)ptr + 8 + (uint)num3));
+									sbyte type = *(sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->m_type);
+									*(sbyte*)(&localsPointer->field_0) = type;
+									((sbyte*)(&localsPointer->field_0))[1] = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->m_type))[1];
+									((sbyte*)(&localsPointer->field_0))[2] = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->m_type))[2];
+									((sbyte*)(&localsPointer->field_0))[3] = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->m_type))[3];
+									((sbyte*)(&localsPointer->field_0))[4] = 0;
+									sbyte b5 = ((strcmp.Invoke(&localsPointer->field_0, String_qjc9xdd.__pointer) == 0) ? ((sbyte)1) : ((sbyte)0));
+									if ((b5 & 1) != 1 && fpng_crc32.Invoke((byte*)ptr + 4, 4L + (long)(uint)num3, 0) != num5)
 									{
 										num = 4;
 										break;
 									}
-									ptr4 = (byte*)ptr + 8;
-									if (strcmp.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0, String_p7olgfc.__pointer) != 0)
+									void* ptr4 = (byte*)ptr + 8;
+									if (strcmp.Invoke(&localsPointer->field_0, String_p7olgfc.__pointer) != 0)
 									{
 										if ((b5 & 1) == 1)
 										{
@@ -164,22 +149,22 @@ internal static partial class fpng_get_info_internal
 												num = 1;
 												break;
 											}
-											*(int*)idat_ofs = (int)num3;
-											*(int*)idat_len = num5;
+											*(int*)idat_ofs = (int)num2;
+											*(int*)idat_len = num3;
 											if ((uint)(*(int*)idat_len) < 7u)
 											{
 												num = 8;
 												break;
 											}
 										}
-										else if (strcmp.Invoke(&startFrame.GetLocalsPointer<LocalVariables>()->field_0, String_22lii4a.__pointer) == 0)
+										else if (strcmp.Invoke(&localsPointer->field_0, String_22lii4a.__pointer) == 0)
 										{
 											if ((b & 1) == 1)
 											{
 												num = 1;
 												break;
 											}
-											if (num5 != 5)
+											if (num3 != 5)
 											{
 												num = 1;
 												break;
@@ -196,17 +181,17 @@ internal static partial class fpng_get_info_internal
 											}
 											b = 1;
 										}
-										else if ((*(sbyte*)(&startFrame.GetLocalsPointer<LocalVariables>()->field_0) & 0x20) == 0)
+										else if ((*(sbyte*)(&localsPointer->field_0) & 0x20) == 0)
 										{
 											num = 1;
 											break;
 										}
-										ptr = (byte*)ptr + (8L + (long)(uint)num5 + 4L);
+										ptr = (byte*)ptr + (8L + (long)(uint)num3 + 4L);
 										continue;
 									}
 									num = (((b & 1) != 1 || *(int*)idat_ofs == 0) ? 1 : 0);
 									break;
-									IL_035b:
+									IL_036a:
 									num = 7;
 									break;
 								}

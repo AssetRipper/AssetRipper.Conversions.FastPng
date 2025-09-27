@@ -25,6 +25,6 @@ internal static partial class String_497patd
 	unsafe static String_497patd()
 	{
 		__pointer = unchecked((InlineArray26_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray26_Int16))));
-		Value = InlineArrayHelper.Create<InlineArray26_Int16, char>("src_len >= (zlib_len + 4)\0".ToCharacterSpan());
+		Value = InlineArrayHelper.Create<InlineArray26_Int16, char>("src_len >= (zlib_len + 4)\0");
 	}
 }
