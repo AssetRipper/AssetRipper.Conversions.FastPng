@@ -33,7 +33,7 @@ internal static partial class CT_R0_AVbad_array_new_length_std_8_0bad_array_new_
 			field_3 = -1,
 			field_4 = 0,
 			field_5 = 24,
-			field_6 = PointerIndices.GetIndex(bad_array_new_length_Constructor_7fjuj3c.__pointer)
+			field_6 = PointerIndices.GetIndex(bad_array_new_length_Constructor_avfmh5.__pointer)
 		};
 	}
 }

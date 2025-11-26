@@ -12,7 +12,7 @@ internal static partial class fpng_encode_image_to_memory
 {
 	private partial struct LocalVariables
 	{
-		public std_vector_7uge3hb field_0;
+		public std_vector_4tqn2f field_0;
 
 		public InlineArray58_SByte field_1;
 	}
@@ -22,7 +22,7 @@ internal static partial class fpng_encode_image_to_memory
 	{
 		StackFrame startFrame = StackFrameList.Current.New<LocalVariables>();
 		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
-		localsPointer->field_0 = default(std_vector_7uge3hb);
+		localsPointer->field_0 = default(std_vector_4tqn2f);
 		localsPointer->field_1 = default(InlineArray58_SByte);
 		bool flag;
 		int num;
@@ -34,7 +34,7 @@ internal static partial class fpng_encode_image_to_memory
 		{
 			if (!endian_check.Invoke())
 			{
-				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 1666);
+				wassert.Invoke(String_v852r7.__pointer, String_ksmiy6.__pointer, 1666);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
@@ -43,7 +43,7 @@ internal static partial class fpng_encode_image_to_memory
 			}
 			else if ((uint)w < 1u || (uint)h < 1u || (ulong)((long)(uint)w * (long)(uint)h) > 4294967295uL || (uint)w > 16777216u || (uint)h > 16777216u)
 			{
-				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 1672);
+				wassert.Invoke(String_v852r7.__pointer, String_ksmiy6.__pointer, 1672);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
@@ -56,14 +56,14 @@ internal static partial class fpng_encode_image_to_memory
 				{
 					num = w * num_chans;
 					vector_unsigned_char_class_std_allocator_unsigned_char_Constructor.Invoke(&localsPointer->field_0);
-					resize_wwmwtsa.Invoke(Newsize: (uint)(checked(num + 1) * h + 7), @this: &localsPointer->field_0);
+					resize_irjm7f.Invoke(Newsize: (uint)(checked(num + 1) * h + 7), @this: &localsPointer->field_0);
 					if (ExceptionInfo.Current == null)
 					{
 						num2 = 0;
 						num3 = 0;
 						while ((uint)num3 < (uint)h)
 						{
-							apply_filter.Invoke(pSrc: (byte*)pImage + (uint)(num3 * num), pPrev_src: (num3 == 0) ? null : ((byte*)pImage + (uint)((num3 - 1) * num)), pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(&localsPointer->field_0, (uint)num2), filter: InstructionHelper.Select(num3 != 0, 2, 0), w: w, h: h, num_chans: num_chans, bpl: num);
+							apply_filter.Invoke(pSrc: (byte*)pImage + (uint)(num3 * num), pPrev_src: (num3 == 0) ? null : ((byte*)pImage + (uint)((num3 - 1) * num)), pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Operator.Invoke(&localsPointer->field_0, (uint)num2), filter: InstructionHelper.Select(num3 != 0, 2, 0), w: w, h: h, num_chans: num_chans, bpl: num);
 							if (ExceptionInfo.Current == null)
 							{
 								num2 += checked(1 + num);
@@ -73,7 +73,7 @@ internal static partial class fpng_encode_image_to_memory
 							goto IL_0a27;
 						}
 						num4 = 58;
-						resize_wwmwtsa.Invoke(out_buf, (uint)((num4 + checked(num + 1) * h + 7) & -8));
+						resize_irjm7f.Invoke(out_buf, (uint)((num4 + checked(num + 1) * h + 7) & -8));
 						if (ExceptionInfo.Current == null)
 						{
 							num5 = 0;
@@ -85,7 +85,7 @@ internal static partial class fpng_encode_image_to_memory
 							{
 								if ((flags & 1) != 0)
 								{
-									int num6 = pixel_deflate_dyn_3_rle.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num4), pImg: data_efhnzgd.Invoke(&localsPointer->field_0), w: w, h: h);
+									int num6 = pixel_deflate_dyn_3_rle.Invoke(dst_buf_size: (int)size_78pg66.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Operator.Invoke(out_buf, (uint)num4), pImg: data_2v5v72.Invoke(&localsPointer->field_0), w: w, h: h);
 									if (ExceptionInfo.Current == null)
 									{
 										num5 = num6;
@@ -94,7 +94,7 @@ internal static partial class fpng_encode_image_to_memory
 								}
 								else
 								{
-									int num7 = pixel_deflate_dyn_3_rle_one_pass.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num4), pImg: data_efhnzgd.Invoke(&localsPointer->field_0), w: w, h: h);
+									int num7 = pixel_deflate_dyn_3_rle_one_pass.Invoke(dst_buf_size: (int)size_78pg66.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Operator.Invoke(out_buf, (uint)num4), pImg: data_2v5v72.Invoke(&localsPointer->field_0), w: w, h: h);
 									if (ExceptionInfo.Current == null)
 									{
 										num5 = num7;
@@ -104,7 +104,7 @@ internal static partial class fpng_encode_image_to_memory
 							}
 							else if ((flags & 1) != 0)
 							{
-								int num8 = pixel_deflate_dyn_4_rle.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num4), pImg: data_efhnzgd.Invoke(&localsPointer->field_0), w: w, h: h);
+								int num8 = pixel_deflate_dyn_4_rle.Invoke(dst_buf_size: (int)size_78pg66.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Operator.Invoke(out_buf, (uint)num4), pImg: data_2v5v72.Invoke(&localsPointer->field_0), w: w, h: h);
 								if (ExceptionInfo.Current == null)
 								{
 									num5 = num8;
@@ -113,7 +113,7 @@ internal static partial class fpng_encode_image_to_memory
 							}
 							else
 							{
-								int num9 = pixel_deflate_dyn_4_rle_one_pass.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(out_buf, (uint)num4), pImg: data_efhnzgd.Invoke(&localsPointer->field_0), w: w, h: h);
+								int num9 = pixel_deflate_dyn_4_rle_one_pass.Invoke(dst_buf_size: (int)size_78pg66.Invoke(out_buf) - num4, pDst: vector_unsigned_char_class_std_allocator_unsigned_char_Operator.Invoke(out_buf, (uint)num4), pImg: data_2v5v72.Invoke(&localsPointer->field_0), w: w, h: h);
 								if (ExceptionInfo.Current == null)
 								{
 									num5 = num9;
@@ -124,7 +124,7 @@ internal static partial class fpng_encode_image_to_memory
 					}
 					goto IL_0a27;
 				}
-				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 1678);
+				wassert.Invoke(String_v852r7.__pointer, String_ksmiy6.__pointer, 1678);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
@@ -147,18 +147,18 @@ internal static partial class fpng_encode_image_to_memory
 		int num10;
 		unchecked
 		{
-			if ((ulong)(uint)(num4 + num10) > (ulong)size_4io4p4d.Invoke(out_buf))
+			if ((ulong)(uint)(num4 + num10) > (ulong)size_78pg66.Invoke(out_buf))
 			{
-				wassert.Invoke(String_dqvhqxc.__pointer, String_uxbkrtb.__pointer, 1760);
+				wassert.Invoke(String_bjniyv.__pointer, String_ksmiy6.__pointer, 1760);
 				if (ExceptionInfo.Current != null)
 				{
 					goto IL_0a27;
 				}
 			}
-			resize_wwmwtsa.Invoke(out_buf, (uint)(num4 + num10));
+			resize_irjm7f.Invoke(out_buf, (uint)(num4 + num10));
 			if (ExceptionInfo.Current == null)
 			{
-				int num11 = (int)size_4io4p4d.Invoke(out_buf) - 58;
+				int num11 = (int)size_78pg66.Invoke(out_buf) - 58;
 				*(sbyte*)(&localsPointer->field_1) = -119;
 				((sbyte*)(&localsPointer->field_1))[1] = 80;
 				((sbyte*)(&localsPointer->field_1))[2] = 78;
@@ -228,18 +228,18 @@ internal static partial class fpng_encode_image_to_memory
 						num14 = checked(num14 + 1);
 						num13 <<= 8;
 					}
-					llvm_memcpy_p0_p0_i64.Invoke(data_efhnzgd.Invoke(out_buf), &localsPointer->field_1, 58L, isVolatile: false);
-					vector_append.Invoke(out_buf, String_nz3h57a.__pointer, 16L);
+					llvm_memcpy_p0_p0_i64.Invoke(data_2v5v72.Invoke(out_buf), &localsPointer->field_1, 58L, isVolatile: false);
+					vector_append.Invoke(out_buf, String_p5jh5t.__pointer, 16L);
 					if (ExceptionInfo.Current == null)
 					{
-						int num15 = fpng_crc32.Invoke((byte*)data_efhnzgd.Invoke(out_buf) + 58 + -4, (uint)(num11 + 4), 0);
+						int num15 = fpng_crc32.Invoke((byte*)data_2v5v72.Invoke(out_buf) + 58 + -4, (uint)(num11 + 4), 0);
 						if (ExceptionInfo.Current == null)
 						{
 							int num16 = num15;
 							num14 = 0;
 							while (num14 < 4)
 							{
-								((byte*)data_efhnzgd.Invoke(out_buf) + size_4io4p4d.Invoke(out_buf) + -16)[num14] = (byte)(sbyte)((uint)num16 >> 24);
+								((byte*)data_2v5v72.Invoke(out_buf) + size_78pg66.Invoke(out_buf) + -16)[num14] = (byte)(sbyte)((uint)num16 >> 24);
 								num14 = checked(num14 + 1);
 								num16 <<= 8;
 							}
@@ -266,7 +266,7 @@ internal static partial class fpng_encode_image_to_memory
 		{
 			while ((uint)num3 < (uint)h)
 			{
-				apply_filter.Invoke(0, w, h, num_chans, num, (byte*)pImage + (uint)(num3 * num), null, vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(&localsPointer->field_0, (uint)num2));
+				apply_filter.Invoke(0, w, h, num_chans, num, (byte*)pImage + (uint)(num3 * num), null, vector_unsigned_char_class_std_allocator_unsigned_char_Operator.Invoke(&localsPointer->field_0, (uint)num2));
 				if (ExceptionInfo.Current == null)
 				{
 					num2 += checked(1 + num);
@@ -275,18 +275,18 @@ internal static partial class fpng_encode_image_to_memory
 				}
 				goto IL_0a27;
 			}
-			if ((ulong)(uint)num2 > (ulong)size_4io4p4d.Invoke(&localsPointer->field_0))
+			if ((ulong)(uint)num2 > (ulong)size_78pg66.Invoke(&localsPointer->field_0))
 			{
-				wassert.Invoke(String_bik4erc.__pointer, String_uxbkrtb.__pointer, 1745);
+				wassert.Invoke(String_85rv99.__pointer, String_ksmiy6.__pointer, 1745);
 				if (ExceptionInfo.Current != null)
 				{
 					goto IL_0a27;
 				}
 			}
-			resize_wwmwtsa.Invoke(out_buf, (uint)(num4 + 6 + num2 + (int)((uint)(num2 + 65534) / 65535u * 5)));
+			resize_irjm7f.Invoke(out_buf, (uint)(num4 + 6 + num2 + (int)((uint)(num2 + 65534) / 65535u * 5)));
 			if (ExceptionInfo.Current == null)
 			{
-				int num17 = write_raw_block.Invoke(dst_buf_size: (int)size_4io4p4d.Invoke(out_buf) - num4, pDst: (byte*)data_efhnzgd.Invoke(out_buf) + (uint)num4, pSrc: data_efhnzgd.Invoke(&localsPointer->field_0), src_len: num2);
+				int num17 = write_raw_block.Invoke(dst_buf_size: (int)size_78pg66.Invoke(out_buf) - num4, pDst: (byte*)data_2v5v72.Invoke(out_buf) + (uint)num4, pSrc: data_2v5v72.Invoke(&localsPointer->field_0), src_len: num2);
 				if (ExceptionInfo.Current == null)
 				{
 					int num18 = num17;
@@ -295,7 +295,7 @@ internal static partial class fpng_encode_image_to_memory
 						num10 = num18;
 						goto IL_057e;
 					}
-					wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 1753);
+					wassert.Invoke(String_v852r7.__pointer, String_ksmiy6.__pointer, 1753);
 					if (ExceptionInfo.Current == null)
 					{
 						flag = false;

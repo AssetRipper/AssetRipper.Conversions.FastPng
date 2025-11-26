@@ -34,7 +34,7 @@ internal static partial class build_decoder_table
 			{
 				if ((uint)(byte)((sbyte*)pCode_sizes)[(uint)i] > 4096u)
 				{
-					wassert.Invoke(String_32otbnd.__pointer, String_uxbkrtb.__pointer, 1843);
+					wassert.Invoke(String_askaw7.__pointer, String_ksmiy6.__pointer, 1843);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;

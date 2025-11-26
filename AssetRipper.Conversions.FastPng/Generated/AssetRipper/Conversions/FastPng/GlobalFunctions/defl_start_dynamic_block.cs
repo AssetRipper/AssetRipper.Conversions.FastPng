@@ -372,7 +372,7 @@ internal static partial class defl_start_dynamic_block
 			int num61 = 2;
 			if ((uint)num61 < 1u || (uint)num61 > 16u)
 			{
-				wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 799);
+				wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 799);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
@@ -380,7 +380,7 @@ internal static partial class defl_start_dynamic_block
 			}
 			if ((ulong)(uint)num60 >= (ulong)(1L << (int)(uint)num61))
 			{
-				wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 799);
+				wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 799);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
@@ -390,7 +390,7 @@ internal static partial class defl_start_dynamic_block
 			*(int*)bit_buf_size += num61;
 			if (*(int*)bit_buf_size > 64)
 			{
-				wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 799);
+				wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 799);
 				if (ExceptionInfo.Current != null)
 				{
 					return false;
@@ -420,7 +420,7 @@ internal static partial class defl_start_dynamic_block
 				int num63 = 5;
 				if ((uint)num63 < 1u || (uint)num63 > 16u)
 				{
-					wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 801);
+					wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 801);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;
@@ -428,7 +428,7 @@ internal static partial class defl_start_dynamic_block
 				}
 				if ((ulong)(uint)num62 >= (ulong)(1L << (int)(uint)num63))
 				{
-					wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 801);
+					wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 801);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;
@@ -438,7 +438,7 @@ internal static partial class defl_start_dynamic_block
 				*(int*)bit_buf_size += num63;
 				if (*(int*)bit_buf_size > 64)
 				{
-					wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 801);
+					wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 801);
 					if (ExceptionInfo.Current != null)
 					{
 						return false;
@@ -467,7 +467,7 @@ internal static partial class defl_start_dynamic_block
 					int num65 = 5;
 					if ((uint)num65 < 1u || (uint)num65 > 16u)
 					{
-						wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 802);
+						wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 802);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;
@@ -475,7 +475,7 @@ internal static partial class defl_start_dynamic_block
 					}
 					if ((ulong)(uint)num64 >= (ulong)(1L << (int)(uint)num65))
 					{
-						wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 802);
+						wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 802);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;
@@ -485,7 +485,7 @@ internal static partial class defl_start_dynamic_block
 					*(int*)bit_buf_size += num65;
 					if (*(int*)bit_buf_size > 64)
 					{
-						wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 802);
+						wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 802);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;
@@ -518,13 +518,13 @@ internal static partial class defl_start_dynamic_block
 						int num67;
 						checked
 						{
-							l = maximum_sfjssib.Invoke(4, l + 1);
+							l = maximum_5qbg37.Invoke(4, l + 1);
 							num66 = l - 4;
 							num67 = 4;
 						}
 						if ((uint)num67 < 1u || (uint)num67 > 16u)
 						{
-							wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 805);
+							wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 805);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
@@ -532,7 +532,7 @@ internal static partial class defl_start_dynamic_block
 						}
 						if ((ulong)(uint)num66 >= (ulong)(1L << (int)(uint)num67))
 						{
-							wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 805);
+							wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 805);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
@@ -542,7 +542,7 @@ internal static partial class defl_start_dynamic_block
 						*(int*)bit_buf_size += num67;
 						if (*(int*)bit_buf_size > 64)
 						{
-							wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 805);
+							wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 805);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
@@ -576,7 +576,7 @@ internal static partial class defl_start_dynamic_block
 									int num69 = 3;
 									if ((uint)num69 < 1u || (uint)num69 > 16u)
 									{
-										wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 806);
+										wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 806);
 										if (ExceptionInfo.Current != null)
 										{
 											return false;
@@ -584,7 +584,7 @@ internal static partial class defl_start_dynamic_block
 									}
 									if ((ulong)(uint)num68 >= (ulong)(1L << (int)(uint)num69))
 									{
-										wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 806);
+										wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 806);
 										if (ExceptionInfo.Current != null)
 										{
 											return false;
@@ -594,7 +594,7 @@ internal static partial class defl_start_dynamic_block
 									*(int*)bit_buf_size += num69;
 									if (*(int*)bit_buf_size > 64)
 									{
-										wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 806);
+										wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 806);
 										if (ExceptionInfo.Current != null)
 										{
 											return false;
@@ -628,7 +628,7 @@ internal static partial class defl_start_dynamic_block
 										int num72 = (byte)((sbyte*)(&localsPointer->field_1))[(uint)num71];
 										if ((uint)num72 >= 19u)
 										{
-											wassert.Invoke(String_erkdsbd.__pointer, String_uxbkrtb.__pointer, 810);
+											wassert.Invoke(String_cknqxe.__pointer, String_ksmiy6.__pointer, 810);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
@@ -638,7 +638,7 @@ internal static partial class defl_start_dynamic_block
 										int num74 = ((byte*)(&((fpng_defl_huff*)d)->m_huff_code_sizes) + (nint)2 * sizeof(InlineArray288_SByte))[(uint)num72];
 										if ((uint)num74 < 1u || (uint)num74 > 16u)
 										{
-											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 811);
+											wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 811);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
@@ -646,7 +646,7 @@ internal static partial class defl_start_dynamic_block
 										}
 										if ((ulong)(uint)num73 >= (ulong)(1L << (int)(uint)num74))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 811);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 811);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
@@ -656,7 +656,7 @@ internal static partial class defl_start_dynamic_block
 										*(int*)bit_buf_size += num74;
 										if (*(int*)bit_buf_size > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 811);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 811);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
@@ -684,10 +684,10 @@ internal static partial class defl_start_dynamic_block
 										}
 										int num75 = num70++;
 										int num76 = (byte)((sbyte*)(&localsPointer->field_1))[(uint)num75];
-										int num77 = ((sbyte*)String_o9ulvgb.__pointer)[(uint)(num72 - 16)];
+										int num77 = ((sbyte*)String_rvc6pt.__pointer)[(uint)(num72 - 16)];
 										if ((uint)num77 < 1u || (uint)num77 > 16u)
 										{
-											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 812);
+											wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 812);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
@@ -695,7 +695,7 @@ internal static partial class defl_start_dynamic_block
 										}
 										if ((ulong)(uint)num76 >= (ulong)(1L << (int)(uint)num77))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 812);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 812);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;
@@ -705,7 +705,7 @@ internal static partial class defl_start_dynamic_block
 										*(int*)bit_buf_size += num77;
 										if (*(int*)bit_buf_size > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 812);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 812);
 											if (ExceptionInfo.Current != null)
 											{
 												return false;

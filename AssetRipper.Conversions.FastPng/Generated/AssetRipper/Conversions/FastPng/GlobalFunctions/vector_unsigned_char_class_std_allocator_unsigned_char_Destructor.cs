@@ -8,6 +8,6 @@ internal static partial class vector_unsigned_char_class_std_allocator_unsigned_
 {
 	public unsafe static void Invoke(void* @this)
 	{
-		Tidy_iono57d.Invoke(@this);
+		Tidy_uaj7br.Invoke(@this);
 	}
 }

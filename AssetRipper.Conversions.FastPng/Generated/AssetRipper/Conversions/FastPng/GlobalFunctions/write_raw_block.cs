@@ -23,7 +23,7 @@ internal static partial class write_raw_block
 			while ((uint)num2 < (uint)src_len)
 			{
 				int num3 = src_len - num2;
-				int num4 = minimum_su2nfub.Invoke(65535, num3);
+				int num4 = minimum_sh5ug2.Invoke(65535, num3);
 				sbyte b = ((num4 == num3) ? ((sbyte)1) : ((sbyte)0));
 				if ((uint)(num + 5 + num4) > (uint)dst_buf_size)
 				{

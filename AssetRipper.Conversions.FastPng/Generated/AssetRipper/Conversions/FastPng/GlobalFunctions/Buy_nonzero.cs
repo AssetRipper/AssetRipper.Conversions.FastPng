@@ -9,9 +9,9 @@ internal static partial class Buy_nonzero
 	[return: NativeType("void")]
 	public unsafe static void Invoke(void* @this, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
 	{
-		if (unchecked((ulong)Newcapacity > (ulong)max_size_qdwnpha.Invoke(@this)))
+		if (unchecked((ulong)Newcapacity > (ulong)max_size_2ddmdn.Invoke(@this)))
 		{
-			Xlength_nubzgpc.Invoke();
+			Xlength_255g3z.Invoke();
 			throw null;
 		}
 		Buy_raw.Invoke(@this, Newcapacity);

@@ -13,7 +13,7 @@ internal static partial class fpng_pixel_zlib_raw_decompress
 	{
 		if (src_chans != 3 && src_chans != 4)
 		{
-			wassert.Invoke(String_zixkhbc.__pointer, String_uxbkrtb.__pointer, 2112);
+			wassert.Invoke(String_uk2xnu.__pointer, String_ksmiy6.__pointer, 2112);
 			if (ExceptionInfo.Current != null)
 			{
 				return false;
@@ -21,7 +21,7 @@ internal static partial class fpng_pixel_zlib_raw_decompress
 		}
 		if (dst_chans != 3 && dst_chans != 4)
 		{
-			wassert.Invoke(String_kppxlqc.__pointer, String_uxbkrtb.__pointer, 2113);
+			wassert.Invoke(String_9t5ec6.__pointer, String_ksmiy6.__pointer, 2113);
 			if (ExceptionInfo.Current != null)
 			{
 				return false;
@@ -74,7 +74,7 @@ internal static partial class fpng_pixel_zlib_raw_decompress
 						}
 						if (num6 != 0)
 						{
-							wassert.Invoke(String_ji2h3xd.__pointer, String_uxbkrtb.__pointer, 2160);
+							wassert.Invoke(String_z2hmfq.__pointer, String_ksmiy6.__pointer, 2160);
 							if (ExceptionInfo.Current != null)
 							{
 								return false;
@@ -114,7 +114,7 @@ internal static partial class fpng_pixel_zlib_raw_decompress
 					}
 					if (num6 != 0)
 					{
-						wassert.Invoke(String_ji2h3xd.__pointer, String_uxbkrtb.__pointer, 2188);
+						wassert.Invoke(String_z2hmfq.__pointer, String_ksmiy6.__pointer, 2188);
 						if (ExceptionInfo.Current != null)
 						{
 							return false;

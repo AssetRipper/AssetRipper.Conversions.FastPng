@@ -23,8 +23,8 @@ public static partial class FPng
 		}
 
 		byte[] result;
-		std_vector_7uge3hb vector = default;
-		std_vector_7uge3hb* vectorPtr = &vector;
+		std_vector_4tqn2f vector = default;
+		std_vector_4tqn2f* vectorPtr = &vector;
 		vector_unsigned_char_class_std_allocator_unsigned_char_Constructor(vectorPtr); // Constructor
 		try
 		{
@@ -41,7 +41,7 @@ public static partial class FPng
 		return result;
 	}
 
-	static unsafe ReadOnlySpan<T> AsSpan<T>(this std_vector_7uge3hb vector) where T : unmanaged
+	static unsafe ReadOnlySpan<T> AsSpan<T>(this std_vector_4tqn2f vector) where T : unmanaged
 	{
 		T* startPtr = (T*)vector.Mypair.Myval2.Myfirst;
 		T* endPtr = (T*)vector.Mypair.Myval2.Mylast;

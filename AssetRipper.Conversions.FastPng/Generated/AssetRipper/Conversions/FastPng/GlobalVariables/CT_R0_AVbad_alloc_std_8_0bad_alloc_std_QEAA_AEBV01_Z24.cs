@@ -33,7 +33,7 @@ internal static partial class CT_R0_AVbad_alloc_std_8_0bad_alloc_std_QEAA_AEBV01
 			field_3 = -1,
 			field_4 = 0,
 			field_5 = 24,
-			field_6 = PointerIndices.GetIndex(bad_alloc_Constructor_3vdoaxb.__pointer)
+			field_6 = PointerIndices.GetIndex(bad_alloc_Constructor_bb3mgj.__pointer)
 		};
 	}
 }

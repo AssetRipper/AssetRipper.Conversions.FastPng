@@ -22,7 +22,7 @@ internal static partial class fpng_decode_memory
 		LocalVariables* localsPointer = startFrame.GetLocalsPointer<LocalVariables>();
 		localsPointer->field_0 = 0;
 		localsPointer->field_1 = 0;
-		resize_wwmwtsa.Invoke(@out, 0L);
+		resize_irjm7f.Invoke(@out, 0L);
 		if (ExceptionInfo.Current != null)
 		{
 			return 0;
@@ -35,7 +35,7 @@ internal static partial class fpng_decode_memory
 			int num;
 			if (pImage == null || image_size == 0 || (desired_channels != 3 && desired_channels != 4))
 			{
-				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 3094);
+				wassert.Invoke(String_v852r7.__pointer, String_ksmiy6.__pointer, 3094);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -65,7 +65,7 @@ internal static partial class fpng_decode_memory
 					}
 					else
 					{
-						resize_wwmwtsa.Invoke(@out, num4);
+						resize_irjm7f.Invoke(@out, num4);
 						if (ExceptionInfo.Current != null)
 						{
 							return 0;
@@ -77,7 +77,7 @@ internal static partial class fpng_decode_memory
 						{
 							if (*(int*)channels_in_file == 3)
 							{
-								bool flag = fpng_pixel_zlib_decompress_3_prmnnjb.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
+								bool flag = fpng_pixel_zlib_decompress_3_5btwdm.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_2v5v72.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
 								if (ExceptionInfo.Current != null)
 								{
 									return 0;
@@ -86,7 +86,7 @@ internal static partial class fpng_decode_memory
 							}
 							else
 							{
-								bool flag2 = fpng_pixel_zlib_decompress_4_xygi9td.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
+								bool flag2 = fpng_pixel_zlib_decompress_4_aj9q4n.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_2v5v72.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
 								if (ExceptionInfo.Current != null)
 								{
 									return 0;
@@ -96,7 +96,7 @@ internal static partial class fpng_decode_memory
 						}
 						else if (*(int*)channels_in_file == 3)
 						{
-							bool flag3 = fpng_pixel_zlib_decompress_3_yffw42c.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
+							bool flag3 = fpng_pixel_zlib_decompress_3_b29a29.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_2v5v72.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
 							if (ExceptionInfo.Current != null)
 							{
 								return 0;
@@ -105,7 +105,7 @@ internal static partial class fpng_decode_memory
 						}
 						else
 						{
-							bool flag4 = fpng_pixel_zlib_decompress_4_amptoaa.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_efhnzgd.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
+							bool flag4 = fpng_pixel_zlib_decompress_4_q6idwj.Invoke(h: *(int*)height, w: *(int*)width, pDst: data_2v5v72.Invoke(@out), pSrc: pSrc, src_len: src_len, zlib_len: localsPointer->field_1);
 							if (ExceptionInfo.Current != null)
 							{
 								return 0;

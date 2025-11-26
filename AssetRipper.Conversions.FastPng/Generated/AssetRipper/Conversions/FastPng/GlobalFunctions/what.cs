@@ -13,6 +13,6 @@ internal static partial class what
 	[return: NativeType("char const *")]
 	public unsafe static void* Invoke(void* @this)
 	{
-		return unchecked((((std_exception*)@this)->Data.What == null) ? String_ja3ma5d.__pointer : ((std_exception*)@this)->Data.What);
+		return unchecked((((std_exception*)@this)->Data.What == null) ? String_254a4n.__pointer : ((std_exception*)@this)->Data.What);
 	}
 }

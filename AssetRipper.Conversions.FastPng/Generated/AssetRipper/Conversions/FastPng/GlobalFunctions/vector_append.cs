@@ -14,11 +14,11 @@ internal static partial class vector_append
 		{
 			if (len != 0L)
 			{
-				long num = size_4io4p4d.Invoke(buf);
-				resize_wwmwtsa.Invoke(buf, num + len);
+				long num = size_78pg66.Invoke(buf);
+				resize_irjm7f.Invoke(buf, num + len);
 				if (ExceptionInfo.Current == null)
 				{
-					llvm_memcpy_p0_p0_i64.Invoke((byte*)data_efhnzgd.Invoke(buf) + num, pData, len, isVolatile: false);
+					llvm_memcpy_p0_p0_i64.Invoke((byte*)data_2v5v72.Invoke(buf) + num, pData, len, isVolatile: false);
 				}
 			}
 		}

@@ -26,7 +26,7 @@ internal static partial class fpng_get_info_internal
 			int num;
 			if (!endian_check.Invoke())
 			{
-				wassert.Invoke(String_kdrammb.__pointer, String_uxbkrtb.__pointer, 2936);
+				wassert.Invoke(String_v852r7.__pointer, String_ksmiy6.__pointer, 2936);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -133,14 +133,14 @@ internal static partial class fpng_get_info_internal
 									((sbyte*)(&localsPointer->field_0))[2] = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->m_type))[2];
 									((sbyte*)(&localsPointer->field_0))[3] = ((sbyte*)(&((fpng_png_chunk_prefix*)ptr3)->m_type))[3];
 									((sbyte*)(&localsPointer->field_0))[4] = 0;
-									sbyte b5 = ((strcmp.Invoke(&localsPointer->field_0, String_qjc9xdd.__pointer) == 0) ? ((sbyte)1) : ((sbyte)0));
+									sbyte b5 = ((strcmp.Invoke(&localsPointer->field_0, String_zkjij9.__pointer) == 0) ? ((sbyte)1) : ((sbyte)0));
 									if ((b5 & 1) != 1 && fpng_crc32.Invoke((byte*)ptr + 4, 4L + (long)(uint)num3, 0) != num5)
 									{
 										num = 4;
 										break;
 									}
 									void* ptr4 = (byte*)ptr + 8;
-									if (strcmp.Invoke(&localsPointer->field_0, String_p7olgfc.__pointer) != 0)
+									if (strcmp.Invoke(&localsPointer->field_0, String_tnwibv.__pointer) != 0)
 									{
 										if ((b5 & 1) == 1)
 										{
@@ -157,7 +157,7 @@ internal static partial class fpng_get_info_internal
 												break;
 											}
 										}
-										else if (strcmp.Invoke(&localsPointer->field_0, String_22lii4a.__pointer) == 0)
+										else if (strcmp.Invoke(&localsPointer->field_0, String_rgccyn.__pointer) == 0)
 										{
 											if ((b & 1) == 1)
 											{

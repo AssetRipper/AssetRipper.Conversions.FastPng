@@ -14,7 +14,7 @@ internal static partial class exception_Destructor
 	{
 		unchecked
 		{
-			*(byte**)@this = (byte*)(&Variable_x4f2ufc.__pointer->field_0) + sizeof(nint);
+			*(byte**)@this = (byte*)(&Variable_unhbb7.__pointer->field_0) + sizeof(nint);
 			std_exception_destroy.Invoke(&((std_exception*)@this)->Data);
 			if (ExceptionInfo.Current == null)
 			{

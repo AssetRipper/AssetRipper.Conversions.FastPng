@@ -22,7 +22,7 @@ internal static partial class Allocate_manually_vector_aligned
 				}
 				throw null;
 			}
-			long num2 = (long)Allocate_ifu7fia.Invoke(num);
+			long num2 = (long)Allocate_q5w6zu.Invoke(num);
 			if (num2 == 0L)
 			{
 				llvm_trap.Invoke();

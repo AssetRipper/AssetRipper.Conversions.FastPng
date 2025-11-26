@@ -20,11 +20,11 @@ internal static partial class Buy_raw
 		localsPointer->field_0 = Newcapacity;
 		unchecked
 		{
-			void* myval = &((std_vector_drook9b*)@this)->Mypair.Myval2;
-			void* myfirst = &((std_Vector_val_edx9ebc*)myval)->Myfirst;
-			void* mylast = &((std_Vector_val_edx9ebc*)myval)->Mylast;
-			void* myend = &((std_Vector_val_edx9ebc*)myval)->Myend;
-			void* ptr = Allocate_at_least_helper_22hwyxd.Invoke(Getal_t2pmqoc.Invoke(@this), &localsPointer->field_0);
+			void* myval = &((std_vector_jsyy6a*)@this)->Mypair.Myval2;
+			void* myfirst = &((std_Vector_val_fju23j*)myval)->Myfirst;
+			void* mylast = &((std_Vector_val_fju23j*)myval)->Mylast;
+			void* myend = &((std_Vector_val_fju23j*)myval)->Myend;
+			void* ptr = Allocate_at_least_helper_cyykju.Invoke(Getal_jb66tx.Invoke(@this), &localsPointer->field_0);
 			if (ExceptionInfo.Current == null)
 			{
 				*(byte**)myend = (byte*)(*(void**)mylast = (*(void**)myfirst = ptr)) + (nint)localsPointer->field_0 * 4;

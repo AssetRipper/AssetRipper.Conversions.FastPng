@@ -13,7 +13,7 @@ internal static partial class Tidy_guard_class_std_vector_unsigned_int_class_std
 		{
 			if (((std_Tidy_guard*)@this)->Target != null)
 			{
-				Tidy_kyqxybb.Invoke(((std_Tidy_guard*)@this)->Target);
+				Tidy_t4s52y.Invoke(((std_Tidy_guard*)@this)->Target);
 			}
 		}
 	}

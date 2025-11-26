@@ -1,0 +1,30 @@
+using AssetRipper.Conversions.FastPng.Helpers;
+using AssetRipper.Conversions.FastPng.InlineArrays;
+
+namespace AssetRipper.Conversions.FastPng.GlobalVariables;
+
+[MangledName("??_C@_1CG@JFLKAPAP@?$AAb?$AAi?$AAt?$AAs?$AA_?$AAt?$AAo?$AA_?$AAs?$AAh?$AAi?$AAf?$AAt?$AA?5?$AA?$DM?$AA?5?$AA6?$AA4?$AA?$AA@")]
+[DemangledName("L\"bits_to_shift < 64\"")]
+[CleanName("String")]
+internal static partial class String_h6hieb
+{
+	public unsafe static InlineArray19_Int16* __pointer;
+
+	public unsafe static InlineArray19_Int16 Value
+	{
+		get
+		{
+			return *__pointer;
+		}
+		set
+		{
+			*__pointer = value;
+		}
+	}
+
+	unsafe static String_h6hieb()
+	{
+		__pointer = unchecked((InlineArray19_Int16*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray19_Int16))));
+		Value = InlineArrayHelper.Create<InlineArray19_Int16, char>("bits_to_shift < 64\0");
+	}
+}

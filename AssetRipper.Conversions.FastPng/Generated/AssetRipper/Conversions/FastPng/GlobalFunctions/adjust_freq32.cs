@@ -31,7 +31,7 @@ internal static partial class adjust_freq32
 					((short*)pFreq16)[(uint)j] = 0;
 					continue;
 				}
-				((short*)pFreq16)[(uint)j] = (short)maximum_y5wzmwb.Invoke(1, (int)((ulong)(num3 * 65535L) / (ulong)(uint)num));
+				((short*)pFreq16)[(uint)j] = (short)maximum_m9vgh4.Invoke(1, (int)((ulong)(num3 * 65535L) / (ulong)(uint)num));
 				num2 += (ushort)((short*)pFreq16)[(uint)j];
 			}
 			while ((uint)num2 > 65535u)
@@ -41,7 +41,7 @@ internal static partial class adjust_freq32
 				{
 					if (((int*)pFreq)[(uint)k] != 0)
 					{
-						((int*)pFreq)[(uint)k] = maximum_y5wzmwb.Invoke(1, ((int*)pFreq)[(uint)k] >>> 1);
+						((int*)pFreq)[(uint)k] = maximum_m9vgh4.Invoke(1, ((int*)pFreq)[(uint)k] >>> 1);
 						num2 += ((int*)pFreq)[(uint)k];
 					}
 				}

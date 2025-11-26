@@ -33,7 +33,7 @@ internal static partial class CT_R0_AVexception_std_8_0exception_std_QEAA_AEBV01
 			field_3 = -1,
 			field_4 = 0,
 			field_5 = 24,
-			field_6 = PointerIndices.GetIndex(exception_Constructor_ikocrpb.__pointer)
+			field_6 = PointerIndices.GetIndex(exception_Constructor_d3h3g6.__pointer)
 		};
 	}
 }

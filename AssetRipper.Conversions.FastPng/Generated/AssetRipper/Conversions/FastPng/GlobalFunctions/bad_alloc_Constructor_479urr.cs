@@ -1,0 +1,20 @@
+using AssetRipper.Conversions.FastPng.GlobalVariables;
+using AssetRipper.Conversions.FastPng.Helpers;
+
+namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
+
+[MangledName("??0bad_alloc@std@@AEAA@QEBD@Z")]
+[DemangledName("private: __cdecl std::bad_alloc::bad_alloc(char const *const)")]
+[CleanName("bad_alloc_Constructor")]
+internal static partial class bad_alloc_Constructor_479urr
+{
+	public unsafe static void* Invoke(void* @this, [MangledName("_Message")][NativeType("char const *const")] void* Message)
+	{
+		exception_Constructor_d32qp5.Invoke(@this, Message, 1);
+		unchecked
+		{
+			*(byte**)@this = (byte*)(&Variable_u6p3uf.__pointer->field_0) + sizeof(nint);
+			return @this;
+		}
+	}
+}

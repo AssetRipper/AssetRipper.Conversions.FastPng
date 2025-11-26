@@ -24,11 +24,11 @@ internal static partial class Construct_n
 		localsPointer->field_0 = default(std_Fake_allocator);
 		localsPointer->field_1 = default(std_Fake_proxy_ptr_impl);
 		localsPointer->field_2 = default(std_Tidy_guard);
-		void* ptr = Getal_t2pmqoc.Invoke(@this);
-		Get_proxy_allocator_uag3hnc.Invoke(ptr);
+		void* ptr = Getal_jb66tx.Invoke(@this);
+		Get_proxy_allocator_r4aa37.Invoke(ptr);
 		unchecked
 		{
-			void* myval = &((std_vector_drook9b*)@this)->Mypair.Myval2;
+			void* myval = &((std_vector_jsyy6a*)@this)->Mypair.Myval2;
 			Fake_proxy_ptr_impl_Constructor.Invoke(&localsPointer->field_1, &localsPointer->field_0, myval);
 			if (Count != 0L)
 			{
@@ -38,7 +38,7 @@ internal static partial class Construct_n
 					return;
 				}
 				localsPointer->field_2.Target = @this;
-				void* mylast = Uninitialized_value_construct_n_zg4iwva.Invoke(((std_Vector_val_edx9ebc*)myval)->Myfirst, Count, ptr);
+				void* mylast = Uninitialized_value_construct_n_qqxnj2.Invoke(((std_Vector_val_fju23j*)myval)->Myfirst, Count, ptr);
 				if (ExceptionInfo.Current != null)
 				{
 					ExceptionInfo? current = ExceptionInfo.Current;
@@ -47,7 +47,7 @@ internal static partial class Construct_n
 					ExceptionInfo.Current = current;
 					return;
 				}
-				((std_Vector_val_edx9ebc*)myval)->Mylast = mylast;
+				((std_Vector_val_fju23j*)myval)->Mylast = mylast;
 				localsPointer->field_2.Target = null;
 				Tidy_guard_class_std_vector_unsigned_int_class_std_allocator_unsigned_int_Destructor.Invoke(&localsPointer->field_2);
 			}

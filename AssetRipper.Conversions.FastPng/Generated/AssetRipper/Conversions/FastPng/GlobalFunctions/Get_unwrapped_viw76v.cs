@@ -1,0 +1,15 @@
+using AssetRipper.Conversions.FastPng.Helpers;
+
+namespace AssetRipper.Conversions.FastPng.GlobalFunctions;
+
+[MangledName("??$_Get_unwrapped@AEBQEAE@std@@YA?A_TAEBQEAE@Z")]
+[DemangledName("decltype(auto) __cdecl std::_Get_unwrapped<unsigned char *const &>(unsigned char *const &)")]
+[CleanName("Get_unwrapped")]
+internal static partial class Get_unwrapped_viw76v
+{
+	[return: NativeType("decltype(auto)")]
+	public unsafe static void* Invoke([MangledName("_It")][NativeType("unsigned char *const &")] void* It)
+	{
+		return *unchecked((void**)It);
+	}
+}

@@ -9,12 +9,12 @@ internal static partial class Compressed_pair_class_std_allocator_unsigned_char_
 {
 	public unsafe static void* Invoke(void* @this, [MangledName(".coerce")][NativeType("struct std::_Zero_then_variadic_args_t")] sbyte coerce)
 	{
-		std_Zero_then_variadic_args_t std_Zero_then_variadic_args_t = new std_Zero_then_variadic_args_t
+		std_Zero_then_variadic_args_t std_Zero_then_variadic_args_t2 = new std_Zero_then_variadic_args_t
 		{
 			field_0 = coerce
 		};
 		allocator_unsigned_char_Constructor.Invoke(@this);
-		Vector_val_struct_std_Simple_types_unsigned_char_Constructor.Invoke(&unchecked((std_Compressed_pair_cpd7iqa*)@this)->Myval2);
+		Vector_val_struct_std_Simple_types_unsigned_char_Constructor.Invoke(&unchecked((std_Compressed_pair_icp8g8*)@this)->Myval2);
 		return @this;
 	}
 }

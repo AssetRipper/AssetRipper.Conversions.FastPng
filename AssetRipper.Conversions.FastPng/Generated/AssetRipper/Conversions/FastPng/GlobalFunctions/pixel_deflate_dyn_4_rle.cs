@@ -18,7 +18,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 
 		public int field_2;
 
-		public std_vector_mvt3mha field_3;
+		public std_vector_ucmdxb field_3;
 
 		public InlineArray288_Int32 field_4;
 
@@ -33,7 +33,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 		localsPointer->field_0 = 0L;
 		localsPointer->field_1 = 0;
 		localsPointer->field_2 = 0;
-		localsPointer->field_3 = default(std_vector_mvt3mha);
+		localsPointer->field_3 = default(std_vector_ucmdxb);
 		localsPointer->field_4 = default(InlineArray288_Int32);
 		localsPointer->field_5 = default(fpng_defl_huff);
 		int num23;
@@ -47,7 +47,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 			int num3 = 8;
 			if ((uint)num3 < 0u || (uint)num3 > 16u)
 			{
-				wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1279);
+				wassert.Invoke(String_zvmzrv.__pointer, String_ksmiy6.__pointer, 1279);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -55,7 +55,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 			}
 			if ((ulong)(uint)num2 >= (ulong)(1L << (int)(uint)num3))
 			{
-				wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1279);
+				wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1279);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -65,7 +65,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 			localsPointer->field_1 += num3;
 			if (localsPointer->field_1 > 64)
 			{
-				wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1279);
+				wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1279);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -75,7 +75,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 			int num5 = 8;
 			if ((uint)num5 < 0u || (uint)num5 > 16u)
 			{
-				wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1280);
+				wassert.Invoke(String_zvmzrv.__pointer, String_ksmiy6.__pointer, 1280);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -83,7 +83,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 			}
 			if ((ulong)(uint)num4 >= (ulong)(1L << (int)(uint)num5))
 			{
-				wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1280);
+				wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1280);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -93,7 +93,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 			localsPointer->field_1 += num5;
 			if (localsPointer->field_1 > 64)
 			{
-				wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1280);
+				wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1280);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -103,7 +103,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 			int num7 = 1;
 			if ((uint)num7 < 0u || (uint)num7 > 16u)
 			{
-				wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1283);
+				wassert.Invoke(String_zvmzrv.__pointer, String_ksmiy6.__pointer, 1283);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -111,7 +111,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 			}
 			if ((ulong)(uint)num6 >= (ulong)(1L << (int)(uint)num7))
 			{
-				wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1283);
+				wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1283);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
@@ -121,17 +121,17 @@ internal static partial class pixel_deflate_dyn_4_rle
 			localsPointer->field_1 += num7;
 			if (localsPointer->field_1 > 64)
 			{
-				wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1283);
+				wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1283);
 				if (ExceptionInfo.Current != null)
 				{
 					return 0;
 				}
 			}
 			vector_unsigned_int64_class_std_allocator_unsigned_int64_Constructor.Invoke(&localsPointer->field_3);
-			resize_d4pmvud.Invoke(&localsPointer->field_3, (uint)((w + 1) * h));
+			resize_2sthez.Invoke(&localsPointer->field_3, (uint)((w + 1) * h));
 			if (ExceptionInfo.Current == null)
 			{
-				void* ptr = data_dtgl25a.Invoke(&localsPointer->field_3);
+				void* ptr = data_xjuchx.Invoke(&localsPointer->field_3);
 				llvm_memset_p0_i64.Invoke(&localsPointer->field_4, 0, 1152L, isVolatile: false);
 				void* ptr2 = pImg;
 				int num8 = 0;
@@ -165,7 +165,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 							if (num17 == num16)
 							{
 								int j = 4;
-								for (int num18 = minimum_ymfg3kb.Invoke(252, num11 - num8); (uint)j < (uint)num18 && *(int*)((byte*)ptr2 + (uint)num8 + (uint)j) == num17; j += 4)
+								for (int num18 = minimum_89rwph.Invoke(252, num11 - num8); (uint)j < (uint)num18 && *(int*)((byte*)ptr2 + (uint)num8 + (uint)j) == num17; j += 4)
 								{
 								}
 								long num19 = (uint)(j - 1);
@@ -193,16 +193,16 @@ internal static partial class pixel_deflate_dyn_4_rle
 					}
 					if (num8 != h * num)
 					{
-						wassert.Invoke(String_bjvsuxc.__pointer, String_uxbkrtb.__pointer, 1365);
+						wassert.Invoke(String_pjig3w.__pointer, String_ksmiy6.__pointer, 1365);
 						if (ExceptionInfo.Current != null)
 						{
 							goto IL_15fe;
 						}
 					}
-					int num22 = (int)(((long)ptr - (long)data_dtgl25a.Invoke(&localsPointer->field_3)) / 8L);
-					if ((ulong)(uint)num22 > (ulong)size_trt5i3d.Invoke(&localsPointer->field_3))
+					int num22 = (int)(((long)ptr - (long)data_xjuchx.Invoke(&localsPointer->field_3)) / 8L);
+					if ((ulong)(uint)num22 > (ulong)size_q6ncki.Invoke(&localsPointer->field_3))
 					{
-						wassert.Invoke(String_hsgehfc.__pointer, String_uxbkrtb.__pointer, 1367);
+						wassert.Invoke(String_8hzjex.__pointer, String_ksmiy6.__pointer, 1367);
 						if (ExceptionInfo.Current != null)
 						{
 							goto IL_15fe;
@@ -226,7 +226,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 							{
 								if (localsPointer->field_1 > 7)
 								{
-									wassert.Invoke(String_vpte4cc.__pointer, String_uxbkrtb.__pointer, 1382);
+									wassert.Invoke(String_prwb6d.__pointer, String_ksmiy6.__pointer, 1382);
 									if (ExceptionInfo.Current != null)
 									{
 										goto IL_15fe;
@@ -234,7 +234,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 								}
 								if ((ushort)((short*)((byte*)(&localsPointer->field_5.m_huff_codes) + sizeof(InlineArray288_Int16)))[3] != 0 || ((byte*)(&localsPointer->field_5.m_huff_code_sizes) + sizeof(InlineArray288_SByte))[3] != 1)
 								{
-									wassert.Invoke(String_df5ko9b.__pointer, String_uxbkrtb.__pointer, 1383);
+									wassert.Invoke(String_jn9xqb.__pointer, String_ksmiy6.__pointer, 1383);
 									if (ExceptionInfo.Current != null)
 									{
 										goto IL_15fe;
@@ -243,7 +243,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 								int num45;
 								for (int k = 0; (uint)k < (uint)num22; localsPointer->field_0 >>>= (int)(uint)num45, localsPointer->field_1 -= num45, k++)
 								{
-									long num24 = *(long*)vector_unsigned_int64_class_std_allocator_unsigned_int64_Index.Invoke(&localsPointer->field_3, (uint)k);
+									long num24 = *(long*)vector_unsigned_int64_class_std_allocator_unsigned_int64_Operator.Invoke(&localsPointer->field_3, (uint)k);
 									int num25 = (int)(num24 & 0xFFL);
 									if (num25 == 0)
 									{
@@ -252,7 +252,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										int num28 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)(num26 & 0xFF)];
 										if ((uint)num28 < 1u || (uint)num28 > 16u)
 										{
-											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1394);
+											wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 1394);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -260,7 +260,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										}
 										if ((ulong)(uint)num27 >= (ulong)(1L << (int)(uint)num28))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1394);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1394);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -270,7 +270,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										localsPointer->field_1 += num28;
 										if (localsPointer->field_1 > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1394);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1394);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -281,7 +281,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										int num30 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)(num26 & 0xFF)];
 										if ((uint)num30 < 1u || (uint)num30 > 16u)
 										{
-											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1397);
+											wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 1397);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -289,7 +289,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										}
 										if ((ulong)(uint)num29 >= (ulong)(1L << (int)(uint)num30))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1397);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1397);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -299,7 +299,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										localsPointer->field_1 += num30;
 										if (localsPointer->field_1 > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1397);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1397);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -310,7 +310,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										int num32 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)(num26 & 0xFF)];
 										if ((uint)num32 < 1u || (uint)num32 > 16u)
 										{
-											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1400);
+											wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 1400);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -318,7 +318,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										}
 										if ((ulong)(uint)num31 >= (ulong)(1L << (int)(uint)num32))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1400);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1400);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -328,7 +328,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										localsPointer->field_1 += num32;
 										if (localsPointer->field_1 > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1400);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1400);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -347,7 +347,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 											localsPointer->field_2 += num33 >>> 3;
 											if ((uint)num33 >= 64u)
 											{
-												wassert.Invoke(String_2ej5tjb.__pointer, String_uxbkrtb.__pointer, 1405);
+												wassert.Invoke(String_h6hieb.__pointer, String_ksmiy6.__pointer, 1405);
 												if (ExceptionInfo.Current != null)
 												{
 													goto IL_15fe;
@@ -360,7 +360,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										int num35 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)num26];
 										if ((uint)num35 < 1u || (uint)num35 > 16u)
 										{
-											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1408);
+											wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 1408);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -368,7 +368,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										}
 										if ((ulong)(uint)num34 >= (ulong)(1L << (int)(uint)num35))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1408);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1408);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -378,7 +378,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										localsPointer->field_1 += num35;
 										if (localsPointer->field_1 > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1408);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1408);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -392,7 +392,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										int num38 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(uint)num36];
 										if ((uint)num38 < 1u || (uint)num38 > 16u)
 										{
-											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1413);
+											wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 1413);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -400,7 +400,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										}
 										if ((ulong)(uint)num37 >= (ulong)(1L << (int)(uint)num38))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1413);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1413);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -410,7 +410,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										localsPointer->field_1 += num38;
 										if (localsPointer->field_1 > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1413);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1413);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -424,7 +424,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										int num41 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[(ushort)((short*)g_defl_len_sym.__pointer)[(uint)num39]];
 										if ((uint)num41 < 1u || (uint)num41 > 16u)
 										{
-											wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1421);
+											wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 1421);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -432,7 +432,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										}
 										if ((ulong)(uint)num40 >= (ulong)(1L << (int)(uint)num41))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1421);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1421);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -442,7 +442,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										localsPointer->field_1 += num41;
 										if (localsPointer->field_1 > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1421);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1421);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -457,7 +457,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										}
 										if ((uint)num44 < 0u || (uint)num44 > 16u)
 										{
-											wassert.Invoke(String_9hewgtd.__pointer, String_uxbkrtb.__pointer, 1422);
+											wassert.Invoke(String_zvmzrv.__pointer, String_ksmiy6.__pointer, 1422);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -465,7 +465,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										}
 										if ((ulong)(uint)num43 >= (ulong)(1L << (int)(uint)num44))
 										{
-											wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1422);
+											wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1422);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -475,7 +475,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 										localsPointer->field_1 += num44;
 										if (localsPointer->field_1 > 64)
 										{
-											wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1422);
+											wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1422);
 											if (ExceptionInfo.Current != null)
 											{
 												goto IL_15fe;
@@ -494,7 +494,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 									{
 										continue;
 									}
-									wassert.Invoke(String_2ej5tjb.__pointer, String_uxbkrtb.__pointer, 1428);
+									wassert.Invoke(String_h6hieb.__pointer, String_ksmiy6.__pointer, 1428);
 									if (ExceptionInfo.Current == null)
 									{
 										continue;
@@ -505,7 +505,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 								int num47 = (byte)((sbyte*)(&localsPointer->field_5.m_huff_code_sizes))[256];
 								if ((uint)num47 < 1u || (uint)num47 > 16u)
 								{
-									wassert.Invoke(String_isj2lib.__pointer, String_uxbkrtb.__pointer, 1431);
+									wassert.Invoke(String_e8urik.__pointer, String_ksmiy6.__pointer, 1431);
 									if (ExceptionInfo.Current != null)
 									{
 										goto IL_15fe;
@@ -513,7 +513,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 								}
 								if ((ulong)(uint)num46 >= (ulong)(1L << (int)(uint)num47))
 								{
-									wassert.Invoke(String_ooiduua.__pointer, String_uxbkrtb.__pointer, 1431);
+									wassert.Invoke(String_7a9csr.__pointer, String_ksmiy6.__pointer, 1431);
 									if (ExceptionInfo.Current != null)
 									{
 										goto IL_15fe;
@@ -523,7 +523,7 @@ internal static partial class pixel_deflate_dyn_4_rle
 								localsPointer->field_1 += num47;
 								if (localsPointer->field_1 > 64)
 								{
-									wassert.Invoke(String_mggwlgb.__pointer, String_uxbkrtb.__pointer, 1431);
+									wassert.Invoke(String_y2p2wj.__pointer, String_ksmiy6.__pointer, 1431);
 									if (ExceptionInfo.Current != null)
 									{
 										goto IL_15fe;

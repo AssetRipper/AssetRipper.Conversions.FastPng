@@ -28,60 +28,60 @@ public static partial class FPng
 	[MangledName("??_C@_1DK@OKEJEHAG@?$AA?4?$AA?4?$AA?1?$AA?4?$AA?4?$AA?1?$AA?4?$AA?4?$AA?1?$AA?4?$AA?4?$AA?1?$AAS?$AAa?$AAm?$AAp?$AAl?$AAe?$AAs?$AA?2?$AAf?$AAp?$AAn?$AAg?$AA?4?$AAc?$AAp?$AAp?$AA?$AA@")]
 	[DemangledName("L\"../../../../Samples\\\\fpng.cpp\"")]
 	[CleanName("String")]
-	public static InlineArray29_Int16 String_uxbkrtb
+	public static InlineArray29_Int16 String_ksmiy6
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_uxbkrtb.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_ksmiy6.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_uxbkrtb.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_ksmiy6.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_13COJANIEC@?$AA0?$AA?$AA@")]
 	[DemangledName("L\"0\"")]
 	[CleanName("String")]
-	public static InlineArray2_Int16 String_kdrammb
+	public static InlineArray2_Int16 String_v852r7
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_kdrammb.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_v852r7.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_kdrammb.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_v852r7.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1EA@NGEOLJKL@?$AAt?$AAe?$AAm?$AAp?$AA_?$AAb?$AAu?$AAf?$AA_?$AAo?$AAf?$AAs?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAt?$AAe?$AAm?$AAp?$AA_?$AAb?$AAu?$AAf?$AA?4?$AAs?$AAi?$AAz?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"temp_buf_ofs <= temp_buf.size()\"")]
 	[CleanName("String")]
-	public static InlineArray32_Int16 String_bik4erc
+	public static InlineArray32_Int16 String_85rv99
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_bik4erc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_85rv99.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_bik4erc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_85rv99.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1FA@FOPIPCKM@?$AA?$CI?$AAo?$AAu?$AAt?$AA_?$AAo?$AAf?$AAs?$AA?5?$AA?$CL?$AA?5?$AAz?$AAl?$AAi?$AAb?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?$CJ?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAo?$AAu?$AAt?$AA_?$AAb?$AAu?$AAf@")]
 	[DemangledName("L\"(out_ofs + zlib_size) <= out_buf\"...")]
 	[CleanName("String")]
-	public static InlineArray40_Int16 String_dqvhqxc
+	public static InlineArray40_Int16 String_bjniyv
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_dqvhqxc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_bjniyv.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_dqvhqxc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_bjniyv.Value = value;
 		}
 	}
 
@@ -102,15 +102,15 @@ public static partial class FPng
 	[MangledName("??_C@_0BB@BKMJLBGB@?$AA?$AA?$AA?$AA?$AA?$AA?$AA?$AAIEND?$KOB?$GA?$IC?$AA@")]
 	[DemangledName("\"\\0\\0\\0\\0\\0\\0\\0\\0IEND\\xAEB`\\x82\"")]
 	[CleanName("String")]
-	public static InlineArray17_SByte String_nz3h57a
+	public static InlineArray17_SByte String_p5jh5t
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_nz3h57a.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_p5jh5t.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_nz3h57a.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_p5jh5t.Value = value;
 		}
 	}
 
@@ -131,60 +131,60 @@ public static partial class FPng
 	[MangledName("??_C@_1BE@DFLAPPIJ@?$AAp?$AAP?$AAr?$AAe?$AAv?$AA_?$AAs?$AAr?$AAc?$AA?$AA@")]
 	[DemangledName("L\"pPrev_src\"")]
 	[CleanName("String")]
-	public static InlineArray10_Int16 String_uc52kza
+	public static InlineArray10_Int16 String_vtzqzc
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_uc52kza.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_vtzqzc.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_uc52kza.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_vtzqzc.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1CM@PHNBINKF@?$AA?$CI?$AAl?$AA?$CJ?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAl?$AA?$CJ?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA1?$AA6?$AA?$AA@")]
 	[DemangledName("L\"(l) >= 0 && (l) <= 16\"")]
 	[CleanName("String")]
-	public static InlineArray22_Int16 String_9hewgtd
+	public static InlineArray22_Int16 String_zvmzrv
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_9hewgtd.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_zvmzrv.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_9hewgtd.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_zvmzrv.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1CI@EDFEPIBM@?$AA?$CI?$AAb?$AA?$CJ?$AA?5?$AA?$DM?$AA?5?$AA?$CI?$AA1?$AAU?$AAL?$AAL?$AA?5?$AA?$DM?$AA?$DM?$AA?5?$AA?$CI?$AAl?$AA?$CJ?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"(b) < (1ULL << (l))\"")]
 	[CleanName("String")]
-	public static InlineArray20_Int16 String_ooiduua
+	public static InlineArray20_Int16 String_7a9csr
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_ooiduua.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_7a9csr.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_ooiduua.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_7a9csr.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1CG@LKELDOLB@?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA6?$AA4?$AA?$AA@")]
 	[DemangledName("L\"bit_buf_size <= 64\"")]
 	[CleanName("String")]
-	public static InlineArray19_Int16 String_mggwlgb
+	public static InlineArray19_Int16 String_y2p2wj
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_mggwlgb.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_y2p2wj.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_mggwlgb.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_y2p2wj.Value = value;
 		}
 	}
 
@@ -205,75 +205,75 @@ public static partial class FPng
 	[MangledName("??_C@_1CG@PKEJNHCM@?$AAs?$AAr?$AAc?$AA_?$AAo?$AAf?$AAs?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AAh?$AA?5?$AA?$CK?$AA?5?$AAb?$AAp?$AAl?$AA?$AA@")]
 	[DemangledName("L\"src_ofs == h * bpl\"")]
 	[CleanName("String")]
-	public static InlineArray19_Int16 String_bjvsuxc
+	public static InlineArray19_Int16 String_pjig3w
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_bjvsuxc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_pjig3w.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_bjvsuxc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_pjig3w.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1DI@FDHIJIML@?$AAt?$AAo?$AAt?$AAa?$AAl?$AA_?$AAc?$AAo?$AAd?$AAe?$AAs?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAc?$AAo?$AAd?$AAe?$AAs?$AA?4?$AAs?$AAi?$AAz?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"total_codes <= codes.size()\"")]
 	[CleanName("String")]
-	public static InlineArray28_Int16 String_hsgehfc
+	public static InlineArray28_Int16 String_8hzjex
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_hsgehfc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_8hzjex.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_hsgehfc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_8hzjex.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1CE@GPOANAFC@?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA7?$AA?$AA@")]
 	[DemangledName("L\"bit_buf_size <= 7\"")]
 	[CleanName("String")]
-	public static InlineArray18_Int16 String_vpte4cc
+	public static InlineArray18_Int16 String_prwb6d
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_vpte4cc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_prwb6d.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_vpte4cc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_prwb6d.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1JI@IFFHKEFF@?$AAd?$AAh?$AA?4?$AAm?$AA_?$AAh?$AAu?$AAf?$AAf?$AA_?$AAc?$AAo?$AAd?$AAe?$AAs?$AA?$FL?$AA1?$AA?$FN?$AA?$FL?$AAd?$AAi?$AAs?$AAt?$AA_?$AAs?$AAy?$AAm?$AA?$FN?$AA?5?$AA?$DN?$AA?$DN?$AA?5@")]
 	[DemangledName("L\"dh.m_huff_codes[1][dist_sym] == \"...")]
 	[CleanName("String")]
-	public static InlineArray76_Int16 String_df5ko9b
+	public static InlineArray76_Int16 String_jn9xqb
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_df5ko9b.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_jn9xqb.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_df5ko9b.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_jn9xqb.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1CM@MLLBGOKN@?$AA?$CI?$AAl?$AA?$CJ?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA1?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAl?$AA?$CJ?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA1?$AA6?$AA?$AA@")]
 	[DemangledName("L\"(l) >= 1 && (l) <= 16\"")]
 	[CleanName("String")]
-	public static InlineArray22_Int16 String_isj2lib
+	public static InlineArray22_Int16 String_e8urik
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_isj2lib.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_e8urik.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_isj2lib.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_e8urik.Value = value;
 		}
 	}
 
@@ -308,30 +308,30 @@ public static partial class FPng
 	[MangledName("??_C@_1CG@JFLKAPAP@?$AAb?$AAi?$AAt?$AAs?$AA_?$AAt?$AAo?$AA_?$AAs?$AAh?$AAi?$AAf?$AAt?$AA?5?$AA?$DM?$AA?5?$AA6?$AA4?$AA?$AA@")]
 	[DemangledName("L\"bits_to_shift < 64\"")]
 	[CleanName("String")]
-	public static InlineArray19_Int16 String_2ej5tjb
+	public static InlineArray19_Int16 String_h6hieb
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_2ej5tjb.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_h6hieb.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_2ej5tjb.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_h6hieb.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_0BA@FOIKENOD@vector?5too?5long?$AA@")]
 	[DemangledName("\"vector too long\"")]
 	[CleanName("String")]
-	public static InlineArray16_SByte String_7b7kt9c
+	public static InlineArray16_SByte String_ss96c3
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_7b7kt9c.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_ss96c3.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_7b7kt9c.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_ss96c3.Value = value;
 		}
 	}
 
@@ -478,28 +478,28 @@ public static partial class FPng
 	[MangledName("??_C@_0BF@KINCDENJ@bad?5array?5new?5length?$AA@")]
 	[DemangledName("\"bad array new length\"")]
 	[CleanName("String")]
-	public static InlineArray21_SByte String_gudorqc
+	public static InlineArray21_SByte String_73ugr6
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_gudorqc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_73ugr6.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_gudorqc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_73ugr6.Value = value;
 		}
 	}
 
 	[CleanName("Variable")]
-	public static Struct Variable_4yxjuqa
+	public static Struct Variable_fiz2nb
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.Variable_4yxjuqa.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.Variable_fiz2nb.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.Variable_4yxjuqa.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.Variable_fiz2nb.Value = value;
 		}
 	}
 
@@ -548,30 +548,30 @@ public static partial class FPng
 	[MangledName("??_R1A@?0A@EA@bad_array_new_length@std@@8")]
 	[DemangledName("std::bad_array_new_length::`RTTI Base Class Descriptor at (0, -1, 0, 64)'")]
 	[CleanName("R1A")]
-	public static rtti_BaseClassDescriptor R1A_9w7p7zd
+	public static rtti_BaseClassDescriptor R1A_dz84df
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.R1A_9w7p7zd.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.R1A_dz84df.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.R1A_9w7p7zd.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.R1A_dz84df.Value = value;
 		}
 	}
 
 	[MangledName("??_R1A@?0A@EA@bad_alloc@std@@8")]
 	[DemangledName("std::bad_alloc::`RTTI Base Class Descriptor at (0, -1, 0, 64)'")]
 	[CleanName("R1A")]
-	public static rtti_BaseClassDescriptor R1A_vzsilob
+	public static rtti_BaseClassDescriptor R1A_un6hum
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.R1A_vzsilob.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.R1A_un6hum.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.R1A_vzsilob.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.R1A_un6hum.Value = value;
 		}
 	}
 
@@ -606,15 +606,15 @@ public static partial class FPng
 	[MangledName("??_R1A@?0A@EA@exception@std@@8")]
 	[DemangledName("std::exception::`RTTI Base Class Descriptor at (0, -1, 0, 64)'")]
 	[CleanName("R1A")]
-	public static rtti_BaseClassDescriptor R1A_bbqer2a
+	public static rtti_BaseClassDescriptor R1A_cfk42d
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.R1A_bbqer2a.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.R1A_cfk42d.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.R1A_bbqer2a.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.R1A_cfk42d.Value = value;
 		}
 	}
 
@@ -647,15 +647,15 @@ public static partial class FPng
 	}
 
 	[CleanName("Variable")]
-	public static Struct Variable_zdor9mc
+	public static Struct Variable_u6p3uf
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.Variable_zdor9mc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.Variable_u6p3uf.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.Variable_zdor9mc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.Variable_u6p3uf.Value = value;
 		}
 	}
 
@@ -674,15 +674,15 @@ public static partial class FPng
 	}
 
 	[CleanName("Variable")]
-	public static Struct Variable_x4f2ufc
+	public static Struct Variable_unhbb7
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.Variable_x4f2ufc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.Variable_unhbb7.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.Variable_x4f2ufc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.Variable_unhbb7.Value = value;
 		}
 	}
 
@@ -703,15 +703,15 @@ public static partial class FPng
 	[MangledName("??_C@_0BC@EOODALEL@Unknown?5exception?$AA@")]
 	[DemangledName("\"Unknown exception\"")]
 	[CleanName("String")]
-	public static InlineArray18_SByte String_ja3ma5d
+	public static InlineArray18_SByte String_254a4n
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_ja3ma5d.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_254a4n.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_ja3ma5d.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_254a4n.Value = value;
 		}
 	}
 
@@ -732,30 +732,30 @@ public static partial class FPng
 	[MangledName("??_C@_1DO@PIFJFOL@?$AAc?$AAo?$AAd?$AAe?$AA?5?$AA?$DM?$AA?5?$AAD?$AAE?$AAF?$AAL?$AA_?$AAM?$AAA?$AAX?$AA_?$AAH?$AAU?$AAF?$AAF?$AA_?$AAS?$AAY?$AAM?$AAB?$AAO?$AAL?$AAS?$AA_?$AA2?$AA?$AA@")]
 	[DemangledName("L\"code < DEFL_MAX_HUFF_SYMBOLS_2\"")]
 	[CleanName("String")]
-	public static InlineArray31_Int16 String_erkdsbd
+	public static InlineArray31_Int16 String_cknqxe
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_erkdsbd.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_cknqxe.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_erkdsbd.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_cknqxe.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_03DJLFMAPG@?$AC?$AD?$AH?$AA@")]
 	[DemangledName("\"\\x02\\x03\\a\"")]
 	[CleanName("String")]
-	public static InlineArray4_SByte String_o9ulvgb
+	public static InlineArray4_SByte String_rvc6pt
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_o9ulvgb.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_rvc6pt.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_o9ulvgb.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_rvc6pt.Value = value;
 		}
 	}
 
@@ -775,7 +775,7 @@ public static partial class FPng
 
 	[MangledName("?g_dyn_huff_3_codes@fpng@@3QBU<unnamed-type-g_dyn_huff_3_codes>@1@B")]
 	[DemangledName("struct fpng::<unnamed-type-g_dyn_huff_3_codes> const *const fpng::g_dyn_huff_3_codes")]
-	public static InlineArray288_anon_b9ijpuc g_dyn_huff_3_codes
+	public static InlineArray288_anon_m9uqrv g_dyn_huff_3_codes
 	{
 		get
 		{
@@ -803,7 +803,7 @@ public static partial class FPng
 
 	[MangledName("?g_dyn_huff_4_codes@fpng@@3QBU<unnamed-type-g_dyn_huff_4_codes>@1@B")]
 	[DemangledName("struct fpng::<unnamed-type-g_dyn_huff_4_codes> const *const fpng::g_dyn_huff_4_codes")]
-	public static InlineArray288_anon_atvx4gd g_dyn_huff_4_codes
+	public static InlineArray288_anon_d53z4b g_dyn_huff_4_codes
 	{
 		get
 		{
@@ -832,105 +832,105 @@ public static partial class FPng
 	[MangledName("??_C@_04NHMHICBH@IDAT?$AA@")]
 	[DemangledName("\"IDAT\"")]
 	[CleanName("String")]
-	public static InlineArray5_SByte String_qjc9xdd
+	public static InlineArray5_SByte String_zkjij9
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_qjc9xdd.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_zkjij9.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_qjc9xdd.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_zkjij9.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_04COOFLABO@IEND?$AA@")]
 	[DemangledName("\"IEND\"")]
 	[CleanName("String")]
-	public static InlineArray5_SByte String_p7olgfc
+	public static InlineArray5_SByte String_tnwibv
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_p7olgfc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_tnwibv.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_p7olgfc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_tnwibv.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_04DGOOLJLG@fdEC?$AA@")]
 	[DemangledName("\"fdEC\"")]
 	[CleanName("String")]
-	public static InlineArray5_SByte String_22lii4a
+	public static InlineArray5_SByte String_rgccyn
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_22lii4a.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_rgccyn.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_22lii4a.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_rgccyn.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1DE@LOJFIBNB@?$AAs?$AAr?$AAc?$AA_?$AAl?$AAe?$AAn?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA?$CI?$AAz?$AAl?$AAi?$AAb?$AA_?$AAl?$AAe?$AAn?$AA?5?$AA?$CL?$AA?5?$AA4?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"src_len >= (zlib_len + 4)\"")]
 	[CleanName("String")]
-	public static InlineArray26_Int16 String_497patd
+	public static InlineArray26_Int16 String_wv8pqk
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_497patd.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_wv8pqk.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_497patd.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_wv8pqk.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1BO@DPMPJCNO@?$AAl?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAl?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA3?$AA2?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"l && (l <= 32)\"")]
 	[CleanName("String")]
-	public static InlineArray15_Int16 String_aa3exrc
+	public static InlineArray15_Int16 String_f74ax6
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_aa3exrc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_f74ax6.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_aa3exrc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_f74ax6.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1FA@PEENLMBD@?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AAF?$AAP?$AAN?$AAG?$AA_?$AAD?$AAE?$AAC?$AAO?$AAD?$AAE?$AAR?$AA_?$AAT?$AAA?$AAB@")]
 	[DemangledName("L\"bit_buf_size >= FPNG_DECODER_TAB\"...")]
 	[CleanName("String")]
-	public static InlineArray40_Int16 String_ktv524d
+	public static InlineArray40_Int16 String_vetfdg
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_ktv524d.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_vetfdg.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_ktv524d.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_vetfdg.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1BA@ONNHMHEP@?$AAl?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA3?$AA2?$AA?$AA@")]
 	[DemangledName("L\"l <= 32\"")]
 	[CleanName("String")]
-	public static InlineArray8_Int16 String_mf9hyza
+	public static InlineArray8_Int16 String_j9965d
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_mf9hyza.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_j9965d.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_mf9hyza.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_j9965d.Value = value;
 		}
 	}
 
@@ -965,45 +965,45 @@ public static partial class FPng
 	[MangledName("??_C@_1EM@LNFOKHHI@?$AAl?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAl?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA3?$AA2?$AA?$CJ?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5@")]
 	[DemangledName("L\"l && (l <= 32) && (bit_buf_size \"...")]
 	[CleanName("String")]
-	public static InlineArray38_Int16 String_ftb25bb
+	public static InlineArray38_Int16 String_t338gg
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_ftb25bb.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_t338gg.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_ftb25bb.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_t338gg.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1DO@GINGNLCO@?$AAl?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA3?$AA2?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CI?$AAb?$AAi?$AAt?$AA_?$AAb?$AAu?$AAf?$AA_?$AAs?$AAi?$AAz?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AAl?$AA?$CJ?$AA?$AA@")]
 	[DemangledName("L\"l <= 32 && (bit_buf_size >= l)\"")]
 	[CleanName("String")]
-	public static InlineArray31_Int16 String_bahgbqd
+	public static InlineArray31_Int16 String_s5c4mv
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_bahgbqd.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_s5c4mv.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_bahgbqd.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_s5c4mv.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1CG@ELPAFFDG@?$AA?$CI?$AAr?$AAu?$AAn?$AA_?$AAl?$AAe?$AAn?$AA?5?$AA?$CF?$AA?5?$AA3?$AA?$CJ?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA0?$AA?$AA@")]
 	[DemangledName("L\"(run_len % 3) == 0\"")]
 	[CleanName("String")]
-	public static InlineArray19_Int16 String_a5rp7bb
+	public static InlineArray19_Int16 String_gn3izp
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_a5rp7bb.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_gn3izp.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_a5rp7bb.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_gn3izp.Value = value;
 		}
 	}
 
@@ -1024,45 +1024,45 @@ public static partial class FPng
 	[MangledName("??_C@_1EK@NPDOIFAN@?$AA?$CI?$AAs?$AAr?$AAc?$AA_?$AAc?$AAh?$AAa?$AAn?$AAs?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA3?$AA?$CJ?$AA?5?$AA?$HM?$AA?$HM?$AA?5?$AA?$CI?$AAs?$AAr?$AAc?$AA_?$AAc?$AAh?$AAa?$AAn?$AAs?$AA?5?$AA?$DN@")]
 	[DemangledName("L\"(src_chans == 3) || (src_chans =\"...")]
 	[CleanName("String")]
-	public static InlineArray37_Int16 String_zixkhbc
+	public static InlineArray37_Int16 String_uk2xnu
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_zixkhbc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_uk2xnu.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_zixkhbc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_uk2xnu.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1EK@BJMGPLPL@?$AA?$CI?$AAd?$AAs?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAs?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA3?$AA?$CJ?$AA?5?$AA?$HM?$AA?$HM?$AA?5?$AA?$CI?$AAd?$AAs?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAs?$AA?5?$AA?$DN@")]
 	[DemangledName("L\"(dst_chans == 3) || (dst_chans =\"...")]
 	[CleanName("String")]
-	public static InlineArray37_Int16 String_kppxlqc
+	public static InlineArray37_Int16 String_9t5ec6
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_kppxlqc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_9t5ec6.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_kppxlqc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_9t5ec6.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1BE@MMMJACNB@?$AA?$CB?$AAc?$AAo?$AAm?$AAp?$AA_?$AAo?$AAf?$AAs?$AA?$AA@")]
 	[DemangledName("L\"!comp_ofs\"")]
 	[CleanName("String")]
-	public static InlineArray10_Int16 String_ji2h3xd
+	public static InlineArray10_Int16 String_z2hmfq
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_ji2h3xd.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_z2hmfq.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_ji2h3xd.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_z2hmfq.Value = value;
 		}
 	}
 
@@ -1083,30 +1083,30 @@ public static partial class FPng
 	[MangledName("??_C@_1EI@CMIKALPF@?$AAs?$AAy?$AAm?$AA_?$AAb?$AAi?$AAt?$AAs?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAF?$AAP?$AAN?$AAG?$AA_?$AAD?$AAE?$AAC?$AAO?$AAD?$AAE?$AAR?$AA_?$AAT?$AAA?$AAB?$AAL?$AAE?$AA_?$AAB@")]
 	[DemangledName("L\"sym_bits <= FPNG_DECODER_TABLE_B\"...")]
 	[CleanName("String")]
-	public static InlineArray36_Int16 String_nlshwsc
+	public static InlineArray36_Int16 String_dvv5b3
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_nlshwsc.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_dvv5b3.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_nlshwsc.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_dvv5b3.Value = value;
 		}
 	}
 
 	[MangledName("??_C@_1FE@PPLLBMKL@?$AAp?$AAC?$AAo?$AAd?$AAe?$AA_?$AAs?$AAi?$AAz?$AAe?$AAs?$AA?$FL?$AAi?$AA?$FN?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AAF?$AAP?$AAN?$AAG?$AA_?$AAD?$AAE?$AAC?$AAO?$AAD?$AAE?$AAR?$AA_?$AAT@")]
 	[DemangledName("L\"pCode_sizes[i] <= FPNG_DECODER_T\"...")]
 	[CleanName("String")]
-	public static InlineArray42_Int16 String_32otbnd
+	public static InlineArray42_Int16 String_askaw7
 	{
 		get
 		{
-			return AssetRipper.Conversions.FastPng.GlobalVariables.String_32otbnd.Value;
+			return AssetRipper.Conversions.FastPng.GlobalVariables.String_askaw7.Value;
 		}
 		set
 		{
-			AssetRipper.Conversions.FastPng.GlobalVariables.String_32otbnd.Value = value;
+			AssetRipper.Conversions.FastPng.GlobalVariables.String_askaw7.Value = value;
 		}
 	}
 
@@ -1212,11 +1212,11 @@ public static partial class FPng
 	[DemangledName("public: void __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::resize(unsigned __int64)")]
 	[CleanName("resize")]
 	[return: NativeType("void")]
-	public unsafe static void resize_wwmwtsa(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
+	public unsafe static void resize_irjm7f(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
 	{
 		try
 		{
-			AssetRipper.Conversions.FastPng.GlobalFunctions.resize_wwmwtsa.Invoke(@this, Newsize);
+			AssetRipper.Conversions.FastPng.GlobalFunctions.resize_irjm7f.Invoke(@this, Newsize);
 		}
 		catch
 		{
@@ -1236,9 +1236,9 @@ public static partial class FPng
 	[MangledName("??A?$vector@EV?$allocator@E@std@@@std@@QEAAAEAE_K@Z")]
 	[DemangledName("public: unsigned char & __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::operator[](unsigned __int64)")]
 	[return: NativeType("unsigned char &")]
-	public unsafe static void* vector_unsigned_char_class_std_allocator_unsigned_char_Index(void* @this, [MangledName("_Pos")][NativeType("unsigned __int64")] long Pos)
+	public unsafe static void* vector_unsigned_char_class_std_allocator_unsigned_char_Operator(void* @this, [MangledName("_Pos")][NativeType("unsigned __int64")] long Pos)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_char_class_std_allocator_unsigned_char_Index.Invoke(@this, Pos);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_char_class_std_allocator_unsigned_char_Operator.Invoke(@this, Pos);
 	}
 
 	[MangledName("?apply_filter@fpng@@YAXIHHIIPEBE0PEAE@Z")]
@@ -1281,18 +1281,18 @@ public static partial class FPng
 	[DemangledName("public: unsigned __int64 __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::size(void) const")]
 	[CleanName("size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long size_4io4p4d(void* @this)
+	public unsafe static long size_78pg66(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.size_4io4p4d.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.size_78pg66.Invoke(@this);
 	}
 
 	[MangledName("?data@?$vector@EV?$allocator@E@std@@@std@@QEAAPEAEXZ")]
 	[DemangledName("public: unsigned char * __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::data(void)")]
 	[CleanName("data")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* data_efhnzgd(void* @this)
+	public unsafe static void* data_2v5v72(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.data_efhnzgd.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.data_2v5v72.Invoke(@this);
 	}
 
 	[MangledName("?pixel_deflate_dyn_3_rle_one_pass@fpng@@YAIPEBEIIPEAEI@Z")]
@@ -1452,12 +1452,12 @@ public static partial class FPng
 	[DemangledName("bool __cdecl fpng::fpng_pixel_zlib_decompress_3<3>(unsigned char const *, unsigned int, unsigned int, unsigned char *, unsigned int, unsigned int)")]
 	[CleanName("fpng_pixel_zlib_decompress_3")]
 	[return: NativeType("bool")]
-	public unsafe static bool fpng_pixel_zlib_decompress_3_prmnnjb([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
+	public unsafe static bool fpng_pixel_zlib_decompress_3_5btwdm([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
 	{
 		bool result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.fpng_pixel_zlib_decompress_3_prmnnjb.Invoke(pSrc, src_len, zlib_len, pDst, w, h);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.fpng_pixel_zlib_decompress_3_5btwdm.Invoke(pSrc, src_len, zlib_len, pDst, w, h);
 		}
 		catch
 		{
@@ -1472,12 +1472,12 @@ public static partial class FPng
 	[DemangledName("bool __cdecl fpng::fpng_pixel_zlib_decompress_4<3>(unsigned char const *, unsigned int, unsigned int, unsigned char *, unsigned int, unsigned int)")]
 	[CleanName("fpng_pixel_zlib_decompress_4")]
 	[return: NativeType("bool")]
-	public unsafe static bool fpng_pixel_zlib_decompress_4_xygi9td([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
+	public unsafe static bool fpng_pixel_zlib_decompress_4_aj9q4n([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
 	{
 		bool result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.fpng_pixel_zlib_decompress_4_xygi9td.Invoke(pSrc, src_len, zlib_len, pDst, w, h);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.fpng_pixel_zlib_decompress_4_aj9q4n.Invoke(pSrc, src_len, zlib_len, pDst, w, h);
 		}
 		catch
 		{
@@ -1492,12 +1492,12 @@ public static partial class FPng
 	[DemangledName("bool __cdecl fpng::fpng_pixel_zlib_decompress_3<4>(unsigned char const *, unsigned int, unsigned int, unsigned char *, unsigned int, unsigned int)")]
 	[CleanName("fpng_pixel_zlib_decompress_3")]
 	[return: NativeType("bool")]
-	public unsafe static bool fpng_pixel_zlib_decompress_3_yffw42c([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
+	public unsafe static bool fpng_pixel_zlib_decompress_3_b29a29([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
 	{
 		bool result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.fpng_pixel_zlib_decompress_3_yffw42c.Invoke(pSrc, src_len, zlib_len, pDst, w, h);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.fpng_pixel_zlib_decompress_3_b29a29.Invoke(pSrc, src_len, zlib_len, pDst, w, h);
 		}
 		catch
 		{
@@ -1512,12 +1512,12 @@ public static partial class FPng
 	[DemangledName("bool __cdecl fpng::fpng_pixel_zlib_decompress_4<4>(unsigned char const *, unsigned int, unsigned int, unsigned char *, unsigned int, unsigned int)")]
 	[CleanName("fpng_pixel_zlib_decompress_4")]
 	[return: NativeType("bool")]
-	public unsafe static bool fpng_pixel_zlib_decompress_4_amptoaa([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
+	public unsafe static bool fpng_pixel_zlib_decompress_4_q6idwj([NativeType("unsigned char const *")] void* pSrc, [NativeType("unsigned int")] int src_len, [NativeType("unsigned int")] int zlib_len, [NativeType("unsigned char *")] void* pDst, [NativeType("unsigned int")] int w, [NativeType("unsigned int")] int h)
 	{
 		bool result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.fpng_pixel_zlib_decompress_4_amptoaa.Invoke(pSrc, src_len, zlib_len, pDst, w, h);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.fpng_pixel_zlib_decompress_4_q6idwj.Invoke(pSrc, src_len, zlib_len, pDst, w, h);
 		}
 		catch
 		{
@@ -1557,9 +1557,9 @@ public static partial class FPng
 	[DemangledName("public: unsigned int * __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::data(void)")]
 	[CleanName("data")]
 	[return: NativeType("unsigned int *")]
-	public unsafe static void* data_uf9yj3b(void* @this)
+	public unsafe static void* data_znr6c7(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.data_uf9yj3b.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.data_znr6c7.Invoke(@this);
 	}
 
 	[MangledName("llvm.memset.p0.i64")]
@@ -1581,18 +1581,18 @@ public static partial class FPng
 	[DemangledName("int __cdecl fpng::minimum<int>(int, int)")]
 	[CleanName("minimum")]
 	[return: NativeType("int")]
-	public static int minimum_ymfg3kb([NativeType("int")] int a, [NativeType("int")] int b)
+	public static int minimum_89rwph([NativeType("int")] int a, [NativeType("int")] int b)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.minimum_ymfg3kb.Invoke(a, b);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.minimum_89rwph.Invoke(a, b);
 	}
 
 	[MangledName("?size@?$vector@IV?$allocator@I@std@@@std@@QEBA_KXZ")]
 	[DemangledName("public: unsigned __int64 __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::size(void) const")]
 	[CleanName("size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long size_wtrvsgc(void* @this)
+	public unsafe static long size_4a3vbc(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.size_wtrvsgc.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.size_4a3vbc.Invoke(@this);
 	}
 
 	[MangledName("?adjust_freq32@fpng@@YAXIPEAIPEAG@Z")]
@@ -1625,9 +1625,9 @@ public static partial class FPng
 	[MangledName("??A?$vector@IV?$allocator@I@std@@@std@@QEAAAEAI_K@Z")]
 	[DemangledName("public: unsigned int & __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::operator[](unsigned __int64)")]
 	[return: NativeType("unsigned int &")]
-	public unsafe static void* vector_unsigned_int_class_std_allocator_unsigned_int_Index(void* @this, [MangledName("_Pos")][NativeType("unsigned __int64")] long Pos)
+	public unsafe static void* vector_unsigned_int_class_std_allocator_unsigned_int_Operator(void* @this, [MangledName("_Pos")][NativeType("unsigned __int64")] long Pos)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_int_class_std_allocator_unsigned_int_Index.Invoke(@this, Pos);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_int_class_std_allocator_unsigned_int_Operator.Invoke(@this, Pos);
 	}
 
 	[MangledName("??1?$vector@IV?$allocator@I@std@@@std@@QEAA@XZ")]
@@ -1672,18 +1672,18 @@ public static partial class FPng
 	[DemangledName("private: class std::allocator<unsigned int> & __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::_Getal(void)")]
 	[CleanName("Getal")]
 	[return: NativeType("class std::allocator<unsigned int> &")]
-	public unsafe static void* Getal_t2pmqoc(void* @this)
+	public unsafe static void* Getal_jb66tx(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_t2pmqoc.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_jb66tx.Invoke(@this);
 	}
 
 	[MangledName("??$_Get_proxy_allocator@V?$allocator@I@std@@@std@@YA?AU_Fake_allocator@0@AEBV?$allocator@I@0@@Z")]
 	[DemangledName("struct std::_Fake_allocator __cdecl std::_Get_proxy_allocator<class std::allocator<unsigned int>>(class std::allocator<unsigned int> const &)")]
 	[CleanName("Get_proxy_allocator")]
 	[return: NativeType("struct std::_Fake_allocator")]
-	public unsafe static sbyte Get_proxy_allocator_uag3hnc([NativeType("class std::allocator<unsigned int> const &")] void* parameter_0)
+	public unsafe static sbyte Get_proxy_allocator_r4aa37([NativeType("class std::allocator<unsigned int> const &")] void* parameter_0)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_uag3hnc.Invoke(parameter_0);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_r4aa37.Invoke(parameter_0);
 	}
 
 	[MangledName("??0_Fake_proxy_ptr_impl@std@@QEAA@AEBU_Fake_allocator@1@AEBU_Container_base0@1@@Z")]
@@ -1714,9 +1714,9 @@ public static partial class FPng
 	[DemangledName("unsigned int * __cdecl std::_Uninitialized_value_construct_n<class std::allocator<unsigned int>>(unsigned int *, unsigned __int64, class std::allocator<unsigned int> &)")]
 	[CleanName("Uninitialized_value_construct_n")]
 	[return: NativeType("unsigned int *")]
-	public unsafe static void* Uninitialized_value_construct_n_zg4iwva([MangledName("_First")][NativeType("unsigned int *")] void* First, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned int> &")] void* Al)
+	public unsafe static void* Uninitialized_value_construct_n_qqxnj2([MangledName("_First")][NativeType("unsigned int *")] void* First, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned int> &")] void* Al)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_value_construct_n_zg4iwva.Invoke(First, Count, Al);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_value_construct_n_qqxnj2.Invoke(First, Count, Al);
 	}
 
 	[MangledName("??1?$_Tidy_guard@V?$vector@IV?$allocator@I@std@@@std@@@std@@QEAA@XZ")]
@@ -1738,27 +1738,27 @@ public static partial class FPng
 	[DemangledName("public: class std::allocator<unsigned int> & __cdecl std::_Compressed_pair<class std::allocator<unsigned int>, class std::_Vector_val<struct std::_Simple_types<unsigned int>>, 1>::_Get_first(void)")]
 	[CleanName("Get_first")]
 	[return: NativeType("class std::allocator<unsigned int> &")]
-	public unsafe static void* Get_first_evhdorb(void* @this)
+	public unsafe static void* Get_first_cund8f(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_evhdorb.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_cund8f.Invoke(@this);
 	}
 
 	[MangledName("?max_size@?$vector@IV?$allocator@I@std@@@std@@QEBA_KXZ")]
 	[DemangledName("public: unsigned __int64 __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::max_size(void) const")]
 	[CleanName("max_size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long max_size_qdwnpha(void* @this)
+	public unsafe static long max_size_2ddmdn(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_qdwnpha.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_2ddmdn.Invoke(@this);
 	}
 
 	[MangledName("?_Xlength@?$vector@IV?$allocator@I@std@@@std@@CAXXZ")]
 	[DemangledName("private: static void __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::_Xlength(void)")]
 	[CleanName("Xlength")]
 	[return: NativeType("void")]
-	public static void Xlength_nubzgpc()
+	public static void Xlength_255g3z()
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Xlength_nubzgpc.Invoke();
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Xlength_255g3z.Invoke();
 	}
 
 	[MangledName("?_Buy_raw@?$vector@IV?$allocator@I@std@@@std@@AEAAX_K@Z")]
@@ -1790,18 +1790,18 @@ public static partial class FPng
 	[DemangledName("public: static unsigned __int64 __cdecl std::_Default_allocator_traits<class std::allocator<unsigned int>>::max_size(class std::allocator<unsigned int> const &)")]
 	[CleanName("max_size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long max_size_snq294b([NativeType("class std::allocator<unsigned int> const &")] void* parameter_0)
+	public unsafe static long max_size_g5g57n([NativeType("class std::allocator<unsigned int> const &")] void* parameter_0)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_snq294b.Invoke(parameter_0);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_g5g57n.Invoke(parameter_0);
 	}
 
 	[MangledName("?_Getal@?$vector@IV?$allocator@I@std@@@std@@AEBAAEBV?$allocator@I@2@XZ")]
 	[DemangledName("private: class std::allocator<unsigned int> const & __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::_Getal(void) const")]
 	[CleanName("Getal")]
 	[return: NativeType("class std::allocator<unsigned int> const &")]
-	public unsafe static void* Getal_r5wdlvb(void* @this)
+	public unsafe static void* Getal_kwpsjz(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_r5wdlvb.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_kwpsjz.Invoke(@this);
 	}
 
 	[MangledName("??$_Max_limit@_J@std@@YA_JXZ")]
@@ -1816,9 +1816,9 @@ public static partial class FPng
 	[DemangledName("public: class std::allocator<unsigned int> const & __cdecl std::_Compressed_pair<class std::allocator<unsigned int>, class std::_Vector_val<struct std::_Simple_types<unsigned int>>, 1>::_Get_first(void) const")]
 	[CleanName("Get_first")]
 	[return: NativeType("class std::allocator<unsigned int> const &")]
-	public unsafe static void* Get_first_gs7mvkc(void* @this)
+	public unsafe static void* Get_first_djzrvk(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_gs7mvkc.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_djzrvk.Invoke(@this);
 	}
 
 	[MangledName("?_Xlength_error@std@@YAXPEBD@Z")]
@@ -1833,12 +1833,12 @@ public static partial class FPng
 	[DemangledName("unsigned int * __cdecl std::_Allocate_at_least_helper<class std::allocator<unsigned int>>(class std::allocator<unsigned int> &, unsigned __int64 &)")]
 	[CleanName("Allocate_at_least_helper")]
 	[return: NativeType("unsigned int *")]
-	public unsafe static void* Allocate_at_least_helper_22hwyxd([MangledName("_Al")][NativeType("class std::allocator<unsigned int> &")] void* Al, [MangledName("_Count")][NativeType("unsigned __int64 &")] void* Count)
+	public unsafe static void* Allocate_at_least_helper_cyykju([MangledName("_Al")][NativeType("class std::allocator<unsigned int> &")] void* Al, [MangledName("_Count")][NativeType("unsigned __int64 &")] void* Count)
 	{
 		void* result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_at_least_helper_22hwyxd.Invoke(Al, Count);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_at_least_helper_cyykju.Invoke(Al, Count);
 		}
 		catch
 		{
@@ -1853,12 +1853,12 @@ public static partial class FPng
 	[DemangledName("public: unsigned int * __cdecl std::allocator<unsigned int>::allocate(unsigned __int64)")]
 	[CleanName("allocate")]
 	[return: NativeType("unsigned int *")]
-	public unsafe static void* allocate_wor4ptd(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public unsafe static void* allocate_r4t6j4(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		void* result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.allocate_wor4ptd.Invoke(@this, Count);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.allocate_r4t6j4.Invoke(@this, Count);
 		}
 		catch
 		{
@@ -1873,12 +1873,12 @@ public static partial class FPng
 	[DemangledName("void * __cdecl std::_Allocate<16, struct std::_Default_allocate_traits>(unsigned __int64)")]
 	[CleanName("Allocate")]
 	[return: NativeType("void *")]
-	public unsafe static void* Allocate_i4jzs2a([MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
+	public unsafe static void* Allocate_4exgpj([MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
 	{
 		void* result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_i4jzs2a.Invoke(Bytes);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_4exgpj.Invoke(Bytes);
 		}
 		catch
 		{
@@ -1893,12 +1893,12 @@ public static partial class FPng
 	[DemangledName("unsigned __int64 __cdecl std::_Get_size_of_n<4>(unsigned __int64)")]
 	[CleanName("Get_size_of_n")]
 	[return: NativeType("unsigned __int64")]
-	public static long Get_size_of_n_rdjmi2b([MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public static long Get_size_of_n_4bnjce([MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		long result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Get_size_of_n_rdjmi2b.Invoke(Count);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Get_size_of_n_4bnjce.Invoke(Count);
 		}
 		catch
 		{
@@ -1932,9 +1932,9 @@ public static partial class FPng
 	[DemangledName("public: static void * __cdecl std::_Default_allocate_traits::_Allocate(unsigned __int64)")]
 	[CleanName("Allocate")]
 	[return: NativeType("void *")]
-	public unsafe static void* Allocate_ifu7fia([MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
+	public unsafe static void* Allocate_q5w6zu([MangledName("_Bytes")][NativeType("unsigned __int64")] long Bytes)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_ifu7fia.Invoke(Bytes);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_q5w6zu.Invoke(Bytes);
 	}
 
 	[MangledName("?_Throw_bad_array_new_length@std@@YAXXZ")]
@@ -1964,33 +1964,33 @@ public static partial class FPng
 	[MangledName("??0bad_array_new_length@std@@QEAA@XZ")]
 	[DemangledName("public: __cdecl std::bad_array_new_length::bad_array_new_length(void)")]
 	[CleanName("bad_array_new_length_Constructor")]
-	public unsafe static void* bad_array_new_length_Constructor_fnjru5d(void* @this)
+	public unsafe static void* bad_array_new_length_Constructor_ygbqdc(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.bad_array_new_length_Constructor_fnjru5d.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.bad_array_new_length_Constructor_ygbqdc.Invoke(@this);
 	}
 
 	[MangledName("??0bad_array_new_length@std@@QEAA@AEBV01@@Z")]
 	[DemangledName("public: __cdecl std::bad_array_new_length::bad_array_new_length(class std::bad_array_new_length const &)")]
 	[CleanName("bad_array_new_length_Constructor")]
-	public unsafe static void* bad_array_new_length_Constructor_7fjuj3c(void* @this, [NativeType("class std::bad_array_new_length const &")] void* parameter_1)
+	public unsafe static void* bad_array_new_length_Constructor_avfmh5(void* @this, [NativeType("class std::bad_array_new_length const &")] void* parameter_1)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.bad_array_new_length_Constructor_7fjuj3c.Invoke(@this, parameter_1);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.bad_array_new_length_Constructor_avfmh5.Invoke(@this, parameter_1);
 	}
 
 	[MangledName("??0bad_alloc@std@@QEAA@AEBV01@@Z")]
 	[DemangledName("public: __cdecl std::bad_alloc::bad_alloc(class std::bad_alloc const &)")]
 	[CleanName("bad_alloc_Constructor")]
-	public unsafe static void* bad_alloc_Constructor_3vdoaxb(void* @this, [NativeType("class std::bad_alloc const &")] void* parameter_1)
+	public unsafe static void* bad_alloc_Constructor_bb3mgj(void* @this, [NativeType("class std::bad_alloc const &")] void* parameter_1)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.bad_alloc_Constructor_3vdoaxb.Invoke(@this, parameter_1);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.bad_alloc_Constructor_bb3mgj.Invoke(@this, parameter_1);
 	}
 
 	[MangledName("??0exception@std@@QEAA@AEBV01@@Z")]
 	[DemangledName("public: __cdecl std::exception::exception(class std::exception const &)")]
 	[CleanName("exception_Constructor")]
-	public unsafe static void* exception_Constructor_ikocrpb(void* @this, [MangledName("_Other")][NativeType("class std::exception const &")] void* Other)
+	public unsafe static void* exception_Constructor_d3h3g6(void* @this, [MangledName("_Other")][NativeType("class std::exception const &")] void* Other)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.exception_Constructor_ikocrpb.Invoke(@this, Other);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.exception_Constructor_d3h3g6.Invoke(@this, Other);
 	}
 
 	[MangledName("??1bad_array_new_length@std@@UEAA@XZ")]
@@ -2019,9 +2019,9 @@ public static partial class FPng
 	[MangledName("??0bad_alloc@std@@AEAA@QEBD@Z")]
 	[DemangledName("private: __cdecl std::bad_alloc::bad_alloc(char const *const)")]
 	[CleanName("bad_alloc_Constructor")]
-	public unsafe static void* bad_alloc_Constructor_72dj2ea(void* @this, [MangledName("_Message")][NativeType("char const *const")] void* Message)
+	public unsafe static void* bad_alloc_Constructor_479urr(void* @this, [MangledName("_Message")][NativeType("char const *const")] void* Message)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.bad_alloc_Constructor_72dj2ea.Invoke(@this, Message);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.bad_alloc_Constructor_479urr.Invoke(@this, Message);
 	}
 
 	[MangledName("??_Gbad_array_new_length@std@@UEAAPEAXI@Z")]
@@ -2043,9 +2043,9 @@ public static partial class FPng
 	[MangledName("??0exception@std@@QEAA@QEBDH@Z")]
 	[DemangledName("public: __cdecl std::exception::exception(char const *const, int)")]
 	[CleanName("exception_Constructor")]
-	public unsafe static void* exception_Constructor_morlzmd(void* @this, [MangledName("_Message")][NativeType("char const *const")] void* Message, [NativeType("int")] int parameter_2)
+	public unsafe static void* exception_Constructor_d32qp5(void* @this, [MangledName("_Message")][NativeType("char const *const")] void* Message, [NativeType("int")] int parameter_2)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.exception_Constructor_morlzmd.Invoke(@this, Message, parameter_2);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.exception_Constructor_d32qp5.Invoke(@this, Message, parameter_2);
 	}
 
 	[MangledName("??_Gbad_alloc@std@@UEAAPEAXI@Z")]
@@ -2119,36 +2119,36 @@ public static partial class FPng
 	[DemangledName("unsigned int * __cdecl std::_Unfancy<unsigned int>(unsigned int *)")]
 	[CleanName("Unfancy")]
 	[return: NativeType("unsigned int *")]
-	public unsafe static void* Unfancy_xjzn42c([MangledName("_Ptr")][NativeType("unsigned int *")] void* Ptr)
+	public unsafe static void* Unfancy_up4piv([MangledName("_Ptr")][NativeType("unsigned int *")] void* Ptr)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_xjzn42c.Invoke(Ptr);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_up4piv.Invoke(Ptr);
 	}
 
 	[MangledName("??$_Zero_range@PEAI@std@@YAPEAIQEAI0@Z")]
 	[DemangledName("unsigned int * __cdecl std::_Zero_range<unsigned int *>(unsigned int *const, unsigned int *const)")]
 	[CleanName("Zero_range")]
 	[return: NativeType("unsigned int *")]
-	public unsafe static void* Zero_range_dc39dpa([MangledName("_First")][NativeType("unsigned int *const")] void* First, [MangledName("_Last")][NativeType("unsigned int *const")] void* Last)
+	public unsafe static void* Zero_range_mqchde([MangledName("_First")][NativeType("unsigned int *const")] void* First, [MangledName("_Last")][NativeType("unsigned int *const")] void* Last)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Zero_range_dc39dpa.Invoke(First, Last);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Zero_range_mqchde.Invoke(First, Last);
 	}
 
 	[MangledName("??$_To_address@PEAI@std@@YA?A_PAEBQEAI@Z")]
 	[DemangledName("auto __cdecl std::_To_address<unsigned int *>(unsigned int *const &)")]
 	[CleanName("To_address")]
 	[return: NativeType("auto")]
-	public unsafe static void* To_address_aoz7nfb([MangledName("_Val")][NativeType("unsigned int *const &")] void* Val)
+	public unsafe static void* To_address_vfzm44([MangledName("_Val")][NativeType("unsigned int *const &")] void* Val)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.To_address_aoz7nfb.Invoke(Val);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.To_address_vfzm44.Invoke(Val);
 	}
 
 	[MangledName("?_Tidy@?$vector@IV?$allocator@I@std@@@std@@AEAAXXZ")]
 	[DemangledName("private: void __cdecl std::vector<unsigned int, class std::allocator<unsigned int>>::_Tidy(void)")]
 	[CleanName("Tidy")]
 	[return: NativeType("void")]
-	public unsafe static void Tidy_kyqxybb(void* @this)
+	public unsafe static void Tidy_t4s52y(void* @this)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Tidy_kyqxybb.Invoke(@this);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Tidy_t4s52y.Invoke(@this);
 	}
 
 	[MangledName("?_Orphan_all@_Container_base0@std@@QEAAXXZ")]
@@ -2163,18 +2163,18 @@ public static partial class FPng
 	[DemangledName("void __cdecl std::_Destroy_range<class std::allocator<unsigned int>>(unsigned int *, unsigned int *const, class std::allocator<unsigned int> &)")]
 	[CleanName("Destroy_range")]
 	[return: NativeType("void")]
-	public unsafe static void Destroy_range_9rluabc([MangledName("_First")][NativeType("unsigned int *")] void* First, [MangledName("_Last")][NativeType("unsigned int *const")] void* Last, [MangledName("_Al")][NativeType("class std::allocator<unsigned int> &")] void* Al)
+	public unsafe static void Destroy_range_vpmzer([MangledName("_First")][NativeType("unsigned int *")] void* First, [MangledName("_Last")][NativeType("unsigned int *const")] void* Last, [MangledName("_Al")][NativeType("class std::allocator<unsigned int> &")] void* Al)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Destroy_range_9rluabc.Invoke(First, Last, Al);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Destroy_range_vpmzer.Invoke(First, Last, Al);
 	}
 
 	[MangledName("?deallocate@?$allocator@I@std@@QEAAXQEAI_K@Z")]
 	[DemangledName("public: void __cdecl std::allocator<unsigned int>::deallocate(unsigned int *const, unsigned __int64)")]
 	[CleanName("deallocate")]
 	[return: NativeType("void")]
-	public unsafe static void deallocate_gfl4ncc(void* @this, [MangledName("_Ptr")][NativeType("unsigned int *const")] void* Ptr, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public unsafe static void deallocate_dfgvkh(void* @this, [MangledName("_Ptr")][NativeType("unsigned int *const")] void* Ptr, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.deallocate_gfl4ncc.Invoke(@this, Ptr, Count);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.deallocate_dfgvkh.Invoke(@this, Ptr, Count);
 	}
 
 	[MangledName("??$_Deallocate@$0BA@@std@@YAXPEAX_K@Z")]
@@ -2197,18 +2197,18 @@ public static partial class FPng
 	[DemangledName("unsigned int * __cdecl std::_Unfancy_maybe_null<unsigned int>(unsigned int *)")]
 	[CleanName("Unfancy_maybe_null")]
 	[return: NativeType("unsigned int *")]
-	public unsafe static void* Unfancy_maybe_null_ys5czvb([MangledName("_Ptr")][NativeType("unsigned int *")] void* Ptr)
+	public unsafe static void* Unfancy_maybe_null_78x93g([MangledName("_Ptr")][NativeType("unsigned int *")] void* Ptr)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_maybe_null_ys5czvb.Invoke(Ptr);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_maybe_null_78x93g.Invoke(Ptr);
 	}
 
 	[MangledName("??$maximum@I@fpng@@YAIII@Z")]
 	[DemangledName("unsigned int __cdecl fpng::maximum<unsigned int>(unsigned int, unsigned int)")]
 	[CleanName("maximum")]
 	[return: NativeType("unsigned int")]
-	public static int maximum_y5wzmwb([NativeType("unsigned int")] int a, [NativeType("unsigned int")] int b)
+	public static int maximum_m9vgh4([NativeType("unsigned int")] int a, [NativeType("unsigned int")] int b)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.maximum_y5wzmwb.Invoke(a, b);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.maximum_m9vgh4.Invoke(a, b);
 	}
 
 	[MangledName("?defl_optimize_huffman_table@fpng@@YAXPEAUdefl_huff@1@HHHH@Z")]
@@ -2223,9 +2223,9 @@ public static partial class FPng
 	[DemangledName("int __cdecl fpng::maximum<int>(int, int)")]
 	[CleanName("maximum")]
 	[return: NativeType("int")]
-	public static int maximum_sfjssib([NativeType("int")] int a, [NativeType("int")] int b)
+	public static int maximum_5qbg37([NativeType("int")] int a, [NativeType("int")] int b)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.maximum_sfjssib.Invoke(a, b);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.maximum_5qbg37.Invoke(a, b);
 	}
 
 	[MangledName("?defl_radix_sort_syms@fpng@@YAPEAUdefl_sym_freq@1@IPEAU21@0@Z")]
@@ -2263,11 +2263,11 @@ public static partial class FPng
 	[DemangledName("public: void __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::resize(unsigned __int64)")]
 	[CleanName("resize")]
 	[return: NativeType("void")]
-	public unsafe static void resize_d4pmvud(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
+	public unsafe static void resize_2sthez(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
 	{
 		try
 		{
-			AssetRipper.Conversions.FastPng.GlobalFunctions.resize_d4pmvud.Invoke(@this, Newsize);
+			AssetRipper.Conversions.FastPng.GlobalFunctions.resize_2sthez.Invoke(@this, Newsize);
 		}
 		catch
 		{
@@ -2281,26 +2281,26 @@ public static partial class FPng
 	[DemangledName("public: unsigned __int64 * __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::data(void)")]
 	[CleanName("data")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* data_dtgl25a(void* @this)
+	public unsafe static void* data_xjuchx(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.data_dtgl25a.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.data_xjuchx.Invoke(@this);
 	}
 
 	[MangledName("?size@?$vector@_KV?$allocator@_K@std@@@std@@QEBA_KXZ")]
 	[DemangledName("public: unsigned __int64 __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::size(void) const")]
 	[CleanName("size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long size_trt5i3d(void* @this)
+	public unsafe static long size_q6ncki(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.size_trt5i3d.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.size_q6ncki.Invoke(@this);
 	}
 
 	[MangledName("??A?$vector@_KV?$allocator@_K@std@@@std@@QEAAAEA_K_K@Z")]
 	[DemangledName("public: unsigned __int64 & __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::operator[](unsigned __int64)")]
 	[return: NativeType("unsigned __int64 &")]
-	public unsafe static void* vector_unsigned_int64_class_std_allocator_unsigned_int64_Index(void* @this, [MangledName("_Pos")][NativeType("unsigned __int64")] long Pos)
+	public unsafe static void* vector_unsigned_int64_class_std_allocator_unsigned_int64_Operator(void* @this, [MangledName("_Pos")][NativeType("unsigned __int64")] long Pos)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_int64_class_std_allocator_unsigned_int64_Index.Invoke(@this, Pos);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.vector_unsigned_int64_class_std_allocator_unsigned_int64_Operator.Invoke(@this, Pos);
 	}
 
 	[MangledName("??1?$vector@_KV?$allocator@_K@std@@@std@@QEAA@XZ")]
@@ -2329,18 +2329,18 @@ public static partial class FPng
 	[DemangledName("struct std::_Fake_allocator __cdecl std::_Get_proxy_allocator<class std::allocator<unsigned __int64>>(class std::allocator<unsigned __int64> const &)")]
 	[CleanName("Get_proxy_allocator")]
 	[return: NativeType("struct std::_Fake_allocator")]
-	public unsafe static sbyte Get_proxy_allocator_9e3ilvb([NativeType("class std::allocator<unsigned __int64> const &")] void* parameter_0)
+	public unsafe static sbyte Get_proxy_allocator_pz3zxs([NativeType("class std::allocator<unsigned __int64> const &")] void* parameter_0)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_9e3ilvb.Invoke(parameter_0);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_pz3zxs.Invoke(parameter_0);
 	}
 
 	[MangledName("?_Getal@?$vector@_KV?$allocator@_K@std@@@std@@AEAAAEAV?$allocator@_K@2@XZ")]
 	[DemangledName("private: class std::allocator<unsigned __int64> & __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Getal(void)")]
 	[CleanName("Getal")]
 	[return: NativeType("class std::allocator<unsigned __int64> &")]
-	public unsafe static void* Getal_kuj7nva(void* @this)
+	public unsafe static void* Getal_ie7hg9(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_kuj7nva.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_ie7hg9.Invoke(@this);
 	}
 
 	[MangledName("??0?$allocator@_K@std@@QEAA@XZ")]
@@ -2361,20 +2361,20 @@ public static partial class FPng
 	[DemangledName("public: class std::allocator<unsigned __int64> & __cdecl std::_Compressed_pair<class std::allocator<unsigned __int64>, class std::_Vector_val<struct std::_Simple_types<unsigned __int64>>, 1>::_Get_first(void)")]
 	[CleanName("Get_first")]
 	[return: NativeType("class std::allocator<unsigned __int64> &")]
-	public unsafe static void* Get_first_whlbtqb(void* @this)
+	public unsafe static void* Get_first_he3p6z(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_whlbtqb.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_he3p6z.Invoke(@this);
 	}
 
 	[MangledName("??$_Resize@U_Value_init_tag@std@@@?$vector@_KV?$allocator@_K@std@@@std@@AEAAX_KAEBU_Value_init_tag@1@@Z")]
 	[DemangledName("private: void __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Resize<struct std::_Value_init_tag>(unsigned __int64, struct std::_Value_init_tag const &)")]
 	[CleanName("Resize")]
 	[return: NativeType("void")]
-	public unsafe static void Resize_2s9rs9d(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
+	public unsafe static void Resize_m89abf(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
 	{
 		try
 		{
-			AssetRipper.Conversions.FastPng.GlobalFunctions.Resize_2s9rs9d.Invoke(@this, Newsize, Val);
+			AssetRipper.Conversions.FastPng.GlobalFunctions.Resize_m89abf.Invoke(@this, Newsize, Val);
 		}
 		catch
 		{
@@ -2388,29 +2388,29 @@ public static partial class FPng
 	[DemangledName("private: void __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Orphan_range(unsigned __int64 *, unsigned __int64 *) const")]
 	[CleanName("Orphan_range")]
 	[return: NativeType("void")]
-	public unsafe static void Orphan_range_qciws4b(void* @this, [NativeType("unsigned __int64 *")] void* parameter_1, [NativeType("unsigned __int64 *")] void* parameter_2)
+	public unsafe static void Orphan_range_8vzm8x(void* @this, [NativeType("unsigned __int64 *")] void* parameter_1, [NativeType("unsigned __int64 *")] void* parameter_2)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Orphan_range_qciws4b.Invoke(@this, parameter_1, parameter_2);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Orphan_range_8vzm8x.Invoke(@this, parameter_1, parameter_2);
 	}
 
 	[MangledName("??$_Destroy_range@V?$allocator@_K@std@@@std@@YAXPEA_KQEA_KAEAV?$allocator@_K@0@@Z")]
 	[DemangledName("void __cdecl std::_Destroy_range<class std::allocator<unsigned __int64>>(unsigned __int64 *, unsigned __int64 *const, class std::allocator<unsigned __int64> &)")]
 	[CleanName("Destroy_range")]
 	[return: NativeType("void")]
-	public unsafe static void Destroy_range_qbzp7xb([MangledName("_First")][NativeType("unsigned __int64 *")] void* First, [MangledName("_Last")][NativeType("unsigned __int64 *const")] void* Last, [MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al)
+	public unsafe static void Destroy_range_eprs33([MangledName("_First")][NativeType("unsigned __int64 *")] void* First, [MangledName("_Last")][NativeType("unsigned __int64 *const")] void* Last, [MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Destroy_range_qbzp7xb.Invoke(First, Last, Al);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Destroy_range_eprs33.Invoke(First, Last, Al);
 	}
 
 	[MangledName("??$_Resize_reallocate@U_Value_init_tag@std@@@?$vector@_KV?$allocator@_K@std@@@std@@AEAAX_KAEBU_Value_init_tag@1@@Z")]
 	[DemangledName("private: void __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Resize_reallocate<struct std::_Value_init_tag>(unsigned __int64, struct std::_Value_init_tag const &)")]
 	[CleanName("Resize_reallocate")]
 	[return: NativeType("void")]
-	public unsafe static void Resize_reallocate_ytnsorc(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
+	public unsafe static void Resize_reallocate_jjqf5n(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
 	{
 		try
 		{
-			AssetRipper.Conversions.FastPng.GlobalFunctions.Resize_reallocate_ytnsorc.Invoke(@this, Newsize, Val);
+			AssetRipper.Conversions.FastPng.GlobalFunctions.Resize_reallocate_jjqf5n.Invoke(@this, Newsize, Val);
 		}
 		catch
 		{
@@ -2424,48 +2424,48 @@ public static partial class FPng
 	[DemangledName("unsigned __int64 * __cdecl std::_Uninitialized_value_construct_n<class std::allocator<unsigned __int64>>(unsigned __int64 *, unsigned __int64, class std::allocator<unsigned __int64> &)")]
 	[CleanName("Uninitialized_value_construct_n")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* Uninitialized_value_construct_n_hqowyoc([MangledName("_First")][NativeType("unsigned __int64 *")] void* First, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al)
+	public unsafe static void* Uninitialized_value_construct_n_e2x86x([MangledName("_First")][NativeType("unsigned __int64 *")] void* First, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_value_construct_n_hqowyoc.Invoke(First, Count, Al);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_value_construct_n_e2x86x.Invoke(First, Count, Al);
 	}
 
 	[MangledName("?max_size@?$vector@_KV?$allocator@_K@std@@@std@@QEBA_KXZ")]
 	[DemangledName("public: unsigned __int64 __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::max_size(void) const")]
 	[CleanName("max_size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long max_size_kyvxnnb(void* @this)
+	public unsafe static long max_size_t88hhi(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_kyvxnnb.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_t88hhi.Invoke(@this);
 	}
 
 	[MangledName("?_Xlength@?$vector@_KV?$allocator@_K@std@@@std@@CAXXZ")]
 	[DemangledName("private: static void __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Xlength(void)")]
 	[CleanName("Xlength")]
 	[return: NativeType("void")]
-	public static void Xlength_zmqdsxa()
+	public static void Xlength_4tkvw9()
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Xlength_zmqdsxa.Invoke();
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Xlength_4tkvw9.Invoke();
 	}
 
 	[MangledName("?_Calculate_growth@?$vector@_KV?$allocator@_K@std@@@std@@AEBA_K_K@Z")]
 	[DemangledName("private: unsigned __int64 __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Calculate_growth(unsigned __int64) const")]
 	[CleanName("Calculate_growth")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long Calculate_growth_vbhwmec(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
+	public unsafe static long Calculate_growth_2ntm6t(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Calculate_growth_vbhwmec.Invoke(@this, Newsize);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Calculate_growth_2ntm6t.Invoke(@this, Newsize);
 	}
 
 	[MangledName("??$_Allocate_at_least_helper@V?$allocator@_K@std@@@std@@YAPEA_KAEAV?$allocator@_K@0@AEA_K@Z")]
 	[DemangledName("unsigned __int64 * __cdecl std::_Allocate_at_least_helper<class std::allocator<unsigned __int64>>(class std::allocator<unsigned __int64> &, unsigned __int64 &)")]
 	[CleanName("Allocate_at_least_helper")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* Allocate_at_least_helper_l9zi7qb([MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al, [MangledName("_Count")][NativeType("unsigned __int64 &")] void* Count)
+	public unsafe static void* Allocate_at_least_helper_2ny77t([MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al, [MangledName("_Count")][NativeType("unsigned __int64 &")] void* Count)
 	{
 		void* result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_at_least_helper_l9zi7qb.Invoke(Al, Count);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_at_least_helper_2ny77t.Invoke(Al, Count);
 		}
 		catch
 		{
@@ -2480,74 +2480,74 @@ public static partial class FPng
 	[DemangledName("unsigned __int64 * __cdecl std::_Uninitialized_move<unsigned __int64 *, class std::allocator<unsigned __int64>>(unsigned __int64 *const, unsigned __int64 *const, unsigned __int64 *, class std::allocator<unsigned __int64> &)")]
 	[CleanName("Uninitialized_move")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* Uninitialized_move_cbc4pbc([MangledName("_First")][NativeType("unsigned __int64 *const")] void* First, [MangledName("_Last")][NativeType("unsigned __int64 *const")] void* Last, [MangledName("_Dest")][NativeType("unsigned __int64 *")] void* Dest, [MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al)
+	public unsafe static void* Uninitialized_move_5rztdf([MangledName("_First")][NativeType("unsigned __int64 *const")] void* First, [MangledName("_Last")][NativeType("unsigned __int64 *const")] void* Last, [MangledName("_Dest")][NativeType("unsigned __int64 *")] void* Dest, [MangledName("_Al")][NativeType("class std::allocator<unsigned __int64> &")] void* Al)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_move_cbc4pbc.Invoke(First, Last, Dest, Al);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_move_5rztdf.Invoke(First, Last, Dest, Al);
 	}
 
 	[MangledName("?_Change_array@?$vector@_KV?$allocator@_K@std@@@std@@AEAAXQEA_K_K1@Z")]
 	[DemangledName("private: void __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Change_array(unsigned __int64 *const, unsigned __int64, unsigned __int64)")]
 	[CleanName("Change_array")]
 	[return: NativeType("void")]
-	public unsafe static void Change_array_hgqy2vc(void* @this, [MangledName("_Newvec")][NativeType("unsigned __int64 *const")] void* Newvec, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
+	public unsafe static void Change_array_nieg7e(void* @this, [MangledName("_Newvec")][NativeType("unsigned __int64 *const")] void* Newvec, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Change_array_hgqy2vc.Invoke(@this, Newvec, Newsize, Newcapacity);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Change_array_nieg7e.Invoke(@this, Newvec, Newsize, Newcapacity);
 	}
 
 	[MangledName("??1_Reallocation_guard@?$vector@_KV?$allocator@_K@std@@@std@@QEAA@XZ")]
 	[DemangledName("public: __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Reallocation_guard::~_Reallocation_guard(void)")]
 	[CleanName("Reallocation_guard_Destructor")]
-	public unsafe static void Reallocation_guard_Destructor_jfaqped(void* @this)
+	public unsafe static void Reallocation_guard_Destructor_fq2gtv(void* @this)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Reallocation_guard_Destructor_jfaqped.Invoke(@this);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Reallocation_guard_Destructor_fq2gtv.Invoke(@this);
 	}
 
 	[MangledName("?max_size@?$_Default_allocator_traits@V?$allocator@_K@std@@@std@@SA_KAEBV?$allocator@_K@2@@Z")]
 	[DemangledName("public: static unsigned __int64 __cdecl std::_Default_allocator_traits<class std::allocator<unsigned __int64>>::max_size(class std::allocator<unsigned __int64> const &)")]
 	[CleanName("max_size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long max_size_ngjedfc([NativeType("class std::allocator<unsigned __int64> const &")] void* parameter_0)
+	public unsafe static long max_size_mjt878([NativeType("class std::allocator<unsigned __int64> const &")] void* parameter_0)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_ngjedfc.Invoke(parameter_0);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_mjt878.Invoke(parameter_0);
 	}
 
 	[MangledName("?_Getal@?$vector@_KV?$allocator@_K@std@@@std@@AEBAAEBV?$allocator@_K@2@XZ")]
 	[DemangledName("private: class std::allocator<unsigned __int64> const & __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Getal(void) const")]
 	[CleanName("Getal")]
 	[return: NativeType("class std::allocator<unsigned __int64> const &")]
-	public unsafe static void* Getal_2reycsb(void* @this)
+	public unsafe static void* Getal_vgvjy8(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_2reycsb.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_vgvjy8.Invoke(@this);
 	}
 
 	[MangledName("?_Get_first@?$_Compressed_pair@V?$allocator@_K@std@@V?$_Vector_val@U?$_Simple_types@_K@std@@@2@$00@std@@QEBAAEBV?$allocator@_K@2@XZ")]
 	[DemangledName("public: class std::allocator<unsigned __int64> const & __cdecl std::_Compressed_pair<class std::allocator<unsigned __int64>, class std::_Vector_val<struct std::_Simple_types<unsigned __int64>>, 1>::_Get_first(void) const")]
 	[CleanName("Get_first")]
 	[return: NativeType("class std::allocator<unsigned __int64> const &")]
-	public unsafe static void* Get_first_gcgh4xa(void* @this)
+	public unsafe static void* Get_first_6qcwh9(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_gcgh4xa.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_6qcwh9.Invoke(@this);
 	}
 
 	[MangledName("?capacity@?$vector@_KV?$allocator@_K@std@@@std@@QEBA_KXZ")]
 	[DemangledName("public: unsigned __int64 __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::capacity(void) const")]
 	[CleanName("capacity")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long capacity_f49yk4c(void* @this)
+	public unsafe static long capacity_e227dw(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.capacity_f49yk4c.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.capacity_e227dw.Invoke(@this);
 	}
 
 	[MangledName("?allocate@?$allocator@_K@std@@QEAAPEA_K_K@Z")]
 	[DemangledName("public: unsigned __int64 * __cdecl std::allocator<unsigned __int64>::allocate(unsigned __int64)")]
 	[CleanName("allocate")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* allocate_4vpkydd(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public unsafe static void* allocate_hfyt8m(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		void* result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.allocate_4vpkydd.Invoke(@this, Count);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.allocate_hfyt8m.Invoke(@this, Count);
 		}
 		catch
 		{
@@ -2562,12 +2562,12 @@ public static partial class FPng
 	[DemangledName("unsigned __int64 __cdecl std::_Get_size_of_n<8>(unsigned __int64)")]
 	[CleanName("Get_size_of_n")]
 	[return: NativeType("unsigned __int64")]
-	public static long Get_size_of_n_siqup9d([MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public static long Get_size_of_n_p7wxpq([MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		long result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Get_size_of_n_siqup9d.Invoke(Count);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Get_size_of_n_p7wxpq.Invoke(Count);
 		}
 		catch
 		{
@@ -2582,45 +2582,45 @@ public static partial class FPng
 	[DemangledName("decltype(auto) __cdecl std::_Get_unwrapped<unsigned __int64 *const &>(unsigned __int64 *const &)")]
 	[CleanName("Get_unwrapped")]
 	[return: NativeType("decltype(auto)")]
-	public unsafe static void* Get_unwrapped_3jsimya([MangledName("_It")][NativeType("unsigned __int64 *const &")] void* It)
+	public unsafe static void* Get_unwrapped_b5ivdj([MangledName("_It")][NativeType("unsigned __int64 *const &")] void* It)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_unwrapped_3jsimya.Invoke(It);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_unwrapped_b5ivdj.Invoke(It);
 	}
 
 	[MangledName("??$_Copy_memmove@PEA_KPEA_K@std@@YAPEA_KPEA_K00@Z")]
 	[DemangledName("unsigned __int64 * __cdecl std::_Copy_memmove<unsigned __int64 *, unsigned __int64 *>(unsigned __int64 *, unsigned __int64 *, unsigned __int64 *)")]
 	[CleanName("Copy_memmove")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* Copy_memmove_uofrjzc([MangledName("_First")][NativeType("unsigned __int64 *")] void* First, [MangledName("_Last")][NativeType("unsigned __int64 *")] void* Last, [MangledName("_Dest")][NativeType("unsigned __int64 *")] void* Dest)
+	public unsafe static void* Copy_memmove_cci3ap([MangledName("_First")][NativeType("unsigned __int64 *")] void* First, [MangledName("_Last")][NativeType("unsigned __int64 *")] void* Last, [MangledName("_Dest")][NativeType("unsigned __int64 *")] void* Dest)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Copy_memmove_uofrjzc.Invoke(First, Last, Dest);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Copy_memmove_cci3ap.Invoke(First, Last, Dest);
 	}
 
 	[MangledName("??$_Unfancy@_K@std@@YAPEA_KPEA_K@Z")]
 	[DemangledName("unsigned __int64 * __cdecl std::_Unfancy<unsigned __int64>(unsigned __int64 *)")]
 	[CleanName("Unfancy")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* Unfancy_z2hkbxa([MangledName("_Ptr")][NativeType("unsigned __int64 *")] void* Ptr)
+	public unsafe static void* Unfancy_2hrtxn([MangledName("_Ptr")][NativeType("unsigned __int64 *")] void* Ptr)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_z2hkbxa.Invoke(Ptr);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_2hrtxn.Invoke(Ptr);
 	}
 
 	[MangledName("??$_To_address@PEA_K@std@@YA?A_PAEBQEA_K@Z")]
 	[DemangledName("auto __cdecl std::_To_address<unsigned __int64 *>(unsigned __int64 *const &)")]
 	[CleanName("To_address")]
 	[return: NativeType("auto")]
-	public unsafe static void* To_address_l9253rd([MangledName("_Val")][NativeType("unsigned __int64 *const &")] void* Val)
+	public unsafe static void* To_address_uy47kg([MangledName("_Val")][NativeType("unsigned __int64 *const &")] void* Val)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.To_address_l9253rd.Invoke(Val);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.To_address_uy47kg.Invoke(Val);
 	}
 
 	[MangledName("??$_Copy_memmove_tail@PEA_K@std@@YAPEA_KQEBDQEA_K_K2@Z")]
 	[DemangledName("unsigned __int64 * __cdecl std::_Copy_memmove_tail<unsigned __int64 *>(char const *const, unsigned __int64 *const, unsigned __int64, unsigned __int64)")]
 	[CleanName("Copy_memmove_tail")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* Copy_memmove_tail_oluaukc([MangledName("_First_ch")][NativeType("char const *const")] void* First_ch, [MangledName("_Dest")][NativeType("unsigned __int64 *const")] void* Dest, [MangledName("_Byte_count")][NativeType("unsigned __int64")] long Byte_count, [MangledName("_Object_count")][NativeType("unsigned __int64")] long Object_count)
+	public unsafe static void* Copy_memmove_tail_gix4qw([MangledName("_First_ch")][NativeType("char const *const")] void* First_ch, [MangledName("_Dest")][NativeType("unsigned __int64 *const")] void* Dest, [MangledName("_Byte_count")][NativeType("unsigned __int64")] long Byte_count, [MangledName("_Object_count")][NativeType("unsigned __int64")] long Object_count)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Copy_memmove_tail_oluaukc.Invoke(First_ch, Dest, Byte_count, Object_count);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Copy_memmove_tail_gix4qw.Invoke(First_ch, Dest, Byte_count, Object_count);
 	}
 
 	[MangledName("llvm.memmove.p0.p0.i64")]
@@ -2634,45 +2634,45 @@ public static partial class FPng
 	[DemangledName("public: void __cdecl std::allocator<unsigned __int64>::deallocate(unsigned __int64 *const, unsigned __int64)")]
 	[CleanName("deallocate")]
 	[return: NativeType("void")]
-	public unsafe static void deallocate_yb2gvqa(void* @this, [MangledName("_Ptr")][NativeType("unsigned __int64 *const")] void* Ptr, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public unsafe static void deallocate_hcscub(void* @this, [MangledName("_Ptr")][NativeType("unsigned __int64 *const")] void* Ptr, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.deallocate_yb2gvqa.Invoke(@this, Ptr, Count);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.deallocate_hcscub.Invoke(@this, Ptr, Count);
 	}
 
 	[MangledName("??$_Zero_range@PEA_K@std@@YAPEA_KQEA_K0@Z")]
 	[DemangledName("unsigned __int64 * __cdecl std::_Zero_range<unsigned __int64 *>(unsigned __int64 *const, unsigned __int64 *const)")]
 	[CleanName("Zero_range")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* Zero_range_lx9svca([MangledName("_First")][NativeType("unsigned __int64 *const")] void* First, [MangledName("_Last")][NativeType("unsigned __int64 *const")] void* Last)
+	public unsafe static void* Zero_range_frsqbi([MangledName("_First")][NativeType("unsigned __int64 *const")] void* First, [MangledName("_Last")][NativeType("unsigned __int64 *const")] void* Last)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Zero_range_lx9svca.Invoke(First, Last);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Zero_range_frsqbi.Invoke(First, Last);
 	}
 
 	[MangledName("??$_Unfancy_maybe_null@_K@std@@YAPEA_KPEA_K@Z")]
 	[DemangledName("unsigned __int64 * __cdecl std::_Unfancy_maybe_null<unsigned __int64>(unsigned __int64 *)")]
 	[CleanName("Unfancy_maybe_null")]
 	[return: NativeType("unsigned __int64 *")]
-	public unsafe static void* Unfancy_maybe_null_uqd3pbd([MangledName("_Ptr")][NativeType("unsigned __int64 *")] void* Ptr)
+	public unsafe static void* Unfancy_maybe_null_q2cruh([MangledName("_Ptr")][NativeType("unsigned __int64 *")] void* Ptr)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_maybe_null_uqd3pbd.Invoke(Ptr);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_maybe_null_q2cruh.Invoke(Ptr);
 	}
 
 	[MangledName("?_Tidy@?$vector@_KV?$allocator@_K@std@@@std@@AEAAXXZ")]
 	[DemangledName("private: void __cdecl std::vector<unsigned __int64, class std::allocator<unsigned __int64>>::_Tidy(void)")]
 	[CleanName("Tidy")]
 	[return: NativeType("void")]
-	public unsafe static void Tidy_hq3jjxb(void* @this)
+	public unsafe static void Tidy_2eisfw(void* @this)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Tidy_hq3jjxb.Invoke(@this);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Tidy_2eisfw.Invoke(@this);
 	}
 
 	[MangledName("??$minimum@I@fpng@@YAIII@Z")]
 	[DemangledName("unsigned int __cdecl fpng::minimum<unsigned int>(unsigned int, unsigned int)")]
 	[CleanName("minimum")]
 	[return: NativeType("unsigned int")]
-	public static int minimum_su2nfub([NativeType("unsigned int")] int a, [NativeType("unsigned int")] int b)
+	public static int minimum_sh5ug2([NativeType("unsigned int")] int a, [NativeType("unsigned int")] int b)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.minimum_su2nfub.Invoke(a, b);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.minimum_sh5ug2.Invoke(a, b);
 	}
 
 	public unsafe static int memcmp(void* parameter_0, void* parameter_1, long parameter_2)
@@ -2704,11 +2704,11 @@ public static partial class FPng
 	[DemangledName("private: void __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Resize<struct std::_Value_init_tag>(unsigned __int64, struct std::_Value_init_tag const &)")]
 	[CleanName("Resize")]
 	[return: NativeType("void")]
-	public unsafe static void Resize_p4x2rua(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
+	public unsafe static void Resize_zwsk2t(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
 	{
 		try
 		{
-			AssetRipper.Conversions.FastPng.GlobalFunctions.Resize_p4x2rua.Invoke(@this, Newsize, Val);
+			AssetRipper.Conversions.FastPng.GlobalFunctions.Resize_zwsk2t.Invoke(@this, Newsize, Val);
 		}
 		catch
 		{
@@ -2722,38 +2722,38 @@ public static partial class FPng
 	[DemangledName("private: class std::allocator<unsigned char> & __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Getal(void)")]
 	[CleanName("Getal")]
 	[return: NativeType("class std::allocator<unsigned char> &")]
-	public unsafe static void* Getal_jms5hzb(void* @this)
+	public unsafe static void* Getal_vpqbcr(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_jms5hzb.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_vpqbcr.Invoke(@this);
 	}
 
 	[MangledName("?_Orphan_range@?$vector@EV?$allocator@E@std@@@std@@AEBAXPEAE0@Z")]
 	[DemangledName("private: void __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Orphan_range(unsigned char *, unsigned char *) const")]
 	[CleanName("Orphan_range")]
 	[return: NativeType("void")]
-	public unsafe static void Orphan_range_334quvb(void* @this, [NativeType("unsigned char *")] void* parameter_1, [NativeType("unsigned char *")] void* parameter_2)
+	public unsafe static void Orphan_range_xjvz63(void* @this, [NativeType("unsigned char *")] void* parameter_1, [NativeType("unsigned char *")] void* parameter_2)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Orphan_range_334quvb.Invoke(@this, parameter_1, parameter_2);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Orphan_range_xjvz63.Invoke(@this, parameter_1, parameter_2);
 	}
 
 	[MangledName("??$_Destroy_range@V?$allocator@E@std@@@std@@YAXPEAEQEAEAEAV?$allocator@E@0@@Z")]
 	[DemangledName("void __cdecl std::_Destroy_range<class std::allocator<unsigned char>>(unsigned char *, unsigned char *const, class std::allocator<unsigned char> &)")]
 	[CleanName("Destroy_range")]
 	[return: NativeType("void")]
-	public unsafe static void Destroy_range_jjcob5a([MangledName("_First")][NativeType("unsigned char *")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last, [MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al)
+	public unsafe static void Destroy_range_6evibt([MangledName("_First")][NativeType("unsigned char *")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last, [MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Destroy_range_jjcob5a.Invoke(First, Last, Al);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Destroy_range_6evibt.Invoke(First, Last, Al);
 	}
 
 	[MangledName("??$_Resize_reallocate@U_Value_init_tag@std@@@?$vector@EV?$allocator@E@std@@@std@@AEAAX_KAEBU_Value_init_tag@1@@Z")]
 	[DemangledName("private: void __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Resize_reallocate<struct std::_Value_init_tag>(unsigned __int64, struct std::_Value_init_tag const &)")]
 	[CleanName("Resize_reallocate")]
 	[return: NativeType("void")]
-	public unsafe static void Resize_reallocate_dt5hjdb(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
+	public unsafe static void Resize_reallocate_63gyyk(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Val")][NativeType("struct std::_Value_init_tag const &")] void* Val)
 	{
 		try
 		{
-			AssetRipper.Conversions.FastPng.GlobalFunctions.Resize_reallocate_dt5hjdb.Invoke(@this, Newsize, Val);
+			AssetRipper.Conversions.FastPng.GlobalFunctions.Resize_reallocate_63gyyk.Invoke(@this, Newsize, Val);
 		}
 		catch
 		{
@@ -2767,57 +2767,57 @@ public static partial class FPng
 	[DemangledName("unsigned char * __cdecl std::_Uninitialized_value_construct_n<class std::allocator<unsigned char>>(unsigned char *, unsigned __int64, class std::allocator<unsigned char> &)")]
 	[CleanName("Uninitialized_value_construct_n")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* Uninitialized_value_construct_n_cxm3ryd([MangledName("_First")][NativeType("unsigned char *")] void* First, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al)
+	public unsafe static void* Uninitialized_value_construct_n_sbfpus([MangledName("_First")][NativeType("unsigned char *")] void* First, [MangledName("_Count")][NativeType("unsigned __int64")] long Count, [MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_value_construct_n_cxm3ryd.Invoke(First, Count, Al);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_value_construct_n_sbfpus.Invoke(First, Count, Al);
 	}
 
 	[MangledName("?_Get_first@?$_Compressed_pair@V?$allocator@E@std@@V?$_Vector_val@U?$_Simple_types@E@std@@@2@$00@std@@QEAAAEAV?$allocator@E@2@XZ")]
 	[DemangledName("public: class std::allocator<unsigned char> & __cdecl std::_Compressed_pair<class std::allocator<unsigned char>, class std::_Vector_val<struct std::_Simple_types<unsigned char>>, 1>::_Get_first(void)")]
 	[CleanName("Get_first")]
 	[return: NativeType("class std::allocator<unsigned char> &")]
-	public unsafe static void* Get_first_nkl7psd(void* @this)
+	public unsafe static void* Get_first_2rs8wq(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_nkl7psd.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_2rs8wq.Invoke(@this);
 	}
 
 	[MangledName("?max_size@?$vector@EV?$allocator@E@std@@@std@@QEBA_KXZ")]
 	[DemangledName("public: unsigned __int64 __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::max_size(void) const")]
 	[CleanName("max_size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long max_size_2yjes5b(void* @this)
+	public unsafe static long max_size_zqnixi(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_2yjes5b.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_zqnixi.Invoke(@this);
 	}
 
 	[MangledName("?_Xlength@?$vector@EV?$allocator@E@std@@@std@@CAXXZ")]
 	[DemangledName("private: static void __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Xlength(void)")]
 	[CleanName("Xlength")]
 	[return: NativeType("void")]
-	public static void Xlength_zpuxaia()
+	public static void Xlength_anx5wc()
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Xlength_zpuxaia.Invoke();
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Xlength_anx5wc.Invoke();
 	}
 
 	[MangledName("?_Calculate_growth@?$vector@EV?$allocator@E@std@@@std@@AEBA_K_K@Z")]
 	[DemangledName("private: unsigned __int64 __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Calculate_growth(unsigned __int64) const")]
 	[CleanName("Calculate_growth")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long Calculate_growth_scmxisc(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
+	public unsafe static long Calculate_growth_xjnsmq(void* @this, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Calculate_growth_scmxisc.Invoke(@this, Newsize);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Calculate_growth_xjnsmq.Invoke(@this, Newsize);
 	}
 
 	[MangledName("??$_Allocate_at_least_helper@V?$allocator@E@std@@@std@@YAPEAEAEAV?$allocator@E@0@AEA_K@Z")]
 	[DemangledName("unsigned char * __cdecl std::_Allocate_at_least_helper<class std::allocator<unsigned char>>(class std::allocator<unsigned char> &, unsigned __int64 &)")]
 	[CleanName("Allocate_at_least_helper")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* Allocate_at_least_helper_wikabbc([MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al, [MangledName("_Count")][NativeType("unsigned __int64 &")] void* Count)
+	public unsafe static void* Allocate_at_least_helper_da8z8c([MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al, [MangledName("_Count")][NativeType("unsigned __int64 &")] void* Count)
 	{
 		void* result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_at_least_helper_wikabbc.Invoke(Al, Count);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.Allocate_at_least_helper_da8z8c.Invoke(Al, Count);
 		}
 		catch
 		{
@@ -2832,74 +2832,74 @@ public static partial class FPng
 	[DemangledName("unsigned char * __cdecl std::_Uninitialized_move<unsigned char *, class std::allocator<unsigned char>>(unsigned char *const, unsigned char *const, unsigned char *, class std::allocator<unsigned char> &)")]
 	[CleanName("Uninitialized_move")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* Uninitialized_move_vysyj4a([MangledName("_First")][NativeType("unsigned char *const")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last, [MangledName("_Dest")][NativeType("unsigned char *")] void* Dest, [MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al)
+	public unsafe static void* Uninitialized_move_uueuvn([MangledName("_First")][NativeType("unsigned char *const")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last, [MangledName("_Dest")][NativeType("unsigned char *")] void* Dest, [MangledName("_Al")][NativeType("class std::allocator<unsigned char> &")] void* Al)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_move_vysyj4a.Invoke(First, Last, Dest, Al);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Uninitialized_move_uueuvn.Invoke(First, Last, Dest, Al);
 	}
 
 	[MangledName("?_Change_array@?$vector@EV?$allocator@E@std@@@std@@AEAAXQEAE_K1@Z")]
 	[DemangledName("private: void __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Change_array(unsigned char *const, unsigned __int64, unsigned __int64)")]
 	[CleanName("Change_array")]
 	[return: NativeType("void")]
-	public unsafe static void Change_array_k9lpzqa(void* @this, [MangledName("_Newvec")][NativeType("unsigned char *const")] void* Newvec, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
+	public unsafe static void Change_array_2dpfnj(void* @this, [MangledName("_Newvec")][NativeType("unsigned char *const")] void* Newvec, [MangledName("_Newsize")][NativeType("unsigned __int64")] long Newsize, [MangledName("_Newcapacity")][NativeType("unsigned __int64")] long Newcapacity)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Change_array_k9lpzqa.Invoke(@this, Newvec, Newsize, Newcapacity);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Change_array_2dpfnj.Invoke(@this, Newvec, Newsize, Newcapacity);
 	}
 
 	[MangledName("??1_Reallocation_guard@?$vector@EV?$allocator@E@std@@@std@@QEAA@XZ")]
 	[DemangledName("public: __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Reallocation_guard::~_Reallocation_guard(void)")]
 	[CleanName("Reallocation_guard_Destructor")]
-	public unsafe static void Reallocation_guard_Destructor_9xb7gra(void* @this)
+	public unsafe static void Reallocation_guard_Destructor_r9uyr4(void* @this)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Reallocation_guard_Destructor_9xb7gra.Invoke(@this);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Reallocation_guard_Destructor_r9uyr4.Invoke(@this);
 	}
 
 	[MangledName("?max_size@?$_Default_allocator_traits@V?$allocator@E@std@@@std@@SA_KAEBV?$allocator@E@2@@Z")]
 	[DemangledName("public: static unsigned __int64 __cdecl std::_Default_allocator_traits<class std::allocator<unsigned char>>::max_size(class std::allocator<unsigned char> const &)")]
 	[CleanName("max_size")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long max_size_hv9dl3d([NativeType("class std::allocator<unsigned char> const &")] void* parameter_0)
+	public unsafe static long max_size_cipza6([NativeType("class std::allocator<unsigned char> const &")] void* parameter_0)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_hv9dl3d.Invoke(parameter_0);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.max_size_cipza6.Invoke(parameter_0);
 	}
 
 	[MangledName("?_Getal@?$vector@EV?$allocator@E@std@@@std@@AEBAAEBV?$allocator@E@2@XZ")]
 	[DemangledName("private: class std::allocator<unsigned char> const & __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Getal(void) const")]
 	[CleanName("Getal")]
 	[return: NativeType("class std::allocator<unsigned char> const &")]
-	public unsafe static void* Getal_llls4cc(void* @this)
+	public unsafe static void* Getal_xcf3vf(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_llls4cc.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Getal_xcf3vf.Invoke(@this);
 	}
 
 	[MangledName("?_Get_first@?$_Compressed_pair@V?$allocator@E@std@@V?$_Vector_val@U?$_Simple_types@E@std@@@2@$00@std@@QEBAAEBV?$allocator@E@2@XZ")]
 	[DemangledName("public: class std::allocator<unsigned char> const & __cdecl std::_Compressed_pair<class std::allocator<unsigned char>, class std::_Vector_val<struct std::_Simple_types<unsigned char>>, 1>::_Get_first(void) const")]
 	[CleanName("Get_first")]
 	[return: NativeType("class std::allocator<unsigned char> const &")]
-	public unsafe static void* Get_first_pnsruja(void* @this)
+	public unsafe static void* Get_first_nacpdc(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_pnsruja.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_first_nacpdc.Invoke(@this);
 	}
 
 	[MangledName("?capacity@?$vector@EV?$allocator@E@std@@@std@@QEBA_KXZ")]
 	[DemangledName("public: unsigned __int64 __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::capacity(void) const")]
 	[CleanName("capacity")]
 	[return: NativeType("unsigned __int64")]
-	public unsafe static long capacity_mz5ysja(void* @this)
+	public unsafe static long capacity_zpcf72(void* @this)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.capacity_mz5ysja.Invoke(@this);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.capacity_zpcf72.Invoke(@this);
 	}
 
 	[MangledName("?allocate@?$allocator@E@std@@QEAAPEAE_K@Z")]
 	[DemangledName("public: unsigned char * __cdecl std::allocator<unsigned char>::allocate(unsigned __int64)")]
 	[CleanName("allocate")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* allocate_qfop4bd(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public unsafe static void* allocate_7uvktt(void* @this, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
 		void* result;
 		try
 		{
-			result = AssetRipper.Conversions.FastPng.GlobalFunctions.allocate_qfop4bd.Invoke(@this, Count);
+			result = AssetRipper.Conversions.FastPng.GlobalFunctions.allocate_7uvktt.Invoke(@this, Count);
 		}
 		catch
 		{
@@ -2914,81 +2914,81 @@ public static partial class FPng
 	[DemangledName("unsigned __int64 __cdecl std::_Get_size_of_n<1>(unsigned __int64)")]
 	[CleanName("Get_size_of_n")]
 	[return: NativeType("unsigned __int64")]
-	public static long Get_size_of_n_iqtw9sb([MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public static long Get_size_of_n_d9tw5e([MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_size_of_n_iqtw9sb.Invoke(Count);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_size_of_n_d9tw5e.Invoke(Count);
 	}
 
 	[MangledName("??$_Get_unwrapped@AEBQEAE@std@@YA?A_TAEBQEAE@Z")]
 	[DemangledName("decltype(auto) __cdecl std::_Get_unwrapped<unsigned char *const &>(unsigned char *const &)")]
 	[CleanName("Get_unwrapped")]
 	[return: NativeType("decltype(auto)")]
-	public unsafe static void* Get_unwrapped_z99fpma([MangledName("_It")][NativeType("unsigned char *const &")] void* It)
+	public unsafe static void* Get_unwrapped_viw76v([MangledName("_It")][NativeType("unsigned char *const &")] void* It)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_unwrapped_z99fpma.Invoke(It);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_unwrapped_viw76v.Invoke(It);
 	}
 
 	[MangledName("??$_Copy_memmove@PEAEPEAE@std@@YAPEAEPEAE00@Z")]
 	[DemangledName("unsigned char * __cdecl std::_Copy_memmove<unsigned char *, unsigned char *>(unsigned char *, unsigned char *, unsigned char *)")]
 	[CleanName("Copy_memmove")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* Copy_memmove_2kkdavd([MangledName("_First")][NativeType("unsigned char *")] void* First, [MangledName("_Last")][NativeType("unsigned char *")] void* Last, [MangledName("_Dest")][NativeType("unsigned char *")] void* Dest)
+	public unsafe static void* Copy_memmove_y9se66([MangledName("_First")][NativeType("unsigned char *")] void* First, [MangledName("_Last")][NativeType("unsigned char *")] void* Last, [MangledName("_Dest")][NativeType("unsigned char *")] void* Dest)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Copy_memmove_2kkdavd.Invoke(First, Last, Dest);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Copy_memmove_y9se66.Invoke(First, Last, Dest);
 	}
 
 	[MangledName("??$_Unfancy@E@std@@YAPEAEPEAE@Z")]
 	[DemangledName("unsigned char * __cdecl std::_Unfancy<unsigned char>(unsigned char *)")]
 	[CleanName("Unfancy")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* Unfancy_aszk3nc([MangledName("_Ptr")][NativeType("unsigned char *")] void* Ptr)
+	public unsafe static void* Unfancy_zvjymc([MangledName("_Ptr")][NativeType("unsigned char *")] void* Ptr)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_aszk3nc.Invoke(Ptr);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_zvjymc.Invoke(Ptr);
 	}
 
 	[MangledName("??$_To_address@PEAE@std@@YA?A_PAEBQEAE@Z")]
 	[DemangledName("auto __cdecl std::_To_address<unsigned char *>(unsigned char *const &)")]
 	[CleanName("To_address")]
 	[return: NativeType("auto")]
-	public unsafe static void* To_address_enkoctc([MangledName("_Val")][NativeType("unsigned char *const &")] void* Val)
+	public unsafe static void* To_address_e887gk([MangledName("_Val")][NativeType("unsigned char *const &")] void* Val)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.To_address_enkoctc.Invoke(Val);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.To_address_e887gk.Invoke(Val);
 	}
 
 	[MangledName("??$_Copy_memmove_tail@PEAE@std@@YAPEAEQEBDQEAE_K2@Z")]
 	[DemangledName("unsigned char * __cdecl std::_Copy_memmove_tail<unsigned char *>(char const *const, unsigned char *const, unsigned __int64, unsigned __int64)")]
 	[CleanName("Copy_memmove_tail")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* Copy_memmove_tail_x7ipzed([MangledName("_First_ch")][NativeType("char const *const")] void* First_ch, [MangledName("_Dest")][NativeType("unsigned char *const")] void* Dest, [MangledName("_Byte_count")][NativeType("unsigned __int64")] long Byte_count, [MangledName("_Object_count")][NativeType("unsigned __int64")] long Object_count)
+	public unsafe static void* Copy_memmove_tail_v5pv3y([MangledName("_First_ch")][NativeType("char const *const")] void* First_ch, [MangledName("_Dest")][NativeType("unsigned char *const")] void* Dest, [MangledName("_Byte_count")][NativeType("unsigned __int64")] long Byte_count, [MangledName("_Object_count")][NativeType("unsigned __int64")] long Object_count)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Copy_memmove_tail_x7ipzed.Invoke(First_ch, Dest, Byte_count, Object_count);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Copy_memmove_tail_v5pv3y.Invoke(First_ch, Dest, Byte_count, Object_count);
 	}
 
 	[MangledName("?deallocate@?$allocator@E@std@@QEAAXQEAE_K@Z")]
 	[DemangledName("public: void __cdecl std::allocator<unsigned char>::deallocate(unsigned char *const, unsigned __int64)")]
 	[CleanName("deallocate")]
 	[return: NativeType("void")]
-	public unsafe static void deallocate_mc9rbjc(void* @this, [MangledName("_Ptr")][NativeType("unsigned char *const")] void* Ptr, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
+	public unsafe static void deallocate_572ymf(void* @this, [MangledName("_Ptr")][NativeType("unsigned char *const")] void* Ptr, [MangledName("_Count")][NativeType("unsigned __int64")] long Count)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.deallocate_mc9rbjc.Invoke(@this, Ptr, Count);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.deallocate_572ymf.Invoke(@this, Ptr, Count);
 	}
 
 	[MangledName("??$_Zero_range@PEAE@std@@YAPEAEQEAE0@Z")]
 	[DemangledName("unsigned char * __cdecl std::_Zero_range<unsigned char *>(unsigned char *const, unsigned char *const)")]
 	[CleanName("Zero_range")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* Zero_range_927ahid([MangledName("_First")][NativeType("unsigned char *const")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last)
+	public unsafe static void* Zero_range_t5bpt7([MangledName("_First")][NativeType("unsigned char *const")] void* First, [MangledName("_Last")][NativeType("unsigned char *const")] void* Last)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Zero_range_927ahid.Invoke(First, Last);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Zero_range_t5bpt7.Invoke(First, Last);
 	}
 
 	[MangledName("??$_Unfancy_maybe_null@E@std@@YAPEAEPEAE@Z")]
 	[DemangledName("unsigned char * __cdecl std::_Unfancy_maybe_null<unsigned char>(unsigned char *)")]
 	[CleanName("Unfancy_maybe_null")]
 	[return: NativeType("unsigned char *")]
-	public unsafe static void* Unfancy_maybe_null_pj5f7cb([MangledName("_Ptr")][NativeType("unsigned char *")] void* Ptr)
+	public unsafe static void* Unfancy_maybe_null_gt4y67([MangledName("_Ptr")][NativeType("unsigned char *")] void* Ptr)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_maybe_null_pj5f7cb.Invoke(Ptr);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Unfancy_maybe_null_gt4y67.Invoke(Ptr);
 	}
 
 	[MangledName("??$?0$$V@?$_Compressed_pair@V?$allocator@E@std@@V?$_Vector_val@U?$_Simple_types@E@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z")]
@@ -3002,9 +3002,9 @@ public static partial class FPng
 	[DemangledName("struct std::_Fake_allocator __cdecl std::_Get_proxy_allocator<class std::allocator<unsigned char>>(class std::allocator<unsigned char> const &)")]
 	[CleanName("Get_proxy_allocator")]
 	[return: NativeType("struct std::_Fake_allocator")]
-	public unsafe static sbyte Get_proxy_allocator_zrfshta([NativeType("class std::allocator<unsigned char> const &")] void* parameter_0)
+	public unsafe static sbyte Get_proxy_allocator_gq86h4([NativeType("class std::allocator<unsigned char> const &")] void* parameter_0)
 	{
-		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_zrfshta.Invoke(parameter_0);
+		return AssetRipper.Conversions.FastPng.GlobalFunctions.Get_proxy_allocator_gq86h4.Invoke(parameter_0);
 	}
 
 	[MangledName("??0?$allocator@E@std@@QEAA@XZ")]
@@ -3025,9 +3025,9 @@ public static partial class FPng
 	[DemangledName("private: void __cdecl std::vector<unsigned char, class std::allocator<unsigned char>>::_Tidy(void)")]
 	[CleanName("Tidy")]
 	[return: NativeType("void")]
-	public unsafe static void Tidy_iono57d(void* @this)
+	public unsafe static void Tidy_uaj7br(void* @this)
 	{
-		AssetRipper.Conversions.FastPng.GlobalFunctions.Tidy_iono57d.Invoke(@this);
+		AssetRipper.Conversions.FastPng.GlobalFunctions.Tidy_uaj7br.Invoke(@this);
 	}
 
 	[MangledName("?fpng_pixel_zlib_raw_decompress@fpng@@YA_NPEBEIIPEAEIIII@Z")]

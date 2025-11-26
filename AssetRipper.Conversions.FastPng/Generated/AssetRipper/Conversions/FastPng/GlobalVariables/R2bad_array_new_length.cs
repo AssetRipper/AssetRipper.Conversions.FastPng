@@ -26,9 +26,9 @@ internal static partial class R2bad_array_new_length
 		__pointer = unchecked((InlineArray4_Int32*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray4_Int32))));
 		Value = new InlineArrayBuilder<InlineArray4_Int32, int>
 		{
-			PointerIndices.GetIndex(R1A_9w7p7zd.__pointer),
-			PointerIndices.GetIndex(R1A_vzsilob.__pointer),
-			PointerIndices.GetIndex(R1A_bbqer2a.__pointer),
+			PointerIndices.GetIndex(R1A_dz84df.__pointer),
+			PointerIndices.GetIndex(R1A_un6hum.__pointer),
+			PointerIndices.GetIndex(R1A_cfk42d.__pointer),
 			0
 		};
 	}

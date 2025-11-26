@@ -26,7 +26,7 @@ internal static partial class R2exception
 		__pointer = unchecked((InlineArray2_Int32*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray2_Int32))));
 		Value = new InlineArrayBuilder<InlineArray2_Int32, int>
 		{
-			PointerIndices.GetIndex(R1A_bbqer2a.__pointer),
+			PointerIndices.GetIndex(R1A_cfk42d.__pointer),
 			0
 		};
 	}

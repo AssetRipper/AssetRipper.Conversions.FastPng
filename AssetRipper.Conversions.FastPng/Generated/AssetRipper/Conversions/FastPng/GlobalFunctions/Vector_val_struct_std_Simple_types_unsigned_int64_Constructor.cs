@@ -11,9 +11,9 @@ internal static partial class Vector_val_struct_std_Simple_types_unsigned_int64_
 	{
 		unchecked
 		{
-			((std_Vector_val_zgi5p7d*)@this)->Myfirst = null;
-			((std_Vector_val_zgi5p7d*)@this)->Mylast = null;
-			((std_Vector_val_zgi5p7d*)@this)->Myend = null;
+			((std_Vector_val_i7igbu*)@this)->Myfirst = null;
+			((std_Vector_val_i7igbu*)@this)->Mylast = null;
+			((std_Vector_val_i7igbu*)@this)->Myend = null;
 			return @this;
 		}
 	}

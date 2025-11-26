@@ -19,7 +19,7 @@ internal static partial class Throw_bad_array_new_length
 	{
 		LocalVariables* localsPointer = StackFrameList.Current.New<LocalVariables>().GetLocalsPointer<LocalVariables>();
 		localsPointer->field_0 = default(std_bad_array_new_length);
-		bad_array_new_length_Constructor_fnjru5d.Invoke(&localsPointer->field_0);
+		bad_array_new_length_Constructor_ygbqdc.Invoke(&localsPointer->field_0);
 		CxxThrowException.Invoke(&localsPointer->field_0, TI3_AVbad_array_new_length_std.__pointer);
 		if (ExceptionInfo.Current != null)
 		{
